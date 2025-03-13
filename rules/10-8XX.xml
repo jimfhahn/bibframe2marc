@@ -923,7 +923,7 @@
     <sf code="a"><transform><xsl:value-of select="$vCurrentVersion"/> (<xsl:value-of select="$xslProcessor" />)</transform></sf>
     <switch>
       <case test="$pGenerationDatestamp">
-        <sf code="g"><transform><xsl:value-of select="$pGenerationDatestamp"/></transform></sf>
+        <sf code="g"><transform><xsl:value-of select="substring($pGenerationDatestamp, 1, 8)"/></transform></sf>
       </case>
     </switch>
     <switch>
