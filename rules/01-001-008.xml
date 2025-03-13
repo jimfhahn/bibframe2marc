@@ -596,6 +596,7 @@
               </transform>
             </case>
             
+            <!-- Production - i, k, s -->
             <case test="
               bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Production']/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf' 
               or 
@@ -670,10 +671,19 @@
                     <xsl:otherwise>0</xsl:otherwise>
                   </xsl:choose>
                 </xsl:variable>
+                <xsl:variable name="cOriginDateExists">
+                  <xsl:choose>
+                    <xsl:when test="bf:Work/bf:originDate[@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']">1</xsl:when>
+                    <xsl:otherwise>0</xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
                 <xsl:variable name="date2">
                   <xsl:choose>
                     <xsl:when test="$cDateExists = 1">
                       <xsl:value-of select="translate(bf:Instance/bf:copyrightDate[@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'], '©', '')" />
+                    </xsl:when>
+                    <xsl:when test="$cOriginDateExists = 1">
+                      <xsl:value-of select="bf:Work/bf:originDate[@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
                     </xsl:when>
                     <xsl:when test="contains($theDate, '/..')">9999</xsl:when>
                     <xsl:when test="contains($theDate, '/')">
@@ -687,6 +697,9 @@
                 <xsl:choose>
                   <xsl:when test="string-length($date1) = 4 and $cDateExists = 1">
                     <xsl:value-of select="translate(concat('t', $date1, $date2), 'X', 'u')" />
+                  </xsl:when>
+                  <xsl:when test="string-length($date1) = 4 and $cOriginDateExists = 1">
+                    <xsl:value-of select="translate(concat('r', $date1, $date2), 'X', 'u')" />
                   </xsl:when>
                   <xsl:when test="$vPA/bf:*/bf:status/bf:Status/@rdf:about = 'http://id.loc.gov/vocabulary/mstatus/current' and
                     string-length($date1) = 4 and string-length($date2) = 4">
@@ -720,10 +733,16 @@
                       <xsl:when test="contains($date2, '-')">
                         <xsl:value-of select="translate(concat('e', $date1, translate($date2, '-', '')), 'X', 'u')" />
                       </xsl:when>
+                      <xsl:when test="$date1='XXXX' and $date2='XXXX'">
+                        <xsl:value-of select="concat('n', '    ', '    ')" />
+                      </xsl:when>
                       <xsl:otherwise>
                         <xsl:value-of select="translate(concat('e', $date1, $date2, '  '), 'X', 'u')" />
                       </xsl:otherwise>
                     </xsl:choose>
+                  </xsl:when>
+                  <xsl:when test="string-length($date1) = 4 and $date1='XXXX'">
+                    <xsl:value-of select="concat('n', '    ', '    ')" />
                   </xsl:when>
                   <xsl:when test="string-length($date1) = 4">
                     <xsl:value-of select="translate(concat('s', $date1, '    '), 'X', 'u')" />
