@@ -195,6 +195,12 @@
           </sf>
         </case>
       </switch>
+      <sf code="2" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="contains(@rdf:about,'id.loc.gov/vocabulary/contentType')">rdacontent</case>
+          <case test="default"><select xpath="bf:source/bf:Source/bf:code"/></case>
+        </switch>
+      </sf>
       <sf code="0">
         <select xpath="@rdf:about"/>
       </sf>
@@ -214,9 +220,6 @@
             </xsl:choose>
           </transform>
         </select>
-      </sf>
-      <sf code="2" chopPunct="true" repeatable="false">
-        <select xpath="bf:source/bf:Source/bf:code"/>
       </sf>
     </context>
   </df>
@@ -262,6 +265,12 @@
           </sf>
         </case>
       </switch>
+      <sf code="2" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="contains(@rdf:about,'id.loc.gov/vocabulary/mediaType')">rdamedia</case>
+          <case test="default"><select xpath="bf:source/bf:Source/bf:code"/></case>
+        </switch>
+      </sf>
       <sf code="0">
         <select xpath="@rdf:about"/>
       </sf>
@@ -281,9 +290,6 @@
             </xsl:choose>
           </transform>
         </select>
-      </sf>
-      <sf code="2" chopPunct="true" repeatable="false">
-        <select xpath="bf:source/bf:Source/bf:code"/>
       </sf>
     </context>
   </df>
@@ -329,6 +335,12 @@
           </sf>
         </case>
       </switch>
+      <sf code="2" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="contains(@rdf:about,'id.loc.gov/vocabulary/carriers')">rdacarrier</case>
+          <case test="default"><select xpath="bf:source/bf:Source/bf:code"/></case>
+        </switch>
+      </sf>
       <sf code="0">
         <select xpath="@rdf:about"/>
       </sf>
@@ -348,9 +360,6 @@
             </xsl:choose>
           </transform>
         </select>
-      </sf>
-      <sf code="2" chopPunct="true" repeatable="false">
-        <select xpath="bf:source/bf:Source/bf:code"/>
       </sf>
     </context>
   </df>
