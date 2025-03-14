@@ -75,7 +75,14 @@
             <case test="$vSubjectTag='651'">a</case>
           </switch>
         </var>
-
+        
+        <var name="vMainSourceUri">
+          <switch>
+            <case test="*/bf:source//@rdf:*[1] != ''"><transform><xsl:value-of select="*/bf:source//@rdf:*[1]" /></transform></case>
+            <case test="*/madsrdf:isMemberOfMADSScheme//@rdf:*[1] != ''"><transform><xsl:value-of select="*/madsrdf:isMemberOfMADSScheme//@rdf:*[1]" /></transform></case>
+            <case test="$relURI != ''"><transform><xsl:value-of select="$relURI" /></transform></case>
+          </switch>
+        </var>
 
         <var name="v880Script">
           <switch>
@@ -241,30 +248,35 @@
           </ind1>
           <ind2 default="4">
             <switch>
-              <case test="contains($relURI, '/subjects/') or contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">0</case>
-              <case test="contains($relURI, '/childrensSubjects/')">1</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/cyac') or 
+                          contains($vMainSourceUri, '/authorities/childrensSubjects') or
+                          contains($vMainSourceUri, '/subjectSchemes/lcshac')">1</case>
+              
+              <case test="contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">
+                <switch>
+                  <case test="ancestor::bf:Work/bf:subject/*/bf:source//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                  <case test="ancestor::bf:Work/bf:subject/*/madsrdf:isMemberOfMADSScheme//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                  <case test="default">0</case>
+                </switch>
+              </case>
+              <case test="contains($relURI, '/subjects/')">0</case> 
               <case test="contains($relURI, '/mesh/')">2</case>
               <case test="contains($relURI, '/nalt/')">3</case>
-              <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
-                contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
-                contains($relURI, '/fast/') or
-                contains($relURI, 'd-nb.info/gnd/')">7</case>
               
-              <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects'] or 
-                bf:source[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects']">1</case>
-              <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/subjects'] or 
-                bf:source[@rdf:resource='http://id.loc.gov/authorities/subjects']">0</case>
+              <case test="contains($relURI, '/genreForms/') or 
+                          contains($relURI, '/demographicTerms/') or 
+                          contains($relURI, '/graphicMaterials/') or 
+                          contains($relURI, '/fast/') or
+                          contains($relURI, 'd-nb.info/gnd/')">7</case>
               
-              <case test="contains(bf:source//@rdf:*[1], '/subjectSchemes/cyac') or 
-                          contains(bf:source//@rdf:*[1], '/authorities/childrensSubjects') or
-                          contains(bf:source//@rdf:*[1], '/subjectSchemes/lcshac')">1</case>
-              <case test="contains(bf:source//@rdf:*[1], '/subjectSchemes/lcsh') or 
-                          contains(bf:source//@rdf:*[1], '/authorities/subjects')">0</case>
+              <case test="contains($vMainSourceUri, '/authorities/subjects') or 
+                          contains($vMainSourceUri, '/subjectSchemes/lcsh') or 
+                          contains($vMainSourceUri, '/authorities/subjects')">0</case>
               
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/mesh']">2</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/nal']">3</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/cash']">5</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm']">6</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/mesh')">2</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/nal')">3</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/cash')">5</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/rvm')">6</case>
             </switch>
           </ind2>
           <switch>
@@ -336,23 +348,35 @@
               </ind1>
               <ind2 default="4">
                 <switch>
-                  <case test="contains($relURI, '/subjects/') or contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">0</case>
-                  <case test="contains($relURI, '/childrensSubjects/')">1</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/cyac') or 
+                              contains($vMainSourceUri, '/authorities/childrensSubjects') or
+                              contains($vMainSourceUri, '/subjectSchemes/lcshac')">1</case>
+                  
+                  <case test="contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">
+                    <switch>
+                      <case test="ancestor::bf:Work/bf:subject/*/bf:source//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                      <case test="ancestor::bf:Work/bf:subject/*/madsrdf:isMemberOfMADSScheme//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                      <case test="default">0</case>
+                    </switch>
+                  </case>
+                  <case test="contains($relURI, '/subjects/')">0</case> 
                   <case test="contains($relURI, '/mesh/')">2</case>
                   <case test="contains($relURI, '/nalt/')">3</case>
-                  <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
-                    contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
-                    contains($relURI, '/fast/') or
-                    contains($relURI, 'd-nb.info/gnd/')">7</case>
                   
-                  <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/subjects'] or 
-                    bf:source[@rdf:resource='http://id.loc.gov/authorities/subjects']">0</case>
-                  <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects'] or 
-                    bf:source[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects']">1</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/mesh']">2</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/nal']">3</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/cash']">5</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm']">6</case>
+                  <case test="contains($relURI, '/genreForms/') or 
+                              contains($relURI, '/demographicTerms/') or 
+                              contains($relURI, '/graphicMaterials/') or 
+                              contains($relURI, '/fast/') or
+                              contains($relURI, 'd-nb.info/gnd/')">7</case>
+                  
+                  <case test="contains($vMainSourceUri, '/authorities/subjects') or 
+                              contains($vMainSourceUri, '/subjectSchemes/lcsh') or 
+                              contains($vMainSourceUri, '/authorities/subjects')">0</case>
+                  
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/mesh')">2</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/nal')">3</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/cash')">5</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/rvm')">6</case>
                 </switch>
               </ind2>
               <switch>
