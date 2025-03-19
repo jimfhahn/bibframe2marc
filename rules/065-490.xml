@@ -8,7 +8,7 @@
        xmlns:marc="http://www.loc.gov/MARC21/slim"
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <!-- Series added entries -->
+  <!-- Series transcribed -->
   <select xpath="
         bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, '/relationship/series') or contains(bf:Relationship/@rdf:about, '/relationship/series')]]/bf:associatedResource/bf:Series[bf:status/@rdf:resource[.='http://id.loc.gov/vocabulary/mstatus/t'] or bf:status/bf:Status/@rdf:about[.='http://id.loc.gov/vocabulary/mstatus/t']] |
         bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, '/relationship/series') or contains(bf:Relationship/@rdf:about, '/relationship/series')]]/bf:associatedResource/bflc:Uncontrolled[bf:status/@rdf:resource[.='http://id.loc.gov/vocabulary/mstatus/t'] or bf:status/bf:Status/@rdf:about[.='http://id.loc.gov/vocabulary/mstatus/t']] |
@@ -165,12 +165,7 @@
         <df tag="880">
           <ind1 default="0">
             <switch>
-              <case test="../../../../bf:relation/bf:Relation[bf:relationship/bf:Relationship/@rdf:about='http://id.loc.gov/vocabulary/relationship/series']/bf:associatedResource/bf:Hub[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
-              <case test="../../../../bf:relation/bf:Relation[bf:relationship/bf:Relationship/@rdf:about='http://id.loc.gov/vocabulary/relationship/series']/bf:associatedResource/bf:Series[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
-              <case test="../../../../bf:relation/bf:Relation[bf:relationship/bf:Relationship/@rdf:about='http://id.loc.gov/ontologies/bibframe/hasSeries']/bf:associatedResource/bf:Hub[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
-              <case test="../../../../bf:relation/bf:Relation[bf:relationship/bf:Relationship/@rdf:about='http://id.loc.gov/ontologies/bibframe/hasSeries']/bf:associatedResource/bf:Series[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
-              <case test="../../../../bflc:relationship/bflc:Relationship[bflc:relation/bflc:Relation/@rdf:about='http://id.loc.gov/ontologies/bibframe/hasSeries']/bf:relatedTo/bf:Hub[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
-              <case test="../../../../bflc:relationship/bflc:Relationship[bflc:relation/bflc:Relation/@rdf:about='http://id.loc.gov/ontologies/bibframe/hasSeries']/bf:relatedTo/bf:Series[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/Uncontrolled')]">1</case>
+              <case test="bf:status//@rdf:*[1] = 'http://id.loc.gov/vocabulary/mstatus/tr'">1</case>
             </switch>
           </ind1>
           <ind2 default=" "/>
