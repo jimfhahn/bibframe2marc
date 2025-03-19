@@ -593,10 +593,16 @@
 
   <df tag="130" repeatable="false" lang-xpath="bf:mainTitle" lang-prefer="transliterated">
     <context xpath="bf:Work/bf:expressionOf/bf:*[(local-name() = 'Hub' or local-name() = 'Work') and 
-                                                  bf:title and 
-                                                  not(../../bf:contribution/bf:PrimaryContribution) and 
-                                                  not(../../bf:contribution/bflc:PrimaryContribution) and 
-                                                  not(../../bf:contribution/*/rdf:type[contains(@rdf:resource, '/PrimaryContribution')])
+                                                  (
+                                                    (
+                                                      bf:title and 
+                                                      not(../../bf:contribution/bf:PrimaryContribution) and 
+                                                      not(../../bf:contribution/bflc:PrimaryContribution) and 
+                                                      not(../../bf:contribution/*/rdf:type[contains(@rdf:resource, '/PrimaryContribution')])
+                                                    )
+                                                  ) or (
+                                                    bflc:marcKey[starts-with(., '130')]
+                                                  )
                                             ]">
       <var name="vTitleResourcePreNS">
         <transform>
@@ -670,7 +676,7 @@
         </case>
       </switch>
 
-      <sf code="0"><select xpath="@rdf:about[not(contains(.,'example.org')) and not(contains(., 'REPLACE'))]"/></sf>
+      <sf code="1"><select xpath="@rdf:about[not(contains(.,'example.org')) and not(contains(., 'REPLACE'))]"/></sf>
       <sf code="0">
         <select xpath="bf:identifiedBy/bf:Identifier">
           <transform>
