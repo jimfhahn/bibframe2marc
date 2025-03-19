@@ -905,14 +905,14 @@
           <df tag="880">
             <ind1 default="3">
               <switch>
-                <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/por']">1</case>
+                <!-- <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/por']">1</case> -->
                 <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/atp']">1</case>
                 <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/cap']">1</case>
                 <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/run']">1</case>
                 <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/cov']">1</case>
                 <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/spi']">1</case>
                 
-                <case test="bf:variantType = 'portion'">1</case>
+                <!-- <case test="bf:variantType = 'portion'">1</case> -->
                 <case test="bf:variantType = 'added title page'">1</case>
                 <case test="bf:variantType = 'caption'">1</case>
                 <case test="bf:variantType = 'running'">1</case>
