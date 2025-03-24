@@ -649,6 +649,27 @@
                           </switch>
                         </sf>
                       </case>
+                      <case test="local-name()='HierarchicalGeographic' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic']">
+                        <switch>
+                          <case test="contains(madsrdf:authoritativeLabel, '--')">
+                            <transform>
+                              <xsl:call-template name="tToken2Subfields">
+                                <xsl:with-param name="pString" select="madsrdf:authoritativeLabel" />
+                                <xsl:with-param name="pSeparator" select="'--'"/>
+                                <xsl:with-param name="pSubfieldCode" select="'z'"/>  
+                              </xsl:call-template>
+                            </transform>
+                          </case>
+                          <case test="default">
+                            <sf code="z" chopPunct="true">
+                              <switch>
+                                <case test="madsrdf:authoritativeLabel"><select xpath="madsrdf:authoritativeLabel"/></case>
+                                <case test="default"><select xpath="rdfs:label"/></case>
+                              </switch>
+                            </sf>
+                          </case>
+                        </switch>
+                      </case>
                       <case test="default">
                         <sf code="x" chopPunct="true">
                           <switch>
