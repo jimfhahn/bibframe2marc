@@ -1085,61 +1085,55 @@
   </select>
 
   <!-- 250/880 -->
-  <select xpath="bf:Instance/bf:editionStatement">
+  <select xpath="bf:Instance/bf:editionStatement[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+    <var name="v880" xpath="ancestor::bf:Instance/bf:editionStatement[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]" />
     <var name="v880Script">
       <switch>
-        <case test="@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))">
+        <case test="$v880/@xml:lang">
           <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(@xml:lang,'-'),$upper,$lower)"/>
+            <lookupField name="lang" xpath="translate(substring-after($v880/@xml:lang,'-'),$upper,$lower)"/>
           </lookup>
         </case>
       </switch>
     </var>
+    <df tag="250">
+      <ind1 default=" "/>
+      <ind2 default=" "/>
+      <switch>
+        <case test="$v880/@xml:lang">
+          <sf code="6"><transform><xsl:value-of select="'880-24'"/></transform></sf>    
+        </case>
+      </switch>
+      <sf code="a" chopPunct="false">
+        <transform>
+          <xsl:value-of select="."></xsl:value-of>
+          <xsl:variable name="vEndsWith">
+            <transform>
+              <xsl:call-template name="tEndsWith">
+                <xsl:with-param name="pStr" select="."/>
+                <xsl:with-param name="pEndChar" select="'.'"/>
+              </xsl:call-template>
+            </transform>
+          </xsl:variable>
+          <xsl:if test="$vEndsWith = '0'">
+            <xsl:text>.</xsl:text>
+          </xsl:if>
+        </transform>
+      </sf>
+    </df>
     <switch>
-      <case test="$v880Script != ''">
+      <case test="$v880/@xml:lang">
         <df tag="880">
           <ind1 default=" "/>
           <ind2 default=" "/>
-          <switch>
-            <case test="ancestor::bf:Instance/bf:editionStatement[not(@xml:lang)]">
-              <sf code="6"><transform><xsl:value-of select="concat('250-24/',$v880Script)"/></transform></sf>    
-            </case>
-            <case test="default"><sf code="6"><transform><xsl:value-of select="concat('250-24/',$v880Script)"/></transform></sf></case>
-          </switch>
+          <sf code="6"><transform><xsl:value-of select="concat('250-24/',$v880Script)"/></transform></sf>
           <sf code="a" chopPunct="false">
             <transform>
-              <xsl:value-of select="."></xsl:value-of>
+              <xsl:value-of select="$v880"></xsl:value-of>
               <xsl:variable name="vEndsWith">
                 <transform>
                   <xsl:call-template name="tEndsWith">
-                    <xsl:with-param name="pStr" select="."/>
-                    <xsl:with-param name="pEndChar" select="'.'"/>
-                  </xsl:call-template>
-                </transform>
-              </xsl:variable>
-              <xsl:if test="$vEndsWith = '0'">
-                <xsl:text>.</xsl:text>
-              </xsl:if>
-            </transform>
-          </sf>
-        </df>
-      </case>
-      <case test="default">
-        <df tag="250">
-          <ind1 default=" "/>
-          <ind2 default=" "/>
-          <switch>
-            <case test="ancestor::bf:Instance/bf:editionStatement[@xml:lang]">
-              <sf code="6"><transform><xsl:value-of select="'880-24'"/></transform></sf>    
-            </case>
-          </switch>
-          <sf code="a" chopPunct="false">
-            <transform>
-              <xsl:value-of select="."></xsl:value-of>
-              <xsl:variable name="vEndsWith">
-                <transform>
-                  <xsl:call-template name="tEndsWith">
-                    <xsl:with-param name="pStr" select="."/>
+                    <xsl:with-param name="pStr" select="$v880"/>
                     <xsl:with-param name="pEndChar" select="'.'"/>
                   </xsl:call-template>
                 </transform>
@@ -1542,6 +1536,12 @@
                           <xsl:with-param name="pEndChar" select="']'"/>
                         </xsl:call-template>
                       </xsl:variable>
+                      <xsl:variable name="vEndsWithDash">
+                        <xsl:call-template name="tEndsWith">
+                          <xsl:with-param name="pStr" select="."/>
+                          <xsl:with-param name="pEndChar" select="'-'"/>
+                        </xsl:call-template>
+                      </xsl:variable>
                       <xsl:variable name="vEndsWithPeriod">
                         <xsl:call-template name="tEndsWith">
                           <xsl:with-param name="pStr" select="."/>
@@ -1550,6 +1550,7 @@
                       </xsl:variable>
                       <xsl:choose>
                         <xsl:when test="$vEndsWithBracket = '1'" />
+                        <xsl:when test="$vEndsWithDash = '1'" />
                         <xsl:when test="$vEndsWithPeriod = '0'">
                           <xsl:text>.</xsl:text>
                         </xsl:when>
@@ -1684,6 +1685,12 @@
                               <xsl:with-param name="pEndChar" select="']'"/>
                             </xsl:call-template>
                           </xsl:variable>
+                          <xsl:variable name="vEndsWithDash">
+                            <xsl:call-template name="tEndsWith">
+                              <xsl:with-param name="pStr" select="."/>
+                              <xsl:with-param name="pEndChar" select="'-'"/>
+                            </xsl:call-template>
+                          </xsl:variable>
                           <xsl:variable name="vEndsWithPeriod">
                             <xsl:call-template name="tEndsWith">
                               <xsl:with-param name="pStr" select="."/>
@@ -1692,6 +1699,7 @@
                           </xsl:variable>
                           <xsl:choose>
                             <xsl:when test="$vEndsWithBracket = '1'" />
+                            <xsl:when test="$vEndsWithDash = '1'" />
                             <xsl:when test="$vEndsWithPeriod = '0'">
                               <xsl:text>.</xsl:text>
                             </xsl:when>
