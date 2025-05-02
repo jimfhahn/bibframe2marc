@@ -947,21 +947,72 @@
     </context>
   </df>
 
-  <df tag="520" lang-xpath="rdfs:label">
-    <context xpath="bf:Work/bf:summary/bf:Summary[rdfs:label]">
-      <ind1 default=" "/>
-      <ind2 default=" "/>
-      <sf code="3" chopPunct="true" repeatable="false">
-        <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
-      </sf>
-      <sf code="a" chopPunct="false" repeatable="false">
-        <select xpath="rdfs:label"/>
-      </sf>
-      <sf code="u">
-        <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
-      </sf>
-    </context>
-  </df>
+  <select xpath="bf:Work/bf:summary/bf:Summary[rdfs:label]">
+    <var name="v880Script">
+      <switch>
+        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+          <lookup map="df880script" targetField="code">
+            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
+          </lookup>
+        </case>
+      </switch>
+    </var>
+    <var name="v880Occurrence">
+      <switch>
+        <case test="$v880Script != ''">
+          <transform>
+            <!-- This should be the next in the numerical sequence for work notes, when also accounting for tableOfContents .. -->
+            <xsl:value-of select="
+                            39 + 
+                            count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+                            count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+                            position()" />
+          </transform>
+        </case>
+      </switch>
+    </var>
+    
+    <df tag="520" lang-xpath="rdfs:label">
+        <ind1 default=" "/>
+        <ind2 default=" "/>
+        <switch>
+          <case test="$v880Script != ''">
+            <sf code="6"><transform><xsl:value-of select="concat('880-', $v880Occurrence)"/></transform></sf>
+          </case>
+        </switch>
+        <sf code="3" chopPunct="true" repeatable="false">
+          <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+        </sf>
+        <sf code="a" chopPunct="false" repeatable="false">
+          <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+        </sf>
+        <sf code="u">
+          <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+        </sf>
+    </df>
+    
+    <switch>
+      <case test="$v880Script != ''">
+        <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+          <df tag="880">
+            <ind1 default=" "/>
+            <ind2 default=" "/>
+            <sf code="6"><transform><xsl:value-of select="concat('520-', $v880Occurrence, '/', $v880Script)"/></transform></sf>
+            <sf code="3" chopPunct="true" repeatable="false">
+              <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+            </sf>
+            <sf code="a" chopPunct="true" repeatable="false">
+              <select xpath="."/>
+            </sf>
+            <sf code="u">
+              <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+            </sf>
+          </df>
+        </select>
+      </case>
+    </switch>
+  </select>
+  
 
   <!-- rules for 521 coded with 385 -->
 
