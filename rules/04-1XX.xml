@@ -255,7 +255,7 @@
       <switch>
         <case test="$vNameVariant//marc:datafield[@tag!='']">
           <!-- We have a variant, so we need to create an 880 link. -->
-          <sf code="6"><transform><xsl:value-of select="concat('880-0', position())"/></transform></sf>   
+          <sf code="6"><transform><xsl:value-of select="concat('880-0', '1')"/></transform></sf>   
         </case>
       </switch>
       <transform>
@@ -287,7 +287,7 @@
             </switch>
           </ind1>
           <ind2 default=" "/>
-          <sf code="6"><transform><xsl:value-of select="concat($vNameTag, '-0', position(), '/', $v880Script)"/></transform></sf>
+          <sf code="6"><transform><xsl:value-of select="concat($vNameTag, '-0', '1', '/', $v880Script)"/></transform></sf>
           <transform>
             <xsl:for-each select="$vNameVariant//marc:datafield/marc:subfield[contains($vAuthSubfields,@code)]">
               <marc:subfield>

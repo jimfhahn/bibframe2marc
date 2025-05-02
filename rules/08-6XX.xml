@@ -124,7 +124,7 @@
           <transform>
             <xsl:if test="$v880Script != ''">
               <xsl:variable name="previousSubjectCount" select="count(preceding-sibling::bf:subject[*/madsrdf:componentList/*[1]/bflc:marcKey[@xml:lang] or */bflc:marcKey[@xml:lang]])" />
-              <xsl:value-of select="50 + $previousSubjectCount" />
+              <xsl:value-of select="60 + $previousSubjectCount" />
             </xsl:if>
           </transform>
         </var>

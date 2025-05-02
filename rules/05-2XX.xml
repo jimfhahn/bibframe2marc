@@ -1101,7 +1101,7 @@
       <ind2 default=" "/>
       <switch>
         <case test="$v880/@xml:lang">
-          <sf code="6"><transform><xsl:value-of select="'880-24'"/></transform></sf>    
+          <sf code="6"><transform><xsl:value-of select="'880-20'"/></transform></sf>    
         </case>
       </switch>
       <sf code="a" chopPunct="false">
@@ -1126,7 +1126,7 @@
         <df tag="880">
           <ind1 default=" "/>
           <ind2 default=" "/>
-          <sf code="6"><transform><xsl:value-of select="concat('250-24/',$v880Script)"/></transform></sf>
+          <sf code="6"><transform><xsl:value-of select="concat('250-20/',$v880Script)"/></transform></sf>
           <sf code="a" chopPunct="false">
             <transform>
               <xsl:value-of select="$v880"></xsl:value-of>
@@ -1296,7 +1296,7 @@
       </switch>
     </var>
     <var name="v880Occurence">
-      <transform><xsl:value-of select="30+position()"/></transform>
+      <transform><xsl:value-of select="21+position()"/></transform>
     </var>
     <switch>
       <case test="$v880Occurence &lt; 41">

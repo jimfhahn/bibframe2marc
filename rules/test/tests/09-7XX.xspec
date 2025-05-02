@@ -47,15 +47,15 @@
     <x:expect label="$a from label of agent"
       test="//marc:datafield[@tag='700'][1]/marc:subfield[@code='a'] = 'Kipiani, Vakhtanh'"/>
     <x:expect label="$6 for paired non-latin field"
-      test="//marc:datafield[@tag='700'][1]/marc:subfield[@code='6'] = '880-71'"/>
+      test="//marc:datafield[@tag='700'][1]/marc:subfield[@code='6'] = '880-70'"/>
     
-    <x:expect label="generate 880" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-71/(N']]) = 1"/>
+    <x:expect label="generate 880" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-70/(N']]) = 1"/>
     <x:expect label="ind1 default to blank"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-71/(N']]/@ind1 = '1'"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-70/(N']]/@ind1 = '1'"/>
     <x:expect label="ind2 default to blank"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-71/(N']]/@ind2 = ' '"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-70/(N']]/@ind2 = ' '"/>
     <x:expect label="$a from label of agent"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-71/(N']]/marc:subfield[@code='a'] = 'Кіпіані, Вахтанг'"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='700-70/(N']]/marc:subfield[@code='a'] = 'Кіпіані, Вахтанг'"/>
     
   </x:scenario>
 
@@ -104,15 +104,15 @@
     <x:expect label="$a from label of agent"
       test="//marc:datafield[@tag='710'][1]/marc:subfield[@code='a'] = 'Beijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui'"/>
     <x:expect label="$6 for paired non-latin field"
-      test="//marc:datafield[@tag='710'][1]/marc:subfield[@code='6'] = '880-71'"/>
+      test="//marc:datafield[@tag='710'][1]/marc:subfield[@code='6'] = '880-70'"/>
     
-    <x:expect label="generate 880" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-71/$1']]) = 1"/>
+    <x:expect label="generate 880" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-70/$1']]) = 1"/>
     <x:expect label=".. and expected ind1"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-71/$1']]/@ind1 = '2'"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-70/$1']]/@ind1 = '2'"/>
     <x:expect label=".. and expected ind2"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-71/$1']]/@ind2 = ' '"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-70/$1']]/@ind2 = ' '"/>
     <x:expect label="$a from label of agent"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-71/$1']]/marc:subfield[@code='a'] = '北京生物产业发展报告编辑委员会'"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='710-70/$1']]/marc:subfield[@code='a'] = '北京生物产业发展报告编辑委员会'"/>
     
   </x:scenario>
 

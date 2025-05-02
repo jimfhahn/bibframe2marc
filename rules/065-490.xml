@@ -30,7 +30,7 @@
       </lookup>
     </var>
     <var name="v880Occurence">
-      <transform><xsl:value-of select="20+position()"/></transform>
+      <transform><xsl:value-of select="35+position()"/></transform>
     </var>
     
     <switch>

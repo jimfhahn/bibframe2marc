@@ -339,7 +339,7 @@
       <switch>
         <case test="$vNameVariant//marc:datafield[@tag!='']">
           <!-- We have a variant, so we need to create an 880 link. -->
-          <sf code="6"><transform><xsl:value-of select="concat('880-7', position())"/></transform></sf>   
+          <sf code="6"><transform><xsl:value-of select="concat('880-', 69+position())"/></transform></sf>   
         </case>
       </switch>
       <transform>
@@ -379,7 +379,7 @@
           <sf code="6">
             <switch>
               <case test="$vRelResource//marc:datafield[@tag!='']">
-                <transform><xsl:value-of select="concat($vAddedEntryNameMarcKeyTag, '-7', position(), '/', $v880Script)"/></transform>
+                <transform><xsl:value-of select="concat($vAddedEntryNameMarcKeyTag, '-', 69+position(), '/', $v880Script)"/></transform>
               </case>
               <case test="default">
                 <transform><xsl:value-of select="concat($vAddedEntryNameMarcKeyTag, '-00', '/', $v880Script)"/></transform>
