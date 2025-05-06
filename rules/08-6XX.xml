@@ -2561,6 +2561,11 @@
                       ) and
                       not(*/marc:record) and not(*/bflc:marcKey)
                     ]">
+      <var name="relURI">
+        <switch>
+          <case test="not(contains(.,'example.org')) and not(contains(bf:*/@rdf:about, 'REPLACE'))"><transform><xsl:value-of select="bf:*/@rdf:about"/></transform></case>
+        </switch>
+      </var>
       <var name="vInd2Val">
         <switch>
           <case test="*/bf:source/bf:Source/bf:code='lcsh' or
@@ -2583,11 +2588,13 @@
           <case test="*/bf:source/bf:Source/bf:code='rvm' or
             */bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm' or */@rdf:about='http://id.loc.gov/vocabulary/subjectSchemes/rvm'] or
             */madsrdf:componentList/*[1]/bf:source/bf:Source/bf:code='rvm'">6</case>
+          <case test="contains($relURI, '/vocabulary/rbmscv/')">7</case>
           <case test="*/bf:source or */madsrdf:componentList/*[1]/bf:source">7</case>
         </switch>
       </var>
       <var name="vSf2val">
         <switch>
+          <case test="$vInd2Val = '7' and contains($relURI, '/vocabulary/rbmscv/')">rbmscv</case>
           <case test="$vInd2Val = '7'">
             <select xpath="*/bf:source|*/madsrdf:componentList/*[1]/bf:source">
               <var name="vSourceUri">
@@ -2705,8 +2712,11 @@
               <case test="default"><select xpath="*/rdfs:label[1]"/></case>
             </switch>
           </sf>
-          <sf code="0"><select xpath="@rdf:resource[not(contains(.,'example.org')) and not(contains(.,'REPLACE'))]"/></sf>
-          <sf code="0"><select xpath="*/@rdf:about[not(contains(.,'example.org')) and not(contains(.,'REPLACE'))]"/></sf>
+          <switch>
+            <case test="$relURI != ''">
+              <sf code="0"><transform><xsl:value-of select="$relURI" /></transform></sf>
+            </case>
+          </switch>
           <sf code="0">
             <select xpath="*/bf:identifiedBy/bf:Identifier">
               <transform>
