@@ -58,8 +58,7 @@
     become a Name/Title or Title added entry.
     It is predicated on a Hub being referenced.
   -->
-  <df tag="240" lang-xpath="rdfs:label" lang-prefer="transliterated">
-    <context xpath="bf:Work/bf:expressionOf[contains(@rdf:resource, 'hubs')][../bf:contribution/*[local-name()='PrimaryContribution'] or ../bf:contribution/*/rdf:type[contains(@rdf:resource, '/PrimaryContribution')]] |
+  <select xpath="bf:Work/bf:expressionOf[contains(@rdf:resource, 'hubs')][../bf:contribution/*[local-name()='PrimaryContribution'] or ../bf:contribution/*/rdf:type[contains(@rdf:resource, '/PrimaryContribution')]] |
                     bf:Work/bf:expressionOf/bf:*[contains(@rdf:about, 'hubs') or bflc:marcKey or marc:record][../../bf:contribution/*[local-name()='PrimaryContribution'] or ../../bf:contribution/*/rdf:type[contains(@rdf:resource, '/PrimaryContribution')]]
       ">
       
@@ -78,6 +77,27 @@
         </transform>
       </var>
       <var name="vRelResource" xpath="exsl:node-set($vRelResourcePreNS)" />
+    
+    <var name="v880Script">
+      <switch>
+        <case test="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang">
+          <var name="vLangTag" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+          <lookup map="df880script" targetField="code">
+            <lookupField name="lang" xpath="translate(substring-after($vLangTag,'-'),$upper,$lower)"/>
+          </lookup>
+        </case>
+      </switch>
+    </var>      
+    <var name="vRelVariantPreNS">
+      <transform>
+        <xsl:if test="$v880Script != '' and self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]">
+          <xsl:call-template name="tGetMiniMARCFromKey">
+            <xsl:with-param name="pFieldStr" select="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]"/>
+          </xsl:call-template>
+        </xsl:if>
+      </transform>
+    </var>
+    <var name="vRelVariant" xpath="exsl:node-set($vRelVariantPreNS)" />
       
       <switch>
         <case test="$xslProcessor='libxslt' and contains($relURI, 'resources/hubs') and not(bflc:marcKey)">
@@ -86,9 +106,16 @@
           </transform>
         </case>
       </switch>
-
+      
+    <df tag="240" lang-xpath="rdfs:label" lang-prefer="transliterated">
       <ind1 default="1"/>
       <ind2 default="0" />
+      <switch>
+        <case test="$vRelVariant//marc:datafield[@tag!='']">
+          <!-- We have a variant, so we need to create an 880 link. -->
+          <sf code="6"><transform><xsl:value-of select="concat('880-0', '2')"/></transform></sf>
+        </case>
+      </switch>
       <switch>
         <case test="$vRelResource//marc:datafield[@tag = '240']">
           <!-- This was from a looked up resource, so a fuller MARC record, not a marcKey, -->
@@ -120,8 +147,35 @@
           </case>
         </switch>
       </sf>
-    </context>
-  </df>
+    </df>
+    
+    <switch>
+      <case test="$vRelVariant//marc:datafield[@tag!='']">
+        <!-- We have a variant, so we need to create an 880. -->
+        <df tag="880">
+          <ind1 default="1"/>
+          <ind2 default="0" />
+          <sf code="6"><transform><xsl:value-of select="concat('880-0', '2', '/', $v880Script)"/></transform></sf>
+          <transform> 
+            <xsl:for-each select="$vRelVariant//marc:datafield[starts-with(@tag, '1')]/marc:subfield[(@code = 't' or preceding-sibling::marc:subfield[@code = 't']) and contains('dgfhklmnoprst',@code)]">
+              <marc:subfield>
+                <xsl:attribute name="code"><xsl:value-of select="translate(@code, 't', 'a')"/></xsl:attribute>
+                <xsl:value-of select="."/>
+              </marc:subfield>
+            </xsl:for-each>
+          </transform>
+          
+          <sf code="1">
+            <switch>
+              <case test="$relURI != ''">
+                <transform><xsl:value-of select="$relURI"/></transform>
+              </case>
+            </switch>
+          </sf>
+        </df>
+      </case>
+    </switch>
+  </select>
   
   <df tag="240" repeatable="false" lang-xpath="bf:mainTitle" lang-prefer="transliterated">
     <!-- This should be copied from tag 130 for all subfields -->
@@ -282,7 +336,7 @@
       </ind2>
       <switch>
         <case test="count(bf:mainTitle)=2 and bf:mainTitle[@xml:lang] and bf:mainTitle[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
-          <sf code="6">880-02</sf>
+          <sf code="6">880-03</sf>
         </case>
       </switch>
       <sf code="a" chopPunct="false" repeatable="false">
@@ -520,7 +574,7 @@
           <sf code="6">
             <switch>
               <case test="$v880Script != ''">
-                <transform><xsl:value-of select="concat('245-02/',$v880Script)"/></transform>
+                <transform><xsl:value-of select="concat('245-03/',$v880Script)"/></transform>
               </case>
               <case test="default">245-01</case>
             </switch>
@@ -719,7 +773,7 @@
               not(bf:variantType = 'translated') and
               not(bf:variantType = 'former') and
               bf:mainTitle[@xml:lang]])" />
-            <xsl:value-of select="3 + $prevTitleCount" />
+            <xsl:value-of select="4 + $prevTitleCount" />
           </xsl:if>
         </transform>
       </var>

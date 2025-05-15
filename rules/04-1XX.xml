@@ -591,8 +591,8 @@
     </context>
   </df>
 
-  <df tag="130" repeatable="false" lang-xpath="bf:mainTitle" lang-prefer="transliterated">
-    <context xpath="bf:Work/bf:expressionOf/bf:*[(local-name() = 'Hub' or local-name() = 'Work') and 
+  
+  <select xpath="bf:Work/bf:expressionOf/bf:*[(local-name() = 'Hub' or local-name() = 'Work') and 
                                                   (
                                                     (
                                                       bf:title and 
@@ -613,6 +613,27 @@
         </transform>
       </var>
       <var name="vTitleResource" xpath="exsl:node-set($vTitleResourcePreNS)" />
+
+      <var name="v880Script">
+        <switch>
+          <case test="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang">
+            <var name="vLangTag" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+            <lookup map="df880script" targetField="code">
+              <lookupField name="lang" xpath="translate(substring-after($vLangTag,'-'),$upper,$lower)"/>
+            </lookup>
+          </case>
+        </switch>
+      </var>      
+      <var name="vRelVariantPreNS">
+        <transform>
+          <xsl:if test="$v880Script != '' and self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]">
+            <xsl:call-template name="tGetMiniMARCFromKey">
+              <xsl:with-param name="pFieldStr" select="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]"/>
+            </xsl:call-template>
+          </xsl:if>
+        </transform>
+      </var>
+      <var name="vRelVariant" xpath="exsl:node-set($vRelVariantPreNS)" />
       
       <switch>
         <case test="$xslProcessor='libxslt' and contains(@rdf:about, 'resources/hubs') and not(bflc:marcKey)">
@@ -621,7 +642,8 @@
           </transform>
         </case>
       </switch>
-
+    
+    <df tag="130" repeatable="false" lang-xpath="bf:mainTitle" lang-prefer="transliterated">
       <ind1 default="0">
         <switch>
           <case test="bf:title/bf:Title/bflc:nonSortNum">
@@ -638,6 +660,13 @@
       </ind1>
       <ind2 default=" "/>
       
+      <switch>
+        <case test="$vRelVariant//marc:datafield[@tag!='']">
+          <!-- We have a variant, so we need to create an 880 link. -->
+          <sf code="6"><transform><xsl:value-of select="concat('880-0', '1')"/></transform></sf>
+        </case>
+      </switch>
+      
       <!-- title subfields -->
       <switch>
         <case test="$vTitleResource//marc:datafield[@tag='130']">
@@ -651,49 +680,100 @@
           </transform>
         </case>
         <case test="default">
-      <sf code="a" chopPunct="true" repeatable="false">
-        <switch>
-          <case test="bf:title/bf:Title/rdfs:label">
-            <select xpath="bf:title/bf:Title/rdfs:label"/>
-          </case>
-          <case test="bf:title/bf:Title/bf:mainTitle">
-            <select xpath="bf:title/bf:Title/bf:mainTitle"/>
-          </case>          
-        </switch>
-      </sf>
-      <sf code="d"><select xpath="bf:legalDate"/></sf>
-      <sf code="f" repeatable="false"><select xpath="bf:originDate"/></sf>
-      <sf code="m" chopPunct="true"><select xpath="bf:musicMedium/bf:MusicMedium/rdfs:label"/></sf>
-      <sf code="n" chopPunct="true"><select xpath="bf:title/bf:Title/bf:partNumber"/></sf>
-      <sf code="p" chopPunct="true"><select xpath="bf:title/bf:Title/bf:partName"/></sf>
-      <switch>
-        <case test="rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Arrangement'">
-          <sf code="o">arranged</sf>
-        </case>
-      </switch>
-      <sf code="r" chopPunct="true"><select xpath="bf:musicKey"/></sf>
-      <sf code="s" chopPunct="true"><select xpath="bf:version"/></sf>
-        </case>
-      </switch>
-
-      <sf code="1"><select xpath="@rdf:about[not(contains(.,'example.org')) and not(contains(., 'REPLACE'))]"/></sf>
-      <sf code="0">
-        <select xpath="bf:identifiedBy/bf:Identifier">
+          <sf code="a" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="bf:title/bf:Title/rdfs:label">
+                <select xpath="bf:title/bf:Title/rdfs:label"/>
+              </case>
+              <case test="bf:title/bf:Title/bf:mainTitle">
+                <select xpath="bf:title/bf:Title/bf:mainTitle"/>
+              </case>          
+            </switch>
+          </sf>
+          <sf code="d"><select xpath="bf:legalDate"/></sf>
+          <sf code="f" repeatable="false"><select xpath="bf:originDate"/></sf>
+          <sf code="m" chopPunct="true"><select xpath="bf:musicMedium/bf:MusicMedium/rdfs:label"/></sf>
+          <sf code="n" chopPunct="true"><select xpath="bf:title/bf:Title/bf:partNumber"/></sf>
+          <sf code="p" chopPunct="true"><select xpath="bf:title/bf:Title/bf:partName"/></sf>
+          <switch>
+            <case test="rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Arrangement'">
+              <sf code="o">arranged</sf>
+            </case>
+          </switch>
+          <sf code="r" chopPunct="true"><select xpath="bf:musicKey"/></sf>
+          <sf code="s" chopPunct="true"><select xpath="bf:version"/></sf>
+         </case>
+       </switch>
+    
+       <sf code="1"><select xpath="@rdf:about[not(contains(.,'example.org')) and not(contains(., 'REPLACE'))]"/></sf>
+       <sf code="0">
+         <select xpath="bf:identifiedBy/bf:Identifier">
+           <transform>
+             <xsl:variable name="vIdType">
+               <xsl:call-template name="tChopPunct">
+                 <xsl:with-param name="pString" select="bf:source/bf:Source/bf:code"/>
+               </xsl:call-template>
+             </xsl:variable>
+             <xsl:choose>
+                <xsl:when test="$vIdType != ''"><xsl:value-of select="concat('(',$vIdType,')',rdf:value)"/></xsl:when>
+               <xsl:otherwise><xsl:value-of select="rdf:value"/></xsl:otherwise>
+             </xsl:choose>
+           </transform>
+         </select>
+       </sf>
+       <sf code="2"><select xpath="bf:source/bf:Source/bf:code"/></sf>
+    </df>
+    
+    <switch>
+      <case test="$vRelVariant//marc:datafield[@tag!='']">
+        <!-- We have a variant, so we need to create an 880. -->
+        <df tag="880">
+          <ind1 default="0">
+            <switch>
+              <case test="$vRelVariant//marc:datafield[@tag!='']/@ind1 != ' '">
+                <transform>
+                  <xsl:value-of select="$vRelVariant//marc:datafield[@tag!='']/@ind1"/>
+                </transform>
+              </case>
+            </switch>
+          </ind1>
+          <ind2 default=" "/>
+          
+          <sf code="6"><transform><xsl:value-of select="concat('880-0', '1', '/', $v880Script)"/></transform></sf>
+          
           <transform>
-            <xsl:variable name="vIdType">
-              <xsl:call-template name="tChopPunct">
-                <xsl:with-param name="pString" select="bf:source/bf:Source/bf:code"/>
-              </xsl:call-template>
-            </xsl:variable>
-            <xsl:choose>
-              <xsl:when test="$vIdType != ''"><xsl:value-of select="concat('(',$vIdType,')',rdf:value)"/></xsl:when>
-              <xsl:otherwise><xsl:value-of select="rdf:value"/></xsl:otherwise>
-            </xsl:choose>
+            <xsl:for-each select="$vRelVariant//marc:datafield[@tag!='']/marc:subfield[contains('adfghklmnoprst',@code)]">
+              <marc:subfield>
+                <xsl:attribute name="code"><xsl:value-of select="@code"/></xsl:attribute>
+                <xsl:value-of select="."/>
+              </marc:subfield>
+            </xsl:for-each>
           </transform>
-        </select>
-      </sf>
-      <sf code="2"><select xpath="bf:source/bf:Source/bf:code"/></sf>
-    </context>
-  </df>
+          
+          <sf code="1"><select xpath="@rdf:about[not(contains(.,'example.org')) and not(contains(., 'REPLACE'))]"/></sf>
+          <sf code="0">
+            <select xpath="bf:identifiedBy/bf:Identifier">
+              <transform>
+                <xsl:variable name="vIdType">
+                  <xsl:call-template name="tChopPunct">
+                    <xsl:with-param name="pString" select="bf:source/bf:Source/bf:code"/>
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:choose>
+                  <xsl:when test="$vIdType != ''"><xsl:value-of select="concat('(',$vIdType,')',rdf:value)"/></xsl:when>
+                  <xsl:otherwise><xsl:value-of select="rdf:value"/></xsl:otherwise>
+                </xsl:choose>
+              </transform>
+            </select>
+          </sf>
+          <sf code="2"><select xpath="bf:source/bf:Source/bf:code"/></sf>
+
+        </df>
+      </case>
+    </switch>
+    
+    
+  
+  </select>
 
 </rules>
