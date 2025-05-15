@@ -155,7 +155,7 @@
         <df tag="880">
           <ind1 default="1"/>
           <ind2 default="0" />
-          <sf code="6"><transform><xsl:value-of select="concat('880-0', '2', '/', $v880Script)"/></transform></sf>
+          <sf code="6"><transform><xsl:value-of select="concat('240-0', '2', '/', $v880Script)"/></transform></sf>
           <transform> 
             <xsl:for-each select="$vRelVariant//marc:datafield[starts-with(@tag, '1')]/marc:subfield[(@code = 't' or preceding-sibling::marc:subfield[@code = 't']) and contains('dgfhklmnoprst',@code)]">
               <marc:subfield>

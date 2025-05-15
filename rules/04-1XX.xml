@@ -739,7 +739,7 @@
           </ind1>
           <ind2 default=" "/>
           
-          <sf code="6"><transform><xsl:value-of select="concat('880-0', '1', '/', $v880Script)"/></transform></sf>
+          <sf code="6"><transform><xsl:value-of select="concat('130-0', '1', '/', $v880Script)"/></transform></sf>
           
           <transform>
             <xsl:for-each select="$vRelVariant//marc:datafield[@tag!='']/marc:subfield[contains('adfghklmnoprst',@code)]">
