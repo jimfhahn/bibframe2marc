@@ -105,7 +105,7 @@
   </df>
 
   <df tag="016">
-    <context xpath="bf:Instance/bf:identifiedBy/bf:Local[bf:source/bf:Source]|bf:Instance/bf:adminMetadata/bf:AdminMetadata/bf:identifiedBy/bf:Local[bf:source//@rdf:*[.='http://id.loc.gov/authorities/names/no2004037399']]">
+    <context xpath="bf:Instance/bf:identifiedBy/bf:Local[bf:source]|bf:Instance/bf:adminMetadata/bf:AdminMetadata/bf:identifiedBy/bf:Local[bf:source//@rdf:*[.='http://id.loc.gov/authorities/names/no2004037399']]">
       <var name="vSourceUri">
         <switch>
           <case test="bf:source/@rdf:resource"><transform><xsl:value-of select="bf:source/@rdf:resource"/></transform></case>
@@ -146,9 +146,12 @@
                 <switch>
                   <case test="contains($vSourceUri,'id.loc.gov')">
                     <transform>
-                      <xsl:call-template name="tUriCode">
-                        <xsl:with-param name="pUri" select="$vSourceUri"/>
-                      </xsl:call-template>
+                      <xsl:variable name="vC">
+                        <xsl:call-template name="tUriCode">
+                          <xsl:with-param name="pUri" select="$vSourceUri"/>
+                        </xsl:call-template>  
+                      </xsl:variable>
+                      <xsl:value-of select="translate($vC, $lower, $upper)" />
                     </transform>
                   </case>
                   <case test="default"><transform><xsl:value-of select="$vSourceUri"/></transform></case>
