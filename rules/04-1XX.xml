@@ -224,6 +224,9 @@
                 <case test="$agentURI != '' and (contains($agentURI, '/agents/') or contains($agentURI, '/gnd/'))">
                   <transform><xsl:value-of select="$agentURI"/></transform>
                 </case>
+                <case test="$agentURI != '' and contains($agentURI, 'id.loc.gov/authorities/')">
+                  <transform><xsl:value-of select="concat(substring-before($agentURI,'authorities/names'), 'rwo/agents/', substring-after($agentURI,'authorities/names/'))"/></transform>
+                </case>
                 <case test="@rdf:about[
                   contains(., '/agents/') or contains(., '/gnd/') or contains(., '/isni/') 
                   ]">

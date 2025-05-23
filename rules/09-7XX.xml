@@ -137,6 +137,16 @@
       
       
         <switch>
+          <case test="$relURI != '' and contains($relURI, 'id.loc.gov/authorities/')">
+            <sf code="0">
+              <transform><xsl:value-of select="$relURI"/></transform>
+            </sf>
+          </case>
+          <case test="$relURI != '' and contains($relURI, 'id.loc.gov/rwo/agents/')">
+            <sf code="0">
+              <transform><xsl:value-of select="concat(substring-before($relURI,'rwo/agents'), 'authorities/names/', substring-after($relURI,'rwo/agents/'))"/></transform>
+            </sf>
+          </case>
           <case test="not(contains($relURI,'example.org')) and not(contains($relURI,'REPLACE')) and not(contains($relURI,'rwo'))">
             <sf code="0">
               <transform><xsl:value-of select="$relURI" /></transform>
@@ -144,6 +154,11 @@
           </case>
         </switch>
         <switch>
+          <case test="$relURI != '' and (contains($relURI, '/agents/') or contains($relURI, '/gnd/'))">
+            <sf code="1">
+              <transform><xsl:value-of select="$relURI"/></transform>
+            </sf>
+          </case>
           <case test="not(contains($relURI,'example.org')) and not(contains($relURI,'REPLACE')) and not(contains($relURI,'authorities'))">
             <sf code="1">
               <transform><xsl:value-of select="$relURI" /></transform>
@@ -283,6 +298,16 @@
       </switch>
       
       <switch>
+        <case test="$relURI != '' and contains($relURI, 'id.loc.gov/authorities/')">
+          <sf code="0">
+            <transform><xsl:value-of select="$relURI"/></transform>
+          </sf>
+        </case>
+        <case test="$relURI != '' and contains($relURI, 'id.loc.gov/rwo/agents/')">
+          <sf code="0">
+            <transform><xsl:value-of select="concat(substring-before($relURI,'rwo/agents'), 'authorities/names/', substring-after($relURI,'rwo/agents/'))"/></transform>
+          </sf>
+        </case>
         <case test="not(contains($relURI,'example.org')) and 
           not(contains($relURI,'REPLACE')) and 
           not(contains($relURI,'rwo')) and 
@@ -296,6 +321,16 @@
         </case>
       </switch>
       <switch>
+        <case test="$relURI != '' and (contains($relURI, '/agents/') or contains($relURI, '/gnd/'))">
+          <sf code="1">
+            <transform><xsl:value-of select="$relURI"/></transform>
+          </sf>
+        </case>
+        <case test="$relURI != '' and contains($relURI, 'id.loc.gov/authorities/')">
+          <sf code="1">
+            <transform><xsl:value-of select="concat(substring-before($relURI,'authorities/names'), 'rwo/agents/', substring-after($relURI,'authorities/names/'))"/></transform>
+          </sf>
+        </case>
         <case test="contains($relURI,'id.oclc.org/worldcat/entity/') or 
           contains($relURI,'isni.org/isni/') or 
           contains($relURI,'viaf.org/viaf/') or 
