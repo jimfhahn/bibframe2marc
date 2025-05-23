@@ -748,14 +748,16 @@
           ]/bflc:Relation[rdfs:label or madsrdf:authoritativeLabel] 
           
           ">
-          <xsl:choose>
-            <xsl:when test="madsrdf:authoritativeLabel">
-              <xsl:value-of select="madsrdf:authoritativeLabel" />
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:value-of select="rdfs:label" />
-            </xsl:otherwise>
-          </xsl:choose>
+          <marc:subfield code="i">
+            <xsl:choose>
+              <xsl:when test="madsrdf:authoritativeLabel">
+                <xsl:value-of select="madsrdf:authoritativeLabel" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="rdfs:label" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </marc:subfield>
         </xsl:for-each>
       </transform>
     </var>
