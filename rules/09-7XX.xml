@@ -1966,6 +1966,7 @@
       <sf code="d" chopPunct="true" repeatable="false">
         <select xpath="bf:hasInstance/bf:Instance/bf:publicationStatement|bf:hasInstance/bf:Instance/bflc:publicationStatement|bf:hasInstance/bf:Instance/bf:provisionActivityStatement"/>
       </sf>
+      <!--
       <switch>
         <case test="$vLanguageUri != '' or bf:language/*[local-name()='code']">
           <sf code="e">
@@ -1987,6 +1988,7 @@
           </sf>
         </case>
       </switch>
+      -->
       <switch>
         <case test="$vPlaceUri != '' or bf:hasInstance/bf:Instance/bf:provisionActivity/bf:ProvisionActivity/bf:place/*[local-name()='code']">
           <sf code="f">
