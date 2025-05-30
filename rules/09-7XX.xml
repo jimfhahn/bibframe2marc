@@ -1737,6 +1737,7 @@
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'partof') or contains(bf:Relationship/@rdf:about, 'partof')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, '/part') or contains(bf:Relationship/@rdf:about, '/part')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'otheredition') or contains(bf:Relationship/@rdf:about, 'otheredition')]]/bf:associatedResource/bf:*[bf:hasInstance] |
+      bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'revisionof') or contains(bf:Relationship/@rdf:about, 'revisionof')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'otherphysicalformat') or contains(bf:Relationship/@rdf:about, 'otherphysicalformat')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'issuedwith') or contains(bf:Relationship/@rdf:about, 'issuedwith')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'continuedinpart') or contains(bf:Relationship/@rdf:about, 'continuedinpart')]]/bf:associatedResource/bf:*[bf:hasInstance] |
@@ -1792,6 +1793,7 @@
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'partof') or contains(bf:Relationship/@rdf:about, 'partof')]">773</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, '/part') or contains(bf:Relationship/@rdf:about, '/part')]">774</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'otheredition') or contains(bf:Relationship/@rdf:about, 'otheredition')]">775</case>
+          <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'revisionof') or contains(bf:Relationship/@rdf:about, 'revisionof')]">775</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'otherphysicalformat') or contains(bf:Relationship/@rdf:about, 'otherphysicalformat')]">776</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'issuedwith') or contains(bf:Relationship/@rdf:about, 'issuedwith')]">777</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'continuedinpart') or contains(bf:Relationship/@rdf:about, 'continuedinpart')]">780</case>
@@ -2047,9 +2049,11 @@
           </sf>
         </case>
       </switch>
+      <!--
       <sf code="h" chopPunct="true" repeatable="false">
         <select xpath="bf:hasInstance/bf:Instance/bf:extent/bf:Extent/rdfs:label"/>
       </sf>
+      -->
       <sf code="k" chopPunct="true">
         <select xpath="bf:hasInstance/bf:Instance/bf:seriesStatement"/>
       </sf>
@@ -2064,9 +2068,11 @@
       </sf>
       <select xpath="bf:hasInstance/bf:Instance/bf:identifiedBy/*">
         <switch>
+          <!--
           <case test="local-name()='Local' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Local'">
             <sf code="o"><select xpath="rdf:value"/></sf>
           </case>
+          -->
           <case test="local-name()='ReportNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/ReportNumber'">
             <sf code="r"><select xpath="rdf:value"/></sf>
           </case>
