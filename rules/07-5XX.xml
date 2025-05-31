@@ -1513,6 +1513,16 @@
       </sf>
     </context>
   </df>
+  
+  <df tag="547" lang-xpath=".">
+    <context xpath="bf:Work/bf:title/bf:VariantTitle[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/for']/bf:note/bf:Note/rdfs:label">
+      <ind1 default=" "/>
+      <ind2 default=" "/>
+      <sf code="a" chopPunct="true" repeatable="false">
+        <select xpath="."/>
+      </sf>
+    </context>
+  </df>
 
   <df tag="561" lang-xpath=".">
     <context xpath="bf:Instance/bf:custodialHistory|//bf:Item/bf:custodialHistory">
