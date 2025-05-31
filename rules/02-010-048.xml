@@ -2033,7 +2033,7 @@
   </switch>
 
   <df tag="046">
-    <context xpath="bf:Work/bf:originDate[@rdf:datatype='http://id.loc.gov/datatypes/edtf']">
+    <context xpath="bf:Work/bf:creationDate[@rdf:datatype='http://id.loc.gov/datatypes/edtf']">
       <ind1 default=" "/>
       <ind2 default=" "/>
       <var name="v046DateTime1">
