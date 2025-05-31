@@ -23,7 +23,14 @@
       </sf>
       <sf code="a" chopPunct="false"><select xpath="rdfs:label"/></sf>
       <sf code="b" chopPunct="true" repeatable="false">
-        <select xpath="../../bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='physical details' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/physical']/rdfs:label"/>
+        <switch>
+          <case test="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='physical details' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/physical']/rdfs:label">
+            <select xpath="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='physical details' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/physical']/rdfs:label"></select>
+          </case>
+          <case test="../../bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='physical details' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/physical']/rdfs:label">
+            <select xpath="../../bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='physical details' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/physical']/rdfs:label"/>
+          </case>
+        </switch>
       </sf>
       <sf code="c" chopPunct="true"><select xpath="../../bf:dimensions"/></sf>
       <sf code="e" chopPunct="true" repeatable="false">
