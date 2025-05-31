@@ -45,12 +45,17 @@
       </switch>
     </var>
 
+    <var name="vLangTagLabel" xpath="self::node()/bflc:marcKey[
+            contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+            string-length(@xml:lang)='2' or 
+            string-length(@xml:lang)='3'
+        ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
       <switch>
-        <case test="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang">
-          <var name="vLangTag" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+        <case test="$vLangTagScript!=''">
           <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after($vLangTag,'-'),$upper,$lower)"/>
+            <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
           </lookup>
         </case>
       </switch>
@@ -269,6 +274,11 @@
           </marc:subfield>
         </xsl:for-each>
         <xsl:copy-of select="$vShared" />
+        <xsl:if test="$vLangTagLabel!=''">
+          <marc:subfield code="7">
+            <xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/>
+          </marc:subfield>
+        </xsl:if>
       </transform>
     </df>
     
@@ -300,6 +310,7 @@
             </xsl:for-each>
             <xsl:copy-of select="$vShared" />
           </transform>
+          <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
         </df>
       </case>
     </switch>
@@ -617,12 +628,18 @@
       </var>
       <var name="vTitleResource" xpath="exsl:node-set($vTitleResourcePreNS)" />
 
+      <var name="vLangTagLabel" xpath="self::node()/bflc:marcKey[
+              contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+              string-length(@xml:lang)='2' or 
+              string-length(@xml:lang)='3'
+            ][1]/@xml:lang" />
+      <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    
       <var name="v880Script">
         <switch>
-          <case test="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang">
-            <var name="vLangTag" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+          <case test="$vLangTagScript!=''">
             <lookup map="df880script" targetField="code">
-              <lookupField name="lang" xpath="translate(substring-after($vLangTag,'-'),$upper,$lower)"/>
+              <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
             </lookup>
           </case>
         </switch>
@@ -725,6 +742,13 @@
          </select>
        </sf>
        <sf code="2"><select xpath="bf:source/bf:Source/bf:code"/></sf>
+       <sf code="7" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+          </case>
+        </switch>
+       </sf>
     </df>
     
     <switch>
@@ -770,7 +794,7 @@
             </select>
           </sf>
           <sf code="2"><select xpath="bf:source/bf:Source/bf:code"/></sf>
-
+          <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
         </df>
       </case>
     </switch>
