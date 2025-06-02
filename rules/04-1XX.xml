@@ -50,7 +50,7 @@
             string-length(@xml:lang)='2' or 
             string-length(@xml:lang)='3'
         ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
       <switch>
         <case test="$vLangTagScript!=''">

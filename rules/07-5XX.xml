@@ -42,25 +42,28 @@
   <!-- notes -->
   <select xpath="bf:Instance/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]|bf:Work/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]|//bf:Item/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]">
     
+    <var name="vLangTagLabel" xpath="rdfs:label[
+                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                string-length(@xml:lang)='2' or 
+                string-length(@xml:lang)='3'
+            ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+      <lookup map="df880script" targetField="code">
+        <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+      </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
         <case test="$v880Script != '' and ancestor::bf:Instance">
           <transform>
-            <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 50"></xsl:value-of>
+            <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 50"></xsl:value-of>
           </transform>
         </case>
         <case test="$v880Script != '' and ancestor::bf:Work">
           <transform>
-            <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 40"></xsl:value-of>
+            <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 40"></xsl:value-of>
           </transform>
         </case>
       </switch>
@@ -112,7 +115,7 @@
     <var name="vSimple880">
       <switch>
         <case test="$v880Script != ''">
-          <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+          <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
             <df tag="880">
               <switch>
                 <case test="$vCast = 'true'">
@@ -150,6 +153,7 @@
                   </sf>
                 </case>
               </switch>
+              <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
             </df>
           </select>
         </case>
@@ -177,7 +181,9 @@
       </case>
 
       <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and (translate(bf:noteType,$upper,$lower)='with' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/with')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="501" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -191,6 +197,13 @@
             </sf>
             <sf code="5" repeatable="false">
               <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -208,7 +221,9 @@
                       rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/credits'
                     )
                   )">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="508" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -222,6 +237,13 @@
             </sf>
             <sf code="3" chopPunct="true" repeatable="false">
               <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -239,7 +261,9 @@
                       rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/participants'
                     )
                   )">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="511" lang-xpath=".">
             <switch>
               <case test="$vCast = 'true'">
@@ -274,6 +298,13 @@
             <sf code="3" chopPunct="true" repeatable="false">
               <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>
         <switch>
@@ -284,7 +315,9 @@
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='report type' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/report')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="513" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -296,6 +329,13 @@
             <sf code="a" chopPunct="true" repeatable="false">
               <select xpath="."/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>
         <switch>
@@ -306,7 +346,9 @@
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='issuance information' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/issuance')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="515" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -318,6 +360,13 @@
             <sf code="a" chopPunct="true" repeatable="false">
               <select xpath="."/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>
         <switch>
@@ -328,7 +377,9 @@
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='type of computer data' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/computer')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="516" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -339,6 +390,13 @@
             </switch>
             <sf code="a" chopPunct="true" repeatable="false">
               <select xpath="."/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -365,11 +423,20 @@
           <sf code="u">
             <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
           </sf>
+          <sf code="7" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              </case>
+            </switch>
+          </sf>
         </df>
       </case>
 
       <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and (translate(bf:noteType,$upper,$lower)='reproduction version' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/repro')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="533">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -386,6 +453,13 @@
             </sf>
             <sf code="5" chopPunct="true" repeatable="false">
               <select xpath="../bflc:applicableInstitution/*/*[local-name()='code']"/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -412,11 +486,20 @@
           <sf code="z">
             <select xpath="bf:identifiedBy/*[local-name()='Isbn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Isbn']/rdf:value"/>
           </sf>
+          <sf code="7" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              </case>
+            </switch>
+          </sf>
         </df>
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='funding information' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/fundinfo')">
-          <df tag="536" lang-xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <df tag="536" lang-xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
             <ind1 default=" "/>
             <ind2 default=" "/>
             <switch>
@@ -424,7 +507,9 @@
                 <sf code="6"><transform><xsl:value-of select="concat('880-', $v880Occurrence)"/></transform></sf>
             </case>
           </switch>
-            <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+          <select xpath="rdfs:label[not(@xml:lang) or 
+            string-length(@xml:lang)='2' or 
+            string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
             <switch>
               <case test="starts-with(.,'Contract:')">
                 <sf code="b">
@@ -485,14 +570,21 @@
               </case>
             </switch>
           </select>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
         </df>
         <switch>
           <case test="$v880Script != ''">
-            <df tag="536" lang-xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+            <df tag="880">
               <ind1 default=" "/>
               <ind2 default=" "/>
               <sf code="6"><transform><xsl:value-of select="concat('536-', $v880Occurrence, '/', $v880Script)"/></transform></sf>
-              <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+              <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
                 <switch>
                   <case test="starts-with(.,'Contract:')">
                     <sf code="b">
@@ -553,6 +645,7 @@
                   </case>
                 </switch>
               </select>
+              <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
             </df>
           </case>
         </switch>
@@ -575,11 +668,20 @@
           <sf code="u">
             <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
           </sf>
+          <sf code="7" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              </case>
+            </switch>
+          </sf>
         </df>
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='issuing body' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/issuing')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="550" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -590,6 +692,13 @@
             </switch>
             <sf code="a" chopPunct="true" repeatable="false">
               <select xpath="."/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -617,11 +726,20 @@
           <sf code="u">
             <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
           </sf>
+          <sf code="7" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              </case>
+            </switch>
+          </sf>
         </df>
       </case>
       
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='documentation' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doc')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="556" lang-xpath=".">
             <ind1 default="8"/>
             <ind2 default=" "/>
@@ -632,6 +750,13 @@
             </switch>
             <sf code="a" chopPunct="true" repeatable="false">
               <select xpath="."/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
             </sf>
           </df>
         </select>
@@ -652,11 +777,20 @@
           <sf code="z">
             <select xpath="bf:identifiedBy/*[local-name()='Isbn' or rdf:type/rdf:resource='http://id.loc.gov/ontologies/bibframe/Isbn']/rdf:value"/>
           </sf>
+          <sf code="7" chopPunct="true" repeatable="false">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              </case>
+            </switch>
+          </sf>
         </df>
       </case>
 
       <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and (translate(bf:noteType,$upper,$lower)='exhibition' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/exhibit')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="585" lang-xpath=".">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -674,6 +808,13 @@
             <sf code="5" chopPunct="true" repeatable="false">
               <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>
         <switch>
@@ -684,7 +825,9 @@
       </case>
 
       <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and (translate(bf:noteType,$upper,$lower)='description source' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/descsource')">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
           <df tag="588" lang-xpath=".">
             <ind1 default=" ">
               <switch>
@@ -712,11 +855,18 @@
             <sf code="5" repeatable="false">
               <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>  
         <switch>
           <case test="$v880Script != ''">
-            <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+            <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
               <df tag="880">
               <ind1 default=" ">
                 <switch>
@@ -740,6 +890,7 @@
               <sf code="5" repeatable="false">
                 <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
               </sf>
+                <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
             </df>
             </select>
           </case>
@@ -822,11 +973,18 @@
             <sf code="5" repeatable="false">
               <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
             </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
           </df>
         </select>
         <switch>
           <case test="$v880Script != ''">
-            <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+            <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
               <df tag="880">
                 <ind1 default=" "/>
                 <ind2 default=" "/>
@@ -858,6 +1016,7 @@
                 <sf code="5" repeatable="false">
                   <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
                 </sf>
+                <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
               </df>
             </select>
           </case>
@@ -896,9 +1055,9 @@
               and dissertation .. -->
             <xsl:value-of select="
               39 + 
-              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
-              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) +
+              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
+              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) +
               count(ancestor::bf:Work/bf:dissertation/bf:Dissertation) +
               position()" />
           </transform>
@@ -965,14 +1124,16 @@
   <select xpath="bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != ''] and not(@rdf:about)]  |
     bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != ''] and not(@rdf:about)]
     ">
+    <var name="vLangTagLabel" xpath="rdfs:label[
+                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                  string-length(@xml:lang)='2' or 
+                  string-length(@xml:lang)='3'
+                ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label/bflc:marcKey[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+        <lookup map="df880script" targetField="code">
+          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+        </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
@@ -983,9 +1144,9 @@
               when also accounting for tableOfContents and supplementary content .. -->
             <xsl:value-of select="
               39 + 
-              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
-              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
+              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
+              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
               position()" />
           </transform>
         </case>
@@ -996,8 +1157,8 @@
               when also accounting for supplementary content .. -->
           <xsl:value-of select="
             49 + 
-            count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-            count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
+            count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+            count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
             position()" />
           </transform>
         </case>
@@ -1014,6 +1175,13 @@
       </switch>
         <sf code="a" chopPunct="true" repeatable="false"><select xpath="rdfs:label"/></sf>
         <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
+      <sf code="7" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+          </case>
+        </switch>
+      </sf>
     </df>
     
     <switch>
@@ -1027,6 +1195,7 @@
               <select xpath="."/>
             </sf>
             <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
+            <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
           </df>
         </select>
       </case>
@@ -1034,14 +1203,16 @@
   </select>
   
   <select xpath="bf:Instance/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/biblio' and rdfs:label[. != '']]">
+    <var name="vLangTagLabel" xpath="rdfs:label[
+                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                string-length(@xml:lang)='2' or 
+                string-length(@xml:lang)='3'
+              ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+        <lookup map="df880script" targetField="code">
+          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+        </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
@@ -1052,8 +1223,8 @@
               when also accounting for supplementary content .. -->
             <xsl:value-of select="
               49 + 
-              count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
+              count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+              count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
               position() + 
               1" />
           </transform>
@@ -1072,11 +1243,18 @@
       </switch>
       <sf code="a" chopPunct="true" repeatable="false"><select xpath="rdfs:label"/></sf>
       <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
+      <sf code="7" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+          </case>
+        </switch>
+      </sf>
   </df>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
           <df tag="880">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -1085,6 +1263,7 @@
               <select xpath="."/>
             </sf>
             <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
+            <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
           </df>
         </select>
       </case>
@@ -1092,27 +1271,33 @@
   </select>
 
   <select xpath="bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label]">
+    
+    <var name="vLangTagLabel" xpath="rdfs:label[
+      contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+      string-length(@xml:lang)='2' or 
+      string-length(@xml:lang)='3'
+      ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+        <lookup map="df880script" targetField="code">
+          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+        </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
         <case test="$v880Script != ''">
           <transform>
             <!-- This should be the next in the numerical sequence for work notes. -->
-            <xsl:value-of select="39 + count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + position()"></xsl:value-of>
+            <xsl:value-of select="39 + count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + position()"></xsl:value-of>
           </transform>
         </case>
       </switch>
     </var>
     
-    <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+    <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or 
+      string-length(@xml:lang)='2' or 
+      string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
       <ind1 default="0">
         <switch>
           <case test="bf:status//@rdf:*[.='http://id.loc.gov/vocabulary/mstatus/incmp']">1</case>
@@ -1125,13 +1310,22 @@
           <sf code="6"><transform><xsl:value-of select="concat('880-', $v880Occurrence)"/></transform></sf>
         </case>
       </switch>
-      <sf code="a" chopPunct="false" repeatable="false"><select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]" /></sf>
+      <sf code="a" chopPunct="false" repeatable="false"><select xpath="rdfs:label[not(@xml:lang) or 
+        string-length(@xml:lang)='2' or 
+        string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]" /></sf>
       <sf code="u"><select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/></sf>
+      <sf code="7" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+          </case>
+        </switch>
+      </sf>
     </df>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
           <df tag="880">
             <ind1 default="0">
               <switch>
@@ -1145,6 +1339,7 @@
               <select xpath="."/>
             </sf>
             <sf code="u"><select xpath="../bf:electronicLocator/@rdf:resource|../rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/></sf>
+            <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
           </df>
         </select>
       </case>
@@ -1270,14 +1465,16 @@
   </df>
 
   <select xpath="bf:Work/bf:summary/bf:Summary[rdfs:label]">
+    <var name="vLangTagLabel" xpath="rdfs:label[
+                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                  string-length(@xml:lang)='2' or 
+                  string-length(@xml:lang)='3'
+                ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+        <lookup map="df880script" targetField="code">
+          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+        </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
@@ -1286,8 +1483,8 @@
             <!-- This should be the next in the numerical sequence for work notes, when also accounting for tableOfContents .. -->
             <xsl:value-of select="
                             39 + 
-                            count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-                            count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+                            count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+                            count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
                             position()" />
           </transform>
         </case>
@@ -1311,6 +1508,13 @@
         <sf code="u">
           <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
         </sf>
+      <sf code="7" chopPunct="true" repeatable="false">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+          </case>
+        </switch>
+      </sf>
     </df>
     
     <switch>
@@ -1329,6 +1533,7 @@
             <sf code="u">
               <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
             </sf>
+            <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
           </df>
         </select>
       </case>
@@ -1418,14 +1623,16 @@
   </df>
 
   <select xpath="bf:Work/bf:note/bf:Note[rdf:type/@rdf:resource = 'http://id.loc.gov/vocabulary/mnotetype/lang' and rdfs:label]">
+    <var name="vLangTagLabel" xpath="rdfs:label[
+                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                string-length(@xml:lang)='2' or 
+                string-length(@xml:lang)='3'
+              ][1]/@xml:lang" />
+    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
-      <switch>
-        <case test="rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
-          <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after(rdfs:label/@xml:lang,'-'),$upper,$lower)"/>
-          </lookup>
-        </case>
-      </switch>
+        <lookup map="df880script" targetField="code">
+          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+        </lookup>
     </var>
     <var name="v880Occurrence">
       <switch>
@@ -1435,9 +1642,9 @@
                  when also accounting for tableOfContents, supplementarycontent, dissertation, and padding .. -->
             <xsl:value-of select="
               41 + 
-              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
-              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) +
+              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
+              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) +
               count(ancestor::bf:Work/bf:dissertation/bf:Dissertation) +
               position()" />
           </transform>
@@ -1469,6 +1676,13 @@
           <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
         </sf>
       </select>
+    <sf code="7" chopPunct="true" repeatable="false">
+      <switch>
+        <case test="$vLangTagLabel!=''">
+          <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+        </case>
+      </switch>
+    </sf>
   </df>
     
     <switch>
@@ -1494,6 +1708,7 @@
                 <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
               </sf>
             </select>
+            <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
           </df>
         </select>
       </case>
