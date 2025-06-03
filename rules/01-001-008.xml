@@ -1604,8 +1604,8 @@
                     <xsl:when test="$v008Format='BK'">
                       <xsl:choose>
                         <xsl:when test="bf:Work/bf:genreForm[@rdf:resource='http://id.loc.gov/authorities/genreForms/gf2014026339' or */@rdf:about='http://id.loc.gov/authorities/genreForms/gf2014026339']">1</xsl:when>
-                        <xsl:when test="bf:Work/bf:genreForm/*/madsrdf:authoritativeLabel[contains(., 'fiction')]">1</xsl:when>
-                        <xsl:when test="bf:Work/bf:genreForm/*/rdfs:label[contains(., 'fiction')]">1</xsl:when>
+                        <xsl:when test="bf:Work/bf:genreForm/*/madsrdf:authoritativeLabel[contains(., 'fiction') and not(contains(., 'onfiction'))]">1</xsl:when>
+                        <xsl:when test="bf:Work/bf:genreForm/*/rdfs:label[contains(., 'fiction') and not(contains(., 'onfiction'))]">1</xsl:when>
                         <xsl:when test="bf:Work/bf:genreForm/*/madsrdf:authoritativeLabel[contains(., '(Fiction)')]">1</xsl:when>                        
                         <xsl:when test="bf:Work/bf:genreForm//@rdf:*[1]='http://id.loc.gov/authorities/genreForms/gf2014026243'">1</xsl:when>
                         <xsl:when test="bf:Work/bf:genreForm//@rdf:*[1]='http://id.loc.gov/authorities/genreForms/gf2014026259'">1</xsl:when>
