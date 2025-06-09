@@ -716,6 +716,7 @@
                               bf:Hub/bf:contribution/*/bf:agent/*[local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName']] or
                               madsrdf:componentList/*[1]/bf:Hub/bf:contribution/*/bf:agent/*[local-name()='Family' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family']] or
                               madsrdf:componentList/*[1]/bf:Hub/bf:contribution/*/bf:agent/*[local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName']]]">3</case>
+                  <case test="*/madsrdf:componentList/*/bflc:marcKey[starts-with(., '1000')]">0</case>
                 </switch>
               </ind1>
               <ind2 default="4">
@@ -785,6 +786,7 @@
                 subject/Agent(Person) (if URI or marcKey present at this level, taken care of above; otherwise no lookup possible and handle here)
                 subject/*/componentList/*[1]=Hub (may have marcKey or URI; lookup possible, which is handled above, but if not...)
                 subject/*/componentList/*[1]=Agent(Person) (may have marcKey or URI; lookup possible, which is handled above, but if not...)
+                ...this code will execute.
               -->
               <!-- name subfields -->
               <select xpath="
