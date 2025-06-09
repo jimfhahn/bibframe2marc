@@ -1031,6 +1031,12 @@
     </var>
     <var name="vSharedDollar2">
       <switch>
+        <case test="contains(self::node()//@rdf:*[1], 'id.loc.gov/authorities/demographicTerms')">
+          <sf code="2">lcdgt</sf>
+        </case>
+        <case test="contains(self::node()//@rdf:*[1], 'id.loc.gov/authorities/subjects')">
+          <sf code="2">lcsh</sf>
+        </case>
         <case test="*/bf:source/bf:Source/*[local-name()='code']">
           <sf code="2"><transform><xsl:value-of select="*/bf:source/bf:Source/*[local-name()='code'][1]"/></transform></sf>
         </case>
