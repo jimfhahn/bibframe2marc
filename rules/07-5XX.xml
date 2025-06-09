@@ -943,7 +943,7 @@
             <ind2 default=" "/>
             <switch>
               <case test="$v880Script != ''">
-                <sf code="6"><transform><xsl:value-of select="concat('500-', $v880Occurrence)"/></transform></sf>
+                <sf code="6"><transform><xsl:value-of select="concat('880-', $v880Occurrence)"/></transform></sf>
               </case>
             </switch>
             <sf code="3" chopPunct="true" repeatable="false">
