@@ -178,7 +178,7 @@
           <sf code="a"><select xpath="rdf:value"/></sf>
         </case>
       </switch>
-      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:Agent/rdfs:label"/></sf>
+      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:*/rdfs:label"/></sf>
       <sf code="d" chopPunct="true" repeatable="false"><select xpath="bf:date"/></sf>
       <sf code="i" chopPunct="true" repeatable="false"><select xpath="bf:note/bf:Note/rdfs:label"/></sf>
     </context>
@@ -407,7 +407,7 @@
       </ind1>
       <ind2 default="2"/>
       <sf code="a" repeatable="false"><select xpath="rdf:value"/></sf>
-      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:Agent/rdfs:label"/></sf>
+      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:*/rdfs:label"/></sf>
       <sf code="q" chopPunct="true"><select xpath="bf:qualifier"/></sf>
     </context>
   </df>
@@ -436,7 +436,7 @@
       <ind1 default=" "/>
       <ind2 default=" "/>
       <sf code="a" repeatable="false"><select xpath="rdf:value"/></sf>
-      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:Agent/rdfs:label"/></sf>
+      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:*/rdfs:label"/></sf>
     </context>
   </df>
 
@@ -733,7 +733,7 @@
       <ind1 default=" "/>
       <ind2 default=" "/>
       <sf code="a" repeatable="false"><select xpath="rdf:value"/></sf>
-      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:Agent/rdfs:label"/></sf>
+      <sf code="b" chopPunct="true" repeatable="false"><select xpath="bf:assigner/bf:*/rdfs:label"/></sf>
     </context>
   </df>
 
