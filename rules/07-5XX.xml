@@ -1465,11 +1465,22 @@
   </df>
 
   <select xpath="bf:Work/bf:summary/bf:Summary[rdfs:label]">
+    <var name="vLabel" xpath="rdfs:label[
+                  not(@xml:lang) or 
+                  (
+                    string-length(@xml:lang)='2' or 
+                    string-length(@xml:lang)='3' or
+                    contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))
+                  ) 
+               ][1]" />
     <var name="vLangTagLabel" xpath="rdfs:label[
-                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                  string-length(@xml:lang)='2' or 
-                  string-length(@xml:lang)='3'
-                ][1]/@xml:lang" />
+                  @xml:lang and
+                  (  
+                    ( contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))) ) or 
+                    string-length(@xml:lang)='2' or 
+                    string-length(@xml:lang)='3'
+                  )
+                  ][1]/@xml:lang" />
     <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
@@ -1478,6 +1489,7 @@
     </var>
     <var name="v880Occurrence">
       <switch>
+        <case test="string($vLabel) = ''"><text>00</text></case>
         <case test="$v880Script != ''">
           <transform>
             <!-- This should be the next in the numerical sequence for work notes, when also accounting for tableOfContents .. -->
@@ -1491,7 +1503,9 @@
       </switch>
     </var>
     
-    <df tag="520" lang-xpath="rdfs:label">
+    <switch>
+      <case test="string($vLabel) != ''">
+        <df tag="520" lang-xpath="rdfs:label">
         <ind1 default=" "/>
         <ind2 default=" "/>
         <switch>
@@ -1516,6 +1530,8 @@
         </switch>
       </sf>
     </df>
+      </case>
+    </switch>
     
     <switch>
       <case test="$v880Script != ''">
