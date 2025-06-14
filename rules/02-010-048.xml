@@ -2101,6 +2101,7 @@
           </sf>
         </case>
       </switch>
+      <sf code="2"><transform><xsl:value-of select="'edtf'" /></transform></sf>
     </context>
   </df>
 
