@@ -1434,7 +1434,7 @@
             <case test="bf:Work/bf:note/bf:Note[rdfs:label='Includes translation']">1</case>
           </switch>
         </ind1>
-        <ind2 default=" "/>
+        <ind2 default="7"/>
         <!-- making dubious assertion that first language property is primary -->
         <transform>
           <xsl:variable name="vLangElements" select="
