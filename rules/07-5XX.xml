@@ -90,6 +90,9 @@
                     ( translate(bf:noteType,$upper,$lower)='additional physical form' or 
                     rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/addphys')">530</case>
         <case test="local-name(../..)='Instance' and 
+                    ( translate(bf:noteType,$upper,$lower)='original version' or 
+                    rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/orig')">534</case>
+        <case test="local-name(../..)='Instance' and 
                     ( translate(bf:noteType,$upper,$lower)='issuing body' or 
                       rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/issuing')">550</case>
         <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and 
@@ -131,7 +134,7 @@
               <ind2 default=" "/>
               <sf code="6"><transform><xsl:value-of select="concat($vTag, '-', $v880Occurrence, '/', $v880Script)"/></transform></sf>
               <switch>
-                <case test="$vTag = '508' or $vTag = '511' or $vTag = '533' or $vTag = '585'">
+                <case test="$vTag = '508' or $vTag = '511' or $vTag = '533' or $vTag = '534' or $vTag = '585'">
                   <sf code="3" chopPunct="true" repeatable="false">
                     <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
                   </sf>
@@ -150,13 +153,31 @@
                 </case>
               </switch>
               <switch>
-                <case test="$vTag = '501'">
+                <case test="$vTag = '530'">
                   <sf code="d" repeatable="false">
-                <select xpath="../bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
-              </sf>
-              <sf code="u">
-                <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
-              </sf>
+                    <select xpath="../bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
+                  </sf>
+                </case>
+              </switch>
+              <switch>
+                <case test="$vTag = '534'">
+                  <sf code="x">
+                    <select xpath="../bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']/rdf:value"/>
+                  </sf>
+                </case>
+              </switch>
+              <switch>
+                <case test="$vTag = '534'">
+                  <sf code="z">
+                    <select xpath="../bf:identifiedBy/*[local-name()='Isbn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Isbn']/rdf:value"/>
+                  </sf>
+                </case>
+              </switch>
+              <switch>
+                <case test="$vTag = '530'">
+                  <sf code="u">
+                    <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+                  </sf>
                 </case>
               </switch>
               <switch>
@@ -498,29 +519,43 @@
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='original version' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/orig')">
-        <df tag="534">
-          <ind1 default=" "/>
-          <ind2 default=" "/>
-          <sf code="3" chopPunct="true">
-            <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
-          </sf>
-          <sf code="a" chopPunct="true" repeatable="false">
-            <select xpath="rdfs:label"/>
-          </sf>
-          <sf code="x">
-            <select xpath="bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']/rdf:value"/>
-          </sf>
-          <sf code="z">
-            <select xpath="bf:identifiedBy/*[local-name()='Isbn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Isbn']/rdf:value"/>
-          </sf>
-          <sf code="7" chopPunct="true" repeatable="false">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+          <df tag="534">
+            <ind1 default=" "/>
+            <ind2 default=" "/>
             <switch>
-              <case test="$vLangTagLabel!=''">
-                <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+              <case test="$v880Script != ''">
+                <transform><xsl:copy-of select="$vSimple880sf6" /></transform>
               </case>
             </switch>
-          </sf>
-        </df>
+            <sf code="3" chopPunct="true">
+              <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+            </sf>
+            <sf code="a" chopPunct="true" repeatable="false">
+              <select xpath="."/>
+            </sf>
+            <sf code="x">
+              <select xpath="../bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']/rdf:value"/>
+            </sf>
+            <sf code="z">
+              <select xpath="../bf:identifiedBy/*[local-name()='Isbn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Isbn']/rdf:value"/>
+            </sf>
+            <sf code="7" chopPunct="true" repeatable="false">
+              <switch>
+                <case test="$vLangTagLabel!=''">
+                  <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+                </case>
+              </switch>
+            </sf>
+          </df>
+        </select>
+        <switch>
+          <case test="$v880Script != ''">
+            <transform><xsl:copy-of select="$vSimple880" /></transform>
+          </case>
+        </switch>
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='funding information' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/fundinfo')">
