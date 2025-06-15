@@ -87,6 +87,9 @@
                     ( translate(bf:noteType,$upper,$lower)='reproduction version' or 
                       rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/repro')">533</case>
         <case test="local-name(../..)='Instance' and 
+                    ( translate(bf:noteType,$upper,$lower)='additional physical form' or 
+                    rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/addphys')">530</case>
+        <case test="local-name(../..)='Instance' and 
                     ( translate(bf:noteType,$upper,$lower)='issuing body' or 
                       rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/issuing')">550</case>
         <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and 
@@ -144,6 +147,16 @@
                   <sf code="a" chopPunct="true" repeatable="false">
                     <select xpath="."/>
                   </sf>
+                </case>
+              </switch>
+              <switch>
+                <case test="$vTag = '501'">
+                  <sf code="d" repeatable="false">
+                <select xpath="../bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
+              </sf>
+              <sf code="u">
+                <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+              </sf>
                 </case>
               </switch>
               <switch>
@@ -408,20 +421,28 @@
       </case>
 
       <case test="local-name(../..)='Instance' and (translate(bf:noteType,$upper,$lower)='additional physical form' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/addphys')">
-        <df tag="530">
+        <select xpath="rdfs:label[not(@xml:lang) or 
+          string-length(@xml:lang)='2' or 
+          string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+          <df tag="530">
           <ind1 default=" "/>
           <ind2 default=" "/>
+            <switch>
+              <case test="$v880Script != ''">
+                <transform><xsl:copy-of select="$vSimple880sf6" /></transform>
+              </case>
+            </switch>
           <sf code="3" chopPunct="true" repeatable="false">
-            <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+            <select xpath="../bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
           </sf>
           <sf code="a" chopPunct="true" repeatable="false">
-            <select xpath="rdfs:label"/>
+            <select xpath="."/>
           </sf>
           <sf code="d" repeatable="false">
-            <select xpath="bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
+            <select xpath="../bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
           </sf>
           <sf code="u">
-            <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+            <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
           </sf>
           <sf code="7" chopPunct="true" repeatable="false">
             <switch>
@@ -431,6 +452,12 @@
             </switch>
           </sf>
         </df>
+        </select>
+        <switch>
+          <case test="$v880Script != ''">
+            <transform><xsl:copy-of select="$vSimple880" /></transform>
+          </case>
+        </switch>
       </case>
 
       <case test="(local-name(../..)='Instance' or local-name(../..)='Item') and (translate(bf:noteType,$upper,$lower)='reproduction version' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/repro')">
