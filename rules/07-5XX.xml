@@ -41,7 +41,14 @@
 
   <!-- notes -->
   <select xpath="bf:Instance/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]|bf:Work/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]|//bf:Item/bf:note/bf:Note[rdfs:*[. != ''] or rdf:value[. != ''] or bf:*]">
-    
+    <var name="vLabel" xpath="rdfs:label[
+                not(@xml:lang) or 
+                (
+                  string-length(@xml:lang)='2' or 
+                  string-length(@xml:lang)='3' or
+                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))
+                ) 
+              ][1]" />
     <var name="vLangTagLabel" xpath="rdfs:label[
                 contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
                 string-length(@xml:lang)='2' or 
@@ -56,6 +63,7 @@
     </var>
     <var name="v880Occurrence">
       <switch>
+        <case test="string($vLabel) = ''"><text>00</text></case>
         <case test="$v880Script != '' and ancestor::bf:Instance">
           <transform>
             <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 50"></xsl:value-of>
@@ -66,6 +74,7 @@
             <xsl:value-of select="count(../preceding-sibling::bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 40"></xsl:value-of>
           </transform>
         </case>
+        <case test="default">00</case>
       </switch>
     </var>
     
