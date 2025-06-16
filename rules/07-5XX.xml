@@ -1511,12 +1511,16 @@
   </select>
     
   <df tag="510" lang-xpath="bf:title/*/bf:mainTitle">
-    <context xpath="bf:Work/bf:relation/bf:Relation[bf:relationship//@rdf:*[1]='http://id.loc.gov/vocabulary/relationship/references']/bf:associatedResource/bf:Work |
+    <context xpath="bf:Instance/bf:note/bf:*[rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/refcitation']] |
+                    bf:Work/bf:relation/bf:Relation[bf:relationship//@rdf:*[1]='http://id.loc.gov/vocabulary/relationship/references']/bf:associatedResource/bf:Work |
                     bf:Work/bf:relation/bf:Relation[bf:relationship//@rdf:*[1]='http://id.loc.gov/vocabulary/relationship/indexedin']/bf:associatedResource/bf:Work |
                     bf:Work/bflc:indexedIn/bf:Work |
                     bf:Work/bf:references/bf:Work">
       <ind1 default="0">
         <switch>
+          <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/refcitation'] and bflc:citation">4</case>
+          <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/refcitation'] and bf:enumerationAndChronology">4</case>
+          <case test="rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/refcitation'] and not(bflc:citation) and not(bf:enumerationAndChronology)">3</case>
           <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[1]='http://id.loc.gov/vocabulary/relationship/references' and (bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='location' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/loc'])">4</case>
           <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[1]='http://id.loc.gov/vocabulary/relationship/references'">3</case>
           <case test="local-name(..)='references' and bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='location' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/loc']">4</case>
@@ -1525,14 +1529,15 @@
       </ind1>
       <ind2 default=" "/>
       <sf code="3" chopPunct="true" repeatable="false">
-        <select xpath="ancestor::bf:Relation/bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+        <select xpath="ancestor::bf:Relation/bflc:appliesTo/bflc:AppliesTo/rdfs:label|bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
-      <sf code="a" repeatable="false"><select xpath="bf:title/*/bf:mainTitle"/></sf>
+      <sf code="a" repeatable="false"><select xpath="bf:title/*/bf:mainTitle|rdfs:label"/></sf>
       <sf code="b" repeatable="false">
-        <select xpath="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='coverage' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/coverage']/rdfs:label"/>
+        <select xpath="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='coverage' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/coverage']/rdfs:label |
+                       bf:enumerationAndChronology/bf:EnumerationAndChronology/rdfs:label"/>
       </sf>
       <sf code="c" repeatable="false">
-        <select xpath="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='location' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/loc']/rdfs:label"/>
+        <select xpath="bf:note/bf:Note[translate(bf:noteType,$upper,$lower)='location' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/loc']/rdfs:label | bflc:citation"/>
       </sf>
       <sf code="x" repeatable="false">
         <select xpath="bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']/rdf:value"/>
