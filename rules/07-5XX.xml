@@ -1951,6 +1951,34 @@
   </context>
   </df>
   
+  <df tag="580" lang-xpath="rdfs:label">
+    <context xpath="
+      bf:Work/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/relnote']/rdfs:label |
+      bf:Work/bf:relation/bf:Relation/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/relnote']/rdfs:label ">
+      <ind1 default=" "/>
+      <ind2 default=" "/>
+      <switch>
+        <case test="ancestor::bf:Relation">
+          <var name="vLinkage">
+            <transform>
+              <xsl:value-of select="concat( count(ancestor::bf:relation/preceding::bf:relation) + 10, '\p' )" />
+            </transform>
+          </var>
+          <sf code="8" repeatable="false">
+            <transform><xsl:value-of select="$vLinkage" /></transform>
+          </sf>
+        </case>
+      </switch>
+      <sf code="a" repeatable="false">
+        <transform>
+          <xsl:call-template name="tChopPunct">
+            <xsl:with-param name="pString" select="."/>
+          </xsl:call-template>
+        </transform>
+      </sf>
+    </context>
+  </df>
+  
   <df tag="583" lang-xpath="rdfs:label">
     <context xpath="
       //bf:Item/bf:note/*[bf:noteType='action' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/action'] |

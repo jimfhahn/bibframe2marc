@@ -1790,6 +1790,7 @@
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'continuedinpartby') or contains(bf:Relationship/@rdf:about, 'continuedinpartby')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'succeededby') or contains(bf:Relationship/@rdf:about, 'succeededby')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'splitinto') or contains(bf:Relationship/@rdf:about, 'splitinto')]]/bf:associatedResource/bf:*[bf:hasInstance] |
+      bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'mergedtoform') or contains(bf:Relationship/@rdf:about, 'mergedtoform')]]/bf:mergedWith/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'mergedtoform') or contains(bf:Relationship/@rdf:about, 'mergedtoform')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'datasource') or contains(bf:Relationship/@rdf:about, 'datasource')]]/bf:associatedResource/bf:*[bf:hasInstance] |
       bf:Work/bf:relation/bf:Relation[bf:relationship[contains(@rdf:resource, 'relatedwork') or contains(bf:Relationship/@rdf:about, 'relatedwork')]]/bf:associatedResource/bf:*[bf:hasInstance] |
@@ -1838,7 +1839,7 @@
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'continues') or contains(bf:Relationship/@rdf:about, 'continues')]">780</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'precededby') or contains(bf:Relationship/@rdf:about, 'precededby')]">780</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'succeededby') or contains(bf:Relationship/@rdf:about, 'succeededby')]">785</case>
-          <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'mergerof') or contains(bf:Relationship/@rdf:about, 'mergeriof')]">780</case>
+          <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'mergerof') or contains(bf:Relationship/@rdf:about, 'mergerof')]">780</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'absorbedby') or contains(bf:Relationship/@rdf:about, 'absorbedby')]">785</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'absorptionof') or contains(bf:Relationship/@rdf:about, 'absorptionof')]">780</case>
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'separatedfrom') or contains(bf:Relationship/@rdf:about, 'separatedfrom')]">780</case>
@@ -1924,6 +1925,18 @@
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'mergedToForm') or contains(bf:Relationship/@rdf:about, 'mergedToForm')]">7</case>
         </switch>
       </ind2>
+      <switch>
+        <case test="ancestor::bf:Relation/bf:note">
+          <var name="vLinkage">
+            <transform>
+              <xsl:value-of select="concat( count(ancestor::bf:relation/preceding::bf:relation) + 10, '\p' )" />
+            </transform>
+          </var>
+          <sf code="8" repeatable="false">
+            <transform><xsl:value-of select="$vLinkage" /></transform>
+          </sf>
+        </case>
+      </switch>
       <sf code="3" chopPunct="true" repeatable="false">
         <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
