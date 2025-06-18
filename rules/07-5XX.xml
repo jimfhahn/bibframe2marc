@@ -815,7 +815,7 @@
               </case>
             </switch>
             <sf code="a" chopPunct="true" repeatable="false">
-              <select xpath=".[not(@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI')]"/>
+              <select xpath="self::node()[not(@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI')]"/>
             </sf>
             <sf code="u">
               <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
