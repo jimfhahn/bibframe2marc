@@ -1033,8 +1033,9 @@
       <!-- these notes are picked up in the rules for various 5XXs, do not process here -->
       <case test="(local-name(../..)='Instance' and 
         (
-        rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doc' or 
-        rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/citeas'
+          rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doc' or 
+          rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/citeas' or
+          rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/refcitation'
         ))"/>
 
       <case test="default">
