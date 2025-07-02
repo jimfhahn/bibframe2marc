@@ -952,6 +952,9 @@
               <xsl:when test="$vAdminMetadata/bf:identifiedBy/bf:Local[not(bf:source) or bf:source/@rdf:resource='http://id.loc.gov/vocabulary/organizations/dlc' or bf:source/bf:Source/@rdf:about='http://id.loc.gov/vocabulary/organizations/dlc' or bf:source/bf:Source/rdfs:label='DLC']/rdf:value">
                 <xsl:value-of select="$vAdminMetadata/bf:identifiedBy/bf:Local[not(bf:source) or bf:source/@rdf:resource='http://id.loc.gov/vocabulary/organizations/dlc' or bf:source/bf:Source/@rdf:about='http://id.loc.gov/vocabulary/organizations/dlc' or bf:source/bf:Source/rdfs:label='DLC']/rdf:value"/>
               </xsl:when>
+              <xsl:when test="$vAdminMetadata/bf:identifiedBy/bf:Local[not(bf:source) or bf:source/@rdf:resource='http://id.loc.gov/vocabulary/organizations/dlcmrc' or bf:source/bf:Source/@rdf:about='http://id.loc.gov/vocabulary/organizations/dlcmrc' or bf:source/bf:Source/rdfs:label='DLC']/rdf:value">
+                <xsl:value-of select="$vAdminMetadata/bf:identifiedBy/bf:Local[not(bf:source) or bf:source/@rdf:resource='http://id.loc.gov/vocabulary/organizations/dlcmrc' or bf:source/bf:Source/@rdf:about='http://id.loc.gov/vocabulary/organizations/dlcmrc' or bf:source/bf:Source/rdfs:label='DLC']/rdf:value"/>
+              </xsl:when>
               <xsl:otherwise><xsl:value-of select="generate-id()"/></xsl:otherwise>
             </xsl:choose>
           </xsl:when>
