@@ -643,8 +643,32 @@
         <case test="contains(@rdf:about,'id.loc.gov/resources/hubs')"><transform><xsl:value-of select="@rdf:about"/></transform></case>
       </switch>
     </var>
+    <var name="vLangTagLabel" xpath="self::node()/bflc:marcKey[
+                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                string-length(@xml:lang)='2' or 
+                string-length(@xml:lang)='3'
+                ][1]/@xml:lang" />
     <var name="vRelResourcePreNS">
       <transform>
+        <!--<xsl:choose>
+          <xsl:when test="self::node()/bflc:marcKey[not(@xml:lang)]">
+            <xsl:call-template name="tGetMiniMARCFromKey">
+              <xsl:with-param name="pFieldStr" select="self::node()/bflc:marcKey[not(@xml:lang)][1]"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="$vLangTagLabel != ''">
+            <xsl:call-template name="tGetMiniMARCFromKey">
+              <xsl:with-param name="pFieldStr" select="self::node()/bflc:marcKey[@xml:lang = $vLangTagLabel][1]"/>
+            </xsl:call-template>
+          </xsl:when>
+          <xsl:when test="self::node()/bflc:marcKey[@xml:lang]" /><!-\- marcKey with @xml:lang and likely in a non-latin script -\->
+          <xsl:otherwise>
+            <xsl:call-template name="tGetRelResource">
+              <xsl:with-param name="pRelUri" select="$relURI"/>
+              <xsl:with-param name="pContext" select="."/>
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>-->
         <xsl:call-template name="tGetRelResource">
           <xsl:with-param name="pRelUri" select="$relURI"/>
           <xsl:with-param name="pContext" select="."/>
@@ -673,11 +697,6 @@
       </switch>
     </var>
     
-    <var name="vLangTagLabel" xpath="self::node()/bflc:marcKey[
-                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                string-length(@xml:lang)='2' or 
-                string-length(@xml:lang)='3'
-              ][1]/@xml:lang" />
     <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
     <var name="v880Script">
       <switch>
