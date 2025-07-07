@@ -2045,10 +2045,20 @@
     </case>
   </switch>
 
-  <df tag="046">
-    <context xpath="bf:Work/bf:creationDate[@rdf:datatype='http://id.loc.gov/datatypes/edtf']">
-      <ind1 default=" "/>
-      <ind2 default=" "/>
+    <select xpath="bf:Work/bf:originDate[@rdf:datatype='http://id.loc.gov/datatypes/edtf']">
+      <var name="vCF008PreNS">
+        <transform>
+          <xsl:apply-templates select="ancestor::rdf:RDF" mode="generate-008">
+            <xsl:with-param name="vAdminMetadata" select="$vAdminMetadata"/>
+          </xsl:apply-templates>
+        </transform>
+      </var>
+      <var name="vCF008" xpath="exsl:node-set($vCF008PreNS)" />
+      <var name="vDateType">
+        <transform>
+          <xsl:value-of select="substring($vCF008, 7, 1)" />
+        </transform>
+      </var>
       <var name="v046DateTime1">
         <transform>
           <xsl:call-template name="EDTF-Date1">
@@ -2077,33 +2087,40 @@
           </xsl:call-template>
         </transform>
       </var>
-      <sf code="k">
-        <transform>
-          <xsl:value-of select="concat(translate($v046Date1,'-',''),translate($v046Time1,':',''))"/>
-        </transform>
-      </sf>
       <switch>
-        <case test="$v046DateTime2">
-          <sf code="l">
-            <transform>
-              <xsl:variable name="v046Date2">
-                <xsl:call-template name="EDTF-DatePart">
-                  <xsl:with-param name="pEDTFDate" select="$v046DateTime2"/>
-                </xsl:call-template>
-              </xsl:variable>
-              <xsl:variable name="v046Time2">
-                <xsl:call-template name="EDTF-TimePart">
-                  <xsl:with-param name="pEDTFDate" select="$v046DateTime2"/>
-                </xsl:call-template>
-              </xsl:variable>
-              <xsl:value-of select="concat(translate($v046Date2,'-',''),translate($v046Time2,':',''))"/>
-            </transform>
-          </sf>
+        <case test="$vDateType != 'r'">
+          <df tag="046">
+            <ind1 default=" "/>
+            <ind2 default=" "/>
+            <sf code="k">
+              <transform>
+                <xsl:value-of select="concat(translate($v046Date1,'-',''),translate($v046Time1,':',''))"/>
+              </transform>
+            </sf>
+            <switch>
+              <case test="$v046DateTime2">
+                <sf code="l">
+                  <transform>
+                    <xsl:variable name="v046Date2">
+                      <xsl:call-template name="EDTF-DatePart">
+                        <xsl:with-param name="pEDTFDate" select="$v046DateTime2"/>
+                      </xsl:call-template>
+                    </xsl:variable>
+                    <xsl:variable name="v046Time2">
+                      <xsl:call-template name="EDTF-TimePart">
+                        <xsl:with-param name="pEDTFDate" select="$v046DateTime2"/>
+                      </xsl:call-template>
+                    </xsl:variable>
+                    <xsl:value-of select="concat(translate($v046Date2,'-',''),translate($v046Time2,':',''))"/>
+                  </transform>
+                </sf>
+              </case>
+            </switch>
+            <sf code="2"><transform><xsl:value-of select="'edtf'" /></transform></sf>
+          </df>
         </case>
       </switch>
-      <sf code="2"><transform><xsl:value-of select="'edtf'" /></transform></sf>
-    </context>
-  </df>
+    </select>
 
   <switch>
     <case test="bf:Work/bf:instrument/bf:MusicInstrument or

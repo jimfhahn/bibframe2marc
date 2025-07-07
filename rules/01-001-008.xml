@@ -698,9 +698,6 @@
                   <xsl:when test="string-length($date1) = 4 and $cDateExists = 1">
                     <xsl:value-of select="translate(concat('t', $date1, $date2), 'X', 'u')" />
                   </xsl:when>
-                  <xsl:when test="string-length($date1) = 4 and $cOriginDateExists = 1">
-                    <xsl:value-of select="translate(concat('r', $date1, $date2), 'X', 'u')" />
-                  </xsl:when>
                   <xsl:when test="$vPA/bf:*/bf:status/bf:Status/@rdf:about = 'http://id.loc.gov/vocabulary/mstatus/current' and
                     string-length($date1) = 4 and string-length($date2) = 4">
                     <xsl:value-of select="translate(concat('c', $date1, $date2), 'X', 'u')" />
@@ -725,24 +722,23 @@
                     (contains($date2, '~') or contains($date2, '?') or contains($date2, '%'))">
                     <xsl:value-of select="translate(concat('q', $date1, substring($date2, 1, 4)), 'X', 'u')" />
                   </xsl:when>
-                  <xsl:when test="string-length($date1)=4 and string-length($date2)=4">
+                  <xsl:when test="string-length($date1)=4 and string-length($date2)=4 and $cOriginDateExists = 0">
                     <xsl:value-of select="translate(concat('m', $date1, $date2), 'X', 'u')" />
                   </xsl:when>
-                  <xsl:when test="$date2 != ''">
-                    <xsl:choose>
-                      <xsl:when test="contains($date2, '-')">
-                        <xsl:value-of select="translate(concat('e', $date1, translate($date2, '-', '')), 'X', 'u')" />
-                      </xsl:when>
-                      <xsl:when test="$date1='XXXX' and $date2='XXXX'">
-                        <xsl:value-of select="concat('n', '    ', '    ')" />
-                      </xsl:when>
-                      <xsl:otherwise>
-                        <xsl:value-of select="translate(concat('e', $date1, $date2, '  '), 'X', 'u')" />
-                      </xsl:otherwise>
-                    </xsl:choose>
+                  <xsl:when test="contains($date2, '-')">
+                    <xsl:value-of select="translate(concat('e', $date1, translate($date2, '-', '')), 'X', 'u')" />
+                  </xsl:when>
+                  <xsl:when test="$date1='XXXX' and $date2='XXXX'">
+                    <xsl:value-of select="concat('n', '    ', '    ')" />
                   </xsl:when>
                   <xsl:when test="string-length($date1) = 4 and $date1='XXXX'">
                     <xsl:value-of select="concat('n', '    ', '    ')" />
+                  </xsl:when>
+                  <xsl:when test="string-length($date1) = 4 and $cOriginDateExists = 1 and $date1 != $date2">
+                    <xsl:value-of select="translate(concat('r', $date1, $date2), 'X', 'u')" />
+                  </xsl:when>
+                  <xsl:when test="$date2 != '' and $date1 != $date2">
+                    <xsl:value-of select="translate(concat('e', $date1, $date2, '  '), 'X', 'u')" />
                   </xsl:when>
                   <xsl:when test="string-length($date1) = 4">
                     <xsl:value-of select="translate(concat('s', $date1, '    '), 'X', 'u')" />
