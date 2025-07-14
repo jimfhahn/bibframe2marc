@@ -52,6 +52,10 @@
       <lang>latn</lang>
       <code>(B</code>
     </script>
+     <script>
+        <lang>thai</lang>
+        <code>Thai</code>
+     </script>
   </bf2marc:map>
   <bf2marc:map name="df045BCEtimePeriods">
     <timePeriod>
