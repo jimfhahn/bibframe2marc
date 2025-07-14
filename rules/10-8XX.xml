@@ -288,7 +288,7 @@
       <sf code="7" chopPunct="true" repeatable="false">
         <switch>
           <case test="$vLangTagLabel!=''">
-            <transform><xsl:value-of select="concat('[bcp47]', $vLangTagLabel)"/></transform>
+            <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
           </case>
         </switch>
       </sf>
@@ -367,7 +367,7 @@
               </sf>
             </case>
           </switch>
-          <sf code="7"><transform><xsl:value-of select="concat('[bcp47]', $vLangTagScript)" /></transform></sf>
+          <sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>
         </df>
       </case>
     </switch>
