@@ -146,7 +146,9 @@
                   <ind1>
                     <switch>
                       <case test="contains(../rdf:type/@rdf:resource, 'index')"><text> </text></case>
+                      <case test="contains(../bf:noteType, 'index')"><text> </text></case>
                       <case test="contains(../rdf:type/@rdf:resource, 'finding')">0</case>
+                      <case test="contains(../bf:noteType, 'finding')">0</case>
                       <case test="default">8</case>
                     </switch>
                   </ind1>
@@ -200,7 +202,7 @@
               <switch>
                 <case test="$vTag = '530' or $vTag = '555'">
                   <sf code="u">
-                    <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+                    <select xpath="../bf:electronicLocator/@rdf:resource|../rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
                   </sf>
                 </case>
               </switch>
@@ -487,7 +489,7 @@
             <select xpath="../bf:identifiedBy/*[local-name()='StockNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/StockNumber']/rdf:value"/>
           </sf>
           <sf code="u">
-            <select xpath="../bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+            <select xpath="../bf:electronicLocator/@rdf:resource|../rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
           </sf>
           <sf code="7" chopPunct="true" repeatable="false">
             <switch>
@@ -804,8 +806,8 @@
           <df tag="555" lang-xpath="rdfs:label[not(@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI')]">
             <ind1 default="8">
               <switch>
-                <case test="translate(bf:noteType,$upper,$lower)='index' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/index'"><text> </text></case>
-                <case test="translate(bf:noteType,$upper,$lower)='finding aid' or rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/finding'">0</case>
+                <case test="translate(../bf:noteType,$upper,$lower)='index' or ../rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/index'"><text> </text></case>
+                <case test="translate(../bf:noteType,$upper,$lower)='finding aid' or ../rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/finding'">0</case>
               </switch>
             </ind1>
             <ind2 default=" "/>
@@ -818,7 +820,7 @@
               <select xpath="self::node()[not(@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI')]"/>
             </sf>
             <sf code="u">
-              <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
+              <select xpath="../bf:electronicLocator/@rdf:resource|../rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
             </sf>
             <sf code="7" chopPunct="true" repeatable="false">
               <switch>
