@@ -298,6 +298,8 @@
 	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n81017756-781">
 	    <rdfs:label>Ukraine</rdfs:label>
 	    <bflc:marcKey>181  $zUkraine</bflc:marcKey>
+	    <rdfs:label xml:lang="zxx-cyrl">Украіне</rdfs:label>
+	    <bflc:marcKey xml:lang="zxx-cyrl">451 4$aУкраіне</bflc:marcKey>
 	  </madsrdf:Geographic>
 	  <madsrdf:GenreForm>
 	    <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>

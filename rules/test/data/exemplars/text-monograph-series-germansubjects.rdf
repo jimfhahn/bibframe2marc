@@ -83,6 +83,18 @@
       <bf:ClassificationLcc>
 	<bf:classificationPortion>PR6068.O93</bf:classificationPortion>
 	<bf:itemPortion>H395 2004x</bf:itemPortion>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+	    <rdfs:label>not used by assigner</rdfs:label>
+	    <bf:code>nuba</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+	    <rdfs:label>prepublication</rdfs:label>
+	    <bf:code>p</bf:code>
+	  </bf:Status>
+	</bf:status>
       </bf:ClassificationLcc>
     </bf:classification>
     <bf:contribution>
@@ -114,6 +126,39 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:seriesEnumeration>bk. 5</bf:seriesEnumeration>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
+		<rdfs:label>traced</rdfs:label>
+		<bf:code>tr</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Harry Potter</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
     <bf:summary>
       <bf:Summary>
 	<rdfs:label>When the government of the magic world and authorities at Hogwarts School of Witchcraft and Wizardry refuse to believe in the growing threat of a freshly revived Lord Voldemort, fifteen-year-old Harry Potter finds support from his loyal friends in facing the evil wizard and other new terrors.</rdfs:label>
@@ -511,108 +556,216 @@
       <bf:Topic rdf:about="https://d-nb.info/gnd/4134557-5">
 	<rdfs:label>Außenseiter</rdfs:label>
 	<bflc:marcKey>150  $aAußenseiter</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4007524-2">
 	<rdfs:label>&#152;Das&#156; Böse</rdfs:label>
 	<bflc:marcKey>150  $a&#152;Das&#156; Böse</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4022600-1">
 	<rdfs:label>&#152;Das&#156; Gute</rdfs:label>
 	<bflc:marcKey>150  $a&#152;Das&#156; Gute</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4727032-9">
 	<rdfs:label>Existenzkampf</rdfs:label>
 	<bflc:marcKey>150  $aExistenzkampf</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4016114-6">
 	<rdfs:label>Fabeltiere</rdfs:label>
 	<bflc:marcKey>150  $aFabeltiere</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4018480-8">
 	<rdfs:label>Freundschaft</rdfs:label>
 	<bflc:marcKey>150  $aFreundschaft</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4161292-9">
 	<rdfs:label>Imaginärer Schauplatz</rdfs:label>
 	<bflc:marcKey>150  $aImaginärer Schauplatz</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4027316-7">
 	<rdfs:label>Internat</rdfs:label>
 	<bflc:marcKey>150  $aInternat</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4137756-4">
 	<rdfs:label>Jugendgruppe</rdfs:label>
 	<bflc:marcKey>150  $aJugendgruppe</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4029002-5">
 	<rdfs:label>Junge</rdfs:label>
 	<bflc:marcKey>150  $aJunge</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4167018-8">
 	<rdfs:label>Lebensgefahr</rdfs:label>
 	<bflc:marcKey>150  $aLebensgefahr</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4334871-3">
 	<rdfs:label>Lebensrettung</rdfs:label>
 	<bflc:marcKey>150  $aLebensrettung</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4036966-3">
 	<rdfs:label>Magie</rdfs:label>
 	<bflc:marcKey>150  $aMagie</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4067403-4">
 	<rdfs:label>Magier</rdfs:label>
 	<bflc:marcKey>150  $aMagier</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4333435-0">
 	<rdfs:label>Rollentausch</rdfs:label>
 	<bflc:marcKey>150  $aRollentausch</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4053369-4">
 	<rdfs:label>Schüler</rdfs:label>
 	<bflc:marcKey>150  $aSchüler</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4136651-7">
 	<rdfs:label>Telepathie</rdfs:label>
 	<bflc:marcKey>150  $aTelepathie</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="https://d-nb.info/gnd/4079128-2">
 	<rdfs:label>Weissagung</rdfs:label>
 	<bflc:marcKey>150  $aWeissagung</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+	    <rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+	    <bf:code>dhb-jdg</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
@@ -624,6 +777,12 @@
 	  <bf:Place rdf:about="https://d-nb.info/gnd/4022153-2">
 	    <rdfs:label>Großbritannien</rdfs:label>
 	    <bflc:marcKey>151  $aGroßbritannien</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="https://id.loc.gov/vocabulary/subjectSchemes/dhb-jdg">
+		<rdfs:label>Deutsche Historische Bibliografie</rdfs:label>
+		<bf:code>dhb-jdg</bf:code>
+	      </bf:Source>
+	    </bf:source>
 	  </bf:Place>
 	</madsrdf:isIdentifiedByAuthority>
 	<bflc:aap-normalized>grossbritannien</bflc:aap-normalized>
@@ -694,6 +853,7 @@
 	<rdfs:label>Fantasy fiction</rdfs:label>
       </bf:GenreForm>
     </bf:genreForm>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026339"/>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
@@ -762,40 +922,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
-	    <rdfs:label>series</rdfs:label>
-	    <bf:code>series</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:seriesEnumeration>bk. 5</bf:seriesEnumeration>
-	<bf:associatedResource>
-	  <bf:Series>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
-		<rdfs:label>transcribed</rdfs:label>
-		<bf:code>t</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
-		<rdfs:label>traced</rdfs:label>
-		<bf:code>tr</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Harry Potter</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	  </bf:Series>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -860,6 +986,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/18602501">
 	<bf:title>
@@ -922,13 +1049,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.514348-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:48.459404-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -972,9 +1099,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -1119,9 +1251,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		<rdfs:label>contributor</rdfs:label>
-		<bf:code>ctb</bf:code>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+		<rdfs:label>author</rdfs:label>
+		<bf:code>aut</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -1328,13 +1460,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.514348-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:48.459404-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -1378,9 +1510,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -1430,9 +1567,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		<rdfs:label>contributor</rdfs:label>
-		<bf:code>ctb</bf:code>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+		<rdfs:label>author</rdfs:label>
+		<bf:code>aut</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -1639,8 +1776,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.514348-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:48.459404-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1658,7 +1795,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -1689,9 +1826,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -1741,9 +1883,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		<rdfs:label>contributor</rdfs:label>
-		<bf:code>ctb</bf:code>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+		<rdfs:label>author</rdfs:label>
+		<bf:code>aut</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -1950,8 +2092,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.514348-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:48.459404-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1969,7 +2111,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -2000,9 +2142,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -2045,9 +2192,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		<rdfs:label>contributor</rdfs:label>
-		<bf:code>ctb</bf:code>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+		<rdfs:label>author</rdfs:label>
+		<bf:code>aut</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -2254,8 +2401,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.514348-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:48.459404-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2273,7 +2420,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -2304,9 +2451,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

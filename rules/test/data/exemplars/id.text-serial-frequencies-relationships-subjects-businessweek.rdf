@@ -78,9 +78,8 @@
       <bf:PostalRegistration>
 	<rdf:value>080900</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n89658260">
-	    <rdfs:label>United States Power Squadrons</rdfs:label>
-	    <bflc:marcKey>11020$aUnited States Power Squadrons</bflc:marcKey>
+	  <bf:Organization>
+	    <rdfs:label>USPS</rdfs:label>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:PostalRegistration>
@@ -98,19 +97,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>volumes</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>all</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>31 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -243,10 +237,10 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-07T06:56:47</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>WARTN</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -268,13 +262,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-08T01:34:24.318292-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -309,7 +303,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN</rdfs:label>
+	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -324,7 +318,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d3$encip$f19$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 3 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
       </bf:AdminMetadata>
@@ -478,24 +474,9 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
-    <bflc:indexedIn>
-      <bf:Work>
-	<bflc:aap>Chemical abstracts</bflc:aap>
-	<bflc:aap-normalized>chemicalabstracts</bflc:aap-normalized>
-	<bf:title>
-	  <bf:Title>
-	    <bf:mainTitle>Chemical abstracts</bf:mainTitle>
-	  </bf:Title>
-	</bf:title>
-	<bf:identifiedBy>
-	  <bf:Issn>
-	    <rdf:value>0009-2258</rdf:value>
-	  </bf:Issn>
-	</bf:identifiedBy>
-      </bf:Work>
-    </bflc:indexedIn>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Available in numerous editions, including several language editions.</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -551,6 +532,12 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/842262">
 	<bflc:marcKey>150  $aBusiness</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Business</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
@@ -708,18 +695,6 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
-	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026139">
-	<rdfs:label xml:lang="en">Periodicals</rdfs:label>
-	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
       <bf:GenreForm>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<madsrdf:authoritativeLabel>periodicals</madsrdf:authoritativeLabel>
@@ -729,6 +704,24 @@
 	  </bf:Source>
 	</bf:source>
 	<rdfs:label>periodicals</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
+	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026139">
+	<rdfs:label xml:lang="en">Periodicals</rdfs:label>
+	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
@@ -745,6 +738,32 @@
       </bf:GenreForm>
     </bf:genreForm>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/indexedin">
+	    <rdfs:label>indexed in</rdfs:label>
+	    <bf:code>indexedin</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work>
+	    <bflc:aap>Chemical abstracts</bflc:aap>
+	    <bflc:aap-normalized>chemicalabstracts</bflc:aap-normalized>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Chemical abstracts</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Issn>
+		<rdf:value>0009-2258</rdf:value>
+	      </bf:Issn>
+	    </bf:identifiedBy>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -1125,7 +1144,7 @@
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:variantType>former</bf:variantType>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/for"/>
 		<bf:mainTitle>Businessweek online</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
@@ -1157,6 +1176,12 @@
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>1 online resource</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>color illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
 		  </bf:Extent>
 		</bf:extent>
 	      </bf:Instance>
@@ -1322,7 +1347,7 @@
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:variantType>former</bf:variantType>
+		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/for"/>
 		<bf:mainTitle>Businessweek online</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
@@ -1354,224 +1379,14 @@
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>1 online resource</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>color illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
 		  </bf:Extent>
 		</bf:extent>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
-	    <rdfs:label>other physical format</rdfs:label>
-	    <bf:code>otherphysicalformat</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/entities/relationships/microfilmversion">
-	    <rdfs:label>Microfilm version</rdfs:label>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11310069">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Business week</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11310069">
-		<bf:publicationStatement>[New York, etc.]: [McGraw-Hill]</bf:publicationStatement>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>sf 86091498 </rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:Coden>
-		    <rdf:value>BUWEA3</rdf:value>
-		  </bf:Coden>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:OclcNumber>
-		    <rdf:value>ocm03548330 </rdf:value>
-		  </bf:OclcNumber>
-		</bf:identifiedBy>
-		<bf:media>
-		  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/h">
-		    <rdfs:label>microform</rdfs:label>
-		    <bf:code>h</bf:code>
-		  </bf:Media>
-		</bf:media>
-		<bf:carrier>
-		  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/hd">
-		    <rdfs:label>microfilm reel</rdfs:label>
-		    <bf:code>hd</bf:code>
-		  </bf:Carrier>
-		</bf:carrier>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
-	    <rdfs:label>other physical format</rdfs:label>
-	    <bf:code>otherphysicalformat</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/entities/relationships/onlineversion">
-	    <rdfs:label>Online version</rdfs:label>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/16894999">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Bloomberg businessweek</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16894999">
-		<bf:publicationStatement>[New York]: Bloomberg L.P.</bf:publicationStatement>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>  2011201713</rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:OclcNumber>
-		    <rdf:value>ocm42637019 </rdf:value>
-		  </bf:OclcNumber>
-		</bf:identifiedBy>
-		<bf:media>
-		  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
-		    <rdfs:label>computer</rdfs:label>
-		    <bf:code>c</bf:code>
-		  </bf:Media>
-		</bf:media>
-		<bf:carrier>
-		  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
-		    <rdfs:label>online resource</rdfs:label>
-		    <bf:code>cr</bf:code>
-		  </bf:Carrier>
-		</bf:carrier>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/absorptionof">
-	    <rdfs:label>absorption of</rdfs:label>
-	    <bf:code>absorptionof</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11136815">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>The Annalist</bf:mainTitle>
-		<bflc:nonSortNum>4</bflc:nonSortNum>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11136815">
-		<bf:publicationStatement>New York, N.Y.: New York Times Co</bf:publicationStatement>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>   16007142 </rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:Local>
-		    <rdf:value>(AMICUS)000004684751</rdf:value>
-		    <bf:source>
-		      <bf:Source rdf:about="http://id.loc.gov/authorities/names/no2004037399">
-			<rdfs:label>Library and Archives Canada</rdfs:label>
-			<bflc:marcKey>1102 $aLibrary and Archives Canada</bflc:marcKey>
-		      </bf:Source>
-		    </bf:source>
-		  </bf:Local>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:OclcNumber>
-		    <rdf:value>ocm06247317 </rdf:value>
-		  </bf:OclcNumber>
-		</bf:identifiedBy>
-		<bf:media>
-		  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-		    <rdfs:label>unmediated</rdfs:label>
-		    <bf:code>n</bf:code>
-		  </bf:Media>
-		</bf:media>
-		<bf:carrier>
-		  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
-		    <rdfs:label>volume</rdfs:label>
-		    <bf:code>nc</bf:code>
-		  </bf:Carrier>
-		</bf:carrier>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/relatedwork">
-	    <rdfs:label>related work</rdfs:label>
-	    <bf:code>relatedwork</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/entities/relationships/currentnewsandselectedarticlesonline">
-	    <rdfs:label>Current news and selected articles online</rdfs:label>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/16894999">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Bloomberg businessweek</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16894999">
-		<bf:publicationStatement>[New York]: Bloomberg L.P.</bf:publicationStatement>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>  2011201713</rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:OclcNumber>
-		    <rdf:value>ocm42637019 </rdf:value>
-		  </bf:OclcNumber>
-		</bf:identifiedBy>
-		<bf:media>
-		  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
-		    <rdfs:label>computer</rdfs:label>
-		    <bf:code>c</bf:code>
-		  </bf:Media>
-		</bf:media>
-		<bf:carrier>
-		  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
-		    <rdfs:label>online resource</rdfs:label>
-		    <bf:code>cr</bf:code>
-		  </bf:Carrier>
-		</bf:carrier>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1603,10 +1418,10 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-07T06:56:47</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>WARTN</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -1628,13 +1443,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-08T01:34:24.318292-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1669,7 +1484,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN</rdfs:label>
+	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -1684,7 +1499,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d3$encip$f19$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 3 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
       </bf:AdminMetadata>
@@ -1742,10 +1559,10 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-07T06:56:47</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>WARTN</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -1767,8 +1584,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-08T01:34:24.318292-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1786,7 +1603,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1808,7 +1625,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN</rdfs:label>
+	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -1823,7 +1640,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d3$encip$f19$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 3 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
       </bf:AdminMetadata>

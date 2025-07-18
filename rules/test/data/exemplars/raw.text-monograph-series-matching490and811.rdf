@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:57.918277-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:58.904349-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,7 +65,10 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d3$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 3 $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
@@ -75,11 +78,6 @@
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <bf:supplementaryContent>
@@ -111,6 +109,14 @@
 	<bf:mainTitle>African literature and African historical experiences</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
     <bf:relation xmlns:exsl="http://exslt.org/common">
       <bf:Relation>
 	<bf:relationship>
@@ -141,7 +147,7 @@
       </bf:Relation>
     </bf:relation>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-19">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-25">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>African literature--History and criticism--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>African literature--History and criticism--Congresses</madsrdf:authoritativeLabel>
@@ -161,7 +167,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-20">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-26">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>African literature (English)--History and criticism--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>African literature (English)--History and criticism--Congresses</madsrdf:authoritativeLabel>
@@ -181,7 +187,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-21">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Topic650-27">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>History in literature--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>History in literature--Congresses</madsrdf:authoritativeLabel>
@@ -200,7 +206,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-22">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-28">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Ikonné, Chidi, 1940-</rdfs:label>
 	    <bflc:marcKey>7001 $aIkonné, Chidi,$d1940-</bflc:marcKey>
@@ -214,7 +220,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-23">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-29">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Oko, E.</rdfs:label>
 	    <bflc:marcKey>7001 $aOko, E.</bflc:marcKey>
@@ -228,7 +234,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-24">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent700-30">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Onwudinjo, Peter</rdfs:label>
 	    <bflc:marcKey>7001 $aOnwudinjo, Peter.</bflc:marcKey>
@@ -242,7 +248,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent711-25">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent711-31">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Meeting"/>
 	    <rdfs:label>International Conference on African Literature and the English Language (9th : 1990 : University of Calabar)</rdfs:label>
 	    <bflc:marcKey>7112 $aInternational Conference on African Literature and the English Language$n(9th :$d1990 :$cUniversity of Calabar)</bflc:marcKey>
@@ -261,12 +267,12 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Hub811-26">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Hub811-32">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent811-26">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/2971034#Agent811-32">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Meeting"/>
 		    <rdfs:label>University of Calabar International Conference on African Literature and the English Language</rdfs:label>
 		    <bflc:marcKey>8112 $aUniversity of Calabar International Conference on African Literature and the English Language.$tCalabar studies in African literature.</bflc:marcKey>
@@ -302,11 +308,6 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Ibadan: Heinemann Educational Books Nigeria PLC, 1991</bf:publicationStatement>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-	<rdfs:label>unmediated</rdfs:label>
-      </bf:Media>
-    </bf:media>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91214017 </rdf:value>
@@ -324,6 +325,18 @@
 	<bf:qualifier>pbk</bf:qualifier>
       </bf:Isbn>
     </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>9789781293719</rdf:value>
+	<bf:qualifier>pbk</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>9789781291852</rdf:value>
+	<bf:qualifier>pbk</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
     <bf:responsibilityStatement>editors, Chidi Ikonne, Emelia Oko, Peter Onwudinjo</bf:responsibilityStatement>
     <bf:title>
       <bf:Title>
@@ -336,6 +349,22 @@
       </bf:Extent>
     </bf:extent>
     <bf:dimensions>24 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Papers from the Ninth International Conference on African Literature and the English Language, held at the University of Calabar in May, 1990.</rdfs:label>

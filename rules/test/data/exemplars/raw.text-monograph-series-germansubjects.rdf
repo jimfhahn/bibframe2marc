@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:48.00457-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:47.831318-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -79,9 +79,14 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a0$bibc$ccopycat$d2$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c copycat $d 2 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bhb09 2015-05-04 z-processor copy to LOAN</bflc:marcKey>
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -153,6 +158,8 @@
       <bf:ClassificationLcc>
 	<bf:classificationPortion>PR6068.O93</bf:classificationPortion>
 	<bf:itemPortion>H395 2004x</bf:itemPortion>
+	<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/nuba"/>
+	<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/p"/>
       </bf:ClassificationLcc>
     </bf:classification>
     <bf:contribution>
@@ -936,10 +943,22 @@
 	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="https://id.loc.gov/authorities/genreForms/gf2014026339">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Fiction</rdfs:label>
+	<madsrdf:authoritativeLabel>Fiction</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft">
+	    <bf:code>lcgft</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent700-73">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent700-74">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Cockcroft, Jason</rdfs:label>
 	    <bflc:marcKey>7001 $aCockcroft, Jason.$4ill</bflc:marcKey>
@@ -953,7 +972,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-74">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-75">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Bloomsbury (Firm)</rdfs:label>
 	    <bflc:marcKey>7102 $aBloomsbury (Firm)$4pbl</bflc:marcKey>
@@ -967,7 +986,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-75">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-76">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Clays Ltd</rdfs:label>
 	    <bflc:marcKey>7102 $aClays Ltd.$4prt</bflc:marcKey>
@@ -981,7 +1000,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-76">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-77">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Palimpsest Book Production Ltd</rdfs:label>
 	    <bflc:marcKey>7102 $aPalimpsest Book Production Ltd.$4tyg</bflc:marcKey>
@@ -1000,12 +1019,12 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub800-77">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub800-78">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent800-77">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent800-78">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		    <rdfs:label>Rowling, J. K.</rdfs:label>
 		    <bflc:marcKey>8001 $aRowling, J. K.$tHarry Potter series ;$v5.</bflc:marcKey>
@@ -1035,7 +1054,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub830-78">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub830-79">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -1175,11 +1194,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>
@@ -1201,11 +1226,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

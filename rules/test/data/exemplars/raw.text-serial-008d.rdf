@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:05.294038-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:07.255237-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -71,6 +71,10 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f19$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
 	</bf:descriptionLanguage>
@@ -90,15 +94,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Serial"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <bflc:serialPubType>
@@ -155,7 +153,7 @@
       </bf:ClassificationDdc>
     </bf:classification>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Hub130-15">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Hub130-17">
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>National sports daily (New York ed.)</bf:mainTitle>
@@ -188,13 +186,22 @@
 	<bf:mainTitle>The National sports daily</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Issued in 4 other regional editions: Chicago, Los Angeles, San Diego, and San Francisco.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Topic650-28">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Topic650-33">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Sports--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Sports--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -242,7 +249,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-32">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-37">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>National sports daily (Chicago ed.)</bf:mainTitle>
@@ -254,7 +261,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-32">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-37">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>National sports daily (Chicago ed.)</bf:mainTitle>
@@ -270,7 +277,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-32"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-37"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -281,7 +288,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-33">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-38">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
@@ -293,7 +300,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-33">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-38">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
@@ -309,7 +316,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-33"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-38"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -320,7 +327,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-34">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-39">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
@@ -332,7 +339,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-34">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-39">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
@@ -348,7 +355,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-34"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-39"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -359,7 +366,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-35">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-40">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
@@ -371,7 +378,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-35">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-40">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
@@ -387,7 +394,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-35"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-40"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -398,7 +405,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otherphysicalformat"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work776-36">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work776-41">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>The National sports daily</bf:mainTitle>
@@ -406,7 +413,7 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance776-36">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance776-41">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>The National sports daily</bf:mainTitle>
@@ -433,7 +440,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work776-36"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work776-41"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -495,9 +502,9 @@
       <bf:PostalRegistration>
 	<rdf:value>005241</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>USPS</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:PostalRegistration>
     </bf:identifiedBy>
@@ -521,14 +528,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>v.</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>ill. (some col.)</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>ill. (some col.)</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 cm</bf:dimensions>
     <bf:frequency>
       <bf:Frequency>
@@ -540,6 +547,22 @@
 	</bf:status>
       </bf:Frequency>
     </bf:frequency>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/number"/>

@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:03.20175-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:04.888589-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bf:identifiedBy>
 	  <bf:Local>
 	    <rdf:value>10496140</rdf:value>
@@ -55,7 +55,9 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bcbc$cpremunv$du$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b cbc $c premunv $d u $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $avl41 2012-07-30 type code change$ivl26 2012-09-14 telework</bflc:marcKey>
 	<lclocal:d955>=955     $a vl41 2012-07-30 type code change $i vl26 2012-09-14 telework</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
@@ -187,6 +189,7 @@
     <bf:provisionActivity xmlns:exsl="http://exslt.org/common">
       <bf:ProvisionActivity>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">XXXX</bf:date>
 	<bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/xx"/>
 	<bflc:simplePlace>[n.p.]</bflc:simplePlace>
 	<bflc:simpleDate>[n.d.]</bflc:simpleDate>

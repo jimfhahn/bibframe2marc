@@ -1,5 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "LCC missing item portion."}]-->
+  <!--[{"level": "WARNING", "message": "A classification number is missing. Check **Classification numbers**"},
+{"level": "WARNING", "message": "LCC missing item portion. Check **Classification numbers** for 'Additional call number information'"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19537131">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -170,26 +171,24 @@
     <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Composed by Lin-Manuel Miranda</rdfs:label>
+	<rdfs:label>Composed by Lin-Manuel Miranda.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Inspired by the book Alexander Hamilton by Ron Chernow</rdfs:label>
+	<rdfs:label>Inspired by the book Alexander Hamilton by Ron Chernow.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Title from disc label</rdfs:label>
+	<rdfs:label>Title from disc label.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>2 booklets with lyrics and full credits (34, 30 unnumbered pages : illustrations ; 12 cm) in container</rdfs:label>
+	<rdfs:label>2 booklets with lyrics and full credits (34, 30 unnumbered pages : illustrations ; 12 cm) in container.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:credits>Alex Lacamoire, musical direction and orchestrations ; Thomas Kail, director ; Andy Blankenbuehler, choreographer.</bf:credits>
-    <bf:credits>Daveed Diggs, Renée Elise Goldsberry, Lin-Manuel Miranda, Jonathan Groff, Christopher Jackson, Jasmine Cephas Jones, Javier Muñoz, Leslie Odom, Jr., Okieriete Onaodowan, Anthony Ramos, Phillipa Soo, vocals ... [and 17 others] ; with accompanying musicians.</bf:credits>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/19537131"/>
     <bf:adminMetadata>
@@ -244,13 +243,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T16:11:10.867354-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T04:56:07.381501-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -288,6 +287,12 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aBTCTA$beng$erda$cBTCTA$dTEF$dAPL$dRB0$dZMS$dWUT$dOCLCF$dERE$dIEP$dIDU$dGK8$dMYG$dIXA$dTXA$dOCL$dVP@$dTJC$dOCLCA$dKYC$dDGU$dZCU$dEMU$dKSU$dSCO$dVOD$dWAU$dOCLCA$dNDS$dGK8$dOCL$dCNSAP$dTOH$dIAT$dCLO$dIQU$dTEFMT$dLPCLI$dCUT$dTXH$dOCL$dAW3$dOCLCQ$dDYJ$dOCLCO$dMKN$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
 	    <rdfs:label>LC Copy Cataloging</rdfs:label>
@@ -301,7 +306,7 @@
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/19537131">
-    <bflc:aap>Miranda, Lin-Manuel, 1980- Hamilton</bflc:aap>
+    <bflc:aap>Miranda, Lin-Manuel, 1980-. Hamilton</bflc:aap>
     <bflc:aap-normalized>mirandalinmanuel1980hamilton</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
@@ -489,6 +494,18 @@
 	<rdfs:label>Disc 2. Act II : What'd I miss -- Cabinet battle #1 -- Take a break -- Say no to this -- The room where it happens -- Schuyler defeated -- Cabinet battle #2 -- Washington on your side -- One last time -- I know him -- The Adams administration -- We know -- Hurricane -- The Reynolds pamphlet -- Burn -- Blow us all away -- Stay alive (reprise) -- It's quiet uptown -- The election of 1800 -- Your obedient servant -- Best of wives and best of women -- The world was wide enough -- Who lives, who dies, who tells your story.</rdfs:label>
       </bf:TableOfContents>
     </bf:tableOfContents>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/credits"/>
+	<rdfs:label>Alex Lacamoire, musical direction and orchestrations ; Thomas Kail, director ; Andy Blankenbuehler, choreographer.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
+	<rdfs:label>Daveed Diggs, Renée Elise Goldsberry, Lin-Manuel Miranda, Jonathan Groff, Christopher Jackson, Jasmine Cephas Jones, Javier Muñoz, Leslie Odom, Jr., Okieriete Onaodowan, Anthony Ramos, Phillipa Soo, vocals ... [and 17 others] ; with accompanying musicians.</rdfs:label>
+      </bf:Note>
+    </bf:note>
     <bf:capture>
       <bf:Capture>
 	<bf:note>
@@ -520,7 +537,7 @@
     </bf:summary>
     <bf:intendedAudience>
       <bf:IntendedAudience>
-	<rdfs:label>Parental Advisory Explicit Content</rdfs:label>
+	<rdfs:label>Parental Advisory Explicit Content.</rdfs:label>
       </bf:IntendedAudience>
     </bf:intendedAudience>
     <bf:subject>
@@ -537,9 +554,8 @@
 	    <rdfs:label>Hamilton, Alexander, 1757-1804</rdfs:label>
 	    <bflc:marcKey>1001 $aHamilton, Alexander,$d1757-1804</bflc:marcKey>
 	  </madsrdf:PersonalName>
-	  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001612">
-	    <rdfs:label xml:lang="en">Drama</rdfs:label>
-	    <bflc:marcKey>185  $vDrama</bflc:marcKey>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
 	  </madsrdf:GenreForm>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>hamiltonalexander17571804drama</bflc:aap-normalized>
@@ -554,6 +570,12 @@
       <bf:Person rdf:about="http://id.worldcat.org/fast/31768">
 	<bflc:marcKey>1001 $aHamilton, Alexander,$d1757-1804</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Hamilton, Alexander, 1757-1804</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Person>
     </bf:subject>
     <bf:subject>
@@ -581,9 +603,8 @@
 	    <rdfs:label>United States</rdfs:label>
 	    <bflc:marcKey>181  $zUnited States</bflc:marcKey>
 	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001612">
-	    <rdfs:label xml:lang="en">Drama</rdfs:label>
-	    <bflc:marcKey>185  $vDrama</bflc:marcKey>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
 	  </madsrdf:GenreForm>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>statesmenunitedstatesdrama</bflc:aap-normalized>
@@ -609,9 +630,8 @@
 	    <rdfs:label xml:lang="en">Founding Fathers of the United States</rdfs:label>
 	    <bflc:marcKey>150  $aFounding Fathers of the United States</bflc:marcKey>
 	  </madsrdf:Topic>
-	  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001612">
-	    <rdfs:label xml:lang="en">Drama</rdfs:label>
-	    <bflc:marcKey>185  $vDrama</bflc:marcKey>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
 	  </madsrdf:GenreForm>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>foundingfathersoftheunitedstatesdrama</bflc:aap-normalized>
@@ -634,25 +654,48 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1030814">
 	<bflc:marcKey>150  $aMusicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1739942">
 	<bflc:marcKey>150  $aFounding Fathers of the United States</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Founding Fathers of the United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1131990">
 	<bflc:marcKey>150  $aStatesmen</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Statesmen</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
-	<rdfs:label>United States</rdfs:label>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
 	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Place>
     </bf:subject>
     <bf:subject>
@@ -694,36 +737,72 @@
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423910">
 	<bflc:marcKey>155  $aAdaptations</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Adaptations</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1921596">
 	<bflc:marcKey>155  $aBiographical drama</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Biographical drama</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423879">
 	<bflc:marcKey>155  $aDrama</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1726680">
 	<bflc:marcKey>155  $aMusicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919889">
 	<bflc:marcKey>155  $aOriginal cast recordings</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Original cast recordings</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1726716">
 	<bflc:marcKey>155  $aRap (Music)</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Rap (Music)</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
@@ -1058,13 +1137,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T16:11:10.867354-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T04:56:07.381501-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1102,6 +1181,12 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aBTCTA$beng$erda$cBTCTA$dTEF$dAPL$dRB0$dZMS$dWUT$dOCLCF$dERE$dIEP$dIDU$dGK8$dMYG$dIXA$dTXA$dOCL$dVP@$dTJC$dOCLCA$dKYC$dDGU$dZCU$dEMU$dKSU$dSCO$dVOD$dWAU$dOCLCA$dNDS$dGK8$dOCL$dCNSAP$dTOH$dIAT$dCLO$dIQU$dTEFMT$dLPCLI$dCUT$dTXH$dOCL$dAW3$dOCLCQ$dDYJ$dOCLCO$dMKN$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
 	    <rdfs:label>LC Copy Cataloging</rdfs:label>
@@ -1194,8 +1279,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T16:11:10.867354-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T04:56:07.381501-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1213,7 +1298,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1238,6 +1323,12 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aBTCTA$beng$erda$cBTCTA$dTEF$dAPL$dRB0$dZMS$dWUT$dOCLCF$dERE$dIEP$dIDU$dGK8$dMYG$dIXA$dTXA$dOCL$dVP@$dTJC$dOCLCA$dKYC$dDGU$dZCU$dEMU$dKSU$dSCO$dVOD$dWAU$dOCLCA$dNDS$dGK8$dOCL$dCNSAP$dTOH$dIAT$dCLO$dIQU$dTEFMT$dLPCLI$dCUT$dTXH$dOCL$dAW3$dOCLCQ$dDYJ$dOCLCO$dMKN$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
 	    <rdfs:label>LC Copy Cataloging</rdfs:label>

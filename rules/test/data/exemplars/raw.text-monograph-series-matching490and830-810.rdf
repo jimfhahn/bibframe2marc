@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:04.180854-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:06.012737-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -71,17 +71,17 @@
 	    <rdfs:label>040  $aDLC$cDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a0$bibc$corigres$d3$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c origres $d 3 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aff70 2011-10-13$aff00 2011-10-28 to GS/SBCG</bflc:marcKey>
 	<lclocal:d955>=955     $a ff70 2011-10-13 $a ff00 2011-10-28 to GS/SBCG</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <bf:title>
@@ -89,6 +89,14 @@
 	<bf:mainTitle>Corruption</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
     <bf:relation xmlns:exsl="http://exslt.org/common">
       <bf:Relation>
 	<bf:relationship>
@@ -126,14 +134,14 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-16">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-18">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Korruption</rdfs:label>
 	<madsrdf:authoritativeLabel>Korruption</madsrdf:authoritativeLabel>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-17">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-19">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Korruption</rdfs:label>
 	<madsrdf:authoritativeLabel>Korruption</madsrdf:authoritativeLabel>
@@ -145,14 +153,14 @@
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-18">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-20">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Aufsatzsammlung</rdfs:label>
 	<madsrdf:authoritativeLabel>Aufsatzsammlung</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-19">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-21">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Aufsatzsammlung</rdfs:label>
 	<madsrdf:authoritativeLabel>Aufsatzsammlung</madsrdf:authoritativeLabel>
@@ -166,7 +174,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-20">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-22">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Jakubowicz, Linda</rdfs:label>
 	    <bflc:marcKey>7001 $aJakubowicz, Linda$eHrsg.$4edt</bflc:marcKey>
@@ -180,7 +188,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-21">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-23">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Fiedler, Franz</rdfs:label>
 	    <bflc:marcKey>7001 $aFiedler, Franz.$4aut</bflc:marcKey>
@@ -199,12 +207,12 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub810-22">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub810-24">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent810-22">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent810-24">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		    <rdfs:label>Sicherheitsakademie &lt;Wien&gt;</rdfs:label>
 		    <bflc:marcKey>8102 $aSicherheitsakademie &lt;Wien&gt;$tSIAK scientific series$v5.</bflc:marcKey>
@@ -234,7 +242,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub830-23">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub830-25">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -292,8 +300,19 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
 	<rdfs:label>unmediated</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
@@ -308,11 +327,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

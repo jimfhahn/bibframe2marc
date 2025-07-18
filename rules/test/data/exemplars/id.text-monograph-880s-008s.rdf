@@ -1,4 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  <!--[{"level": "WARNING", "message": "Work has Supplementary Content = 'bibliography', but it is missing in the @Instance@'s' '**Notes about the Instance**'"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/22014581">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -283,8 +284,8 @@
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Ye, Shuxian, 1954-</rdfs:label>
 	    <bflc:marcKey>1001 $aYe, Shuxian,$d1954-</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Hani">叶舒憲, 1954-</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Hani">4001 $a叶舒憲,$d1954-</bflc:marcKey>
+	    <rdfs:label xml:lang="zxx-Hani">葉舒憲, 1954-</rdfs:label>
+	    <bflc:marcKey xml:lang="zxx-Hani">4001 $a葉舒憲,$d1954-</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
@@ -337,8 +338,8 @@
 	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79091151-781">
 	    <rdfs:label>China</rdfs:label>
 	    <bflc:marcKey>181  $zChina</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-hani">中国</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-hani">4101 $a中国.</bflc:marcKey>
+	    <rdfs:label xml:lang="zxx-hani">Forbidden city (北京, China)</rdfs:label>
+	    <bflc:marcKey xml:lang="zxx-hani">451 4$aForbidden city (北京, China)</bflc:marcKey>
 	  </madsrdf:Geographic>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>jadecarvingprehistoricchina</bflc:aap-normalized>

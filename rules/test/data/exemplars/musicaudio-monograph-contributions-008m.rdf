@@ -3,12 +3,6 @@
     <bflc:aap>Rodgers, Richard, 1902-1979. Selections from the Theatre Guild musical play Oklahoma!</bflc:aap>
     <bflc:aap-normalized>rodgersrichard19021979selectionsfromthetheatreguildmusicalplayoklahoma!</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
-	<rdfs:label>performed music</rdfs:label>
-	<bf:code>prm</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -94,22 +88,22 @@
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Very best of Richard Rodgers</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Very best of Richard Rodgers</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Selections from the Theatre Guild musical play Oklahoma!</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Selections from the Theatre Guild musical play Oklahoma!</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Nelson Eddy in Oklahoma</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Nelson Eddy in Oklahoma</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Music from Rodgers and Hammerstein's Oklahoma! Music from Rodgers and Hammerstein's Carousel</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Music from Rodgers and Hammerstein's Oklahoma! Music from Rodgers and Hammerstein's Carousel</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
       </bf:Hub>
@@ -125,17 +119,55 @@
 	<bf:mainTitle>Oklahoma!</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+	<rdfs:label>performed music</rdfs:label>
+	<bf:code>prm</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
+		<rdfs:label>traced</rdfs:label>
+		<bf:code>tr</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Personality series</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+	<rdfs:label>[v. 1] Overture ; Oh, what a beautiful mornin' ; Surrey with the fringe on top ; Kansas City ; I cain't say no ; Many a new day ; People will say we're in love ; Pore Jud is daid ; Out of my dreams ; All er nothin' ; Oklahoma ; Finale -- v. 2. Lonely room ; It's a scandal ; The farmer and the cowman.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
 	<rdfs:label>Alfred Drake ; Joan Roberts, Howard da Silva, Cleste Holm, Lee Dixon (v. 1) ; Joseph Buloff, Betty Garde, Ralph Riggs (v. 2) ; with chorus and orchestra conducted by Jay Blackton.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:tableOfContents>
-      <bf:TableOfContents>
-	<rdfs:label>[v. 1] Overture ; Oh, what a beautiful mornin' ; Surrey with the fringe on top ; Kansas City ; I cain't say no ; Many a new day ; People will say we're in love ; Pore Jud is daid ; Out of my dreams ; All er nothin' ; Oklahoma ; Finale -- v. 2. Lonely room ; It's a scandal ; The farmer and the cowman.</rdfs:label>
-      </bf:TableOfContents>
-    </bf:tableOfContents>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
@@ -163,6 +195,7 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026097"/>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
@@ -333,39 +366,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
-	    <rdfs:label>series</rdfs:label>
-	    <bf:code>series</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Series>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
-		<rdfs:label>transcribed</rdfs:label>
-		<bf:code>t</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
-		<rdfs:label>traced</rdfs:label>
-		<bf:code>tr</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Personality series</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	  </bf:Series>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -386,13 +386,14 @@
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:mainTitle>Personality series (Decca Records (Firm))</bf:mainTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Personality series (Decca Records (Firm))</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
 	  </bf:Hub>
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/12280298">
 	<bf:title>
@@ -460,13 +461,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:31.654042-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:28.726789-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/4">
 	    <rdfs:label>core</rdfs:label>
@@ -492,9 +493,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d4$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 4 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk17 01-17-01; to MBRS 01-17-01; vl22 05-18-01 (v. 1); to MBRS 05-21-01</bflc:marcKey>
 	<lclocal:d955>=955     $a vk17 01-17-01; to MBRS 01-17-01; vl22 05-18-01 (v. 1); to MBRS 05-21-01</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-990, LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-990, LCAPM-893</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
@@ -517,18 +523,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
-	<rdfs:label>audio</rdfs:label>
-	<bf:code>s</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
-	<rdfs:label>audio disc</rdfs:label>
-	<bf:code>sd</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:soundCharacteristic>
       <bf:PlayingSpeed rdf:about="http://id.loc.gov/vocabulary/mplayspeed/d">
 	<rdfs:label>78 rpm</rdfs:label>
@@ -555,7 +549,7 @@
     </bf:baseMaterial>
     <bf:soundCharacteristic>
       <bf:GrooveCharacteristic rdf:about="http://id.loc.gov/vocabulary/mgroove/lateral">
-	<rdfs:label>Lateral or combined cutting</rdfs:label>
+	<rdfs:label>lateral or combined cutting</rdfs:label>
 	<bf:code>lateral</bf:code>
       </bf:GrooveCharacteristic>
     </bf:soundCharacteristic>
@@ -590,9 +584,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>A-359</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -600,9 +594,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>383</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -610,9 +604,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23282</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -620,9 +614,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23283</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -630,9 +624,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23284</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -640,9 +634,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23285</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -650,9 +644,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23286</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -660,9 +654,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23287</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -670,9 +664,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23389</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -680,9 +674,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>23390</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -690,9 +684,9 @@
       <bf:MatrixNumber>
 	<rdf:value>WW71454T4A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -700,9 +694,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71455T3A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -710,9 +704,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71459T3A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -720,9 +714,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71475T3A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -730,9 +724,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71457T2A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -740,9 +734,9 @@
       <bf:MatrixNumber>
 	<rdf:value>71478AA</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -750,9 +744,9 @@
       <bf:MatrixNumber>
 	<rdf:value>71477AA</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -760,9 +754,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71456T7A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -770,9 +764,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71479T2A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -780,9 +774,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71458T2A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -790,9 +784,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71474T3A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -800,9 +794,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W71476T5A</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -810,9 +804,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W72172A3</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -820,9 +814,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W72169A3</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -830,9 +824,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W72170A3</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -840,9 +834,9 @@
       <bf:MatrixNumber>
 	<rdf:value>W72171A3</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Decca</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MatrixNumber>
     </bf:identifiedBy>
@@ -855,15 +849,27 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>8 sound discs</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>analog, 78 rpm</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>analog, 78 rpm</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>10 in</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+	<rdfs:label>audio</rdfs:label>
+	<bf:code>s</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:code>sd</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Decca: A-359 (23282--23287), 383 (23389--23390).</rdfs:label>
@@ -1422,13 +1428,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:31.654042-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:28.726789-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/4">
 	    <rdfs:label>core</rdfs:label>
@@ -1454,9 +1460,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d4$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 4 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk17 01-17-01; to MBRS 01-17-01; vl22 05-18-01 (v. 1); to MBRS 05-21-01</bflc:marcKey>
 	<lclocal:d955>=955     $a vk17 01-17-01; to MBRS 01-17-01; vl22 05-18-01 (v. 1); to MBRS 05-21-01</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-990, LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-990, LCAPM-893</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>

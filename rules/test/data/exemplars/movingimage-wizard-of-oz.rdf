@@ -3,12 +3,6 @@
     <bflc:aap>The Wizard of Oz</bflc:aap>
     <bflc:aap-normalized>thewizardofoz</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
-	<rdfs:label>two-dimensional moving image</rdfs:label>
-	<bf:code>tdi</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -16,6 +10,7 @@
 	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
       </bf:Language>
     </bf:language>
+    <bf:originDate rdf:datatype="http://id.loc.gov/datatypes/edtf">1939</bf:originDate>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
 	<rdfs:label xml:lang="en">Motion pictures</rdfs:label>
@@ -186,6 +181,8 @@
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MovingImage"/>
 	<rdfs:label>Wizard of Oz (Motion picture : 1939)</rdfs:label>
 	<bflc:marcKey>1300 $aWizard of Oz (Motion picture : 1939)</bflc:marcKey>
+	<bflc:marcKey xml:lang="zxx-cyrl">1300 $aЧарiвник краiiни Оз (Motion picture : 1939)</bflc:marcKey>
+	<bflc:marcKey xml:lang="zxx-grek">1300 $aΜάγος του Οζ (Motion picture : 1939)</bflc:marcKey>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <bf:agent>
@@ -196,8 +193,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film director</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -212,8 +210,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film director</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -228,8 +227,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film director</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -244,8 +244,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film director</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -260,8 +261,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film director</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+		<rdfs:label>film director</rdfs:label>
+		<bf:code>fmd</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -276,8 +278,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film producer</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+		<rdfs:label>film producer</rdfs:label>
+		<bf:code>fmp</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -292,8 +295,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Film producer</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+		<rdfs:label>film producer</rdfs:label>
+		<bf:code>fmp</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -308,8 +312,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Screenwriter</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+		<rdfs:label>screenwriter</rdfs:label>
+		<bf:code>aus</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -324,8 +329,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Screenwriter</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+		<rdfs:label>screenwriter</rdfs:label>
+		<bf:code>aus</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -340,8 +346,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Screenwriter</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+		<rdfs:label>screenwriter</rdfs:label>
+		<bf:code>aus</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -356,8 +363,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Director of photography</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cng">
+		<rdfs:label>cinematographer</rdfs:label>
+		<bf:code>cng</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -372,8 +380,9 @@
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role>
-		<rdfs:label>Production company</rdfs:label>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+		<rdfs:label>production company</rdfs:label>
+		<bf:code>prn</bf:code>
 	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
@@ -385,182 +394,182 @@
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Čarobnjak iz Oza (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Čarobnjak iz Oza (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Carodej ze zeme Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Carodej ze zeme Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Čarodejník z krajiny Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Čarodejník z krajiny Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Čarovnik iz Oza (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Čarovnik iz Oza (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Charivnyk kraiiny Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Charivnyk kraiiny Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Czarnoksiężnik z Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Czarnoksiężnik z Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Feiticeiro de Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Feiticeiro de Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Galdrakarlinn í Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Galdrakarlinn í Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Hexer von Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Hexer von Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Ihmemaa Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Ihmemaa Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Jadugar-e shahr-e oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Jadugar-e shahr-e oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Kossem m'Eretz Ootz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Kossem m'Eretz Ootz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Màgic d'Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Màgic d'Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Magicien d'Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Magicien d'Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Mágico de Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Mágico de Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Mago de Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Mago de Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Mago di Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Mago di Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Magʹosnikŭt ot Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Magʹosnikŭt ot Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Óz, a csodák csodája (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Óz, a csodák csodája (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Ozo šalies burtininkas (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Ozo šalies burtininkas (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Ozu no mahôtsukai (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Ozu no mahôtsukai (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Phù Thu̓y Xứ Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Phù Thu̓y Xứ Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Saher-a oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Saher-a oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Troldmanden fra Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Troldmanden fra Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Trollkarlen från Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Trollkarlen från Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Trollmannen fra Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Trollmannen fra Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Zauberer von Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Zauberer von Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Zauberhafte Land (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Zauberhafte Land (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Vrajitorul din Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Vrajitorul din Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Volshebnik strany Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Volshebnik strany Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Võlur Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Võlur Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Магьосникът от Оз (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-cyrl">Магьосникът от Оз (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Волшебник страны Оз (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-cyrl">Волшебник страны Оз (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Чарiвник краiiни Оз (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-cyrl">Чарiвник краiiни Оз (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Μάγος του Οζ (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-grek">Μάγος του Οζ (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Magos tou Oz (Motion picture : 1939)</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Magos tou Oz (Motion picture : 1939)</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
       </bf:Hub>
@@ -571,6 +580,12 @@
 	<bflc:nonSortNum>4</bflc:nonSortNum>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
+	<rdfs:label>two-dimensional moving image</rdfs:label>
+	<bf:code>tdi</bf:code>
+      </bf:Content>
+    </bf:content>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/credits"/>
@@ -965,41 +980,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n85376712">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Loew's Incorporated</rdfs:label>
-	    <bflc:marcKey>1102 $aLoew's Incorporated</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80015727">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Metro-Goldwyn-Mayer</rdfs:label>
-	    <bflc:marcKey>1102 $aMetro-Goldwyn-Mayer</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -1071,23 +1051,57 @@
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:mainTitle>New Wizard of Oz</bf:mainTitle>
+		<bf:mainTitle xml:lang="zxx-latn">New Wizard of Oz</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:mainTitle>Wonderful Wizard of Oz</bf:mainTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Wonderful Wizard of Oz</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:mainTitle>Wonderful Wizard of Oz</bf:mainTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Wonderful Wizard of Oz</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
 	  </bf:Hub>
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n85376712">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Loew's Incorporated</rdfs:label>
+	    <bflc:marcKey>1102 $aLoew's Incorporated</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n80015727">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Metro-Goldwyn-Mayer</rdfs:label>
+	    <bflc:marcKey>1102 $aMetro-Goldwyn-Mayer</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -1114,7 +1128,7 @@
 		</bf:title>
 		<bf:note>
 		  <bf:Note>
-		    <rdfs:label>MAVIS</rdfs:label>
+		    <rdfs:label>AVCMS</rdfs:label>
 		  </bf:Note>
 		</bf:note>
 		<bf:identifiedBy>
@@ -1136,6 +1150,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11511184">
 	<bf:title>
@@ -1203,13 +1218,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1247,7 +1262,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -1276,12 +1294,6 @@
 	<bf:code>mix</bf:code>
       </bf:ColorContent>
     </bf:colorContent>
-    <bf:videoCharacteristic>
-      <bf:VideoFormat rdf:about="http://id.loc.gov/vocabulary/mvidformat/laser">
-	<rdfs:label>laser optical</rdfs:label>
-	<bf:code>laser</bf:code>
-      </bf:VideoFormat>
-    </bf:videoCharacteristic>
     <bf:soundContent>
       <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
 	<rdfs:label>sound</rdfs:label>
@@ -1337,9 +1349,8 @@
       <bf:CopyrightNumber>
 	<rdf:value>LP9039</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n79117971">
-	    <rdfs:label>Library of Congress. Copyright Office</rdfs:label>
-	    <bflc:marcKey>1102 $aLibrary of Congress.$bCopyright Office</bflc:marcKey>
+	  <bf:Organization>
+	    <rdfs:label>U.S. Copyright Office</rdfs:label>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:CopyrightNumber>
@@ -1394,50 +1405,26 @@
 	    <rdfs:label>two-dimensional moving image</rdfs:label>
 	  </bflc:AppliesTo>
 	</bflc:appliesTo>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>laser optical</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>sd., b&amp;w and col.</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>videodisc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>DVD</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>BluRay</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>Blu-ray disc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>moving image</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>video</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>two-dimensional moving image</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>12 in. viewing copy.</bf:dimensions>
+    <bf:videoCharacteristic>
+      <bf:VideoFormat rdf:about="http://id.loc.gov/vocabulary/mvidformat/laser">
+	<rdfs:label>laser optical</rdfs:label>
+	<bf:code>laser</bf:code>
+      </bf:VideoFormat>
+    </bf:videoCharacteristic>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Copyright: Loew's Inc.; 7Aug39; LP9039.</rdfs:label>
@@ -1785,7 +1772,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -1829,6 +1820,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -1929,13 +1926,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1973,7 +1970,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -2023,21 +2023,27 @@
     </bf:soundCharacteristic>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[videodisc]</bf:mainTitle>
+	<bf:mainTitle>[1 videodisc of 1 (CED) (ca. 102 min.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 videodisc of 1 (CED) (ca. 102 min.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>sd., b&amp;w and col.</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>12 in. viewing copy.</bf:dimensions>
+    <bf:videoCharacteristic>
+      <bf:VideoFormat rdf:about="http://id.loc.gov/vocabulary/mvidformat/laser">
+	<rdfs:label>laser optical</rdfs:label>
+	<bf:code>laser</bf:code>
+      </bf:VideoFormat>
+    </bf:videoCharacteristic>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -2355,7 +2361,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -2399,6 +2409,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -2461,8 +2477,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2480,7 +2496,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -2505,7 +2521,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -2517,18 +2536,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
-	<rdfs:label>film reel</rdfs:label>
-	<bf:code>mr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/blw">
 	<rdfs:label>black and white</rdfs:label>
@@ -2555,21 +2562,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[3 reels of 10 (r1-2, 10b) (ca. 2100 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[3 reels of 10 (r1-2, 10b) (ca. 2100 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>3 reels of 10 (r1-2, 10b) (ca. 2100 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>si., b&amp;w</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>si., b&amp;w</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. masterpos.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -2887,7 +2906,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -2931,6 +2954,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -2993,8 +3022,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3012,7 +3041,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -3037,7 +3066,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -3049,18 +3081,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
-	<rdfs:label>film reel</rdfs:label>
-	<bf:code>mr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
 	<rdfs:label>color</rdfs:label>
@@ -3087,21 +3107,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>8 reels of 10 (r3-10) (ca. 7040 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>si., yellow</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>si., yellow</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. masterpos.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -3419,7 +3451,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -3463,6 +3499,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -3525,8 +3567,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3544,7 +3586,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -3569,7 +3611,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -3581,12 +3626,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
 	<rdfs:label>color</rdfs:label>
@@ -3613,21 +3652,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>8 reels of 10 (r3-10) (ca. 7040 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>si., cyan</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>si., cyan</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. masterpos.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -3945,7 +3996,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -3989,6 +4044,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -4051,8 +4112,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4070,7 +4131,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -4095,7 +4156,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -4107,18 +4171,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
-	<rdfs:label>film reel</rdfs:label>
-	<bf:code>mr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
 	<rdfs:label>color</rdfs:label>
@@ -4145,21 +4197,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[8 reels of 10 (r3-10) (ca. 7040 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>8 reels of 10 (r3-10) (ca. 7040 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>si., magenta</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>si., magenta</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. masterpos.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -4477,7 +4541,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -4521,6 +4589,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -4583,8 +4657,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4602,7 +4676,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -4627,7 +4701,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -4639,18 +4716,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
-	<rdfs:label>film reel</rdfs:label>
-	<bf:code>mr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:soundContent>
       <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
 	<rdfs:label>sound</rdfs:label>
@@ -4677,21 +4742,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[10 reels of 10 on 6 (r1-10, 10b) (ca. 9140 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[10 reels of 10 on 6 (r1-10, 10b) (ca. 9140 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>10 reels of 10 on 6 (r1-10, 10b) (ca. 9140 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sd.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>sd.</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. dbl edge pos trk.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -5009,7 +5086,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -5053,6 +5134,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -5115,8 +5202,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5134,7 +5221,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -5159,7 +5246,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -5171,18 +5261,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
-	<rdfs:label>projected</rdfs:label>
-	<bf:code>g</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
-	<rdfs:label>film reel</rdfs:label>
-	<bf:code>mr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mix">
 	<rdfs:label>mixed color</rdfs:label>
@@ -5215,21 +5293,33 @@
     </bf:baseMaterial>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[10 reels of 10 on 5 (ca. 9140 ft.) :]</bf:mainTitle>
+	<bf:mainTitle>[10 reels of 10 on 5 (ca. 9140 ft.)]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>10 reels of 10 on 5 (ca. 9140 ft.)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sd., col. &amp; b&amp;w</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>sd., col. &amp; b&amp;w</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 mm. theatrical projection print.</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/mr">
+	<rdfs:label>film reel</rdfs:label>
+	<bf:code>mr</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/g">
+	<rdfs:label>projected</rdfs:label>
+	<bf:code>g</bf:code>
+      </bf:Media>
+    </bf:media>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11511184">
@@ -5547,7 +5637,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>LP9039</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
@@ -5591,6 +5685,12 @@
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>sd., b&amp;w and col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -5653,8 +5753,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5672,7 +5772,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -5697,7 +5797,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -5868,13 +5971,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:53.115009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -5912,7 +6015,10 @@
 	    <rdfs:label>040  $aDLC$cDLC$eamim$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f19$gy-movingim</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Item>

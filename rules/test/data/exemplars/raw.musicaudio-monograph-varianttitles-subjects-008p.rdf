@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:44.143919-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:43.25406-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,8 +65,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr36 2019-06-07 z-client$iqr36 2019-06-07$tqr36 Copy 2 2019-06-11</bflc:marcKey>
 	<lclocal:d955>=955     $a qr36 2019-06-07 z-client $i qr36 2019-06-07 $t qr36 Copy 2 2019-06-11</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -133,19 +136,27 @@
 	</bf:source>
       </bf:Content>
     </bf:content>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+	<rdfs:label>From a jack to a king / Ned Miller -- Sea of heartbreak / Don Gibson -- Please help me, I'm falling (in love with you) / Hank Locklin -- Almost persuaded / David Houston -- Girl on the billboard / Del Reeves -- Green, green grass of home / Porter Wagoner -- It's such a pretty world today / Wynn Stewart -- Don't underestimate my love for you / Lee Greenwood -- For the good times / Ray Price -- It's only make believe / Conway Twitty -- Hello walls / Faron Young -- Abilene / George Hamilton IV -- In the misty moonlight / Jerry Wallace -- My special angel / Bobby Helms -- To a sleeping beauty / Jimmy Dean -- Indian Lake / Freddy Weller -- Country bumpkin / Cal Smith -- Before the next teardrop falls / Freddy Fender -- There goes my everything / Jack Greene -- Husbands and wives / Roger Miller.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
 	<rdfs:label>Various performers.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:tableOfContents>
-      <bf:TableOfContents>
-	<rdfs:label>From a jack to a king / Ned Miller -- Sea of heartbreak / Don Gibson -- Please help me, I'm falling (in love with you) / Hank Locklin -- Almost persuaded / David Houston -- Girl on the billboard / Del Reeves -- Green, green grass of home / Porter Wagoner -- It's such a pretty world today / Wynn Stewart -- Don't underestimate my love for you / Lee Greenwood -- For the good times / Ray Price -- It's only make believe / Conway Twitty -- Hello walls / Faron Young -- Abilene / George Hamilton IV -- In the misty moonlight / Jerry Wallace -- My special angel / Bobby Helms -- To a sleeping beauty / Jimmy Dean -- Indian Lake / Freddy Weller -- Country bumpkin / Cal Smith -- Before the next teardrop falls / Freddy Fender -- There goes my everything / Jack Greene -- Husbands and wives / Roger Miller.</rdfs:label>
-      </bf:TableOfContents>
-    </bf:tableOfContents>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-28">
+      <bf:Temporal rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Temporal648-28">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Temporal"/>
+	<rdfs:label>1981-2000</rdfs:label>
+	<madsrdf:authoritativeLabel>1981-2000</madsrdf:authoritativeLabel>
+	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+      </bf:Temporal>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-29">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Country music--1991-2000</rdfs:label>
 	<madsrdf:authoritativeLabel>Country music--1991-2000</madsrdf:authoritativeLabel>
@@ -162,7 +173,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-29">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Country music--1981-1990</rdfs:label>
 	<madsrdf:authoritativeLabel>Country music--1981-1990</madsrdf:authoritativeLabel>
@@ -185,14 +196,6 @@
 	<madsrdf:authoritativeLabel>Country music</madsrdf:authoritativeLabel>
 	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
       </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Temporal rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Temporal648-31">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Temporal"/>
-	<rdfs:label>1981-2000</rdfs:label>
-	<madsrdf:authoritativeLabel>1981-2000</madsrdf:authoritativeLabel>
-	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-      </bf:Temporal>
     </bf:subject>
     <bf:hasInstance rdf:resource="http://id.loc.gov/resources/REPLACE/21009588#Instance"/>
   </bf:Work>
@@ -265,9 +268,9 @@
       <bf:AudioIssueNumber>
 	<rdf:value>3731-3</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Dominion</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
@@ -286,14 +289,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 audio disc</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>digital, stereo</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>digital, stereo</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">

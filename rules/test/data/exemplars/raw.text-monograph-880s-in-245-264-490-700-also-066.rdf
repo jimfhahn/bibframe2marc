@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:00.514604-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:01.934426-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,9 +65,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corigres$d3$encip$f20$gy-nonroman</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origres $d 3 $e ncip $f 20 $g y-nonroman</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $ave16 2023-05-12$bfc69 2023-06-01 telework to ECE$ifc04 2023-11-07 to PresSrvs</bflc:marcKey>
 	<lclocal:d955>=955     $a ve16 2023-05-12 $b fc69 2023-06-01 telework to ECE $i fc04 2023-11-07 to PresSrvs</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
 	</bf:descriptionLanguage>
@@ -102,11 +107,6 @@
 	<rdfs:label>portraits</rdfs:label>
       </bf:Illustration>
     </bf:illustrativeContent>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026049">
-	<rdfs:label>Biographies</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-un"/>
     <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
     <bf:classification>
@@ -182,7 +182,7 @@
       </bf:Relation>
     </bf:relation>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-29">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Women--Ukraine--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>Women--Ukraine--Biography</madsrdf:authoritativeLabel>
@@ -202,7 +202,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Women, Ukrainian--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>Women, Ukrainian--Biography</madsrdf:authoritativeLabel>
@@ -219,7 +219,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-31">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Topic650-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Ukrainian American women--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>Ukrainian American women--Biography</madsrdf:authoritativeLabel>
@@ -235,10 +235,22 @@
 	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
       </bf:Topic>
     </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="https://id.loc.gov/authorities/genreForms/gf2014026049">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Biographies</rdfs:label>
+	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft">
+	    <bf:code>lcgft</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Agent700-32">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/23126927#Agent700-34">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Kipiani, Vakhtanh</rdfs:label>
 	    <rdfs:label xml:lang="uk-cyrl">Кіпіані, Вахтанг</rdfs:label>
@@ -307,14 +319,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>302 pages</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations, portraits</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations, portraits</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>21 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">

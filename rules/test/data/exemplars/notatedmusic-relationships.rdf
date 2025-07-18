@@ -150,9 +150,10 @@
       </bf:Note>
     </bf:note>
     <bf:notation>
-      <bf:Notation>
-	<rdfs:label>Staff notation</rdfs:label>
-      </bf:Notation>
+      <bf:MusicNotation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+	<rdfs:label>staff notation</rdfs:label>
+	<bf:code>staff</bf:code>
+      </bf:MusicNotation>
     </bf:notation>
     <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85094962">
@@ -206,24 +207,48 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1046236">
 	<bflc:marcKey>150  $aOperas$xVocal scores with piano</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Operas--Vocal scores with piano</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1920007">
 	<bflc:marcKey>155  $aArt music</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Art music</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1726688">
 	<bflc:marcKey>155  $aOperas</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Operas</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1692914">
 	<bflc:marcKey>155  $aVocal scores</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Vocal scores</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
@@ -304,7 +329,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -402,10 +426,9 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/e3191810-ffa2-1037-1e92-cdc4eecef223">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
-	    <rdfs:label>Handel, George Frideric, 1685-1759. Sosarme. Vocal score</rdfs:label>
-	    <bflc:marcKey>1001 $aHandel, George Frideric,$d1685-1759.$tSosarme.$sVocal score.</bflc:marcKey>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/084bf4f7-f57f-29c3-f17b-4f1e8a2e87dd">
+	    <rdfs:label>Handel, George Frideric, 1685-1759. Sosarme</rdfs:label>
+	    <bflc:marcKey>1001 $aHandel, George Frideric,$d1685-1759.$tSosarme</bflc:marcKey>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -426,8 +449,28 @@
 	    </bf:contribution>
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>Sosarme. Vocal score.</bf:mainTitle>
+		<bf:mainTitle>Sosarme</bf:mainTitle>
 	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Sosarme, re di Media</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Sosarmes, King of Media</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Fernando</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Fernando, re di Castiglia</bf:mainTitle>
+	      </bf:VariantTitle>
 	    </bf:title>
 	  </bf:Hub>
 	</bf:associatedResource>
@@ -442,10 +485,9 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/a24ddc26-7010-1626-32f2-42c300a8015c">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
-	    <rdfs:label>Handel, George Frideric, 1685-1759. Sosarme. Vocal score. German</rdfs:label>
-	    <bflc:marcKey>1001 $aHandel, George Frideric,$d1685-1759.$tSosarme.$sVocal score.$lGerman.</bflc:marcKey>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/3f49236e-4cc8-1c53-9c61-03654d9d830c">
+	    <rdfs:label>Handel, George Frideric, 1685-1759. Sosarme. German</rdfs:label>
+	    <bflc:marcKey>1001 $aHandel, George Frideric,$d1685-1759.$tSosarme.$lGerman.</bflc:marcKey>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -466,7 +508,7 @@
 	    </bf:contribution>
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>Sosarme. Vocal score. German.</bf:mainTitle>
+		<bf:mainTitle>Sosarme. German.</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
@@ -497,6 +539,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/21851594">
 	<bf:title>
@@ -505,6 +548,7 @@
 	    <bf:subtitle>opera in tre atti : HWV 30 ; Fernando, re di Castiglia : (fragment)</bf:subtitle>
 	  </bf:Title>
 	</bf:title>
+	<bf:publicationStatement>Kassel: Bärenreiter, [2020]</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
     <bf:adminMetadata>
@@ -559,13 +603,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:07.415752-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:09.135263-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -591,9 +635,13 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk39 2022-04-19 z-client$ivk39 2022-04-19$evk39 2022-05-03 c.1 to BCCD</bflc:marcKey>
 	<lclocal:d955>=955     $a vk39 2022-04-19 z-client $i vk39 2022-04-19 $e vk39 2022-05-03 c.1 to BCCD</lclocal:d955>
+	<bflc:marcKey>955  $bfd11 2020-12-22 to MBAS</bflc:marcKey>
 	<lclocal:d955>=955     $b fd11 2020-12-22 to MBAS</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -669,9 +717,9 @@
       <bf:MusicPlate>
 	<rdf:value>BA 10713-90</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Bärenreiter</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPlate>
     </bf:identifiedBy>
@@ -679,9 +727,9 @@
       <bf:MusicPlate>
 	<rdf:value>10713-90</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Bärenreiter</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPlate>
     </bf:identifiedBy>
@@ -766,52 +814,56 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/21851594">
-	<rdfs:label>Handel, George Frideric, 1685-1759 Sosarme, re di Media</rdfs:label>
-	<bf:contribution>
-	  <bflc:PrimaryContribution>
-	    <bf:agent>
-	      <bf:Agent>
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Handel, George Frideric, 1685-1759</rdfs:label>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
-		<rdfs:label>composer</rdfs:label>
-		<bf:code>cmp</bf:code>
-	      </madsrdf:Authority>
-	    </bf:role>
-	  </bflc:PrimaryContribution>
-	</bf:contribution>
+	<rdfs:label>Handel, George Frideric, 1685-1759. Sosarme, re di Media</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	    <bf:agent>
-	      <bf:Agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79129204">
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Brenner, Peter, 1930-</rdfs:label>
+		<rdfs:label>Handel, George Frideric, 1685-1759</rdfs:label>
+		<bflc:marcKey>1001 $aHandel, George Frideric,$d1685-1759</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/trl">
-		<rdfs:label>translator</rdfs:label>
-		<bf:code>trl</bf:code>
-	      </madsrdf:Authority>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+		<rdfs:label>composer</rdfs:label>
+		<bf:code>cmp</bf:code>
+	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <bf:agent>
-	      <bf:Agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2014045942">
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Köhs, Andreas</rdfs:label>
+		<rdfs:label>Brenner, Peter, 1930-</rdfs:label>
+		<bflc:marcKey>1001 $aBrenner, Peter,$d1930-</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/arr">
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/trl">
+		<rdfs:label>translator</rdfs:label>
+		<bf:code>trl</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no99061886">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Köhs, Andreas</rdfs:label>
+		<bflc:marcKey>1001 $aKöhs, Andreas</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/arr">
 		<rdfs:label>arranger</rdfs:label>
 		<bf:code>arr</bf:code>
-	      </madsrdf:Authority>
+	      </bf:Role>
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
@@ -820,21 +872,8 @@
 	    <bf:mainTitle>Sosarme, re di Media</bf:mainTitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:language>
-	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ita"/>
-	</bf:language>
-	<bf:language>
-	  <bf:Language>
-	    <bf:part>accompanying material</bf:part>
-	    <rdf:value rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-	  </bf:Language>
-	</bf:language>
-	<bf:language>
-	  <bf:Language>
-	    <bf:part>original accompanying materials</bf:part>
-	    <rdf:value rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
-	  </bf:Language>
-	</bf:language>
+	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/>
+	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
 	<bf:hasInstance>
 	  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/21851594">
 	    <bf:title>
@@ -881,34 +920,22 @@
 	      </bf:MusicPlate>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
-	      <bf:Local>
+	      <bf:OclcNumber>
 		<rdf:value>on1197943499</rdf:value>
-		<bf:assigner>
-		  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/ocolc"/>
-		</bf:assigner>
-	      </bf:Local>
+	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
-	      <bf:Local>
+	      <bf:OclcNumber>
 		<rdf:value>1197943499</rdf:value>
-		<bf:assigner>
-		  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/ocolc"/>
-		</bf:assigner>
-	      </bf:Local>
+	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
-	      <bf:Local>
+	      <bf:OclcNumber>
 		<rdf:value>1223057722</rdf:value>
-		<bf:status>
-		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
-		    <rdfs:label>invalid</rdfs:label>
-		  </bf:Status>
-		</bf:status>
-		<bf:assigner>
-		  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/ocolc"/>
-		</bf:assigner>
-	      </bf:Local>
+		<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+	      </bf:OclcNumber>
 	    </bf:identifiedBy>
+	    <bf:publicationStatement>Kassel: Bärenreiter, [2020]</bf:publicationStatement>
 	    <bf:editionStatement>Londoner Fassung = London version : 1732</bf:editionStatement>
 	    <bf:editionStatement>Klavierauszug nach dem Urtext der Hallischen Händel-Ausgabe / von Andreas Köhs = Piano reduction based on the Urtext of the Halle Handel Edition / by Andreas Köhs</bf:editionStatement>
 	    <bf:extent>
@@ -972,13 +999,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:07.415752-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:09.135263-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1004,9 +1031,13 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk39 2022-04-19 z-client$ivk39 2022-04-19$evk39 2022-05-03 c.1 to BCCD</bflc:marcKey>
 	<lclocal:d955>=955     $a vk39 2022-04-19 z-client $i vk39 2022-04-19 $e vk39 2022-05-03 c.1 to BCCD</lclocal:d955>
+	<bflc:marcKey>955  $bfd11 2020-12-22 to MBAS</bflc:marcKey>
 	<lclocal:d955>=955     $b fd11 2020-12-22 to MBAS</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">

@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:18.19742-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:14.546623-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,8 +65,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d1$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 1 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default (ex.)</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default (ex.)</lclocal:d925>
+	<bflc:marcKey>955  $brf21 2019-03-21 z-processor$irf21 2019-03-21 HAND CARRY to SL$erf07 2019-03-21 to Hand Carry$ahh12 2019-05-06 2 copies On Order for Loan$trm11 2019-05-06 copy 2 to CALM$ahh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</bflc:marcKey>
 	<lclocal:d955>=955     $b rf21 2019-03-21 z-processor $i rf21 2019-03-21 HAND CARRY to SL $e rf07 2019-03-21 to Hand Carry $a hh12 2019-05-06 2 copies On Order for Loan $t rm11 2019-05-06 copy 2 to CALM $a hh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -263,7 +266,31 @@
       </bf:Agent>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-40">
+      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Agent600-40">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
+	<bflc:marcKey>60011$aObama, Michelle,$d1964-</bflc:marcKey>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/childrensSubjects"/>
+      </bf:Agent>
+    </bf:subject>
+    <bf:subject>
+      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Agent600-41">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
+	<bflc:marcKey>60014$aObama, Michelle,$d1964-</bflc:marcKey>
+      </bf:Agent>
+    </bf:subject>
+    <bf:subject>
+      <bf:Agent rdf:about="http://id.worldcat.org/fast/01915904">
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
+	<bflc:marcKey>60017$aObama, Michelle,$d1964-$2fast$0(OCoLC)fst01915904</bflc:marcKey>
+	<madsrdf:isIdentifiedByAuthority rdf:resource="http://id.worldcat.org/fast/01915904"/>
+	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+      </bf:Agent>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-43">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Presidents' spouses--United States--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>Presidents' spouses--United States--Biography</madsrdf:authoritativeLabel>
@@ -283,7 +310,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-41">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-44">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>African American women lawyers--Illinois--Chicago--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>African American women lawyers--Illinois--Chicago--Biography</madsrdf:authoritativeLabel>
@@ -306,7 +333,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-42">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-45">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Legislators' spouses--United States--Biography</rdfs:label>
 	<madsrdf:authoritativeLabel>Legislators' spouses--United States--Biography</madsrdf:authoritativeLabel>
@@ -324,30 +351,6 @@
 	</madsrdf:componentList>
 	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
       </bf:Topic>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-43">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>Nonfiction</rdfs:label>
-	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
-	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:subject>
-      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Agent600-44">
-	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
-	<bflc:marcKey>60011$aObama, Michelle,$d1964-</bflc:marcKey>
-	<bf:source rdf:resource="http://id.loc.gov/authorities/childrensSubjects"/>
-      </bf:Agent>
-    </bf:subject>
-    <bf:subject>
-      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Agent600-45">
-	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
-	<bflc:marcKey>60014$aObama, Michelle,$d1964-</bflc:marcKey>
-      </bf:Agent>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-46">
@@ -428,57 +431,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-52">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Illinois--Chicago</rdfs:label>
-	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Illinois</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Chicago</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	</madsrdf:componentList>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-53">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
-	<rdfs:label>United States</rdfs:label>
-	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
-      </bf:Place>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-54">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>Autobiographies</rdfs:label>
-	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-55">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>Nonfiction</rdfs:label>
-	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-56">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>Biographies</rdfs:label>
-	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-57">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>Biography</rdfs:label>
-	<madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-58">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-52">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>BIOGRAPHY &amp; AUTOBIOGRAPHY--Cultural, Ethnic &amp; Regional--African American &amp; Black</rdfs:label>
 	<madsrdf:authoritativeLabel>BIOGRAPHY &amp; AUTOBIOGRAPHY--Cultural, Ethnic &amp; Regional--African American &amp; Black</madsrdf:authoritativeLabel>
@@ -501,7 +454,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-59">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-53">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>BIOGRAPHY &amp; AUTOBIOGRAPHY--Personal Memoirs</rdfs:label>
 	<madsrdf:authoritativeLabel>BIOGRAPHY &amp; AUTOBIOGRAPHY--Personal Memoirs</madsrdf:authoritativeLabel>
@@ -521,7 +474,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-60">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-54">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>BIOGRAPHY &amp; AUTOBIOGRAPHY--Women</rdfs:label>
 	<madsrdf:authoritativeLabel>BIOGRAPHY &amp; AUTOBIOGRAPHY--Women</madsrdf:authoritativeLabel>
@@ -539,15 +492,6 @@
 	  </bf:Source>
 	</bf:source>
       </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Agent rdf:about="http://id.worldcat.org/fast/01915904">
-	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
-	<bflc:marcKey>60017$aObama, Michelle,$d1964-$2fast$0(OCoLC)fst01915904</bflc:marcKey>
-	<madsrdf:isIdentifiedByAuthority rdf:resource="http://id.worldcat.org/fast/01915904"/>
-	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-      </bf:Agent>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/00799505">
@@ -574,7 +518,52 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.worldcat.org/fast/01204048">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-58">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Presidents' spouses--United States--Biography</rdfs:label>
+	<madsrdf:authoritativeLabel>Presidents' spouses--United States--Biography</madsrdf:authoritativeLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Presidents' spouses</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/sears">
+	    <bf:code>sears</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-59">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Illinois--Chicago</rdfs:label>
+	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>Illinois</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>Chicago</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	</madsrdf:componentList>
+      </bf:Place>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-60">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
+	<rdfs:label>United States</rdfs:label>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+      </bf:Place>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-61">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Illinois--Chicago</rdfs:label>
 	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
@@ -587,10 +576,11 @@
 	  </madsrdf:Geographic>
 	</madsrdf:componentList>
 	<bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
-      </bf:Topic>
+	<madsrdf:isIdentifiedByAuthority rdf:resource="http://id.worldcat.org/fast/01204048"/>
+      </bf:Place>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-66">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Place651-62">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>United States</rdfs:label>
 	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
@@ -598,6 +588,43 @@
 	<madsrdf:isIdentifiedByAuthority rdf:resource="http://id.worldcat.org/fast/01204155"/>
       </bf:Place>
     </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-63">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Nonfiction</rdfs:label>
+	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-64">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Autobiographies</rdfs:label>
+	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-65">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Nonfiction</rdfs:label>
+	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-66">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Biographies</rdfs:label>
+	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-67">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>Biography</rdfs:label>
+	<madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/01919894">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
@@ -623,7 +650,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-70">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/20898769#GenreForm655-71">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Autobiographies</rdfs:label>
 	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
@@ -634,29 +661,6 @@
 	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Topic650-71">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Presidents' spouses--United States--Biography</rdfs:label>
-	<madsrdf:authoritativeLabel>Presidents' spouses--United States--Biography</madsrdf:authoritativeLabel>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <madsrdf:authoritativeLabel>Presidents' spouses</madsrdf:authoritativeLabel>
-	  </madsrdf:Topic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/sears">
-	    <bf:code>sears</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
-    </bf:subject>
     <bf:hasInstance rdf:resource="http://id.loc.gov/resources/REPLACE/20898769#Instance"/>
   </bf:Work>
   <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/20898769#Instance">
@@ -725,14 +729,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>xiii, 426 pages, 16 unnumbered pages of plates</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations (chiefly color), portraits</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations (chiefly color), portraits</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">

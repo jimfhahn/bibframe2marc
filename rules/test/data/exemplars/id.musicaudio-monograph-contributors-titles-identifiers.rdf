@@ -1,5 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "LCC missing item portion."}]-->
+  <!--[{"level": "WARNING", "message": "LCC missing item portion. Check **Classification numbers** for 'Additional call number information'"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/18344194">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -115,18 +115,17 @@
     <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Originally for violin</rdfs:label>
-      </bf:Note>
-    </bf:note>
-    <bf:credits>Scott Slapin, viola.</bf:credits>
-    <bf:note>
-      <bf:Note>
-	<rdfs:label>Compact disc</rdfs:label>
+	<rdfs:label>Originally for violin.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Program notes by John Peskey and Scott Slapin inserted in container</rdfs:label>
+	<rdfs:label>Compact disc.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Program notes by John Peskey and Scott Slapin inserted in container.</rdfs:label>
       </bf:Note>
     </bf:note>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
@@ -141,12 +140,8 @@
 	</bf:status>
 	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-22</bf:date>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/fbo">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Boca Raton Public Library</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">FBo</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">fbo</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-fbo</bf:code>
+	  <bf:Agent>
+	    <bf:code>FBO</bf:code>
 	  </bf:Agent>
 	</bf:agent>
       </bf:AdminMetadata>
@@ -187,13 +182,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T15:36:21.477113-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T03:50:05.437334-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -222,6 +217,12 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
 	<lclocal:d955>=955     $a qr27 2014-10-22 z-client $i qr27 2014-10-22</lclocal:d955>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aFBO$cFBO$dOCLCA$dOCLCF$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
 	    <rdfs:label>LC Copy Cataloging</rdfs:label>
@@ -232,7 +233,7 @@
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/18344194">
-    <bflc:aap>Paganini, Nicolò, 1782-1840 Paganini's 24 caprices</bflc:aap>
+    <bflc:aap>Paganini, Nicolò, 1782-1840. Paganini's 24 caprices</bflc:aap>
     <bflc:aap-normalized>paganininicolò17821840paganini's24caprices</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
     <bf:content>
@@ -347,22 +348,22 @@
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Caprices, flute, M.S. 25</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Caprices, flute, M.S. 25</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Caprices, guitar, M.S. 25</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Caprices, guitar, M.S. 25</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Caprices, viola, M.S. 25</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Caprices, viola, M.S. 25</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Caprices, violin, M.S. 25; arr</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Caprices, violin, M.S. 25; arr</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
       </bf:Hub>
@@ -387,6 +388,12 @@
 	<bf:mainTitle>24 caprices</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
+	<rdfs:label>Scott Slapin, viola.</rdfs:label>
+      </bf:Note>
+    </bf:note>
     <bf:capture>
       <bf:Capture>
 	<rdfs:label>Recorded on the evenings of June 10, 12 and 13, 2008, at the Cellar Dweller Productions South in North Plainfield, New Jersey.</rdfs:label>
@@ -439,12 +446,8 @@
 	</bf:status>
 	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2014-10-22</bf:date>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/fbo">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Boca Raton Public Library</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">FBo</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">fbo</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-fbo</bf:code>
+	  <bf:Agent>
+	    <bf:code>FBO</bf:code>
 	  </bf:Agent>
 	</bf:agent>
       </bf:AdminMetadata>
@@ -485,13 +488,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T15:36:21.477113-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T03:50:05.437334-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -520,6 +523,12 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
 	<lclocal:d955>=955     $a qr27 2014-10-22 z-client $i qr27 2014-10-22</lclocal:d955>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aFBO$cFBO$dOCLCA$dOCLCF$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
 	    <rdfs:label>LC Copy Cataloging</rdfs:label>

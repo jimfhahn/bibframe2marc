@@ -210,6 +210,30 @@
       </bf:Person>
     </bf:subject>
     <bf:subject>
+      <bf:Person rdf:about="http://id.loc.gov/rwo/agents/n2008054754">
+	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
+	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
+      </bf:Person>
+    </bf:subject>
+    <bf:subject>
+      <bf:Person rdf:about="http://id.loc.gov/rwo/agents/n2008054754">
+	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
+	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
+      </bf:Person>
+    </bf:subject>
+    <bf:subject>
+      <bf:Person rdf:about="http://id.worldcat.org/fast/1915904">
+	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Obama, Michelle, 1964-</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Person>
+    </bf:subject>
+    <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008109323">
 	<rdfs:label xml:lang="en">Presidents' spouses--United States--Biography</rdfs:label>
 	<bflc:marcKey>150  $aPresidents' spouses$zUnited States$vBiography</bflc:marcKey>
@@ -313,35 +337,6 @@
 	</madsrdf:componentList>
       </bf:Topic>
     </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </bf:Source>
-	</bf:source>
-	<rdfs:label>Nonfiction</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:subject>
-      <bf:Person rdf:about="http://id.loc.gov/rwo/agents/n2008054754">
-	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
-	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
-      </bf:Person>
-    </bf:subject>
-    <bf:subject>
-      <bf:Person rdf:about="http://id.loc.gov/rwo/agents/n2008054754">
-	<rdfs:label>Obama, Michelle, 1964-</rdfs:label>
-	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
-      </bf:Person>
-    </bf:subject>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
@@ -432,59 +427,6 @@
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Illinois--Chicago</rdfs:label>
-	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79053746">
-	    <rdfs:label>Illinois</rdfs:label>
-	    <bflc:marcKey>151  $aIllinois</bflc:marcKey>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us-il</bf:code>
-	  </madsrdf:Geographic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Chicago</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>illinoischicago</bflc:aap-normalized>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
-	<rdfs:label>United States</rdfs:label>
-	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
-      </bf:Place>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
-	<rdfs:label>Autobiographies</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
-	<rdfs:label>Nonfiction</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
-	<rdfs:label>Biographies</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
-	<rdfs:label>Biography</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>BIOGRAPHY &amp; AUTOBIOGRAPHY--Cultural, Ethnic &amp; Regional--African American &amp; Black</rdfs:label>
 	<madsrdf:authoritativeLabel>BIOGRAPHY &amp; AUTOBIOGRAPHY--Cultural, Ethnic &amp; Regional--African American &amp; Black</madsrdf:authoritativeLabel>
 	<madsrdf:componentList rdf:parseType="Collection">
@@ -570,65 +512,41 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Person rdf:about="http://id.worldcat.org/fast/1915904">
-	<bflc:marcKey>1001 $aObama, Michelle,$d1964-</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Obama, Michelle, 1964-</madsrdf:authoritativeLabel>
-      </bf:Person>
-    </bf:subject>
-    <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/799505">
 	<bflc:marcKey>150  $aAfrican American women lawyers</bflc:marcKey>
 	<madsrdf:authoritativeLabel>African American women lawyers</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/995904">
 	<bflc:marcKey>150  $aLegislators' spouses</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Legislators' spouses</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1075830">
 	<bflc:marcKey>150  $aPresidents' spouses</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Presidents' spouses</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.worldcat.org/fast/1204048">
-	<bflc:marcKey>151  $aIllinois$zChicago</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
-	<rdfs:label>United States</rdfs:label>
-	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
-      </bf:Place>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919894">
-	<bflc:marcKey>155  $aAutobiographies</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919896">
-	<bflc:marcKey>155  $aBiographies</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423686">
-	<bflc:marcKey>155  $aBiography</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026047">
-	<rdfs:label xml:lang="en">Autobiographies</rdfs:label>
-	<bflc:marcKey>155  $aAutobiographies</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
@@ -661,6 +579,140 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
+    <bf:subject>
+      <bf:Place>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Illinois--Chicago</rdfs:label>
+	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>Illinois</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>Chicago</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>illinoischicago</bflc:aap-normalized>
+      </bf:Place>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
+	<rdfs:label>United States</rdfs:label>
+	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
+      </bf:Place>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204048">
+	<bflc:marcKey>151  $aIllinois$zChicago</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Illinois--Chicago</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Place>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
+	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Place>
+    </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme>
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+	<rdfs:label>Nonfiction</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
+	<rdfs:label>Autobiographies</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Nonfiction</madsrdf:authoritativeLabel>
+	<rdfs:label>Nonfiction</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
+	<rdfs:label>Biographies</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+	<rdfs:label>Biography</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919894">
+	<bflc:marcKey>155  $aAutobiographies</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Autobiographies</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919896">
+	<bflc:marcKey>155  $aBiographies</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Biographies</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423686">
+	<bflc:marcKey>155  $aBiography</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026047">
+	<rdfs:label xml:lang="en">Autobiographies</rdfs:label>
+	<bflc:marcKey>155  $aAutobiographies</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/20898769">
@@ -724,13 +776,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:18.638697-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:15.161379-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -756,8 +808,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d1$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 1 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default (ex.)</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default (ex.)</lclocal:d925>
+	<bflc:marcKey>955  $brf21 2019-03-21 z-processor$irf21 2019-03-21 HAND CARRY to SL$erf07 2019-03-21 to Hand Carry$ahh12 2019-05-06 2 copies On Order for Loan$trm11 2019-05-06 copy 2 to CALM$ahh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</bflc:marcKey>
 	<lclocal:d955>=955     $b rf21 2019-03-21 z-processor $i rf21 2019-03-21 HAND CARRY to SL $e rf07 2019-03-21 to Hand Carry $a hh12 2019-05-06 2 copies On Order for Loan $t rm11 2019-05-06 copy 2 to CALM $a hh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -863,14 +918,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>xiii, 426 pages, 16 unnumbered pages of plates</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations (chiefly color), portraits</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations (chiefly color), portraits</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -1020,13 +1075,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:18.638697-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:15.161379-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1052,8 +1107,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d1$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 1 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default (ex.)</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default (ex.)</lclocal:d925>
+	<bflc:marcKey>955  $brf21 2019-03-21 z-processor$irf21 2019-03-21 HAND CARRY to SL$erf07 2019-03-21 to Hand Carry$ahh12 2019-05-06 2 copies On Order for Loan$trm11 2019-05-06 copy 2 to CALM$ahh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</bflc:marcKey>
 	<lclocal:d955>=955     $b rf21 2019-03-21 z-processor $i rf21 2019-03-21 HAND CARRY to SL $e rf07 2019-03-21 to Hand Carry $a hh12 2019-05-06 2 copies On Order for Loan $t rm11 2019-05-06 copy 2 to CALM $a hh12 2019-07-25 2 copies On Order for Loan Picked up by Signe Carey 6/14/2019</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">

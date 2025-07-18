@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:59.081344-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:00.31783-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -84,7 +84,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cpremver$d2$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c premver $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $ivk39 2018-12-13$evk39 2019-01-09 sent to Music Division</bflc:marcKey>
 	<lclocal:d955>=955     $i vk39 2018-12-13 $e vk39 2019-01-09 sent to Music Division</lclocal:d955>
 	<lclocal:d985>=985     $a consortiumLC</lclocal:d985>
 	<lclocal:d985>=985     $a musliszt</lclocal:d985>
@@ -174,26 +176,6 @@
       </bf:MusicMedium>
     </bf:musicMedium>
     <bf:musicThematicNumber>S. 420 Searle</bf:musicThematicNumber>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/references"/>
-	<bf:associatedResource>
-	  <bf:Work>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>The music, manuscripts, first editions, and correspondence of Franz Liszt (1811-1886) in the collections of the Music Division, Library of Congress</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:note>
-	      <bf:Note>
-		<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/loc"/>
-		<rdfs:label>page 57, no. 121</rdfs:label>
-	      </bf:Note>
-	    </bf:note>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:notation>
       <bf:Notation>
 	<rdfs:label>Staff notation</rdfs:label>
@@ -320,9 +302,9 @@
       <bf:MusicPlate>
 	<rdf:value>P.M. No. 3242</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPlate>
     </bf:identifiedBy>
@@ -330,9 +312,9 @@
       <bf:MusicPublisherNumber>
 	<rdf:value>3242</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPublisherNumber>
     </bf:identifiedBy>
@@ -390,6 +372,13 @@
 	<rdfs:label>The material described in this catalog record is located in the Heineman Foundation Collection, Music Division, Library of Congress.</rdfs:label>
       </bf:Note>
     </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/refcitation"/>
+	<rdfs:label>The music, manuscripts, first editions, and correspondence of Franz Liszt (1811-1886) in the collections of the Music Division, Library of Congress,</rdfs:label>
+	<bflc:citation>page 57, no. 121</bflc:citation>
+      </bf:Note>
+    </bf:note>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/20779915#Work"/>
     <bf:hasItem>
       <bf:Item rdf:about="http://id.loc.gov/resources/REPLACE/20779915#Item">
@@ -416,11 +405,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

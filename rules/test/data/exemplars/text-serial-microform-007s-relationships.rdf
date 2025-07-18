@@ -91,6 +91,7 @@
     </bf:note>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Issued also in international editions: Giornale dell'arte (Turin, Italy). English. Journal of art, Dec. 1988-June-July 1989; Giornale dell'arte (Turin, Italy). English (1990). Art newspaper, Oct. 1990-</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -151,21 +152,38 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/815177">
 	<bflc:marcKey>150  $aArt</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Art</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/816430">
 	<bflc:marcKey>150  $aArt, Italian</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Art, Italian</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
 	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -328,6 +346,12 @@
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
 		  </bf:Extent>
 		</bf:extent>
 	      </bf:Instance>
@@ -336,6 +360,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11891684">
 	<bf:title>
@@ -400,13 +425,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:43.333077-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>
@@ -456,8 +481,11 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d4$encip$f20$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 4 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xPolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
+	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
@@ -574,19 +602,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>volumes</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>all</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>42 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/h">
@@ -741,13 +764,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:43.333077-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>
@@ -797,8 +820,11 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d4$encip$f20$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 4 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xPolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
+	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>
@@ -978,8 +1004,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:43.333077-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -997,7 +1023,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>
@@ -1034,8 +1060,11 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d4$encip$f20$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 4 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aAcquire$b1 shelf copy$xPolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
+	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
       </bf:AdminMetadata>
     </bf:adminMetadata>

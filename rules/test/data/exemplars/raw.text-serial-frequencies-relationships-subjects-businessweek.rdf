@@ -22,10 +22,10 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-07T06:56:47</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>WARTN</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:16.603807-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:12.641973-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -72,7 +72,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN</rdfs:label>
+	    <rdfs:label>040  $aMUL$beng$cMUL$dOCL$dUCU$dYUS$dNSD$dDLC$dNSD$dOCL$dNSD$dDLC$dSER$dRCS$dNSD$dAIP$dNST$dAIP$dOCL$dAIP$dDLC$dAIP$dIUL$dAIP$dHUL$dNSD$dNST$dNSD$dOCL$dAGL$dNST$dNSD$dGUA$dWAU$dCLU$dOCLCQ$dCDS$dDLC$dGK8$dJED$dNLGGC$dLVB$dNYDWH$dWAU$dOCLCQ$dIUL$dDLC$dOCLCQ$dIUL$dDLC$dOCLCQ$dCWS$dCGN$dOCLCQ$dOCLCF$dSBVCA$dOCLCQ$dDLC$dCOD$dDLC$dOVY$dCDT$dAU@$dUKMGB$dPX0$dWDB$dOCLCO$dUAT$dOCLCQ$dCSJ$dOCLCO$dOCLCQ$dMNS$dOCLCO$dOCLCQ$dCCH$dCOD$dOCLCQ$dMAFCI$dCOD$dOCLCQ$dNJB$dTU2$dOCLCO$dHTM$dLKC$dZAS$dOCLCQ$dOCLCO$dDCHUA$dOCLCO$dBUF$dOCLCO$dFUG$dIL4J6$dOCLCQ$dVIA$dZYU$dOCLCQ$dGZL$dWARTN$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -85,7 +85,9 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d3$encip$f19$gn-oclcserc</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 3 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
       </bf:AdminMetadata>
@@ -140,7 +142,7 @@
       </bf:ClassificationNal>
     </bf:classification>
     <bf:classification>
-      <bf:ClassificationDdc>
+      <bf:ClassificationDdc rdf:about="https://id.oclc.org/worldcat/ddc/E38VcvYhKg6CFx8WmvX4jv8JMx">
 	<bf:classificationPortion>650</bf:classificationPortion>
 	<bf:source>
 	  <bf:Source>
@@ -222,6 +224,7 @@
     </bf:relation>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Available in numerous editions, including several language editions.</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -368,6 +371,18 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11138862#GenreForm655-57">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<rdfs:label>periodicals</rdfs:label>
+	<madsrdf:authoritativeLabel>periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/aat">
+	    <bf:code>aat</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/01411641">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Periodicals</rdfs:label>
@@ -376,25 +391,13 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11138862#GenreForm655-58">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11138862#GenreForm655-59">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft">
 	    <bf:code>lcgft</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11138862#GenreForm655-59">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<rdfs:label>periodicals</rdfs:label>
-	<madsrdf:authoritativeLabel>periodicals</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/aat">
-	    <bf:code>aat</bf:code>
 	  </bf:Source>
 	</bf:source>
       </bf:GenreForm>
@@ -951,9 +954,9 @@
       <bf:PostalRegistration>
 	<rdf:value>080900</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>USPS</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:PostalRegistration>
     </bf:identifiedBy>
@@ -970,19 +973,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>volumes</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>all</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>31 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -1096,11 +1094,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

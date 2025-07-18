@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-05T09:33:56</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-05T12:55:04</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:35.48502-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:32.871861-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -79,8 +79,10 @@
 	    <rdfs:label>040  $aDLC$beng$edcrmg$cDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
-	<lclocal:d955>=955     $a pr 2022-07 ; pnpm qw08 2022-08</lclocal:d955>
+	<bflc:marcKey>955  $apr 2022-07 ; pnpm qw08 2022-08; qw91 2024-07r</bflc:marcKey>
+	<lclocal:d955>=955     $a pr 2022-07 ; pnpm qw08 2022-08; qw91 2024-07r</lclocal:d955>
 	<lclocal:d985>=985     $a pp/lilj</lclocal:d985>
 	<lclocal:d985>=985     $a pp/civwar</lclocal:d985>
 	<lclocal:d985>=985     $a pp/diof</lclocal:d985>
@@ -122,6 +124,7 @@
     </bf:summary>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Forms part of: Liljenquist Family Collection of Civil War Photographs (Library of Congress).</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -413,19 +416,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 photograph</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>albumen print on card mount</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>albumen print on card mount</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>all</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>mount 100 x 63 mm (carte de visite format)</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -475,7 +473,7 @@
 	</bf:note>
 	<bf:immediateAcquisition>
 	  <bf:ImmediateAcquisition>
-	    <rdfs:label>Deposit; Tom Liljenquist; 2022; (D079)</rdfs:label>
+	    <rdfs:label>Gift; Tom Liljenquist; 2022; (DLC/PP-2017:171-7, formerly deposit D 079)</rdfs:label>
 	  </bf:ImmediateAcquisition>
 	</bf:immediateAcquisition>
 	<bf:itemOf rdf:resource="http://id.loc.gov/resources/REPLACE/22724623#Instance"/>
@@ -488,11 +486,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

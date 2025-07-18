@@ -3,12 +3,6 @@
     <bflc:aap>2nd workshop, Italian research on Antarctic atmosphere, Porano, 19-20 October, 1989</bflc:aap>
     <bflc:aap-normalized>2ndworkshopitalianresearchonantarcticatmosphereporano1920october1989</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-	<bf:code>txt</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -78,6 +72,77 @@
 	<bf:mainTitle>2nd workshop, Italian research on Antarctic atmosphere, Porano, 19-20 October, 1989</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:code>txt</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
+		<rdfs:label>traced</rdfs:label>
+		<bf:code>tr</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Conference proceedings</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:seriesEnumeration>v. 27</bf:seriesEnumeration>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
+		<rdfs:label>traced</rdfs:label>
+		<bf:code>tr</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Atti di conferenze</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
@@ -245,72 +310,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
-	    <rdfs:label>series</rdfs:label>
-	    <bf:code>series</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Series>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
-		<rdfs:label>transcribed</rdfs:label>
-		<bf:code>t</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
-		<rdfs:label>traced</rdfs:label>
-		<bf:code>tr</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Conference proceedings</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	  </bf:Series>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
-	    <rdfs:label>series</rdfs:label>
-	    <bf:code>series</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:seriesEnumeration>v. 27</bf:seriesEnumeration>
-	<bf:associatedResource>
-	  <bf:Series>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
-		<rdfs:label>transcribed</rdfs:label>
-		<bf:code>t</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
-		<rdfs:label>traced</rdfs:label>
-		<bf:code>tr</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Atti di conferenze</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	  </bf:Series>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -367,68 +366,19 @@
 	</bf:relationship>
 	<bf:seriesEnumeration>v. 27.</bf:seriesEnumeration>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/a5a0574a-3b63-b597-5a08-202a496411f5">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/9333ff07-7859-e4e9-3811-d05b90c955db">
 	    <rdfs:label>Conference proceedings (Società italiana di fisica)</rdfs:label>
-	    <bflc:marcKey>1300 $aConference proceedings (Società italiana di fisica)</bflc:marcKey>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79145388">
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-		    <rdfs:label>Società italiana di fisica</rdfs:label>
-		    <bflc:marcKey>1102 $aSocietà italiana di fisica</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		    <rdfs:label>contributor</rdfs:label>
-		    <bf:code>ctb</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n79145388">
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-		    <rdfs:label>Società italiana di fisica</rdfs:label>
-		    <bflc:marcKey>1102 $aSocietà italiana di fisica</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-		    <rdfs:label>contributor</rdfs:label>
-		    <bf:code>ctb</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
+	    <bflc:marcKey>1300 $aConference proceedings (Società italiana di fisica),</bflc:marcKey>
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Conference proceedings (Società italiana di fisica)</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
-	    <bf:title>
-	      <bf:VariantTitle>
-		<bf:mainTitle>Atti di conferenze (Società italiana di fisica)</bf:mainTitle>
-	      </bf:VariantTitle>
-	    </bf:title>
-	    <bf:title>
-	      <bf:VariantTitle>
-		<bf:mainTitle>Conference proceedings</bf:mainTitle>
-	      </bf:VariantTitle>
-	    </bf:title>
-	    <bf:title>
-	      <bf:VariantTitle>
-		<bf:mainTitle>Atti di conferenze</bf:mainTitle>
-	      </bf:VariantTitle>
-	    </bf:title>
 	  </bf:Hub>
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/4384447">
 	<bf:title>
@@ -495,13 +445,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:42.003996-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:40.827416-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -527,8 +477,12 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d2$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 2 $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $arb09 4-04-91; rc16; ep67 11-21-91; ea17/14 to scd 12-23-91; fg08 12-30-91; fl42 01-31-92</bflc:marcKey>
 	<lclocal:d955>=955     $a rb09 4-04-91; rc16; ep67 11-21-91; ea17/14 to scd 12-23-91; fg08 12-30-91; fl42 01-31-92</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
@@ -561,12 +515,6 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Bologna, Italy: Italian Physical Society, 1990</bf:publicationStatement>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-	<rdfs:label>unmediated</rdfs:label>
-	<bf:code>n</bf:code>
-      </bf:Media>
-    </bf:media>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91137213 </rdf:value>
@@ -575,6 +523,11 @@
     <bf:identifiedBy>
       <bf:Isbn>
 	<rdf:value>8877940344</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>9788877940346</rdf:value>
       </bf:Isbn>
     </bf:identifiedBy>
     <bf:responsibilityStatement>edited by M. Colacino, G. Giovanelli, and L. Stefanutti = 2⁰ workshop ricerche italiane sullʹatmosfera antartica, Porano, 19-20 Ottobre, 1989</bf:responsibilityStatement>
@@ -586,15 +539,27 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>xii, 345 p.</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>ill.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>ill.</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:code>nc</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/4384447">
@@ -739,13 +704,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:42.003996-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:40.827416-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -771,8 +736,12 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d2$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 2 $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $arb09 4-04-91; rc16; ep67 11-21-91; ea17/14 to scd 12-23-91; fg08 12-30-91; fl42 01-31-92</bflc:marcKey>
 	<lclocal:d955>=955     $a rb09 4-04-91; rc16; ep67 11-21-91; ea17/14 to scd 12-23-91; fg08 12-30-91; fl42 01-31-92</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644, LCAPM-150</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>

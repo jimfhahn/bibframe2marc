@@ -3,12 +3,6 @@
     <bflc:aap>Office of Charles and Ray Eames. Eames Collection (Library of Congress)</bflc:aap>
     <bflc:aap-normalized>officeofcharlesandrayeameseamescollection(libraryofcongress)</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/StillImage"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/sti">
-	<rdfs:label>still image</rdfs:label>
-	<bf:code>sti</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Collection"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -80,6 +74,12 @@
 	<bf:mainTitle>Visual materials from the Work of Charles and Ray Eames</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/sti">
+	<rdfs:label>still image</rdfs:label>
+	<bf:code>sti</bf:code>
+      </bf:Content>
+    </bf:content>
     <bf:collectionArrangement>
       <bf:CollectionArrangement>
 	<bf:collectionOrganization>The cataloged portion of the Prints and Photographs Division holdings include: Contact sheets and contact prints (30,000), representing 220,000 film negatives (192,000 b&amp;w; 28,000 color) Architectural drawings: 1,000 (ADE Units related to Washington, DC area). Furniture select prints: 2,500 (LOT 13073). Color 35 mm slides (approximately 300,000). Also drawings, prints, Christmas cards, and other items selected for use in exhibitions: more than 400.</bf:collectionOrganization>
@@ -92,16 +92,18 @@
     </bf:collectionArrangement>
     <bf:summary>
       <bf:Summary>
-	<rdfs:label>The Prints and Photographs Division's portion of the collection is both an archive of design ideas and a record of the Eameses' work. Charles and Ray Eames photographed their own designs extensively, and also used photography to study natural forms and everyday objects. The collection documents exhibitions, publications, and films for organizations such as IBM, Herman Miller, the U.S. government, Boeing, and Polaroid. It also reflects the Eameses' interest in making scientific and mathematical concepts and history more accessible to a general audience. The photographs include many images depicting the Eameses, their family, friends, and colleagues, including Billy Wilder and Eero Saarinen.</rdfs:label>
+	<rdfs:label>The Prints and Photographs Division's portion of the collection is both an archive of design ideas and a record of the Eameses' work. Charles and Ray Eames photographed their own designs extensively and also used photography to study natural forms and everyday objects. The collection documents exhibitions, publications, and films for organizations such as IBM, Herman Miller, the U.S. government, Boeing, and Polaroid. It also reflects the Eameses' interest in making scientific and mathematical concepts and history more accessible to a general audience. The photographs include many images depicting the Eameses, their family, friends, and colleagues, including Billy Wilder and Eero Saarinen.</rdfs:label>
       </bf:Summary>
     </bf:summary>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Forms part of the Work of Charles and Ray Eames.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Forms part of the collection known as the Work of Charles and Ray Eames (Library of Congress).</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -323,7 +325,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -334,7 +335,7 @@
 	</bf:relationship>
 	<bf:associatedResource>
 	  <bf:Work rdf:about="http://id.loc.gov/resources/works/5811493">
-	    <rdfs:label>Eames, Charles Charles Eames and Ray Eames papers</rdfs:label>
+	    <rdfs:label>Eames, Charles. Charles Eames and Ray Eames papers</rdfs:label>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -387,6 +388,11 @@
 		    </bf:source>
 		  </bf:Identifier>
 		</bf:identifiedBy>
+		<bf:identifiedBy>
+		  <bf:Local>
+		    <rdf:value>5811493</rdf:value>
+		  </bf:Local>
+		</bf:identifiedBy>
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>265,000 items.</rdfs:label>
@@ -398,6 +404,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/14437118">
 	<bf:title>
@@ -436,7 +443,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T12:36:17</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T00:00:14</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -464,13 +471,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:37.786219-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:35.488476-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -508,7 +515,12 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC$egihc</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a0$bibc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
+	<bflc:marcKey>955  $aqw60 2025-06r</bflc:marcKey>
+	<lclocal:d955>=955     $a qw60 2025-06r</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-12-04:00: LCAPM-859</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-12-04:00: LCAPM-859</lclocal:d955>
 	<lclocal:d985>=985     $a pp/guide</lclocal:d985>
       </bf:AdminMetadata>
     </bf:adminMetadata>
@@ -520,23 +532,11 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-	<rdfs:label>unmediated</rdfs:label>
-	<bf:code>n</bf:code>
-      </bf:Media>
-    </bf:media>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/graphicMaterials/tgm007718">
 	<rdfs:label xml:lang="en">Photographic prints</rdfs:label>
       </bf:GenreForm>
     </bf:genreForm>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
-	<rdfs:label>sheet</rdfs:label>
-	<bf:code>nb</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:colorContent>
       <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/blw">
 	<rdfs:label>black and white</rdfs:label>
@@ -590,6 +590,18 @@
       </bf:Extent>
     </bf:extent>
     <bf:dimensions>various sizes</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+	<rdfs:label>sheet</rdfs:label>
+	<bf:code>nb</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>The body of material known as The Work of Charles and Ray Eames documents, through more than one million items in a variety of media, the major impact that Charles and Ray Eames had on American design, particularly in the realms of graphic, textile, furniture, architectural, and exhibit design. The material dates primarily from about 1940 to 1978. The Prints and Photographs Division holds the largest portion of the material--more than 750,000 items, about one-third of which has been organized and cataloged. The Library's Manuscript Division holds related textual material, and the Motion Picture, Broadcasting, and Recorded Sound Division holds the Eameses' film materials.</rdfs:label>
@@ -605,6 +617,12 @@
 	<rdfs:label>Collection title devised by Library staff.</rdfs:label>
       </bf:Note>
     </bf:note>
+    <bf:usageAndAccessPolicy>
+      <bf:AccessPolicy>
+	<rdfs:label>Slides are stored offsite. Please contact us at least 10 working days in advance of your visit in order to view the material,</rdfs:label>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/pp.access_request"/>
+      </bf:AccessPolicy>
+    </bf:usageAndAccessPolicy>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/citeas"/>
@@ -613,8 +631,8 @@
     </bf:note>
     <bf:usageAndAccessPolicy>
       <bf:UsePolicy>
-	<rdfs:label>Publication may be restricted. For general information see "Eames Office ...,"</rdfs:label>
-	<bf:electronicLocator rdf:resource="http://www.loc.gov/rr/print/res/069_eame.html."/>
+	<rdfs:label>Publication may be restricted. For information see "The Work of Charles and Ray Eames ...,"</rdfs:label>
+	<bf:electronicLocator rdf:resource="http://www.loc.gov/rr/print/res/069_eame.html"/>
       </bf:UsePolicy>
     </bf:usageAndAccessPolicy>
     <bf:note>
@@ -645,7 +663,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/14437118">
-	<rdfs:label>Office of Charles and Ray Eames Eames Collection (Library of Congress)</rdfs:label>
+	<rdfs:label>Office of Charles and Ray Eames. Eames Collection (Library of Congress)</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -767,7 +785,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T12:36:17</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T00:00:14</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -795,13 +813,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:37.786219-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:35.488476-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -839,7 +857,12 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC$egihc</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a0$bibc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
+	<bflc:marcKey>955  $aqw60 2025-06r</bflc:marcKey>
+	<lclocal:d955>=955     $a qw60 2025-06r</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-12-04:00: LCAPM-859</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-12-04:00: LCAPM-859</lclocal:d955>
 	<lclocal:d985>=985     $a pp/guide</lclocal:d985>
       </bf:AdminMetadata>
     </bf:adminMetadata>
@@ -890,7 +913,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/14437118">
-	<rdfs:label>Office of Charles and Ray Eames Eames Collection (Library of Congress)</rdfs:label>
+	<rdfs:label>Office of Charles and Ray Eames. Eames Collection (Library of Congress)</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -1009,7 +1032,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T12:36:17</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T00:00:14</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1037,8 +1060,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:37.786219-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:35.488476-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1056,7 +1079,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1081,7 +1104,12 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC$egihc</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a0$bibc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
+	<bflc:marcKey>955  $aqw60 2025-06r</bflc:marcKey>
+	<lclocal:d955>=955     $a qw60 2025-06r</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-12-04:00: LCAPM-859</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-12-04:00: LCAPM-859</lclocal:d955>
 	<lclocal:d985>=985     $a pp/guide</lclocal:d985>
       </bf:AdminMetadata>
     </bf:adminMetadata>
@@ -1154,7 +1182,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-03-14T12:36:17</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-11T00:00:14</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1182,13 +1210,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:37.786219-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:35.488476-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1226,7 +1254,12 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC$egihc</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a0$bibc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
+	<bflc:marcKey>955  $aqw60 2025-06r</bflc:marcKey>
+	<lclocal:d955>=955     $a qw60 2025-06r</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-12-04:00: LCAPM-859</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-12-04:00: LCAPM-859</lclocal:d955>
 	<lclocal:d985>=985     $a pp/guide</lclocal:d985>
       </bf:AdminMetadata>
     </bf:adminMetadata>

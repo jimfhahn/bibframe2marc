@@ -115,6 +115,38 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:seriesEnumeration>number 1307</bf:seriesEnumeration>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Memoirs of the American Mathematical Society</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Issn>
+		<rdf:value>0065-9266</rdf:value>
+	      </bf:Issn>
+	    </bf:identifiedBy>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
     <bf:tableOfContents>
       <bf:TableOfContents>
 	<rdfs:label>Strategy for the proofs of theorems 5.1-9.1 -- Irreducible subgroups of G2 -- Irreducible subgroups of F4 -- Irreducible subgroups of G = E6 -- Irreducible subgroups of G = E7 -- Irreducible subgroups of G = E8 -- Corollaries -- Tables for theorem 1 -- Composition factors for G-irreducible subgroups -- Composition factors for the action of Levi subgroups.</rdfs:label>
@@ -210,38 +242,6 @@
       </bf:Topic>
     </bf:subject>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
-	    <rdfs:label>series</rdfs:label>
-	    <bf:code>series</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:seriesEnumeration>number 1307</bf:seriesEnumeration>
-	<bf:associatedResource>
-	  <bf:Series>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
-	    <bf:status>
-	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
-		<rdfs:label>transcribed</rdfs:label>
-		<bf:code>t</bf:code>
-	      </bf:Status>
-	    </bf:status>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Memoirs of the American Mathematical Society</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:identifiedBy>
-	      <bf:Issn>
-		<rdf:value>0065-9266</rdf:value>
-	      </bf:Issn>
-	    </bf:identifiedBy>
-	  </bf:Series>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/22076502">
 	<bf:title>
@@ -305,13 +305,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:10.475414-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:12.551352-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -337,8 +337,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d1$eecip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bLBSOR 2021-06-07$erl06 2021-06-14 (TW Situational) to Dewey$wxm10 2021-06-14 also edited msc codes.$axn11 2022-07-18 1 copy rec'd., to CIP ver.$frl02 2022-07-28 (Telework) to PresSrvs</bflc:marcKey>
 	<lclocal:d955>=955     $b LBSOR 2021-06-07 $e rl06 2021-06-14 (TW Situational) to Dewey $w xm10 2021-06-14 also edited msc codes. $a xn11 2022-07-18 1 copy rec'd., to CIP ver. $f rl02 2022-07-28 (Telework) to PresSrvs</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -567,13 +570,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:35:10.475414-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:12.551352-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -599,8 +602,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d1$eecip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bLBSOR 2021-06-07$erl06 2021-06-14 (TW Situational) to Dewey$wxm10 2021-06-14 also edited msc codes.$axn11 2022-07-18 1 copy rec'd., to CIP ver.$frl02 2022-07-28 (Telework) to PresSrvs</bflc:marcKey>
 	<lclocal:d955>=955     $b LBSOR 2021-06-07 $e rl06 2021-06-14 (TW Situational) to Dewey $w xm10 2021-06-14 also edited msc codes. $a xn11 2022-07-18 1 copy rec'd., to CIP ver. $f rl02 2022-07-28 (Telework) to PresSrvs</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
