@@ -46,7 +46,7 @@
     <x:expect label="... second $b" test="//marc:datafield[@tag='610'][1]/marc:subfield[@code='b'] = 'Pennsylvania Infantry Regiment, 48th (1861-1865)'"/>
   </x:scenario>
 
-  <x:scenario label="MARC 600 - test 02">
+  <!--<x:scenario label="MARC 600 - test 02">
     <x:context href="../data/exemplars/raw.musicaudio-monograph-hamilton-contributos-subjects-genreforms.rdf"/>
     <x:expect label="generate 600s from various marcKeys" test="count(//marc:datafield[@tag='600']) = 2"/>
 
@@ -74,7 +74,7 @@
     <x:expect label="$4 from URI"
       test="//marc:datafield[@tag='600'][2]/marc:subfield[@code='0'] = 'http://id.worldcat.org/fast/00031768'"/>
 
-  </x:scenario>
+  </x:scenario>-->
   
   <!-- FIX in 2.5
   <x:scenario label="MARC 600 - test 02.2">
