@@ -1,5 +1,16 @@
 # bibframe2marc release notes
 
+## v2.10.0
+
+Conversion updates based on specifications v2.10. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
+
+* Added creation of MARC 008/06=r for reprint resources
+* Changed creation of MARC 300 $b
+* Generated more MARC 5XX-880 paired fields
+* Changed creation of MARC 510 (first indicator=3 or 4)
+
+See the [NEWS](NEWS) file for full details of changes.   Changes from v2.9.0 in the specifications are marked in red.
+
 ## v2.9.0
 
 Conversion updates based on specifications v2.9. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
