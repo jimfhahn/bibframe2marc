@@ -18,6 +18,18 @@
         </bf:identifiedBy>
       </bf:Title>
     </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/for"/>
+        <bf:mainTitle>Medical informatics insights</bf:mainTitle>
+        <bf:date>&lt;Mar. 3, 2009&gt;</bf:date>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Journal page and running on article PDF for 2008 (as viewed via Archive.org) originally had title: Medical informatics insights. Publisher notes on current site that previous title was used, although running title on PDF files was later changed to Biomedical informatics insights, so previous title not seen on current issues.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:VariantTitle>
+    </bf:title>
     <bf:hasInstance rdf:resource="http://example.org/247#Instance"/>
   </bf:Work>
   <bf:Instance rdf:about="http://example.org/247#Instance"/>

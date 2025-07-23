@@ -161,9 +161,13 @@
 
   <x:scenario label="MARC 247">
     <x:context href="../data/2XX/247.xml"/>
-    <x:expect label="generate 247" test="count(//marc:datafield[@tag='247']) = 1"/>
+    <x:expect label="generate 247" test="count(//marc:datafield[@tag='247']) = 2"/>
     <x:expect label="$b from subtitle"
-              test="//marc:datafield[@tag='247']/marc:subfield[@code='b'] = 'for every woman'"/>
+              test="//marc:datafield[@tag='247'][1]/marc:subfield[@code='b'] = 'for every woman'"/>
+    <x:expect label="$a from subtitle"
+      test="//marc:datafield[@tag='247'][2]/marc:subfield[@code='a'] = 'Medical informatics insights'"/>
+    <x:expect label="547 from former title note"
+      test="//marc:datafield[@tag='547'][1]/marc:subfield[@code='a'] = 'Journal page and running on article PDF for 2008 (as viewed via Archive.org) originally had title: Medical informatics insights. Publisher notes on current site that previous title was used, although running title on PDF files was later changed to Biomedical informatics insights, so previous title not seen on current issues.'"/>
   </x:scenario>
   
   <x:scenario label="MARC 246 and 247 with 880s">

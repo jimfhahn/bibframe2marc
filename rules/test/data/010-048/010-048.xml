@@ -115,13 +115,22 @@
       </bf:Language>
     </bf:language>
     <bf:language>
-      <bf:Language>
-        <rdf:value>en</rdf:value>
-        <bf:source>
-          <bf:Source rdf:about="http://id.loc.gov/vocabulary/iso639-1"/>
-        </bf:source>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-3/ukr">
+        <rdfs:label>Ukrainian</rdfs:label>
+        <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ukr</bf:code>
       </bf:Language>
     </bf:language>
+    <bf:note>
+      <bf:Note>
+        <rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/otx"/>
+        <bf:language>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/iso639-3/rue">
+            <rdfs:label>Rusyn</rdfs:label>
+            <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rue</bf:code>
+          </bf:Language>
+        </bf:language>
+      </bf:Note>
+    </bf:note>
     <bf:note>
       <bf:Note>
         <rdfs:label>Includes translation</rdfs:label>
