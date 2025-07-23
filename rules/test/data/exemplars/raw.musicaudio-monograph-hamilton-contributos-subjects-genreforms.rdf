@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T13:55:13</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T03:44:39</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:20.225774-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:52.360744-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -92,6 +92,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i3861f94f-548e-590d-9efe-8d22ee367624$s820b220d-249d-4168-b054-1ec230d97bc1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 3861f94f-548e-590d-9efe-8d22ee367624 $s 820b220d-249d-4168-b054-1ec230d97bc1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
@@ -153,7 +155,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent100-22">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent100-23">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Miranda, Lin-Manuel, 1980-</rdfs:label>
 	    <bflc:marcKey>1001 $aMiranda, Lin-Manuel,$d1980-$ecomposer,$elibrettist,$elyricist,$eperformer.</bflc:marcKey>
@@ -251,13 +253,13 @@
       </bf:IntendedAudience>
     </bf:intendedAudience>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic600-46">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic600-47">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<madsrdf:authoritativeLabel>Hamilton, Alexander, 1757-1804--Drama.</madsrdf:authoritativeLabel>
 	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
 	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
 	<madsrdf:componentList rdf:parseType="Collection">
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent600-46">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent600-47">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Hamilton, Alexander, 1757-1804</rdfs:label>
 	    <bflc:marcKey>60010$aHamilton, Alexander,$d1757-1804</bflc:marcKey>
@@ -279,7 +281,7 @@
       </bf:Agent>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-48">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-49">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Musicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
@@ -288,7 +290,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-49">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-50">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Statesmen--United States--Drama</rdfs:label>
 	<madsrdf:authoritativeLabel>Statesmen--United States--Drama</madsrdf:authoritativeLabel>
@@ -308,7 +310,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-50">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-51">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Founding Fathers of the United States--Drama</rdfs:label>
 	<madsrdf:authoritativeLabel>Founding Fathers of the United States--Drama</madsrdf:authoritativeLabel>
@@ -325,7 +327,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-51">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Topic650-52">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Soundtracks</rdfs:label>
 	<madsrdf:authoritativeLabel>Soundtracks</madsrdf:authoritativeLabel>
@@ -356,7 +358,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Place651-55">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Place651-56">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>United States</rdfs:label>
 	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
@@ -365,35 +367,35 @@
       </bf:Place>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Place651-56">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Place651-57">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>United States</rdfs:label>
 	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
       </bf:Place>
     </bf:subject>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-57">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-58">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Soundtracks</rdfs:label>
 	<madsrdf:authoritativeLabel>Soundtracks</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-58">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-59">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Biographical drama</rdfs:label>
 	<madsrdf:authoritativeLabel>Biographical drama</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-59">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-60">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Musicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-60">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-61">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Original cast recordings</rdfs:label>
 	<madsrdf:authoritativeLabel>Original cast recordings</madsrdf:authoritativeLabel>
@@ -448,7 +450,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-67">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-68">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Biographical drama</rdfs:label>
 	<madsrdf:authoritativeLabel>Biographical drama</madsrdf:authoritativeLabel>
@@ -460,7 +462,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-68">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-69">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Musicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
@@ -472,7 +474,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-69">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-70">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Original cast recordings</rdfs:label>
 	<madsrdf:authoritativeLabel>Original cast recordings</madsrdf:authoritativeLabel>
@@ -484,7 +486,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-70">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-71">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Rap (Music)</rdfs:label>
 	<madsrdf:authoritativeLabel>Rap (Music)</madsrdf:authoritativeLabel>
@@ -496,7 +498,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-71">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/19537131#GenreForm655-72">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Adaptations</rdfs:label>
 	<madsrdf:authoritativeLabel>Adaptations</madsrdf:authoritativeLabel>
@@ -510,7 +512,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-72">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-73">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Diggs, Daveed</rdfs:label>
 	    <bflc:marcKey>7001 $aDiggs, Daveed,$eperformer.</bflc:marcKey>
@@ -526,7 +528,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-73">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-74">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Goldsberry, Renée Elise, 1971-</rdfs:label>
 	    <bflc:marcKey>7001 $aGoldsberry, Renée Elise,$d1971-$eperformer.</bflc:marcKey>
@@ -542,7 +544,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-74">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-75">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Groff, Jonathan</rdfs:label>
 	    <bflc:marcKey>7001 $aGroff, Jonathan,$eperformer.</bflc:marcKey>
@@ -558,7 +560,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-75">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-76">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Jackson, Christopher (Vocalist)</rdfs:label>
 	    <bflc:marcKey>7001 $aJackson, Christopher$c(Vocalist),$eperformer.</bflc:marcKey>
@@ -574,7 +576,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-76">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-77">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Jones, Jasmine Cephas</rdfs:label>
 	    <bflc:marcKey>7001 $aJones, Jasmine Cephas,$eperformer.</bflc:marcKey>
@@ -590,7 +592,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-77">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-78">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Muñoz, Javier (Actor)</rdfs:label>
 	    <bflc:marcKey>7001 $aMuñoz, Javier$c(Actor),$eperformer.</bflc:marcKey>
@@ -606,7 +608,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-78">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-79">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Odom, Leslie, Jr., 1981-</rdfs:label>
 	    <bflc:marcKey>7001 $aOdom, Leslie,$cJr.,$d1981-$eperformer.</bflc:marcKey>
@@ -622,7 +624,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-79">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-80">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Onaodowan, Okieriete</rdfs:label>
 	    <bflc:marcKey>7001 $aOnaodowan, Okieriete,$eperformer.</bflc:marcKey>
@@ -638,7 +640,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-80">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-81">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Ramos, Anthony</rdfs:label>
 	    <bflc:marcKey>7001 $aRamos, Anthony,$eperformer.</bflc:marcKey>
@@ -654,7 +656,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-81">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-82">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Soo, Phillipa</rdfs:label>
 	    <bflc:marcKey>7001 $aSoo, Phillipa,$eperformer.</bflc:marcKey>
@@ -670,7 +672,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-82">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-83">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Lacamoire, Alex</rdfs:label>
 	    <bflc:marcKey>7001 $aLacamoire, Alex,$econductor.</bflc:marcKey>
@@ -686,7 +688,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-83">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-84">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Kail, Thomas, 1978-</rdfs:label>
 	    <bflc:marcKey>7001 $aKail, Thomas,$d1978-$edirector.</bflc:marcKey>
@@ -708,11 +710,11 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Hub700-84">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Hub700-85">
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-84">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/19537131#Agent700-85">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		    <rdfs:label>Chernow, Ron</rdfs:label>
 		    <bflc:marcKey>7001 $iInspired by:$aChernow, Ron.$tAlexander Hamilton.</bflc:marcKey>
@@ -770,6 +772,11 @@
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2015</bf:copyrightDate>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>19537131</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2017618270</rdf:value>
       </bf:Lccn>
@@ -791,7 +798,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn919490894</rdf:value>
+	<rdf:value>919490894</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:responsibilityStatement>[book, music and lyrics] by Lin-Manuel Miranda</bf:responsibilityStatement>

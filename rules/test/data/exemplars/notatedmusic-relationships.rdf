@@ -575,7 +575,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-03T10:49:44</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:42:11</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -604,7 +604,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:09.135263-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:56.388529-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -669,6 +669,8 @@
 	</bf:descriptionAuthentication>
 	<lclocal:batch>BibframePilot2</lclocal:batch>
 	<lclocal:d985>=985     $e BibframePilot2 $d 2022-04-19 $f vk39 2022-04-19</lclocal:d985>
+	<bflc:marcKey>999ff$id6a26120-effa-5bd1-8dec-3d99188ecd15$s0b43180f-7d97-4369-a4af-fbc064c40339</bflc:marcKey>
+	<lclocal:d999>=999  ff $i d6a26120-effa-5bd1-8dec-3d99188ecd15 $s 0b43180f-7d97-4369-a4af-fbc064c40339</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -696,6 +698,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement>Kassel: Bärenreiter, [2020]</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2020</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>21851594</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2020431451</rdf:value>
@@ -732,11 +739,6 @@
 	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPlate>
-    </bf:identifiedBy>
-    <bf:identifiedBy>
-      <bf:OclcNumber>
-	<rdf:value>on1197943499</rdf:value>
-      </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
@@ -883,6 +885,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>21851594</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2020431451</rdf:value>
 	      </bf:Lccn>
@@ -903,9 +910,9 @@
 	      <bf:MusicPlate>
 		<rdf:value>BA 10713-90</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Bärenreiter</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPlate>
 	    </bf:identifiedBy>
@@ -913,16 +920,11 @@
 	      <bf:MusicPlate>
 		<rdf:value>10713-90</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Bärenreiter</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPlate>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:OclcNumber>
-		<rdf:value>on1197943499</rdf:value>
-	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:OclcNumber>
@@ -971,7 +973,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-03T10:49:44</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:42:11</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1000,7 +1002,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:09.135263-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:56.388529-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1065,6 +1067,8 @@
 	</bf:descriptionAuthentication>
 	<lclocal:batch>BibframePilot2</lclocal:batch>
 	<lclocal:d985>=985     $e BibframePilot2 $d 2022-04-19 $f vk39 2022-04-19</lclocal:d985>
+	<bflc:marcKey>999ff$id6a26120-effa-5bd1-8dec-3d99188ecd15$s0b43180f-7d97-4369-a4af-fbc064c40339</bflc:marcKey>
+	<lclocal:d999>=999  ff $i d6a26120-effa-5bd1-8dec-3d99188ecd15 $s 0b43180f-7d97-4369-a4af-fbc064c40339</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

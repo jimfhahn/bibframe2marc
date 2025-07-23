@@ -7,18 +7,6 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
-	<rdfs:label>audio</rdfs:label>
-	<bf:code>s</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
-	<rdfs:label>audio disc</rdfs:label>
-	<bf:code>sd</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:soundCharacteristic>
       <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/mon">
 	<rdfs:label>mono</rdfs:label>
@@ -74,11 +62,16 @@
       <bf:AudioIssueNumber>
 	<rdf:value>1216</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>E. Berliner's Gramophone</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11909089</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:title>
       <bf:Title>
@@ -98,49 +91,60 @@
 	    <rdfs:label>CD</rdfs:label>
 	  </bflc:AppliesTo>
 	</bflc:appliesTo>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>spoken word</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>analog, 69 rpm, mono.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>analog, 69 rpm, mono.</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>audio disc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>CD</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>7 in</bf:dimensions>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:code>sd</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+	<rdfs:label>audio</rdfs:label>
+	<bf:code>s</bf:code>
+      </bf:Media>
+    </bf:media>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Recorded on one side only</rdfs:label>
+	<rdfs:label>Recorded on one side only.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Autograph of Adamini inscribed in zinc master</rdfs:label>
+	<rdfs:label>Autograph of Adamini inscribed in zinc master.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Acoustic recording</rdfs:label>
+	<rdfs:label>Acoustic recording.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Production level cataloging</rdfs:label>
+	<rdfs:label>Production level cataloging.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:credits>Arthur B. Adamini, tenor; with piano acc.</bf:credits>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Also available in digital form on the Library of Congress Web site</rdfs:label>
+	<rdfs:label>Also available in digital form on the Library of Congress Web site.</rdfs:label>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/addphys"/>
       </bf:Note>
     </bf:note>
@@ -174,7 +178,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-28T10:14:43</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:11:55</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -202,13 +206,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-06T11:54:23.00679-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:06.146622-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -234,9 +238,21 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$d3$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d 3 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>955  $aqu55 02-10-00$eqr19 2008-05-07</bflc:marcKey>
 	<lclocal:d955>=955     $a qu55 02-10-00 $e qr19 2008-05-07</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-990</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-990</lclocal:d955>
 	<lclocal:d985>=985     $a mbrsrs/berl $e ammem</lclocal:d985>
+	<bflc:marcKey>999ff$ia887ecf5-5a64-5651-bd9b-b01a4a06735a$s4590ff7d-2be3-4524-b5a4-695ad0df9268</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a887ecf5-5a64-5651-bd9b-b01a4a06735a $s 4590ff7d-2be3-4524-b5a4-695ad0df9268</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -244,12 +260,6 @@
     <bflc:aap>Adios a Mexico</bflc:aap>
     <bflc:aap-normalized>adiosamexico</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
-	<rdfs:label>performed music</rdfs:label>
-	<bf:code>prm</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa">
@@ -288,6 +298,18 @@
 	<bf:mainTitle>Adios a Mexico</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+	<rdfs:label>performed music</rdfs:label>
+	<bf:code>prm</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
+	<rdfs:label>Arthur B. Adamini, tenor; with piano acc.</rdfs:label>
+      </bf:Note>
+    </bf:note>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/lang"/>
@@ -379,7 +401,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-28T10:14:43</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:11:55</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -407,13 +429,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-06T11:54:23.00679-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:06.146622-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -439,9 +461,21 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$d3$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d 3 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>955  $aqu55 02-10-00$eqr19 2008-05-07</bflc:marcKey>
 	<lclocal:d955>=955     $a qu55 02-10-00 $e qr19 2008-05-07</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-990</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-990</lclocal:d955>
 	<lclocal:d985>=985     $a mbrsrs/berl $e ammem</lclocal:d985>
+	<bflc:marcKey>999ff$ia887ecf5-5a64-5651-bd9b-b01a4a06735a$s4590ff7d-2be3-4524-b5a4-695ad0df9268</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a887ecf5-5a64-5651-bd9b-b01a4a06735a $s 4590ff7d-2be3-4524-b5a4-695ad0df9268</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -501,7 +535,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-03-28T10:14:43</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:11:55</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -529,8 +563,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-06T11:54:23.00679-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:06.146622-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -548,7 +582,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -561,9 +595,21 @@
 	    <bf:code>aacr</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$d3$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d 3 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>955  $aqu55 02-10-00$eqr19 2008-05-07</bflc:marcKey>
 	<lclocal:d955>=955     $a qu55 02-10-00 $e qr19 2008-05-07</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-990</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-990</lclocal:d955>
 	<lclocal:d985>=985     $a mbrsrs/berl $e ammem</lclocal:d985>
+	<bflc:marcKey>999ff$ia887ecf5-5a64-5651-bd9b-b01a4a06735a$s4590ff7d-2be3-4524-b5a4-695ad0df9268</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a887ecf5-5a64-5651-bd9b-b01a4a06735a $s 4590ff7d-2be3-4524-b5a4-695ad0df9268</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

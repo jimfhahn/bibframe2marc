@@ -294,7 +294,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-27T10:44:59</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:21:29</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -323,7 +323,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:00.836491-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -384,6 +384,8 @@
 	<lclocal:d955>=955     $i vk39 2018-12-13 $e vk39 2019-01-09 sent to Music Division</lclocal:d955>
 	<lclocal:d985>=985     $a consortiumLC</lclocal:d985>
 	<lclocal:d985>=985     $a musliszt</lclocal:d985>
+	<bflc:marcKey>999ff$if6a1523f-eb28-5d7c-a86e-c68ae103c208$s97525eef-0399-49f1-9038-0b3baa90bcd1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i f6a1523f-eb28-5d7c-a86e-c68ae103c208 $s 97525eef-0399-49f1-9038-0b3baa90bcd1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -445,6 +447,11 @@
 	  </bf:Organization>
 	</bf:assigner>
       </bf:MusicPublisherNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>20779915</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>par Fr. Liszt.</bf:responsibilityStatement>
     <bf:title>
@@ -554,9 +561,9 @@
 	      <bf:MusicPlate>
 		<rdf:value>P.M. No. 3242</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPlate>
 	    </bf:identifiedBy>
@@ -564,11 +571,16 @@
 	      <bf:MusicPublisherNumber>
 		<rdf:value>3242</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPublisherNumber>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>20779915</rdf:value>
+	      </bf:Local>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
 	    <bf:extent>
@@ -616,7 +628,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-27T10:44:59</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:21:29</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -645,7 +657,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:00.836491-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -706,6 +718,8 @@
 	<lclocal:d955>=955     $i vk39 2018-12-13 $e vk39 2019-01-09 sent to Music Division</lclocal:d955>
 	<lclocal:d985>=985     $a consortiumLC</lclocal:d985>
 	<lclocal:d985>=985     $a musliszt</lclocal:d985>
+	<bflc:marcKey>999ff$if6a1523f-eb28-5d7c-a86e-c68ae103c208$s97525eef-0399-49f1-9038-0b3baa90bcd1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i f6a1523f-eb28-5d7c-a86e-c68ae103c208 $s 97525eef-0399-49f1-9038-0b3baa90bcd1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -786,9 +800,9 @@
 	      <bf:MusicPlate>
 		<rdf:value>P.M. No. 3242</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPlate>
 	    </bf:identifiedBy>
@@ -796,11 +810,16 @@
 	      <bf:MusicPublisherNumber>
 		<rdf:value>3242</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Pietro Mechetti qm Carlo</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:MusicPublisherNumber>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>20779915</rdf:value>
+	      </bf:Local>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
 	    <bf:extent>
@@ -845,7 +864,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-27T10:44:59</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:21:29</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -874,7 +893,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:00.836491-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -935,6 +954,8 @@
 	<lclocal:d955>=955     $i vk39 2018-12-13 $e vk39 2019-01-09 sent to Music Division</lclocal:d955>
 	<lclocal:d985>=985     $a consortiumLC</lclocal:d985>
 	<lclocal:d985>=985     $a musliszt</lclocal:d985>
+	<bflc:marcKey>999ff$if6a1523f-eb28-5d7c-a86e-c68ae103c208$s97525eef-0399-49f1-9038-0b3baa90bcd1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i f6a1523f-eb28-5d7c-a86e-c68ae103c208 $s 97525eef-0399-49f1-9038-0b3baa90bcd1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -1006,7 +1027,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-27T10:44:59</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:21:29</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1035,7 +1056,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:00.836491-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1096,6 +1117,8 @@
 	<lclocal:d955>=955     $i vk39 2018-12-13 $e vk39 2019-01-09 sent to Music Division</lclocal:d955>
 	<lclocal:d985>=985     $a consortiumLC</lclocal:d985>
 	<lclocal:d985>=985     $a musliszt</lclocal:d985>
+	<bflc:marcKey>999ff$if6a1523f-eb28-5d7c-a86e-c68ae103c208$s97525eef-0399-49f1-9038-0b3baa90bcd1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i f6a1523f-eb28-5d7c-a86e-c68ae103c208 $s 97525eef-0399-49f1-9038-0b3baa90bcd1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Item>

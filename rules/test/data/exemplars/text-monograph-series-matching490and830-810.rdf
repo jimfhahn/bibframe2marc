@@ -260,7 +260,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-28T08:41:08</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:44:58</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -290,7 +290,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:06.462397-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:52.834628-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -335,6 +335,8 @@
 	<lclocal:d955>=955     $a ff70 2011-10-13 $a ff00 2011-10-28 to GS/SBCG</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644</lclocal:d955>
+	<bflc:marcKey>999ff$icb403da1-7e75-5ee6-8d1c-20482db9060d$s2d3af14f-d2d4-42f7-8548-628f370cb988</bflc:marcKey>
+	<lclocal:d999>=999  ff $i cb403da1-7e75-5ee6-8d1c-20482db9060d $s 2d3af14f-d2d4-42f7-8548-628f370cb988</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -375,6 +377,11 @@
       <bf:Isbn>
 	<rdf:value>9783950230383</rdf:value>
       </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>16998093</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>[the authors: Franz Fiedler ... Ed.: Linda Jakubowicz ...].</bf:responsibilityStatement>
     <bf:title>
@@ -472,6 +479,11 @@
 		<rdf:value>9783950230383</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>16998093</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>Vienna: Federal Ministry of the Interior, 2010</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -510,7 +522,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-28T08:41:08</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:44:58</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -540,7 +552,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:06.462397-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:52.834628-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -585,6 +597,8 @@
 	<lclocal:d955>=955     $a ff70 2011-10-13 $a ff00 2011-10-28 to GS/SBCG</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644</lclocal:d955>
+	<bflc:marcKey>999ff$icb403da1-7e75-5ee6-8d1c-20482db9060d$s2d3af14f-d2d4-42f7-8548-628f370cb988</bflc:marcKey>
+	<lclocal:d999>=999  ff $i cb403da1-7e75-5ee6-8d1c-20482db9060d $s 2d3af14f-d2d4-42f7-8548-628f370cb988</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -680,6 +694,11 @@
 		<rdf:value>9783950230383</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>16998093</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>Vienna: Federal Ministry of the Interior, 2010</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -718,7 +737,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-28T08:41:08</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:44:58</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -748,7 +767,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:06.462397-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:52.834628-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -793,6 +812,8 @@
 	<lclocal:d955>=955     $a ff70 2011-10-13 $a ff00 2011-10-28 to GS/SBCG</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644</lclocal:d955>
+	<bflc:marcKey>999ff$icb403da1-7e75-5ee6-8d1c-20482db9060d$s2d3af14f-d2d4-42f7-8548-628f370cb988</bflc:marcKey>
+	<lclocal:d999>=999  ff $i cb403da1-7e75-5ee6-8d1c-20482db9060d $s 2d3af14f-d2d4-42f7-8548-628f370cb988</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

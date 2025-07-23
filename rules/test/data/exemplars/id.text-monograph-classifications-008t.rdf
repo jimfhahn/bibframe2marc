@@ -1,6 +1,4 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "Work has Supplementary Content = 'bibliography', but it is missing in the @Instance@'s' '**Notes about the Instance**'"},
-{"level": "WARNING", "message": "Work has Supplementary Content = 'index', but it is missing in the @Instance@'s' '**Notes about the Instance**'"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/20621601">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -26,6 +24,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement>London; New York, NY: Routledge/Taylor &amp; Francis Group, 2019</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>20621601</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2018020991</rdf:value>
@@ -61,14 +64,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>xiv, 284 pages</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -84,14 +87,15 @@
     </bf:carrier>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Revision of author's thesis (doctoral)--University of North Carolina at Chapel Hill, 2016 under title: Outpost of freedom : a German-American network's campaign to bring Cold War democracy to West Berlin, 1933-66</rdfs:label>
+	<rdfs:label>Revision of author's thesis (doctoral)--University of North Carolina at Chapel Hill, 2016 under title: Outpost of freedom : a German-American network's campaign to bring Cold War democracy to West Berlin, 1933-66.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:supplementaryContent>
-      <bf:SupplementaryContent>
-	<rdfs:label>Includes bibliographical references and index</rdfs:label>
-      </bf:SupplementaryContent>
-    </bf:supplementaryContent>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
+	<rdfs:label>Includes bibliographical references and index.</rdfs:label>
+      </bf:Note>
+    </bf:note>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/20621601"/>
     <bf:adminMetadata>
@@ -118,7 +122,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-09T14:35:07</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:10:17</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -146,13 +150,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T04:12:00.40343-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:01.244855-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -178,8 +182,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d1$eecip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aLBSOR$erf06 2018-08-09 to Dewey$wxm06 2018-08-09$axn13 2018-10-31 1 copy rec'd., to CIP ver.$frf06 2018-11-09 (telework) to CALM</bflc:marcKey>
 	<lclocal:d955>=955     $a LBSOR $e rf06 2018-08-09 to Dewey $w xm06 2018-08-09 $a xn13 2018-10-31 1 copy rec'd., to CIP ver. $f rf06 2018-11-09 (telework) to CALM</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -193,6 +200,12 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aLBSOR/DLC$beng$cLBSOR$erda$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
@@ -200,6 +213,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2018-08-08</lclocal:d985>
+	<bflc:marcKey>999ff$ib7cffd37-086a-55d7-af0f-937434cc334d$s23dd8223-e7d4-4999-a6a1-7b18304ca73a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b7cffd37-086a-55d7-af0f-937434cc334d $s 23dd8223-e7d4-4999-a6a1-7b18304ca73a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -312,16 +327,42 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
-    <bf:summary>
-      <bf:Summary>
-	<rdfs:label>"Within the span of a generation, Nazi Germany's former capital, Berlin, found a new role as a symbol of freedom and resilient democracy in the Cold War. This book unearths how this remarkable transformation derived from a network of liberal American occupation officials, and returned émigrés, or remigrés, of the Marxist Social Democratic Party (SPD). This network derived from lengthy physical and political journeys. After fleeing Hitler, German-speaking self-professed 'revolutionary socialists' emphasized 'anti-totalitarianism' in New Deal America and contributed to its intelligence apparatus. These experiences made these remigrés especially adept at cultural translation in postwar Berlin against Stalinism. This book provides a new explanation for the alignment of Germany's principal left-wing party with the Western camp. While the Cold War has traditionally been analyzed from the perspective of decision makers in Moscow or Washington, this study demonstrates the agency of hitherto marginalized on the conflict's first battlefield. Examining local political culture and social networks underscores how both Berliners and émigrés understood the East-West competition over the rubble that the Nazis left behind as a chance to reinvent themselves as democrats and cultural mediators, respectively. As this network popularized an anti-Communist, pro-Western Left, this book identifies how often ostracized émigrés made a crucial contribution to the Federal Republic of Germany's democratization"-- Provided by publisher</rdfs:label>
-      </bf:Summary>
-    </bf:summary>
     <bf:tableOfContents>
       <bf:TableOfContents>
-	<rdfs:label>Berlin, capital of ruins, 1945-1948 -- Origins of the outpost network, 1933-1949 -- Rise of the outpost narrative in the wake of the Berlin airlift, 1948-1953 -- Triple Crisis, 1953 -- Ascent to leadership, 1954-1961 -- Public acceptance and reinterpretation, 1961-1972 -- Conclusion: Excavating the outpost of freedom on the spree</rdfs:label>
+	<rdfs:label>Berlin, capital of ruins, 1945-1948 -- Origins of the outpost network, 1933-1949 -- Rise of the outpost narrative in the wake of the Berlin airlift, 1948-1953 -- Triple Crisis, 1953 -- Ascent to leadership, 1954-1961 -- Public acceptance and reinterpretation, 1961-1972 -- Conclusion: Excavating the outpost of freedom on the spree.</rdfs:label>
       </bf:TableOfContents>
     </bf:tableOfContents>
+    <bf:summary>
+      <bf:Summary>
+	<rdfs:label>"Within the span of a generation, Nazi Germany's former capital, Berlin, found a new role as a symbol of freedom and resilient democracy in the Cold War. This book unearths how this remarkable transformation derived from a network of liberal American occupation officials, and returned émigrés, or remigrés, of the Marxist Social Democratic Party (SPD). This network derived from lengthy physical and political journeys. After fleeing Hitler, German-speaking self-professed 'revolutionary socialists' emphasized 'anti-totalitarianism' in New Deal America and contributed to its intelligence apparatus. These experiences made these remigrés especially adept at cultural translation in postwar Berlin against Stalinism. This book provides a new explanation for the alignment of Germany's principal left-wing party with the Western camp. While the Cold War has traditionally been analyzed from the perspective of decision makers in Moscow or Washington, this study demonstrates the agency of hitherto marginalized on the conflict's first battlefield. Examining local political culture and social networks underscores how both Berliners and émigrés understood the East-West competition over the rubble that the Nazis left behind as a chance to reinvent themselves as democrats and cultural mediators, respectively. As this network popularized an anti-Communist, pro-Western Left, this book identifies how often ostracized émigrés made a crucial contribution to the Federal Republic of Germany's democratization"-- Provided by publisher.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010110278">
+	<rdfs:label xml:lang="en">Reconstruction (1939-1951)--Germany (West)</rdfs:label>
+	<bflc:marcKey>150  $aReconstruction (1939-1951)$zGermany (West)</bflc:marcKey>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">Reconstruction (1939-1951)</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">Reconstruction (1939-1951)</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:Geographic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">Germany (West)</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:GeographicElement>
+		<madsrdf:elementValue xml:lang="en">Germany (West)</madsrdf:elementValue>
+	      </madsrdf:GeographicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Geographic>
+	</madsrdf:componentList>
+      </bf:Topic>
+    </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85013353">
 	<rdfs:label xml:lang="en">Berlin (Germany)--Politics and government--1945-1990</rdfs:label>
@@ -356,32 +397,6 @@
 	  </madsrdf:Temporal>
 	</madsrdf:componentList>
 	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">e-gx---</bf:code>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010110278">
-	<rdfs:label xml:lang="en">Reconstruction (1939-1951)--Germany (West)</rdfs:label>
-	<bflc:marcKey>150  $aReconstruction (1939-1951)$zGermany (West)</bflc:marcKey>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Reconstruction (1939-1951)</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:TopicElement>
-		<madsrdf:elementValue xml:lang="en">Reconstruction (1939-1951)</madsrdf:elementValue>
-	      </madsrdf:TopicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Topic>
-	  <madsrdf:Geographic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Germany (West)</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:GeographicElement>
-		<madsrdf:elementValue xml:lang="en">Germany (West)</madsrdf:elementValue>
-	      </madsrdf:GeographicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Geographic>
-	</madsrdf:componentList>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
@@ -457,7 +472,12 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
-	<bf:relationship rdf:resource="http://id.loc.gov/ontologies/bibframe/hasSeries"/>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
 	<bf:seriesEnumeration>61</bf:seriesEnumeration>
 	<bf:associatedResource>
 	  <bf:Series>
@@ -470,7 +490,7 @@
 	    </bf:status>
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>Routledge studies in modern European history ;</bf:mainTitle>
+		<bf:mainTitle>Routledge studies in modern European history</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	  </bf:Series>
@@ -502,7 +522,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-09T14:35:07</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:10:17</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -530,13 +550,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T04:12:00.40343-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:01.244855-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -562,8 +582,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d1$eecip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aLBSOR$erf06 2018-08-09 to Dewey$wxm06 2018-08-09$axn13 2018-10-31 1 copy rec'd., to CIP ver.$frf06 2018-11-09 (telework) to CALM</bflc:marcKey>
 	<lclocal:d955>=955     $a LBSOR $e rf06 2018-08-09 to Dewey $w xm06 2018-08-09 $a xn13 2018-10-31 1 copy rec'd., to CIP ver. $f rf06 2018-11-09 (telework) to CALM</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -577,6 +600,12 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aLBSOR/DLC$beng$cLBSOR$erda$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
@@ -584,6 +613,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2018-08-08</lclocal:d985>
+	<bflc:marcKey>999ff$ib7cffd37-086a-55d7-af0f-937434cc334d$s23dd8223-e7d4-4999-a6a1-7b18304ca73a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b7cffd37-086a-55d7-af0f-937434cc334d $s 23dd8223-e7d4-4999-a6a1-7b18304ca73a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

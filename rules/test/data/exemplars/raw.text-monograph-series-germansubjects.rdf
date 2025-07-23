@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-05-06T09:39:41</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T02:40:00</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:47.831318-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:29.096027-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -87,6 +87,8 @@
 	<lclocal:d955>=955     $b hb09 2015-05-04 z-processor copy to LOAN</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
+	<bflc:marcKey>999ff$ic1507dca-ad40-512a-b127-38e5b70986be$s86a2f2ac-475b-4217-9d66-f28342d58a4e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c1507dca-ad40-512a-b127-38e5b70986be $s 86a2f2ac-475b-4217-9d66-f28342d58a4e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -166,7 +168,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent100-25">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent100-26">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Rowling, J. K.</rdfs:label>
 	    <bflc:marcKey>1001 $aRowling, J. K.</bflc:marcKey>
@@ -226,13 +228,13 @@
       </bf:Summary>
     </bf:summary>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic600-36">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic600-37">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<madsrdf:authoritativeLabel>Potter, Harry (Fictitious character)--Juvenile fiction.</madsrdf:authoritativeLabel>
 	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
 	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
 	<madsrdf:componentList rdf:parseType="Collection">
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent600-36">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent600-37">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Potter, Harry (Fictitious character)</rdfs:label>
 	    <bflc:marcKey>60010$aPotter, Harry$c(Fictitious character)</bflc:marcKey>
@@ -245,7 +247,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-37">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-38">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Hogwarts School of Witchcraft and Wizardry (Imaginary organization)--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Hogwarts School of Witchcraft and Wizardry (Imaginary organization)--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -262,7 +264,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-38">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-39">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Friendship--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Friendship--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -279,7 +281,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-39">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-40">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Wizards--England--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Wizards--England--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -299,7 +301,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-40">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-41">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Boarding school students--England--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Boarding school students--England--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -319,7 +321,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-41">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-42">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Boarding schools--England--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Boarding schools--England--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -339,7 +341,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-42">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-43">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Magic--England--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Magic--England--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -359,7 +361,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-43">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-44">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Youth--Conduct of life--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Youth--Conduct of life--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -379,7 +381,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-44">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-45">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Conduct of life--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Conduct of life--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -396,7 +398,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-45">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-46">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Teacher-student relationships--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Teacher-student relationships--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -413,7 +415,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-46">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-47">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Hate--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Hate--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -430,7 +432,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-47">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-48">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Parapsychology--Military aspects--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Parapsychology--Military aspects--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -450,7 +452,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-48">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-49">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Dueling--Juvenile fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Dueling--Juvenile fiction</madsrdf:authoritativeLabel>
@@ -467,7 +469,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-49">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Topic650-50">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Literatura--Inglaterra</rdfs:label>
 	<madsrdf:authoritativeLabel>Literatura--Inglaterra</madsrdf:authoritativeLabel>
@@ -878,7 +880,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Place651-68">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Place651-69">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>Grossbritannien</rdfs:label>
 	<madsrdf:authoritativeLabel>Grossbritannien</madsrdf:authoritativeLabel>
@@ -901,7 +903,7 @@
       </bf:Place>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-69">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-70">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Children's stories--2003</rdfs:label>
 	<madsrdf:authoritativeLabel>Children's stories--2003</madsrdf:authoritativeLabel>
@@ -918,21 +920,21 @@
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-70">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-71">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Children's stories</rdfs:label>
 	<madsrdf:authoritativeLabel>Children's stories</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-71">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-72">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Jugendbuch</rdfs:label>
 	<madsrdf:authoritativeLabel>Jugendbuch</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-72">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/18602501#GenreForm655-73">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Fantasy fiction</rdfs:label>
 	<madsrdf:authoritativeLabel>Fantasy fiction</madsrdf:authoritativeLabel>
@@ -958,7 +960,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent700-74">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent700-75">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Cockcroft, Jason</rdfs:label>
 	    <bflc:marcKey>7001 $aCockcroft, Jason.$4ill</bflc:marcKey>
@@ -972,7 +974,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-75">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-76">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Bloomsbury (Firm)</rdfs:label>
 	    <bflc:marcKey>7102 $aBloomsbury (Firm)$4pbl</bflc:marcKey>
@@ -986,7 +988,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-76">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-77">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Clays Ltd</rdfs:label>
 	    <bflc:marcKey>7102 $aClays Ltd.$4prt</bflc:marcKey>
@@ -1000,7 +1002,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-77">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent710-78">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Palimpsest Book Production Ltd</rdfs:label>
 	    <bflc:marcKey>7102 $aPalimpsest Book Production Ltd.$4tyg</bflc:marcKey>
@@ -1019,12 +1021,12 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub800-78">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub800-79">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent800-78">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Agent800-79">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		    <rdfs:label>Rowling, J. K.</rdfs:label>
 		    <bflc:marcKey>8001 $aRowling, J. K.$tHarry Potter series ;$v5.</bflc:marcKey>
@@ -1054,7 +1056,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub830-79">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18602501#Hub830-80">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -1148,8 +1150,13 @@
       </bf:Isbn>
     </bf:identifiedBy>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>18602501</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm52055301</rdf:value>
+	<rdf:value>52055301</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:responsibilityStatement>J.K. Rowling</bf:responsibilityStatement>

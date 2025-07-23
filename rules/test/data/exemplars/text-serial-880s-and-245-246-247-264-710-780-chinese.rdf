@@ -463,7 +463,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-11T09:10:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:28:39</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCA</bf:code>
@@ -489,7 +489,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:18.871662-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:50.583386-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -550,6 +550,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i5512dd0a-c420-51f0-a545-7170d46dfc12$sd81680a3-f1bc-40b7-b2e1-6248f0d64067</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 5512dd0a-c420-51f0-a545-7170d46dfc12 $s d81680a3-f1bc-40b7-b2e1-6248f0d64067</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -591,13 +593,18 @@
       </bf:Frequency>
     </bf:frequency>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>16777386</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2012211076</rdf:value>
       </bf:Lccn>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn556642687</rdf:value>
+	<rdf:value>556642687</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -703,17 +710,21 @@
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
+	    <bf:mainTitle>Beijing sheng wu yi yao chan ye fa zhan bao gao</bf:mainTitle>
 	    <bf:mainTitle xml:lang="zh-hani">北京生物医药产业发展报告</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
+	    <bf:mainTitle>Beijing sheng wu chan ye fa zhan bao gao</bf:mainTitle>
 	    <bf:mainTitle xml:lang="zh-hani">北京生物产业发展报告</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:variantType>former</bf:variantType>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/for"/>
+	    <bf:mainTitle>Qi hang, Beijing sheng wu chan ye fa zhan bao gao</bf:mainTitle>
+	    <bf:date>2009</bf:date>
 	    <bf:mainTitle xml:lang="zh-hani">启航, 北京生物产业发展报告</bf:mainTitle>
 	    <bf:date xml:lang="zh-hani">2009</bf:date>
 	  </bf:VariantTitle>
@@ -728,16 +739,22 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>16777386</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2012211076</rdf:value>
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocn556642687</rdf:value>
+		<rdf:value>556642687</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Beijing: Ke xue chu ban she</bf:publicationStatement>
+	    <bf:publicationStatement xml:lang="zh-hani">北京: 科学出版社</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
@@ -771,7 +788,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-08-11T09:10:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:28:39</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCA</bf:code>
@@ -797,7 +814,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:18.871662-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:50.583386-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -858,6 +875,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i5512dd0a-c420-51f0-a545-7170d46dfc12$sd81680a3-f1bc-40b7-b2e1-6248f0d64067</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 5512dd0a-c420-51f0-a545-7170d46dfc12 $s d81680a3-f1bc-40b7-b2e1-6248f0d64067</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

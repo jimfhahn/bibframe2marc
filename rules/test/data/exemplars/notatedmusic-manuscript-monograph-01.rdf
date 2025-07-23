@@ -199,7 +199,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-14T13:58:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T12:24:44</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -228,7 +228,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:05.340642-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:51.233456-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -258,6 +258,8 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $e ML96</lclocal:d985>
+	<bflc:marcKey>999ff$i27889336-7a7e-58f4-a8c2-0e449d918ce8$s622b6292-e203-45cc-b4e7-77aadee79fd8</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 27889336-7a7e-58f4-a8c2-0e449d918ce8 $s 622b6292-e203-45cc-b4e7-77aadee79fd8</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -283,6 +285,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>[n.p.]: [n.d.]</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>10496140</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2012570811</rdf:value>
@@ -334,6 +341,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>10496140</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2012570811</rdf:value>
 	      </bf:Lccn>
@@ -376,7 +388,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-14T13:58:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T12:24:44</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -405,7 +417,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:05.340642-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:51.233456-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -435,6 +447,8 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $e ML96</lclocal:d985>
+	<bflc:marcKey>999ff$i27889336-7a7e-58f4-a8c2-0e449d918ce8$s622b6292-e203-45cc-b4e7-77aadee79fd8</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 27889336-7a7e-58f4-a8c2-0e449d918ce8 $s 622b6292-e203-45cc-b4e7-77aadee79fd8</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

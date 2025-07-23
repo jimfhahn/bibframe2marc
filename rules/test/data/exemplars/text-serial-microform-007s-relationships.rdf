@@ -400,7 +400,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-09T13:30:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:10:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCA</bf:code>
@@ -426,7 +426,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:21.336572-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -487,6 +487,8 @@
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
 	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
+	<bflc:marcKey>999ff$i04afa760-6e9e-5dc8-aa78-81f201ed28b7$s2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 04afa760-6e9e-5dc8-aa78-81f201ed28b7 $s 2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -584,8 +586,13 @@
       </bf:Lccn>
     </bf:identifiedBy>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11891684</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm43286094 </rdf:value>
+	<rdf:value>43286094</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:acquisitionSource>
@@ -697,14 +704,25 @@
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11891684</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocm43286094 </rdf:value>
+		<rdf:value>43286094</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>illustrations</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -739,7 +757,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-09T13:30:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:10:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCA</bf:code>
@@ -765,7 +783,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:21.336572-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -826,6 +844,8 @@
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
 	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
+	<bflc:marcKey>999ff$i04afa760-6e9e-5dc8-aa78-81f201ed28b7$s2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 04afa760-6e9e-5dc8-aa78-81f201ed28b7 $s 2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -937,14 +957,25 @@
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11891684</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocm43286094 </rdf:value>
+		<rdf:value>43286094</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>illustrations</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -979,7 +1010,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-09T13:30:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:10:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCA</bf:code>
@@ -1005,7 +1036,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:42.40733-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:21.336572-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1066,6 +1097,8 @@
 	<lclocal:d925>=925  0  $a Acquire $b 1 shelf copy $x Policy default</lclocal:d925>
 	<bflc:marcKey>955  $adb18 01-28-00</bflc:marcKey>
 	<lclocal:d955>=955     $a db18 01-28-00</lclocal:d955>
+	<bflc:marcKey>999ff$i04afa760-6e9e-5dc8-aa78-81f201ed28b7$s2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 04afa760-6e9e-5dc8-aa78-81f201ed28b7 $s 2c6eb173-14a8-49c4-ae9b-d9b9b8867f6d</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

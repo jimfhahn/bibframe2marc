@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2011-10-28T08:41:08</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:44:58</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:06.012737-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:52.131469-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -79,6 +79,8 @@
 	<lclocal:d955>=955     $a ff70 2011-10-13 $a ff00 2011-10-28 to GS/SBCG</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-644</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-644</lclocal:d955>
+	<bflc:marcKey>999ff$icb403da1-7e75-5ee6-8d1c-20482db9060d$s2d3af14f-d2d4-42f7-8548-628f370cb988</bflc:marcKey>
+	<lclocal:d999>=999  ff $i cb403da1-7e75-5ee6-8d1c-20482db9060d $s 2d3af14f-d2d4-42f7-8548-628f370cb988</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -134,14 +136,14 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-18">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-19">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Korruption</rdfs:label>
 	<madsrdf:authoritativeLabel>Korruption</madsrdf:authoritativeLabel>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-19">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Topic650-20">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Korruption</rdfs:label>
 	<madsrdf:authoritativeLabel>Korruption</madsrdf:authoritativeLabel>
@@ -153,14 +155,14 @@
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-20">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-21">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Aufsatzsammlung</rdfs:label>
 	<madsrdf:authoritativeLabel>Aufsatzsammlung</madsrdf:authoritativeLabel>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-21">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/16998093#GenreForm655-22">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Aufsatzsammlung</rdfs:label>
 	<madsrdf:authoritativeLabel>Aufsatzsammlung</madsrdf:authoritativeLabel>
@@ -174,7 +176,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-22">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-23">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Jakubowicz, Linda</rdfs:label>
 	    <bflc:marcKey>7001 $aJakubowicz, Linda$eHrsg.$4edt</bflc:marcKey>
@@ -188,7 +190,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-23">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent700-24">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Fiedler, Franz</rdfs:label>
 	    <bflc:marcKey>7001 $aFiedler, Franz.$4aut</bflc:marcKey>
@@ -207,12 +209,12 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub810-24">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub810-25">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:contribution>
 	      <bf:Contribution>
 		<bf:agent>
-		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent810-24">
+		  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Agent810-25">
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		    <rdfs:label>Sicherheitsakademie &lt;Wien&gt;</rdfs:label>
 		    <bflc:marcKey>8102 $aSicherheitsakademie &lt;Wien&gt;$tSIAK scientific series$v5.</bflc:marcKey>
@@ -242,7 +244,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub830-25">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/16998093#Hub830-26">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -284,6 +286,11 @@
       <bf:Isbn>
 	<rdf:value>9783950230383</rdf:value>
       </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>16998093</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>[the authors: Franz Fiedler ... Ed.: Linda Jakubowicz ...].</bf:responsibilityStatement>
     <bf:title>

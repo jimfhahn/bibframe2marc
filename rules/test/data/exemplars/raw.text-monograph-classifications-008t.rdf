@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-09T14:35:07</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:10:17</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:25.525906-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:59.327738-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -91,6 +91,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2018-08-08</lclocal:d985>
+	<bflc:marcKey>999ff$ib7cffd37-086a-55d7-af0f-937434cc334d$s23dd8223-e7d4-4999-a6a1-7b18304ca73a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b7cffd37-086a-55d7-af0f-937434cc334d $s 23dd8223-e7d4-4999-a6a1-7b18304ca73a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -139,7 +141,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Agent100-16">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Agent100-17">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Krause, Scott H.</rdfs:label>
 	    <bflc:marcKey>1001 $aKrause, Scott H.,$eauthor.</bflc:marcKey>
@@ -201,7 +203,7 @@
       </bf:Summary>
     </bf:summary>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Reconstruction (1939-1951)--Germany (West)</rdfs:label>
 	<madsrdf:authoritativeLabel>Reconstruction (1939-1951)--Germany (West)</madsrdf:authoritativeLabel>
@@ -218,7 +220,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-31">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Berlin (Germany)--Politics and government--1945-1990</rdfs:label>
 	<madsrdf:authoritativeLabel>Berlin (Germany)--Politics and government--1945-1990</madsrdf:authoritativeLabel>
@@ -238,7 +240,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-32">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-33">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Germany (West)--Foreign relations--United States</rdfs:label>
 	<madsrdf:authoritativeLabel>Germany (West)--Foreign relations--United States</madsrdf:authoritativeLabel>
@@ -258,7 +260,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>United States--Foreign relations--Germany (West)</rdfs:label>
 	<madsrdf:authoritativeLabel>United States--Foreign relations--Germany (West)</madsrdf:authoritativeLabel>
@@ -294,6 +296,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London; New York, NY: Routledge/Taylor &amp; Francis Group, 2019</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>20621601</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2018020991</rdf:value>

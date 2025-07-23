@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-11T09:43:01</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:36:56</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:43.25406-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:22.420204-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -85,6 +85,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i16a5e19a-feac-5d80-bfdf-4068a3dc19e8$sefac65a5-1246-49da-95c7-ccf796514ab2</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 16a5e19a-feac-5d80-bfdf-4068a3dc19e8 $s efac65a5-1246-49da-95c7-ccf796514ab2</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
@@ -148,7 +150,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Temporal rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Temporal648-28">
+      <bf:Temporal rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Temporal648-29">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Temporal"/>
 	<rdfs:label>1981-2000</rdfs:label>
 	<madsrdf:authoritativeLabel>1981-2000</madsrdf:authoritativeLabel>
@@ -156,7 +158,7 @@
       </bf:Temporal>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-29">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Country music--1991-2000</rdfs:label>
 	<madsrdf:authoritativeLabel>Country music--1991-2000</madsrdf:authoritativeLabel>
@@ -173,7 +175,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21009588#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Country music--1981-1990</rdfs:label>
 	<madsrdf:authoritativeLabel>Country music--1981-1990</madsrdf:authoritativeLabel>
@@ -255,6 +257,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>21009588</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2019621855</rdf:value>
       </bf:Lccn>
@@ -276,7 +283,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn608089562</rdf:value>
+	<rdf:value>608089562</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>

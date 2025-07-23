@@ -86,7 +86,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm01537921 </rdf:value>
+	<rdf:value>1537921</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -237,7 +237,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-29T22:48:48</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -262,13 +262,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:43.395924-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -323,6 +323,8 @@
 	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
+	<bflc:marcKey>999ff$i6cb082c4-d56c-5f10-913c-3aa4d43e35d6$s93fd87ff-cad4-4d12-8fce-a15a83226e38</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6cb082c4-d56c-5f10-913c-3aa4d43e35d6 $s 93fd87ff-cad4-4d12-8fce-a15a83226e38</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -1418,7 +1420,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-29T22:48:48</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -1443,13 +1445,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:43.395924-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1504,6 +1506,8 @@
 	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
+	<bflc:marcKey>999ff$i6cb082c4-d56c-5f10-913c-3aa4d43e35d6$s93fd87ff-cad4-4d12-8fce-a15a83226e38</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6cb082c4-d56c-5f10-913c-3aa4d43e35d6 $s 93fd87ff-cad4-4d12-8fce-a15a83226e38</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -1559,7 +1563,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-20T06:56:50</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-29T22:48:48</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -1584,8 +1588,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-21T01:31:59.152054-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:43.395924-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1603,7 +1607,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1645,6 +1649,8 @@
 	<bflc:marcKey>955  $hdb30 2004-08-05$axf13 2010-03-19</bflc:marcKey>
 	<lclocal:d955>=955     $h db30 2004-08-05 $a xf13 2010-03-19</lclocal:d955>
 	<lclocal:d985>=985     $e eserial 200406</lclocal:d985>
+	<bflc:marcKey>999ff$i6cb082c4-d56c-5f10-913c-3aa4d43e35d6$s93fd87ff-cad4-4d12-8fce-a15a83226e38</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6cb082c4-d56c-5f10-913c-3aa4d43e35d6 $s 93fd87ff-cad4-4d12-8fce-a15a83226e38</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

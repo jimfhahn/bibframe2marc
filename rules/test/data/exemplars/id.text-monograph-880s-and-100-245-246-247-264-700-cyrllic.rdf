@@ -26,7 +26,12 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Ėlista: GU "Izdatel'skiĭ dom "Gerel", 2009</bf:publicationStatement>
-    <bflc:publicationStatement xml:lang="ru-cyrl">Элиста: ГУ "Издательский дом "Герел", 2009</bflc:publicationStatement>
+    <bf:publicationStatement xml:lang="ru-cyrl">Элиста: ГУ "Издательский дом "Герел", 2009</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>22915593</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2022497161</rdf:value>
@@ -105,7 +110,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-22T19:00:25</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T08:02:56</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -134,13 +139,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T05:28:43.373268-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:48.495336-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -166,9 +171,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corigres$d2$encip$f20$gy-nonroman</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c origres $d 2 $e ncip $f 20 $g y-nonroman</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bjs13 2023-01-03 z-processor JACKPHY to GS/RUS$afe00 2023-01-03 to GS/RUS$ife11 2023-04-12 TW to CMD$ife11 2023-06-22 (update)</bflc:marcKey>
 	<lclocal:d955>=955     $b js13 2023-01-03 z-processor JACKPHY to GS/RUS $a fe00 2023-01-03 to GS/RUS $i fe11 2023-04-12 TW to CMD $i fe11 2023-06-22 (update)</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -193,11 +203,13 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$iaad0a55e-15b1-5d36-b99d-32f4195633fb$saa74ad06-06bd-4ff3-80a8-5c373bcdd18e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i aad0a55e-15b1-5d36-b99d-32f4195633fb $s aa74ad06-06bd-4ff3-80a8-5c373bcdd18e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/22915593">
-    <bflc:aap>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna) I︠A︡ izuchai︠u︡ "Dzhangar"</bflc:aap>
+    <bflc:aap>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna). I︠A︡ izuchai︠u︡ "Dzhangar"</bflc:aap>
     <bflc:aap-normalized>todaevabkh(buli︠a︡shkhoĭchievna)i︠a︡izuchai︠u︡"dzhangar"</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
@@ -213,12 +225,6 @@
 	<bf:code>bibliography</bf:code>
       </bf:SupplementaryContent>
     </bf:supplementaryContent>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026086">
-	<rdfs:label xml:lang="en">Dictionaries</rdfs:label>
-	<bflc:marcKey>155  $aDictionaries</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/xal">
 	<rdfs:label xml:lang="en">Oirat</rdfs:label>
@@ -273,13 +279,15 @@
     </bf:title>
     <bf:title>
       <bf:VariantTitle>
-	<bf:variantType>portion</bf:variantType>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+	<bf:mainTitle>Kalmyt︠s︡ko-russkiĭ slovarʹ</bf:mainTitle>
 	<bf:mainTitle xml:lang="ru-cyrl">Калмыцко-русский словарь</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
     <bf:title>
       <bf:VariantTitle>
-	<bf:variantType>former</bf:variantType>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/for"/>
+	<bf:mainTitle>Bi "Jan︠g︡ḣr" daschanav : khalʹmg-ors tolʹ</bf:mainTitle>
 	<bf:mainTitle xml:lang="ru-cyrl">Би "Jan︠g︡hr" дасчанав : хальмг-орс толь</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
@@ -319,6 +327,7 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026086"/>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
@@ -368,7 +377,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-22T19:00:25</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T08:02:56</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -397,13 +406,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T05:28:43.373268-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:48.495336-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -429,9 +438,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corigres$d2$encip$f20$gy-nonroman</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c origres $d 2 $e ncip $f 20 $g y-nonroman</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bjs13 2023-01-03 z-processor JACKPHY to GS/RUS$afe00 2023-01-03 to GS/RUS$ife11 2023-04-12 TW to CMD$ife11 2023-06-22 (update)</bflc:marcKey>
 	<lclocal:d955>=955     $b js13 2023-01-03 z-processor JACKPHY to GS/RUS $a fe00 2023-01-03 to GS/RUS $i fe11 2023-04-12 TW to CMD $i fe11 2023-06-22 (update)</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -456,6 +470,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$iaad0a55e-15b1-5d36-b99d-32f4195633fb$saa74ad06-06bd-4ff3-80a8-5c373bcdd18e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i aad0a55e-15b1-5d36-b99d-32f4195633fb $s aa74ad06-06bd-4ff3-80a8-5c373bcdd18e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

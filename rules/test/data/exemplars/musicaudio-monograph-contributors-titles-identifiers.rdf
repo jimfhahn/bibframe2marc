@@ -236,7 +236,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-24T16:46:09</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T02:21:23</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -265,7 +265,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:37.329917-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:15.140521-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -316,6 +316,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i70af9951-92ab-5bcd-bafe-f247af25bb7c$s5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 70af9951-92ab-5bcd-bafe-f247af25bb7c $s 5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -379,6 +381,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement>Ventura, CA: Eroica Classical Recordings, p2008</bf:publicationStatement>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>18344194</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2014624918</rdf:value>
       </bf:Lccn>
@@ -400,7 +407,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn311097395</rdf:value>
+	<rdf:value>311097395</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -515,6 +522,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>18344194</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2014624918</rdf:value>
 	      </bf:Lccn>
@@ -528,21 +540,27 @@
 	      <bf:AudioIssueNumber>
 		<rdf:value>JDT3420</rdf:value>
 		<bf:assigner>
-		  <bf:Agent>
+		  <bf:Organization>
 		    <rdfs:label>Eroica Classical Recordings</rdfs:label>
-		  </bf:Agent>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:AudioIssueNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocn311097395</rdf:value>
+		<rdf:value>311097395</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>Ventura, CA: Eroica Classical Recordings, p2008</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 sound disc</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>digital</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -573,7 +591,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-24T16:46:09</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T02:21:23</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -602,7 +620,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:37.329917-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:15.140521-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -653,6 +671,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i70af9951-92ab-5bcd-bafe-f247af25bb7c$s5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 70af9951-92ab-5bcd-bafe-f247af25bb7c $s 5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

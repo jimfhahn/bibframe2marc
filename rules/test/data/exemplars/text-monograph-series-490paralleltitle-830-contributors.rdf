@@ -417,7 +417,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-03-22T11:07:35</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T12:49:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -446,7 +446,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:40.827416-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:19.154479-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -489,6 +489,8 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>999ff$i91bd1ad1-351d-5143-8d90-7c962bbf30bd$s55e0878a-3052-4f36-9d52-2ab2f24c84d4</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 91bd1ad1-351d-5143-8d90-7c962bbf30bd $s 55e0878a-3052-4f36-9d52-2ab2f24c84d4</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -515,6 +517,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Bologna, Italy: Italian Physical Society, 1990</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>4384447</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91137213 </rdf:value>
@@ -629,6 +636,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>4384447</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>   91137213 </rdf:value>
 	      </bf:Lccn>
@@ -638,10 +650,21 @@
 		<rdf:value>8877940344</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>9788877940346</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>Bologna, Italy: Italian Physical Society, 1990</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>xii, 345 p.</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>ill.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -676,7 +699,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-03-22T11:07:35</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T12:49:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -705,7 +728,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:40.827416-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:19.154479-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -748,6 +771,8 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>999ff$i91bd1ad1-351d-5143-8d90-7c962bbf30bd$s55e0878a-3052-4f36-9d52-2ab2f24c84d4</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 91bd1ad1-351d-5143-8d90-7c962bbf30bd $s 55e0878a-3052-4f36-9d52-2ab2f24c84d4</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

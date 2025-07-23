@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-16T06:56:52</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:30:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>ZYU</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:13.282006-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:34:01.764939-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -99,6 +99,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$ic9f5de6b-74f9-552a-8dce-b70d1c7c59b9$s5f72c6d2-c34d-47da-be70-be79d903b99e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c9f5de6b-74f9-552a-8dce-b70d1c7c59b9 $s 5f72c6d2-c34d-47da-be70-be79d903b99e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -158,7 +160,7 @@
       </bf:ClassificationDdc>
     </bf:classification>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Hub130-17">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Hub130-18">
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Out (New York, N.Y.)</bf:mainTitle>
@@ -215,7 +217,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-46">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-47">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay men--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay men--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -235,7 +237,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-47">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-48">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Lesbians--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Lesbians--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -255,7 +257,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-48">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-49">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Sexual minorities--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Sexual minorities--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -275,7 +277,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-49">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-50">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay community--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay community--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -295,7 +297,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-50">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-51">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Homosexuality--Social aspects--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Homosexuality--Social aspects--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -318,7 +320,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-51">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-52">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay culture--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay culture--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -338,7 +340,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-52">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-53">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Performing arts--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Performing arts--Periodicals</madsrdf:authoritativeLabel>
@@ -355,7 +357,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-53">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-54">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Fashion--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Fashion--Periodicals</madsrdf:authoritativeLabel>
@@ -372,7 +374,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-54">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-55">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay people--Social conditions--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay people--Social conditions--Periodicals</madsrdf:authoritativeLabel>
@@ -392,7 +394,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-55">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-56">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Homosexuality--Social aspects--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Homosexuality--Social aspects--Periodicals</madsrdf:authoritativeLabel>
@@ -412,7 +414,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-56">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-57">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Homophobia--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Homophobia--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -432,7 +434,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-57">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-58">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay liberation movement--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay liberation movement--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -452,7 +454,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-58">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-59">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay activists--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay activists--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -472,7 +474,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-59">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-60">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay rights--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay rights--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -492,7 +494,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-60">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-61">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>AIDS (Disease)--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>AIDS (Disease)--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -512,7 +514,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-61">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-62">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Gay people--Travel--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Gay people--Travel--Periodicals</madsrdf:authoritativeLabel>
@@ -532,7 +534,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-62">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-63">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Homosexuels masculins--États-Unis--Périodiques</rdfs:label>
 	<madsrdf:authoritativeLabel>Homosexuels masculins--États-Unis--Périodiques</madsrdf:authoritativeLabel>
@@ -581,7 +583,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-63">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Topic650-64">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Lesbiennes--États-Unis--Périodiques</rdfs:label>
 	<madsrdf:authoritativeLabel>Lesbiennes--États-Unis--Périodiques</madsrdf:authoritativeLabel>
@@ -882,7 +884,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Place651-88">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Place651-89">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>United States</rdfs:label>
 	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
@@ -899,7 +901,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-90">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-91">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
@@ -923,7 +925,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-92">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-93">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>periodicals</madsrdf:authoritativeLabel>
@@ -945,7 +947,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-93">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/11457859#GenreForm655-94">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Périodiques</rdfs:label>
 	<madsrdf:authoritativeLabel>Périodiques</madsrdf:authoritativeLabel>
@@ -970,7 +972,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/supplement"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work770-94">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work770-95">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Out traveler</bf:mainTitle>
@@ -982,7 +984,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance770-94">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance770-95">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Out traveler</bf:mainTitle>
@@ -1008,7 +1010,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work770-94"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work770-95"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1024,14 +1026,14 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work776-95">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work776-96">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Out (New York, N.Y.)</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance776-95">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance776-96">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Out (New York, N.Y.)</bf:mainTitle>
@@ -1057,7 +1059,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work776-95"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work776-96"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1073,7 +1075,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work776-96">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work776-97">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Out (New York, N.Y.)</bf:mainTitle>
@@ -1085,7 +1087,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance776-96">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance776-97">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Out (New York, N.Y.)</bf:mainTitle>
@@ -1101,7 +1103,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work776-96"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work776-97"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1112,7 +1114,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/issuedwith"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work777-97">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work777-98">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Advocate (Los Angeles, Calif.)</bf:mainTitle>
@@ -1124,7 +1126,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance777-97">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance777-98">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Advocate (Los Angeles, Calif.)</bf:mainTitle>
@@ -1151,7 +1153,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work777-97"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work777-98"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1162,7 +1164,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/absorptionof"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work780-98">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Work780-99">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Advocate (Los Angeles, Calif.).</bf:mainTitle>
@@ -1174,7 +1176,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance780-98">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11457859#Instance780-99">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Advocate (Los Angeles, Calif.).</bf:mainTitle>
@@ -1201,7 +1203,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work780-98"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11457859#Work780-99"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -1283,6 +1285,11 @@
       </bf:Frequency>
     </bf:frequency>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11457859</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   95657077 </rdf:value>
       </bf:Lccn>
@@ -1314,7 +1321,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm25743067 </rdf:value>
+	<rdf:value>25743067</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>

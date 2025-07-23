@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-06-22T19:00:25</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T08:02:56</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:24.051171-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:57.241044-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -92,6 +92,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$iaad0a55e-15b1-5d36-b99d-32f4195633fb$saa74ad06-06bd-4ff3-80a8-5c373bcdd18e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i aad0a55e-15b1-5d36-b99d-32f4195633fb $s aa74ad06-06bd-4ff3-80a8-5c373bcdd18e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -115,7 +117,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Agent100-17">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Agent100-18">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna)</rdfs:label>
 	    <bflc:marcKey>1001 $aTodaeva, B. Kh.$q(Buli︠a︡sh Khoĭchievna),$eauthor.</bflc:marcKey>
@@ -157,7 +159,7 @@
       </bf:Content>
     </bf:content>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Topic650-31">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Topic650-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Kalmyk language--Dictionaries--Russian</rdfs:label>
 	<madsrdf:authoritativeLabel>Kalmyk language--Dictionaries--Russian</madsrdf:authoritativeLabel>
@@ -191,7 +193,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Agent700-33">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22915593#Agent700-34">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Pi︠u︡rbeev, G. T︠S︡. (Grigoriĭ T︠S︡erenovich)</rdfs:label>
 	    <bflc:marcKey>7001 $aPi︠u︡rbeev, G. T︠S︡.$q(Grigoriĭ T︠S︡erenovich)$eeditor.</bflc:marcKey>
@@ -223,6 +225,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Ėlista: GU "Izdatel'skiĭ dom "Gerel", 2009</bf:publicationStatement>
     <bf:publicationStatement xml:lang="ru-cyrl" xmlns:exsl="http://exslt.org/common">Элиста: ГУ "Издательский дом "Герел", 2009</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>22915593</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2022497161</rdf:value>

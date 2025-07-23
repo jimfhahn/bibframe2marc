@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-10T11:49:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:58:53</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:12.049683-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:59.945932-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -91,6 +91,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2021-06-07</lclocal:d985>
+	<bflc:marcKey>999ff$iedb1fe61-b368-5fd5-b950-dd01f25d463f$s59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</bflc:marcKey>
+	<lclocal:d999>=999  ff $i edb1fe61-b368-5fd5-b950-dd01f25d463f $s 59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -157,7 +159,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Agent100-16">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Agent100-17">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Thomas, Adam R., 1988-</rdfs:label>
 	    <bflc:marcKey>1001 $aThomas, Adam R.,$d1988-$eauthor.</bflc:marcKey>
@@ -225,7 +227,7 @@
       </bf:Summary>
     </bf:summary>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-28">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-29">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Linear algebraic groups</rdfs:label>
 	<madsrdf:authoritativeLabel>Linear algebraic groups</madsrdf:authoritativeLabel>
@@ -234,7 +236,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-29">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Representations of groups</rdfs:label>
 	<madsrdf:authoritativeLabel>Representations of groups</madsrdf:authoritativeLabel>
@@ -243,7 +245,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Embeddings (Mathematics)</rdfs:label>
 	<madsrdf:authoritativeLabel>Embeddings (Mathematics)</madsrdf:authoritativeLabel>
@@ -252,7 +254,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-31">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Maximal subgroups</rdfs:label>
 	<madsrdf:authoritativeLabel>Maximal subgroups</madsrdf:authoritativeLabel>
@@ -261,7 +263,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-32">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-33">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Group theory and generalizations -- Linear algebraic groups and related topics -- Representation theory for linear algebraic groups</rdfs:label>
 	<madsrdf:authoritativeLabel>Group theory and generalizations -- Linear algebraic groups and related topics -- Representation theory for linear algebraic groups</madsrdf:authoritativeLabel>
@@ -273,7 +275,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Group theory and generalizations -- Linear algebraic groups and related topics -- Linear algebraic groups over arbitrary fields</rdfs:label>
 	<madsrdf:authoritativeLabel>Group theory and generalizations -- Linear algebraic groups and related topics -- Linear algebraic groups over arbitrary fields</madsrdf:authoritativeLabel>
@@ -285,7 +287,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-34">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22076502#Topic650-35">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Group theory and generalizations -- Linear algebraic groups and related topics -- Exceptional groups</rdfs:label>
 	<madsrdf:authoritativeLabel>Group theory and generalizations -- Linear algebraic groups and related topics -- Exceptional groups</madsrdf:authoritativeLabel>
@@ -311,6 +313,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Providence, RI: American Mathematical Society, [2020]</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>22076502</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2021016995</rdf:value>

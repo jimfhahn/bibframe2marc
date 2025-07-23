@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-24T16:46:09</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T02:21:23</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:36.863606-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:14.402056-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -84,6 +84,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i70af9951-92ab-5bcd-bafe-f247af25bb7c$s5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 70af9951-92ab-5bcd-bafe-f247af25bb7c $s 5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
@@ -121,7 +123,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent100-18">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent100-19">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Paganini, Nicolò, 1782-1840</rdfs:label>
 	    <bflc:marcKey>1001 $aPaganini, Nicolò,$d1782-1840.</bflc:marcKey>
@@ -133,13 +135,13 @@
       </bf:Contribution>
     </bf:contribution>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-19">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-20">
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Arrangement"/>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-19-Agent">
+	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-20-Agent">
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		<rdfs:label>Paganini, Nicolò, 1782-1840</rdfs:label>
 		<bflc:marcKey>1001 $aPaganini, Nicolò,$d1782-1840.</bflc:marcKey>
@@ -204,7 +206,7 @@
       </bf:Capture>
     </bf:capture>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Topic650-34">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Topic650-35">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Viola music, Arranged</rdfs:label>
 	<madsrdf:authoritativeLabel>Viola music, Arranged</madsrdf:authoritativeLabel>
@@ -215,7 +217,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent700-35">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent700-36">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Slapin, Scott, 1974-</rdfs:label>
 	    <bflc:marcKey>7001 $aSlapin, Scott,$d1974-$4prf</bflc:marcKey>
@@ -272,6 +274,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Ventura, CA: Eroica Classical Recordings, p2008</bf:publicationStatement>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>18344194</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2014624918</rdf:value>
       </bf:Lccn>
@@ -293,7 +300,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn311097395</rdf:value>
+	<rdf:value>311097395</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>

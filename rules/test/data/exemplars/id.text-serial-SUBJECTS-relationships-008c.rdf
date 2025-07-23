@@ -87,6 +87,11 @@
       </bf:Frequency>
     </bf:frequency>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11457859</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   95657077 </rdf:value>
       </bf:Lccn>
@@ -111,16 +116,15 @@
       <bf:PostalRegistration>
 	<rdf:value>010414</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n89658260">
-	    <rdfs:label>United States Power Squadrons</rdfs:label>
-	    <bflc:marcKey>11020$aUnited States Power Squadrons</bflc:marcKey>
+	  <bf:Organization>
+	    <rdfs:label>USPS</rdfs:label>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:PostalRegistration>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm25743067 </rdf:value>
+	<rdf:value>25743067</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -131,14 +135,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>volumes</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>27-28 cm</bf:dimensions>
     <bf:frequency>
       <bf:Frequency>
@@ -298,7 +302,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-16T06:56:52</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:30:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>ZYU</bf:code>
@@ -323,13 +327,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T00:59:51.765223-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:52.802854-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -361,6 +365,10 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$cserials$du$encip$f19$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d u $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $ath14 2008-03-04 HR update</bflc:marcKey>
+	<lclocal:d955>=955     $a th14 2008-03-04 HR update</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -391,8 +399,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c serials $d u $e ncip $f 19 $g n-oclcserc</lclocal:d906>
-	<lclocal:d955>=955     $a th14 2008-03-04 HR update</lclocal:d955>
+	<bflc:marcKey>999ff$ic9f5de6b-74f9-552a-8dce-b70d1c7c59b9$s5f72c6d2-c34d-47da-be70-be79d903b99e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c9f5de6b-74f9-552a-8dce-b70d1c7c59b9 $s 5f72c6d2-c34d-47da-be70-be79d903b99e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -530,11 +538,13 @@
     </bf:content>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Issued with: Advocate (Los Angeles, Calif.), beginning with issue no. 191 (February 2010).</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Absorbed: Advocate (Los Angeles, Calif.) with the March/April 2024 issue.</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -1259,18 +1269,6 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
-	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
-	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
-	    <bf:code>fast</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:Place>
-    </bf:subject>
-    <bf:subject>
       <bf:Topic rdf:about="https://homosaurus.org/v3/homoit0000915">
 	<madsrdf:authoritativeLabel>LGBTQ+ people</madsrdf:authoritativeLabel>
 	<bf:source>
@@ -1368,6 +1366,18 @@
 	  </bf:Source>
 	</bf:source>
       </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
+	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Place>
     </bf:subject>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
@@ -1858,7 +1868,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-16T06:56:52</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:30:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>ZYU</bf:code>
@@ -1883,13 +1893,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T00:59:51.765223-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:52.802854-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1921,6 +1931,10 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$cserials$du$encip$f19$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d u $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $ath14 2008-03-04 HR update</bflc:marcKey>
+	<lclocal:d955>=955     $a th14 2008-03-04 HR update</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -1951,8 +1965,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c serials $d u $e ncip $f 19 $g n-oclcserc</lclocal:d906>
-	<lclocal:d955>=955     $a th14 2008-03-04 HR update</lclocal:d955>
+	<bflc:marcKey>999ff$ic9f5de6b-74f9-552a-8dce-b70d1c7c59b9$s5f72c6d2-c34d-47da-be70-be79d903b99e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c9f5de6b-74f9-552a-8dce-b70d1c7c59b9 $s 5f72c6d2-c34d-47da-be70-be79d903b99e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

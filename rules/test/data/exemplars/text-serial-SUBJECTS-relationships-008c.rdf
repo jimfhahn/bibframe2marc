@@ -1472,7 +1472,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-16T06:56:52</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:30:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>ZYU</bf:code>
@@ -1498,7 +1498,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:13.94054-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:34:02.667514-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1569,6 +1569,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$ic9f5de6b-74f9-552a-8dce-b70d1c7c59b9$s5f72c6d2-c34d-47da-be70-be79d903b99e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c9f5de6b-74f9-552a-8dce-b70d1c7c59b9 $s 5f72c6d2-c34d-47da-be70-be79d903b99e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -1659,6 +1661,11 @@
       </bf:Frequency>
     </bf:frequency>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11457859</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   95657077 </rdf:value>
       </bf:Lccn>
@@ -1691,7 +1698,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm25743067 </rdf:value>
+	<rdf:value>25743067</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -1883,6 +1890,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11457859</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>   95657077 </rdf:value>
 	      </bf:Lccn>
@@ -1901,12 +1913,16 @@
 	    <bf:identifiedBy>
 	      <bf:PostalRegistration>
 		<rdf:value>010414</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n89658260"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>USPS</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:PostalRegistration>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocm25743067 </rdf:value>
+		<rdf:value>25743067</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>New York, NY: Out Publishing, Inc, [1992]-</bf:publicationStatement>
@@ -1916,6 +1932,12 @@
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>illustrations</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -1946,7 +1968,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-16T06:56:52</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:30:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>ZYU</bf:code>
@@ -1972,7 +1994,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:13.94054-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:34:02.667514-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2043,6 +2065,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$ic9f5de6b-74f9-552a-8dce-b70d1c7c59b9$s5f72c6d2-c34d-47da-be70-be79d903b99e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i c9f5de6b-74f9-552a-8dce-b70d1c7c59b9 $s 5f72c6d2-c34d-47da-be70-be79d903b99e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1995-03-22T11:07:35</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T12:49:37</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:40.317319-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:18.453207-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -77,6 +77,8 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>999ff$i91bd1ad1-351d-5143-8d90-7c962bbf30bd$s55e0878a-3052-4f36-9d52-2ab2f24c84d4</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 91bd1ad1-351d-5143-8d90-7c962bbf30bd $s 55e0878a-3052-4f36-9d52-2ab2f24c84d4</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -188,7 +190,7 @@
       </bf:Relation>
     </bf:relation>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-23">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-24">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Atmospheric physics--Research--Antarctica--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>Atmospheric physics--Research--Antarctica--Congresses</madsrdf:authoritativeLabel>
@@ -211,7 +213,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-24">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-25">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Troposphere--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>Troposphere--Congresses</madsrdf:authoritativeLabel>
@@ -228,7 +230,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-25">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-26">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Stratosphere--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>Stratosphere--Congresses</madsrdf:authoritativeLabel>
@@ -245,7 +247,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-26">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Topic650-27">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Optical radar--Congresses</rdfs:label>
 	<madsrdf:authoritativeLabel>Optical radar--Congresses</madsrdf:authoritativeLabel>
@@ -264,7 +266,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-27">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-28">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Colacino, M.</rdfs:label>
 	    <bflc:marcKey>7001 $aColacino, M.</bflc:marcKey>
@@ -278,7 +280,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-28">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-29">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Giovanelli, G. (Giorgio)</rdfs:label>
 	    <bflc:marcKey>7001 $aGiovanelli, G.$q(Giorgio)</bflc:marcKey>
@@ -292,7 +294,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-29">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Agent700-30">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Stefanutti, L. (Leopoldo)</rdfs:label>
 	    <bflc:marcKey>7001 $aStefanutti, L.$q(Leopoldo)</bflc:marcKey>
@@ -307,7 +309,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/relatedwork"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Work740-30">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Work740-31">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <bf:title>
 	      <bf:Title>
@@ -323,7 +325,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/relatedwork"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Work740-31">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Work740-32">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <bf:title>
 	      <bf:Title>
@@ -343,7 +345,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Hub830-32">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/4384447#Hub830-33">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -371,6 +373,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Bologna, Italy: Italian Physical Society, 1990</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>4384447</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91137213 </rdf:value>

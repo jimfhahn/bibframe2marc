@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-07-05T12:55:04</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T07:49:15</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:32.871861-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:09.664496-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -86,6 +86,8 @@
 	<lclocal:d985>=985     $a pp/lilj</lclocal:d985>
 	<lclocal:d985>=985     $a pp/civwar</lclocal:d985>
 	<lclocal:d985>=985     $a pp/diof</lclocal:d985>
+	<bflc:marcKey>999ff$ie6ecc9da-a81b-5e22-91f4-d714510024d8$sc17f4cf8-3d20-4f2e-8b13-2c5904e2c82c</bflc:marcKey>
+	<lclocal:d999>=999  ff $i e6ecc9da-a81b-5e22-91f4-d714510024d8 $s c17f4cf8-3d20-4f2e-8b13-2c5904e2c82c</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/StillImage"/>
@@ -129,7 +131,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent600-24">
+      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent600-25">
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	<rdfs:label>Wren, James, 1825-</rdfs:label>
 	<bflc:marcKey>60010$aWren, James,$d1825-</bflc:marcKey>
@@ -137,11 +139,11 @@
       </bf:Agent>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic610-25">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic610-26">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<madsrdf:authoritativeLabel>United States. Army. Pennsylvania Infantry Regiment, 48th (1861-1865)--People.</madsrdf:authoritativeLabel>
 	<madsrdf:componentList rdf:parseType="Collection">
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent610-25">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent610-26">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Jurisdiction"/>
 	    <rdfs:label>United States. Army. Pennsylvania Infantry Regiment, 48th (1861-1865)</rdfs:label>
 	    <bflc:marcKey>61014$aUnited States.$bArmy.$bPennsylvania Infantry Regiment, 48th (1861-1865)</bflc:marcKey>
@@ -153,11 +155,11 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic610-26">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic610-27">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<madsrdf:authoritativeLabel>United States. Army. Pennsylvania Infantry Regiment, 25th (1861)--People.</madsrdf:authoritativeLabel>
 	<madsrdf:componentList rdf:parseType="Collection">
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent610-26">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Agent610-27">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Jurisdiction"/>
 	    <rdfs:label>United States. Army. Pennsylvania Infantry Regiment, 25th (1861)</rdfs:label>
 	    <bflc:marcKey>61014$aUnited States.$bArmy.$bPennsylvania Infantry Regiment, 25th (1861)</bflc:marcKey>
@@ -169,7 +171,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-27">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-28">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Soldiers--Union--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Soldiers--Union--1860-1870</madsrdf:authoritativeLabel>
@@ -192,7 +194,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-28">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-29">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Horses--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Horses--1860-1870</madsrdf:authoritativeLabel>
@@ -212,7 +214,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-29">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Daggers &amp; swords--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Daggers &amp; swords--1860-1870</madsrdf:authoritativeLabel>
@@ -232,7 +234,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Military uniforms--Union--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Military uniforms--Union--1860-1870</madsrdf:authoritativeLabel>
@@ -255,7 +257,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Place651-31">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Place651-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>United States--History--Civil War, 1861-1865--Military personnel--Union</rdfs:label>
 	<madsrdf:authoritativeLabel>United States--History--Civil War, 1861-1865--Military personnel--Union</madsrdf:authoritativeLabel>
@@ -279,7 +281,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-32">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-33">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Portrait photographs--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Portrait photographs--1860-1870</madsrdf:authoritativeLabel>
@@ -299,7 +301,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Albumen prints--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Albumen prints--1860-1870</madsrdf:authoritativeLabel>
@@ -319,7 +321,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-34">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/22724623#GenreForm655-35">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Cartes de visite--1860-1870</rdfs:label>
 	<madsrdf:authoritativeLabel>Cartes de visite--1860-1870</madsrdf:authoritativeLabel>
@@ -342,14 +344,14 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/partof"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Work773-35">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Work773-36">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Liljenquist Family collection (Library of Congress)</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Instance773-35">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/22724623#Instance773-36">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Liljenquist Family collection (Library of Congress)</bf:mainTitle>
@@ -365,7 +367,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/22724623#Work773-35"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/22724623#Work773-36"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -396,6 +398,11 @@
       <bf:Lccn>
 	<rdf:value>  2022631487</rdf:value>
       </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>22724623</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:acquisitionSource>
       <bf:AcquisitionSource>

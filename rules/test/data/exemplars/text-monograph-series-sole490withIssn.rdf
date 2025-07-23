@@ -277,7 +277,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-10T11:49:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:58:53</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -306,7 +306,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:12.551352-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:34:00.731042-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -368,6 +368,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2021-06-07</lclocal:d985>
+	<bflc:marcKey>999ff$iedb1fe61-b368-5fd5-b950-dd01f25d463f$s59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</bflc:marcKey>
+	<lclocal:d999>=999  ff $i edb1fe61-b368-5fd5-b950-dd01f25d463f $s 59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -394,6 +396,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Providence, RI: American Mathematical Society, [2020]</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>22076502</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2021016995</rdf:value>
@@ -456,7 +463,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/22076502">
-	<rdfs:label>Thomas, Adam R., 1988- The irreducible subgroups of exceptional algebraic groups</rdfs:label>
+	<rdfs:label>Thomas, Adam R., 1988-. The irreducible subgroups of exceptional algebraic groups</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -490,6 +497,11 @@
 		<bflc:nonSortNum>4</bflc:nonSortNum>
 	      </bf:Title>
 	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>22076502</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2021016995</rdf:value>
@@ -542,7 +554,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-10T11:49:10</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:58:53</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -571,7 +583,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:12.551352-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:34:00.731042-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -633,6 +645,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2021-06-07</lclocal:d985>
+	<bflc:marcKey>999ff$iedb1fe61-b368-5fd5-b950-dd01f25d463f$s59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</bflc:marcKey>
+	<lclocal:d999>=999  ff $i edb1fe61-b368-5fd5-b950-dd01f25d463f $s 59df4e0e-1f54-4f2d-b90a-1b9ba424a3fb</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

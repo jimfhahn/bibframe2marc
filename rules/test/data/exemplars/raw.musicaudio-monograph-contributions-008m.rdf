@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2013-05-24T12:50:28</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:44:10</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:28.174254-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:03.482355-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -84,6 +84,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$ie6289e4a-5586-5544-9dba-436bca1e5595$s627095d7-d12f-421c-a96a-ee276b17a5b2</bflc:marcKey>
+	<lclocal:d999>=999  ff $i e6289e4a-5586-5544-9dba-436bca1e5595 $s 627095d7-d12f-421c-a96a-ee276b17a5b2</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
@@ -110,7 +112,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent100-40">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent100-41">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Rodgers, Richard, 1902-1979</rdfs:label>
 	    <bflc:marcKey>1001 $aRodgers, Richard,$d1902-1979.</bflc:marcKey>
@@ -122,12 +124,12 @@
       </bf:Contribution>
     </bf:contribution>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub240-41">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub240-42">
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub240-41-Agent">
+	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub240-42-Agent">
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		<rdfs:label>Rodgers, Richard, 1902-1979</rdfs:label>
 		<bflc:marcKey>1001 $aRodgers, Richard,$d1902-1979.</bflc:marcKey>
@@ -206,7 +208,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Topic650-55">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Topic650-56">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Musicals--Excerpts</rdfs:label>
 	<madsrdf:authoritativeLabel>Musicals--Excerpts</madsrdf:authoritativeLabel>
@@ -237,7 +239,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-57">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-58">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Hammerstein, Oscar, II, 1895-1960</rdfs:label>
 	    <bflc:marcKey>7001 $aHammerstein, Oscar,$cII,$d1895-1960.$4lyr</bflc:marcKey>
@@ -251,7 +253,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-58">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-59">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Drake, Alfred, 1914-1992</rdfs:label>
 	    <bflc:marcKey>7001 $aDrake, Alfred,$d1914-1992.$4prf</bflc:marcKey>
@@ -265,7 +267,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-59">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-60">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Roberts, Joan, 1917-2012</rdfs:label>
 	    <bflc:marcKey>7001 $aRoberts, Joan,$d1917-2012.$4prf</bflc:marcKey>
@@ -279,7 +281,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-60">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-61">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Da Silva, Howard, 1909-1986</rdfs:label>
 	    <bflc:marcKey>7001 $aDa Silva, Howard,$d1909-1986.$4prf</bflc:marcKey>
@@ -293,7 +295,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-61">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-62">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Holm, Celeste, 1917-2012</rdfs:label>
 	    <bflc:marcKey>7001 $aHolm, Celeste,$d1917-2012.$4prf</bflc:marcKey>
@@ -307,7 +309,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-62">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-63">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Dixon, Lee, -1953</rdfs:label>
 	    <bflc:marcKey>7001 $aDixon, Lee,$d-1953.$4prf</bflc:marcKey>
@@ -321,7 +323,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-63">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-64">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Buloff, Joseph</rdfs:label>
 	    <bflc:marcKey>7001 $aBuloff, Joseph.$4prf</bflc:marcKey>
@@ -335,7 +337,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-64">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-65">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Garde, Betty</rdfs:label>
 	    <bflc:marcKey>7001 $aGarde, Betty.$4prf</bflc:marcKey>
@@ -349,7 +351,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-65">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-66">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Riggs, Ralph</rdfs:label>
 	    <bflc:marcKey>7001 $aRiggs, Ralph.$4prf</bflc:marcKey>
@@ -363,7 +365,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-66">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Agent700-67">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Blackton, Jay, 1909-1994</rdfs:label>
 	    <bflc:marcKey>7001 $aBlackton, Jay,$d1909-1994.$4cnd</bflc:marcKey>
@@ -382,7 +384,7 @@
 	  </bf:Relationship>
 	</bf:relationship>
 	<bf:associatedResource>
-	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub830-67">
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/12280298#Hub830-68">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Series"/>
 	    <bf:title>
 	      <bf:Title>
@@ -439,6 +441,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York: Decca, [1943-1945]</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>12280298</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2001539900</rdf:value>

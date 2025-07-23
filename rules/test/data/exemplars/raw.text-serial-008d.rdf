@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-17T14:02:26</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:24:09</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -39,7 +39,7 @@
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:05:07.255237-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:53.861186-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -94,6 +94,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$idea1d7e2-2eb4-5f8e-ae19-19789ed5a18f$s7665c11a-5b49-4e8f-8859-bacd618931a6</bflc:marcKey>
+	<lclocal:d999>=999  ff $i dea1d7e2-2eb4-5f8e-ae19-19789ed5a18f $s 7665c11a-5b49-4e8f-8859-bacd618931a6</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -153,7 +155,7 @@
       </bf:ClassificationDdc>
     </bf:classification>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Hub130-17">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Hub130-18">
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>National sports daily (New York ed.)</bf:mainTitle>
@@ -201,7 +203,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Topic650-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Topic650-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Sports--United States--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Sports--United States--Periodicals</madsrdf:authoritativeLabel>
@@ -249,7 +251,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-37">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-38">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>National sports daily (Chicago ed.)</bf:mainTitle>
@@ -261,7 +263,7 @@
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-37">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-38">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>National sports daily (Chicago ed.)</bf:mainTitle>
@@ -270,45 +272,6 @@
 		<bf:identifiedBy>
 		  <bf:Lccn>
 		    <rdf:value>sn 90005618</rdf:value>
-		    <bf:assigner>
-		      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-			<bf:code>DLC</bf:code>
-		      </bf:Agent>
-		    </bf:assigner>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-37"/>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-38">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:identifiedBy>
-	      <bf:Issn>
-		<rdf:value>1052-1259</rdf:value>
-	      </bf:Issn>
-	    </bf:identifiedBy>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-38">
-		<bf:title>
-		  <bf:Title>
-		    <bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
-		  </bf:Title>
-		</bf:title>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>sn 90005617</rdf:value>
 		    <bf:assigner>
 		      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 			<bf:code>DLC</bf:code>
@@ -330,24 +293,24 @@
 	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-39">
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
+		<bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
 	      <bf:Issn>
-		<rdf:value>1052-1267</rdf:value>
+		<rdf:value>1052-1259</rdf:value>
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
 	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-39">
 		<bf:title>
 		  <bf:Title>
-		    <bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
+		    <bf:mainTitle>National sports daily (Los Angeles ed.)</bf:mainTitle>
 		  </bf:Title>
 		</bf:title>
 		<bf:identifiedBy>
 		  <bf:Lccn>
-		    <rdf:value>sn 90005616</rdf:value>
+		    <rdf:value>sn 90005617</rdf:value>
 		    <bf:assigner>
 		      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 			<bf:code>DLC</bf:code>
@@ -369,24 +332,24 @@
 	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-40">
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
+		<bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
 	      <bf:Issn>
-		<rdf:value>1052-1275</rdf:value>
+		<rdf:value>1052-1267</rdf:value>
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	    <bf:hasInstance>
 	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-40">
 		<bf:title>
 		  <bf:Title>
-		    <bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
+		    <bf:mainTitle>National sports daily (San Diego ed.)</bf:mainTitle>
 		  </bf:Title>
 		</bf:title>
 		<bf:identifiedBy>
 		  <bf:Lccn>
-		    <rdf:value>sn 90005615</rdf:value>
+		    <rdf:value>sn 90005616</rdf:value>
 		    <bf:assigner>
 		      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 			<bf:code>DLC</bf:code>
@@ -403,9 +366,48 @@
     </bf:relation>
     <bf:relation>
       <bf:Relation>
+	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otheredition"/>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work775-41">
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Issn>
+		<rdf:value>1052-1275</rdf:value>
+	      </bf:Issn>
+	    </bf:identifiedBy>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance775-41">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>National sports daily (San Francisco ed.)</bf:mainTitle>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>sn 90005615</rdf:value>
+		    <bf:assigner>
+		      <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+			<bf:code>DLC</bf:code>
+		      </bf:Agent>
+		    </bf:assigner>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work775-41"/>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/otherphysicalformat"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work776-41">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Work776-42">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>The National sports daily</bf:mainTitle>
@@ -413,7 +415,7 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance776-41">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/11393548#Instance776-42">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>The National sports daily</bf:mainTitle>
@@ -440,7 +442,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work776-41"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/11393548#Work776-42"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -484,6 +486,11 @@
       </bf:Note>
     </bf:note>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11393548</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91662053 </rdf:value>
       </bf:Lccn>
@@ -510,7 +517,7 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm22192348 </rdf:value>
+	<rdf:value>22192348</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:acquisitionSource>

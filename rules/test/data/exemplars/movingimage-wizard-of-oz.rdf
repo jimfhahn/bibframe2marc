@@ -1190,7 +1190,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1219,7 +1219,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1266,6 +1266,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -1354,6 +1356,11 @@
 	  </bf:Organization>
 	</bf:assigner>
       </bf:CopyrightNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11511184</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>Loew's Incorporated ; directed by Victor Fleming ; produced by Mervyn LeRoy ; screen play by Noel Langley, Florence Ryerson, Edgar Allan Woolf</bf:responsibilityStatement>
     <bf:title>
@@ -1779,6 +1786,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -1818,6 +1830,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -1898,7 +1915,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1927,7 +1944,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1974,6 +1991,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -2368,6 +2387,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -2407,6 +2431,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -2449,7 +2478,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -2478,7 +2507,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2525,6 +2554,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -2913,6 +2944,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -2952,6 +2988,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -2994,7 +3035,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -3023,7 +3064,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3070,6 +3111,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -3458,6 +3501,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -3497,6 +3545,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -3539,7 +3592,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -3568,7 +3621,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3615,6 +3668,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -4003,6 +4058,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -4042,6 +4102,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -4084,7 +4149,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -4113,7 +4178,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4160,6 +4225,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -4548,6 +4615,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -4587,6 +4659,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -4629,7 +4706,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -4658,7 +4735,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4705,6 +4782,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -5093,6 +5172,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -5132,6 +5216,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -5174,7 +5263,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -5203,7 +5292,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5250,6 +5339,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -5644,6 +5735,11 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11511184</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
 	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
@@ -5683,6 +5779,11 @@
 		<bflc:appliesTo>
 		  <bflc:AppliesTo>
 		    <rdfs:label>two-dimensional moving image</rdfs:label>
+		  </bflc:AppliesTo>
+		</bflc:appliesTo>
+		<bflc:appliesTo>
+		  <bflc:AppliesTo>
+		    <rdfs:label>laser optical</rdfs:label>
 		  </bflc:AppliesTo>
 		</bflc:appliesTo>
 		<bf:note>
@@ -5725,7 +5826,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -5754,7 +5855,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5801,6 +5902,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -5943,7 +6046,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-01-15T15:24:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:36:24</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -5972,7 +6075,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-18T18:04:53.403783-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -6019,6 +6122,8 @@
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d u $e ncip $f 19 $g y-movingim</lclocal:d906>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-1033, LCAPM-1036</lclocal:d955>
+	<bflc:marcKey>999ff$ib15d59f2-e31d-5b06-b388-b014632fc5be$s3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b15d59f2-e31d-5b06-b388-b014632fc5be $s 3615eea9-91f1-47c1-aeec-3e4bb93aa3cd</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Item>
