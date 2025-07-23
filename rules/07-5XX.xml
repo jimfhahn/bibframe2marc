@@ -1960,6 +1960,8 @@
       bf:Work/bf:relation/bf:Relation/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/relnote']/rdfs:label ">
       <ind1 default=" "/>
       <ind2 default=" "/>
+      <!--
+      Uncomment at your own risk. A $8 subfield could wreak havoc on a MARC system despite its legality.
       <switch>
         <case test="ancestor::bf:Relation">
           <var name="vLinkage">
@@ -1972,6 +1974,7 @@
           </sf>
         </case>
       </switch>
+      -->
       <sf code="a" repeatable="false">
         <transform>
           <xsl:call-template name="tChopPunct">

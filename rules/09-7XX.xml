@@ -1944,6 +1944,8 @@
           <case test="ancestor::bf:Relation/bf:relationship[contains(@rdf:resource, 'mergedToForm') or contains(bf:Relationship/@rdf:about, 'mergedToForm')]">7</case>
         </switch>
       </ind2>
+      <!--
+      Uncomment at your own risk. A $8 subfield could wreak havoc on a MARC system despite its legality. 
       <switch>
         <case test="ancestor::bf:Relation/bf:note">
           <var name="vLinkage">
@@ -1956,6 +1958,7 @@
           </sf>
         </case>
       </switch>
+      -->
       <sf code="3" chopPunct="true" repeatable="false">
         <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
