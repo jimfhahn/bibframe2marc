@@ -151,7 +151,7 @@
                 test="substring(marc:record/marc:controlfield[@tag='007'],3) = ' |||||||||||'"/>
     </x:scenario>
     <x:scenario label="007 - Sound recording - 2">
-      <x:context href="../data/exemplars/musicaudio-monograph-hamilton-contributos-subjects-genreforms.rdf"/>
+      <x:context href="../data/exemplars/musicaudio-sd-cr.rdf"/>
       <x:expect label="Sound recording - two 007s generated when Instance/media is sound and from electronic instance."
         test="count(marc:record/marc:controlfield[@tag='007'])=2"/>
       <x:expect label="... first 007 is sd"

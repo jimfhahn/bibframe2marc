@@ -3,12 +3,6 @@
     <bflc:aap>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change</bflc:aap>
     <bflc:aap-normalized>hedbergmapsincwashingtondcatthemillenniumathousandyearsofchange</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
-	<rdfs:label>cartographic image</rdfs:label>
-	<bf:code>cri</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -168,6 +162,12 @@
 	<rdfs:label>Not drawn to scale</rdfs:label>
       </bf:Scale>
     </bf:scale>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
+	<rdfs:label>cartographic image</rdfs:label>
+	<bf:code>cri</bf:code>
+      </bf:Content>
+    </bf:content>
     <bf:tableOfContents>
       <bf:TableOfContents>
 	<rdfs:label>Satellite image, 1999 -- Aerial image, 1994 -- Aerial view, 1925 : [remote-sensing image] -- Bird's eye view, 1852 : [facsimile] -- Landforms, 1000 A.D.</rdfs:label>
@@ -315,6 +315,7 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026099"/>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
@@ -372,7 +373,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-02-11T07:08:40</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -400,13 +401,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:40.447902-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:17.011803-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -438,8 +439,14 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
+	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
 	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
+	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -450,24 +457,12 @@
 	<bf:code>mono</bf:code>
       </bf:Issuance>
     </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-	<rdfs:label>unmediated</rdfs:label>
-	<bf:code>n</bf:code>
-      </bf:Media>
-    </bf:media>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026530">
 	<rdfs:label xml:lang="en">Remote-sensing images</rdfs:label>
 	<bflc:marcKey>155  $aRemote-sensing images</bflc:marcKey>
       </bf:GenreForm>
     </bf:genreForm>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
-	<rdfs:label>sheet</rdfs:label>
-	<bf:code>nb</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:baseMaterial>
       <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
 	<rdfs:label>paper</rdfs:label>
@@ -513,9 +508,8 @@
       <bf:CopyrightNumber>
 	<rdf:value>VA 1-034-672</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n79117971">
-	    <rdfs:label>Library of Congress. Copyright Office</rdfs:label>
-	    <bflc:marcKey>1102 $aLibrary of Congress.$bCopyright Office</bflc:marcKey>
+	  <bf:Organization>
+	    <rdfs:label>U.S. Copyright Office</rdfs:label>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:CopyrightNumber>
@@ -524,6 +518,16 @@
       <bf:Isbn>
 	<rdf:value>1885508697</rdf:value>
       </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>9781885508690</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11982059</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>design &amp; production--Hedberg Maps, Inc</bf:responsibilityStatement>
     <bf:title>
@@ -535,20 +539,27 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>3 remote-sensing images, 1 view, and 1 map on 1 sheet</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>both sides, col.</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>both sides, col.</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>all</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>28 x 30 cm. or smaller, sheet 46 x 61 cm., folded to 23 x 11 cm.</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+	<rdfs:label>sheet</rdfs:label>
+	<bf:code>nb</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Relief shown by shading on landforms map.</rdfs:label>
@@ -577,7 +588,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11982059">
-	<rdfs:label>Hedberg Maps, Inc Washington DC at the millennium, a thousand years of change</rdfs:label>
+	<rdfs:label>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -585,6 +596,7 @@
 	      <bf:Agent>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		<rdfs:label>Hedberg Maps, Inc</rdfs:label>
+		<bflc:marcKey>1102 $aHedberg Maps, Inc.</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
@@ -634,7 +646,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>VA 1-034-672</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -642,11 +658,27 @@
 		<rdf:value>1885508697</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>9781885508690</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11982059</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>[Minneapolis]: White Star Press</bf:publicationStatement>
 	    <bf:publicationStatement>Santa Barbara, CA: Map Link Inc. [distributor], c1999</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>3 remote-sensing images, 1 view, and 1 map on 1 sheet</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>both sides, col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -681,7 +713,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-02-11T07:08:40</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -709,13 +741,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:40.447902-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:17.011803-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -747,8 +779,14 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
+	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
 	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
+	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -804,7 +842,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11982059">
-	<rdfs:label>Hedberg Maps, Inc Washington DC at the millennium, a thousand years of change</rdfs:label>
+	<rdfs:label>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -812,6 +850,7 @@
 	      <bf:Agent>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		<rdfs:label>Hedberg Maps, Inc</rdfs:label>
+		<bflc:marcKey>1102 $aHedberg Maps, Inc.</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
@@ -861,7 +900,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>VA 1-034-672</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -869,11 +912,27 @@
 		<rdf:value>1885508697</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>9781885508690</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11982059</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>[Minneapolis]: White Star Press</bf:publicationStatement>
 	    <bf:publicationStatement>Santa Barbara, CA: Map Link Inc. [distributor], c1999</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>3 remote-sensing images, 1 view, and 1 map on 1 sheet</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>both sides, col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -908,7 +967,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-02-11T07:08:40</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -936,8 +995,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:40.447902-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:17.011803-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -955,7 +1014,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -974,8 +1033,14 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
+	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
 	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
+	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -1025,7 +1090,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/11982059">
-	<rdfs:label>Hedberg Maps, Inc Washington DC at the millennium, a thousand years of change</rdfs:label>
+	<rdfs:label>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -1033,6 +1098,7 @@
 	      <bf:Agent>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		<rdfs:label>Hedberg Maps, Inc</rdfs:label>
+		<bflc:marcKey>1102 $aHedberg Maps, Inc.</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
@@ -1082,7 +1148,11 @@
 	    <bf:identifiedBy>
 	      <bf:CopyrightNumber>
 		<rdf:value>VA 1-034-672</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n79117971"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>U.S. Copyright Office</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -1090,11 +1160,27 @@
 		<rdf:value>1885508697</rdf:value>
 	      </bf:Isbn>
 	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>9781885508690</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>11982059</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
 	    <bf:publicationStatement>[Minneapolis]: White Star Press</bf:publicationStatement>
 	    <bf:publicationStatement>Santa Barbara, CA: Map Link Inc. [distributor], c1999</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>3 remote-sensing images, 1 view, and 1 map on 1 sheet</rdfs:label>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>both sides, col.</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -1129,7 +1215,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2003-02-11T07:08:40</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1157,8 +1243,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:40.447902-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:17.011803-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1176,7 +1262,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1195,8 +1281,14 @@
 	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
+	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
 	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
+	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

@@ -1,5 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "LCC missing item portion."}]-->
+  <!--[{"level": "WARNING", "message": "LCC missing item portion. Check **Classification numbers** for 'Additional call number information'"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19279034">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -23,6 +23,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Melville, New York: AIP Publishing, 2014</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>19279034</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2016448873</rdf:value>
@@ -50,14 +55,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 volume (various pagings)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>28 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -81,11 +86,12 @@
 	<rdfs:label>"All papers have been peer reviewed."</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:supplementaryContent>
-      <bf:SupplementaryContent>
-	<rdfs:label>Includes bibliographical references</rdfs:label>
-      </bf:SupplementaryContent>
-    </bf:supplementaryContent>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
+	<rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/19279034"/>
     <bf:adminMetadata>
@@ -116,7 +122,16 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-21T08:03:54</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T03:25:40</bf:date>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -136,13 +151,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T10:05:35.032038-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:46.15903-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -168,9 +183,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corignew$d3$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d 3 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $brm08 2016-09-19 z-processor$crl12 2023-09-07$urk20 2023-09-21</bflc:marcKey>
 	<lclocal:d955>=955     $b rm08 2016-09-19 z-processor $c rl12 2023-09-07 $u rk20 2023-09-21</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -183,17 +203,25 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$beng$erda$cDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i8ccd182a-f6c6-5003-a508-d0f218da5444$se1d95861-4450-4b0b-bd4c-f40e66b50e2a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 8ccd182a-f6c6-5003-a508-d0f218da5444 $s e1d95861-4450-4b0b-bd4c-f40e66b50e2a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/19279034">
-    <bflc:aap>International Symposium on Measurement Techniques for Multiphase Flows (8th : 2013 : Guangzhou, P.R. China) 8th International Symposium on Measurement Techniques for Multiphase Flows</bflc:aap>
+    <bflc:aap>International Symposium on Measurement Techniques for Multiphase Flows (8th : 2013 : Guangzhou, P.R. China). 8th International Symposium on Measurement Techniques for Multiphase Flows</bflc:aap>
     <bflc:aap-normalized>internationalsymposiumonmeasurementtechniquesformultiphaseflows(8th:2013:guangzhouprchina)8thinternationalsymposiumonmeasurementtechniquesformultiphaseflows</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
@@ -247,12 +275,13 @@
 	  <bf:Agent>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Meeting"/>
 	    <rdfs:label>International Symposium on Measurement Techniques for Multiphase Flows (8th : 2013 : Guangzhou, P.R. China)</rdfs:label>
+	    <bflc:marcKey>1112 $aInternational Symposium on Measurement Techniques for Multiphase Flows$n(8th :$d2013 :$cGuangzhou, P.R. China)</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+	    <rdfs:label>author</rdfs:label>
+	    <bf:code>aut</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -299,10 +328,16 @@
 	</madsrdf:componentList>
       </bf:Topic>
     </bf:subject>
+    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026068"/>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
-	<bf:relationship rdf:resource="http://id.loc.gov/ontologies/bibframe/hasSeries"/>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
 	<bf:seriesEnumeration>volume 1592</bf:seriesEnumeration>
 	<bf:associatedResource>
 	  <bf:Series>
@@ -315,12 +350,12 @@
 	    </bf:status>
 	    <bf:title>
 	      <bf:Title>
-		<bf:mainTitle>AIP conference proceedings,</bf:mainTitle>
+		<bf:mainTitle>AIP conference proceedings</bf:mainTitle>
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
 	      <bf:Issn>
-		<rdf:value>0094-243X ;</rdf:value>
+		<rdf:value>0094-243X</rdf:value>
 	      </bf:Issn>
 	    </bf:identifiedBy>
 	  </bf:Series>
@@ -356,7 +391,16 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-09-21T08:03:54</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T03:25:40</bf:date>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -376,13 +420,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T10:05:35.032038-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:46.15903-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -408,9 +452,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corignew$d3$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d 3 $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $brm08 2016-09-19 z-processor$crl12 2023-09-07$urk20 2023-09-21</bflc:marcKey>
 	<lclocal:d955>=955     $b rm08 2016-09-19 z-processor $c rl12 2023-09-07 $u rk20 2023-09-21</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-893</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-893</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -423,12 +472,20 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$beng$erda$cDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i8ccd182a-f6c6-5003-a508-d0f218da5444$se1d95861-4450-4b0b-bd4c-f40e66b50e2a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 8ccd182a-f6c6-5003-a508-d0f218da5444 $s e1d95861-4450-4b0b-bd4c-f40e66b50e2a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

@@ -75,7 +75,14 @@
             <case test="$vSubjectTag='651'">a</case>
           </switch>
         </var>
-
+        
+        <var name="vMainSourceUri">
+          <switch>
+            <case test="*/bf:source//@rdf:*[1] != ''"><transform><xsl:value-of select="*/bf:source//@rdf:*[1]" /></transform></case>
+            <case test="*/madsrdf:isMemberOfMADSScheme//@rdf:*[1] != ''"><transform><xsl:value-of select="*/madsrdf:isMemberOfMADSScheme//@rdf:*[1]" /></transform></case>
+            <case test="$relURI != ''"><transform><xsl:value-of select="$relURI" /></transform></case>
+          </switch>
+        </var>
 
         <var name="v880Script">
           <switch>
@@ -117,7 +124,7 @@
           <transform>
             <xsl:if test="$v880Script != ''">
               <xsl:variable name="previousSubjectCount" select="count(preceding-sibling::bf:subject[*/madsrdf:componentList/*[1]/bflc:marcKey[@xml:lang] or */bflc:marcKey[@xml:lang]])" />
-              <xsl:value-of select="50 + $previousSubjectCount" />
+              <xsl:value-of select="60 + $previousSubjectCount" />
             </xsl:if>
           </transform>
         </var>
@@ -241,30 +248,35 @@
           </ind1>
           <ind2 default="4">
             <switch>
-              <case test="contains($relURI, '/subjects/') or contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">0</case>
-              <case test="contains($relURI, '/childrensSubjects/')">1</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/cyac') or 
+                          contains($vMainSourceUri, '/authorities/childrensSubjects') or
+                          contains($vMainSourceUri, '/subjectSchemes/lcshac')">1</case>
+              
+              <case test="contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">
+                <switch>
+                  <case test="ancestor::bf:Work/bf:subject/*/bf:source//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                  <case test="ancestor::bf:Work/bf:subject/*/madsrdf:isMemberOfMADSScheme//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                  <case test="default">0</case>
+                </switch>
+              </case>
+              <case test="contains($relURI, '/subjects/')">0</case> 
               <case test="contains($relURI, '/mesh/')">2</case>
               <case test="contains($relURI, '/nalt/')">3</case>
-              <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
-                contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
-                contains($relURI, '/fast/') or
-                contains($relURI, 'd-nb.info/gnd/')">7</case>
               
-              <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects'] or 
-                bf:source[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects']">1</case>
-              <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/subjects'] or 
-                bf:source[@rdf:resource='http://id.loc.gov/authorities/subjects']">0</case>
+              <case test="contains($relURI, '/genreForms/') or 
+                          contains($relURI, '/demographicTerms/') or 
+                          contains($relURI, '/graphicMaterials/') or 
+                          contains($relURI, '/fast/') or
+                          contains($relURI, 'd-nb.info/gnd/')">7</case>
               
-              <case test="contains(bf:source//@rdf:*[1], '/subjectSchemes/cyac') or 
-                          contains(bf:source//@rdf:*[1], '/authorities/childrensSubjects') or
-                          contains(bf:source//@rdf:*[1], '/subjectSchemes/lcshac')">1</case>
-              <case test="contains(bf:source//@rdf:*[1], '/subjectSchemes/lcsh') or 
-                          contains(bf:source//@rdf:*[1], '/authorities/subjects')">0</case>
+              <case test="contains($vMainSourceUri, '/authorities/subjects') or 
+                          contains($vMainSourceUri, '/subjectSchemes/lcsh') or 
+                          contains($vMainSourceUri, '/authorities/subjects')">0</case>
               
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/mesh']">2</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/nal']">3</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/cash']">5</case>
-              <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm']">6</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/mesh')">2</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/nal')">3</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/cash')">5</case>
+              <case test="contains($vMainSourceUri, '/subjectSchemes/rvm')">6</case>
             </switch>
           </ind2>
           <switch>
@@ -336,23 +348,35 @@
               </ind1>
               <ind2 default="4">
                 <switch>
-                  <case test="contains($relURI, '/subjects/') or contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">0</case>
-                  <case test="contains($relURI, '/childrensSubjects/')">1</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/cyac') or 
+                              contains($vMainSourceUri, '/authorities/childrensSubjects') or
+                              contains($vMainSourceUri, '/subjectSchemes/lcshac')">1</case>
+                  
+                  <case test="contains($relURI, '/names/') or contains($relURI, '/resources/hubs/')">
+                    <switch>
+                      <case test="ancestor::bf:Work/bf:subject/*/bf:source//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                      <case test="ancestor::bf:Work/bf:subject/*/madsrdf:isMemberOfMADSScheme//@rdf:*[contains(., '/subjectSchemes/cyac') or contains(., '/authorities/childrensSubjects')]">1</case>
+                      <case test="default">0</case>
+                    </switch>
+                  </case>
+                  <case test="contains($relURI, '/subjects/')">0</case> 
                   <case test="contains($relURI, '/mesh/')">2</case>
                   <case test="contains($relURI, '/nalt/')">3</case>
-                  <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
-                    contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
-                    contains($relURI, '/fast/') or
-                    contains($relURI, 'd-nb.info/gnd/')">7</case>
                   
-                  <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/subjects'] or 
-                    bf:source[@rdf:resource='http://id.loc.gov/authorities/subjects']">0</case>
-                  <case test="madsrdf:isMemberOfMADSScheme[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects'] or 
-                    bf:source[@rdf:resource='http://id.loc.gov/authorities/childrensSubjects']">1</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/mesh']">2</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/nal']">3</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/cash']">5</case>
-                  <case test="bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm']">6</case>
+                  <case test="contains($relURI, '/genreForms/') or 
+                              contains($relURI, '/demographicTerms/') or 
+                              contains($relURI, '/graphicMaterials/') or 
+                              contains($relURI, '/fast/') or
+                              contains($relURI, 'd-nb.info/gnd/')">7</case>
+                  
+                  <case test="contains($vMainSourceUri, '/authorities/subjects') or 
+                              contains($vMainSourceUri, '/subjectSchemes/lcsh') or 
+                              contains($vMainSourceUri, '/authorities/subjects')">0</case>
+                  
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/mesh')">2</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/nal')">3</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/cash')">5</case>
+                  <case test="contains($vMainSourceUri, '/subjectSchemes/rvm')">6</case>
                 </switch>
               </ind2>
               <switch>
@@ -503,7 +527,8 @@
             
             <case test="
               contains(*/madsrdf:componentList/*[1]/@rdf:about, 'id.loc.gov/authorities/subjects/') or
-              contains(*/madsrdf:componentList/*[1]/@rdf:about, 'id.loc.gov/authorities/names/')">0</case>
+              contains(*/madsrdf:componentList/*[1]/@rdf:about, 'id.loc.gov/authorities/names/') or
+              contains(*/madsrdf:componentList/*[1]/@rdf:about, 'id.loc.gov/resources/hubs/')">0</case>
             
             <case test="contains(*/bf:source//@rdf:*[1], '/subjectSchemes/lcsh') or 
                         contains(*/bf:source//@rdf:*[1], '/authorities/subjects') or
@@ -624,6 +649,27 @@
                           </switch>
                         </sf>
                       </case>
+                      <case test="local-name()='HierarchicalGeographic' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic']">
+                        <switch>
+                          <case test="contains(madsrdf:authoritativeLabel, '--')">
+                            <transform>
+                              <xsl:call-template name="tToken2Subfields">
+                                <xsl:with-param name="pString" select="madsrdf:authoritativeLabel" />
+                                <xsl:with-param name="pSeparator" select="'--'"/>
+                                <xsl:with-param name="pSubfieldCode" select="'z'"/>  
+                              </xsl:call-template>
+                            </transform>
+                          </case>
+                          <case test="default">
+                            <sf code="z" chopPunct="true">
+                              <switch>
+                                <case test="madsrdf:authoritativeLabel"><select xpath="madsrdf:authoritativeLabel"/></case>
+                                <case test="default"><select xpath="rdfs:label"/></case>
+                              </switch>
+                            </sf>
+                          </case>
+                        </switch>
+                      </case>
                       <case test="default">
                         <sf code="x" chopPunct="true">
                           <switch>
@@ -656,7 +702,8 @@
                       local-name(madsrdf:componentList/*[1])='Person' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Person' or
                       local-name(madsrdf:componentList/*[1])='Family' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family' or
                       bf:contribution/*/bf:agent/*[local-name()='PersonalName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#PersonalName'] or local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName'] or local-name()='Person' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Person'] or local-name()='Family' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family']] or
-                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='PersonalName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#PersonalName'] or local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName'] or local-name()='Person' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Person'] or local-name()='Family' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family']]) and
+                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='PersonalName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#PersonalName'] or local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName'] or local-name()='Person' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Person'] or local-name()='Family' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family']] or 
+                      madsrdf:componentList/*[1]/bflc:marcKey[starts-with(., '100')]) and
                       (madsrdf:componentList or madsrdf:authoritativeLabel)]">
             <df tag="600">
               <ind1 default="1">
@@ -669,6 +716,7 @@
                               bf:Hub/bf:contribution/*/bf:agent/*[local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName']] or
                               madsrdf:componentList/*[1]/bf:Hub/bf:contribution/*/bf:agent/*[local-name()='Family' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Family']] or
                               madsrdf:componentList/*[1]/bf:Hub/bf:contribution/*/bf:agent/*[local-name()='FamilyName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#FamilyName']]]">3</case>
+                  <case test="*/madsrdf:componentList/*/bflc:marcKey[starts-with(., '1000')]">0</case>
                 </switch>
               </ind1>
               <ind2 default="4">
@@ -738,6 +786,7 @@
                 subject/Agent(Person) (if URI or marcKey present at this level, taken care of above; otherwise no lookup possible and handle here)
                 subject/*/componentList/*[1]=Hub (may have marcKey or URI; lookup possible, which is handled above, but if not...)
                 subject/*/componentList/*[1]=Agent(Person) (may have marcKey or URI; lookup possible, which is handled above, but if not...)
+                ...this code will execute.
               -->
               <!-- name subfields -->
               <select xpath="
@@ -864,7 +913,8 @@
                       local-name(madsrdf:componentList/*[1])='Organization' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Organization' or
                       local-name(madsrdf:componentList/*[1])='Jurisdiction' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction' or
                       bf:contribution/*/bf:agent/*[local-name()='CorporateName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#CorporateName'] or local-name()='Organization' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Organization'] or local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction']] or
-                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='CorporateName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#CorporateName'] or local-name()='Organization' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Organization'] or local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction']]) and
+                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='CorporateName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#CorporateName'] or local-name()='Organization' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Organization'] or local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction']] or
+                      madsrdf:componentList/*[1]/bflc:marcKey[starts-with(., '110')]) and
                       (madsrdf:componentList or madsrdf:authoritativeLabel)]">
             
             
@@ -1070,7 +1120,8 @@
                       local-name(madsrdf:componentList/*[1])='ConferenceName' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://www.loc.gov/mads/rdf/v1#ConferenceName' or
                       local-name(madsrdf:componentList/*[1])='Meeting' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Meeting' or
                       bf:contribution/*/bf:agent/*[local-name()='ConferenceName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#ConferenceName'] or local-name()='Meeting' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Meeting']] or
-                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='ConferenceName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#ConferenceName'] or local-name()='Meeting' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Meeting']]) and
+                      madsrdf:componentList/*[1]/bf:contribution/*/bf:agent/*[local-name()='ConferenceName' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#ConferenceName'] or local-name()='Meeting' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Meeting']] or
+                      madsrdf:componentList/*[1]/bflc:marcKey[starts-with(., '111')]) and
                       (madsrdf:componentList or madsrdf:authoritativeLabel)]">
             <df tag="611">
               <ind1 default="2"/>
@@ -2512,6 +2563,11 @@
                       ) and
                       not(*/marc:record) and not(*/bflc:marcKey)
                     ]">
+      <var name="relURI">
+        <switch>
+          <case test="not(contains(.,'example.org')) and not(contains(bf:*/@rdf:about, 'REPLACE'))"><transform><xsl:value-of select="bf:*/@rdf:about"/></transform></case>
+        </switch>
+      </var>
       <var name="vInd2Val">
         <switch>
           <case test="*/bf:source/bf:Source/bf:code='lcsh' or
@@ -2534,11 +2590,13 @@
           <case test="*/bf:source/bf:Source/bf:code='rvm' or
             */bf:source[@rdf:resource='http://id.loc.gov/vocabulary/subjectSchemes/rvm' or */@rdf:about='http://id.loc.gov/vocabulary/subjectSchemes/rvm'] or
             */madsrdf:componentList/*[1]/bf:source/bf:Source/bf:code='rvm'">6</case>
+          <case test="contains($relURI, '/vocabulary/rbmscv/')">7</case>
           <case test="*/bf:source or */madsrdf:componentList/*[1]/bf:source">7</case>
         </switch>
       </var>
       <var name="vSf2val">
         <switch>
+          <case test="$vInd2Val = '7' and contains($relURI, '/vocabulary/rbmscv/')">rbmscv</case>
           <case test="$vInd2Val = '7'">
             <select xpath="*/bf:source|*/madsrdf:componentList/*[1]/bf:source">
               <var name="vSourceUri">
@@ -2656,8 +2714,11 @@
               <case test="default"><select xpath="*/rdfs:label[1]"/></case>
             </switch>
           </sf>
-          <sf code="0"><select xpath="@rdf:resource[not(contains(.,'example.org')) and not(contains(.,'REPLACE'))]"/></sf>
-          <sf code="0"><select xpath="*/@rdf:about[not(contains(.,'example.org')) and not(contains(.,'REPLACE'))]"/></sf>
+          <switch>
+            <case test="$relURI != ''">
+              <sf code="0"><transform><xsl:value-of select="$relURI" /></transform></sf>
+            </case>
+          </switch>
           <sf code="0">
             <select xpath="*/bf:identifiedBy/bf:Identifier">
               <transform>

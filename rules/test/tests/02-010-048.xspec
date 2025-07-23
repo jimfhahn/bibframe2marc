@@ -177,8 +177,9 @@
     <x:expect label="ind1 from note" test="//marc:datafield[@tag='041'][1]/@ind1 = '1'"/>
     <x:expect label="$a from Language without part" test="//marc:datafield[@tag='041'][1]/marc:subfield[@code='a'] = 'eng'"/>
     <x:expect label="other subfields determined by part note" test="//marc:datafield[@tag='041'][1]/marc:subfield[@code='b'] = 'dan'"/>
-    <x:expect label="Language with source generates new 041" test="//marc:datafield[@tag='041'][2]/marc:subfield[@code='a'] = 'en'"/>
-    <x:expect label="...with source in $2" test="//marc:datafield[@tag='041'][2]/marc:subfield[@code='2'] = 'iso639-1'"/>
+    <x:expect label="Language with source generates new 041" test="//marc:datafield[@tag='041'][2]/marc:subfield[@code='a'] = 'ukr'"/>
+    <x:expect label="Language with source generates new 041" test="//marc:datafield[@tag='041'][2]/marc:subfield[@code='h'] = 'rue'"/>
+    <x:expect label="...with source in $2" test="//marc:datafield[@tag='041'][2]/marc:subfield[@code='2'] = 'iso639-3'"/>
   </x:scenario>
 
   <x:scenario label="MARC 042">

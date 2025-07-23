@@ -1,6 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "LCC missing item portion."},
-{"level": "INFO", "message": "There is an LCC entry missing bf:assigner, indicating it was not assigned by LC."}]-->
+  <!--[{"level": "WARNING", "message": "LCC missing item portion. Check **Classification numbers** for 'Additional call number information'"},
+{"level": "INFO", "message": "There is an LCC entry missing bf:assigner, indicating it was not assigned by LC. Check **Classification numbers**"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/21665525">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -27,8 +27,7 @@
     <bf:publicationStatement>Cham: Springer International Publishing, Imprint: Springer, 2015</bf:publicationStatement>
     <bf:identifiedBy>
       <bf:Local>
-	<rdf:value>978-3-319-23138-9</rdf:value>
-	<bf:assigner rdf:resource="https://ld.zdb-services.de/resource/organisations/DE-He213"/>
+	<rdf:value>21665525</rdf:value>
       </bf:Local>
     </bf:identifiedBy>
     <bf:identifiedBy>
@@ -45,6 +44,12 @@
       <bf:Doi>
 	<rdf:value>10.1007/978-3-319-23138-9</rdf:value>
       </bf:Doi>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>978-3-319-23138-9</rdf:value>
+	<bf:assigner rdf:resource="https://ld.zdb-services.de/resource/organisations/DE-He213"/>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:responsibilityStatement>by Lars Nørvang Andersen, Søren Asmussen, Frank Aurzada, Peter W. Glynn, Makoto Maejima, Mats Pihlsgård, Thomas Simon</bf:responsibilityStatement>
     <bf:title>
@@ -119,7 +124,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-26T14:03:26</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:27:39</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -148,13 +153,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-22T18:45:18.566845-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:23.209922-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -180,7 +185,9 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corigres$du$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c origres $d u $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$epcnspringer$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $e pcnspringer $x policy default</lclocal:d925>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -207,6 +214,8 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $a springerpcn</lclocal:d985>
+	<bflc:marcKey>999ff$i233b3019-b815-5486-adc3-d995e0dcf415$sb5d64272-60a7-44f7-9aa3-0ab02cb5a00e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 233b3019-b815-5486-adc3-d995e0dcf415 $s b5d64272-60a7-44f7-9aa3-0ab02cb5a00e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -221,16 +230,6 @@
 	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
       </bf:Language>
     </bf:language>
-    <bf:classification>
-      <bf:ClassificationLcc>
-	<bf:classificationPortion>QA273.A1-274.9</bf:classificationPortion>
-      </bf:ClassificationLcc>
-    </bf:classification>
-    <bf:classification>
-      <bf:ClassificationLcc>
-	<bf:classificationPortion>QA274-274.9</bf:classificationPortion>
-      </bf:ClassificationLcc>
-    </bf:classification>
     <bf:subject>
       <bf:Topic>
 	<bf:code>PBT</bf:code>
@@ -288,6 +287,40 @@
 	</bf:source>
 	<bf:edition>full</bf:edition>
       </bf:ClassificationDdc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>QA273.A1-274.9</bf:classificationPortion>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+	    <rdfs:label>not used by assigner</rdfs:label>
+	    <bf:code>nuba</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+	    <rdfs:label>prepublication</rdfs:label>
+	    <bf:code>p</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>QA274-274.9</bf:classificationPortion>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+	    <rdfs:label>not used by assigner</rdfs:label>
+	    <bf:code>nuba</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+	    <rdfs:label>prepublication</rdfs:label>
+	    <bf:code>p</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
     </bf:classification>
     <bf:contribution>
       <bf:Contribution>
@@ -607,7 +640,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-26T14:03:26</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:27:39</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -636,13 +669,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-02-22T18:45:18.566845-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:23.209922-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -668,7 +701,9 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corigres$du$encip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c origres $d u $e ncip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$epcnspringer$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $e pcnspringer $x policy default</lclocal:d925>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -695,6 +730,8 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $a springerpcn</lclocal:d985>
+	<bflc:marcKey>999ff$i233b3019-b815-5486-adc3-d995e0dcf415$sb5d64272-60a7-44f7-9aa3-0ab02cb5a00e</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 233b3019-b815-5486-adc3-d995e0dcf415 $s b5d64272-60a7-44f7-9aa3-0ab02cb5a00e</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

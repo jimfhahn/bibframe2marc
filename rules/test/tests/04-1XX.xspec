@@ -64,7 +64,7 @@
     
     <x:expect label="generate 880" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='100-01/$1']]) = 1"/>
     <x:expect label="$a from label of agent"
-      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='100-01/$1']]/marc:subfield[@code='a'] = '叶舒宪,'"/>
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='100-01/$1']]/marc:subfield[@code='a'] = '葉舒憲,'"/>
     <x:expect label="$d from label of agent"
       test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='100-01/$1']]/marc:subfield[@code='d'] = '1954-'"/>
     <x:expect label="$e from label of agent"

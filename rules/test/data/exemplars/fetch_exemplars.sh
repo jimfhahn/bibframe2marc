@@ -7,6 +7,7 @@ declare -A exemplars=(
 ["18344194"]="musicaudio-monograph-contributors-titles-identifiers"
 ["19537131"]="musicaudio-monograph-hamilton-contributos-subjects-genreforms"
 ["12060035"]="musicaudio-382s-captures-7xxs"
+["11909089"]="musicaudio-sd-cr"
 ["21851594"]="notatedmusic-relationships"
 ["20779915"]="notatedmusic-monograph-genreforms"
 ["21340497"]="notatedmusic-monograph-subjects-paralleltitle-contributors-genreforms"

@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-12-18T16:31:17</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:03:14</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:21.322974-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:47.525268-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,8 +65,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk39 2019-12-18 z-client$ivk39 2019-12-18$evk39 2019-12-18 c.1 to BCCD</bflc:marcKey>
 	<lclocal:d955>=955     $a vk39 2019-12-18 z-client $i vk39 2019-12-18 $e vk39 2019-12-18 c.1 to BCCD</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -87,6 +90,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i3b1f3cb0-f4c5-535f-8c38-ee0a1ea00af5$s814505f5-f85c-46e2-b033-f5ad0265b941</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 3b1f3cb0-f4c5-535f-8c38-ee0a1ea00af5 $s 814505f5-f85c-46e2-b033-f5ad0265b941</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
@@ -351,6 +356,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Klagenfurt am Wörthersee: Verlag des Geschichtsvereines für Kärnten, 2018</bf:publicationStatement>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>21340497</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2019565076</rdf:value>
       </bf:Lccn>
@@ -379,11 +389,6 @@
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>on1056975250</rdf:value>
-      </bf:OclcNumber>
-    </bf:identifiedBy>
-    <bf:identifiedBy>
-      <bf:OclcNumber>
 	<rdf:value>1056975250</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
@@ -398,14 +403,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 score (xlvi, 82 pages)</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations, facsimiles</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations, facsimiles</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>30 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -435,13 +440,13 @@
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
-	<rdfs:label>Bibliography of lute manuscripts, prints, and modern editions: pages xxxvi-xliv.</rdfs:label>
+	<rdfs:label>Contains facsimile prints and modern tablature notation.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:note>
       <bf:Note>
-	<rdfs:label>Contains facsimile prints and modern tablature notation.</rdfs:label>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
+	<rdfs:label>Bibliography of lute manuscripts, prints, and modern editions: pages xxxvi-xliv.</rdfs:label>
       </bf:Note>
     </bf:note>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/21340497#Work"/>

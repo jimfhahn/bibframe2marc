@@ -1,3 +1,24 @@
+--- 2.10 2025/07/23
+
+Changes for updated v2.10.0 specifications:
+
+Instance-bf2marc
+	Added creation of 008/06=r based on bf:originDate
+	Changed creation of 017 $b, 028 $b, 032 $b, 036 $b from bf:Agent to bf:Organization
+	Moved creation of 300 $b from stand-alone note to a note within the extent resource
+	Added creation of 510 Ind=3/4 fields from a note resource instead of a relationship resource
+Work-bf2marc
+	Added creation of 046 $2
+	Added creation of 547 field from a title resource
+	Added creation of 580 field from a relationship resource
+	Added creation of 5XX-880 paired fields
+008-bf2marc
+	Added creation of 008/06=r
+Process 0-4
+	Added more precise language-script combinations for the creation of 006 $c field
+	Added new notetypes to Process 3
+
+
 --- 2.9 2025/03/07
 
 Changes for updated v2.9.0 specifications:

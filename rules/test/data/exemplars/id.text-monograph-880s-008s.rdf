@@ -25,11 +25,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>Shanghai: Shanghai ren min chu ban she, 2020</bf:publicationStatement>
-    <bflc:publicationStatement xml:lang="zh-hani">上海: 上海人民出版社, 2020</bflc:publicationStatement>
+    <bf:publicationStatement xml:lang="zh-hani">上海: 上海人民出版社, 2020</bf:publicationStatement>
     <bf:identifiedBy>
-      <bf:OclcNumber>
-	<rdf:value>on1246209164</rdf:value>
-      </bf:OclcNumber>
+      <bf:Local>
+	<rdf:value>22014581</rdf:value>
+      </bf:Local>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
@@ -66,14 +66,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>3, 2, 264 pages</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations (some color), maps</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations (some color), maps</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
@@ -89,14 +89,16 @@
     </bf:carrier>
     <bf:note>
       <bf:Note>
+	<rdfs:label>"Guo jia chu ban ji jin xiang mu"--title page verso.</rdfs:label>
 	<rdfs:label xml:lang="zh-hani">"国家出版基金项目"--title page verso.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:supplementaryContent>
-      <bf:SupplementaryContent>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
 	<rdfs:label>Includes bibliographical references.</rdfs:label>
-      </bf:SupplementaryContent>
-    </bf:supplementaryContent>
+      </bf:Note>
+    </bf:note>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/22014581"/>
     <bf:adminMetadata>
@@ -127,7 +129,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-25T08:54:11</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:54:08</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -155,13 +157,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-09T22:39:40.873626-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:36.911498-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -187,8 +189,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d3$encip$f20$gy-nonroman</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 3 $e ncip $f 20 $g y-nonroman</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $ave11 to LC 2021-04-28$ccc18 2022-03-16 TW$dcc14 2022-03-25 (TW situational)$ecc14 2022-03-25 (TW situational) to ASIAN</bflc:marcKey>
 	<lclocal:d955>=955     $a ve11 to LC 2021-04-28 $c cc18 2022-03-16 TW $d cc14 2022-03-25 (TW situational) $e cc14 2022-03-25 (TW situational) to ASIAN</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -217,11 +222,13 @@
 	<lclocal:d985>=985     $a CNP load-new $d 2021-04-28</lclocal:d985>
 	<lclocal:batch>BibframePilot2</lclocal:batch>
 	<lclocal:d985>=985     $e BibframePilot2 $d 2022-03-25 $f cc14 2022-03-25</lclocal:d985>
+	<bflc:marcKey>999ff$i45d893f0-fc1a-5d03-abf0-7f37a899fb45$s0edea461-add2-46fc-8bbb-792c90e2a319</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 45d893f0-fc1a-5d03-abf0-7f37a899fb45 $s 0edea461-add2-46fc-8bbb-792c90e2a319</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/22014581">
-    <bflc:aap>Ye, Shuxian, 1954- Xuan yu shi dai</bflc:aap>
+    <bflc:aap>Ye, Shuxian, 1954-. Xuan yu shi dai</bflc:aap>
     <bflc:aap-normalized>yeshuxian1954xuanyushidai</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
@@ -283,8 +290,8 @@
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Ye, Shuxian, 1954-</rdfs:label>
 	    <bflc:marcKey>1001 $aYe, Shuxian,$d1954-</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Hani">叶舒憲, 1954-</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Hani">4001 $a叶舒憲,$d1954-</bflc:marcKey>
+	    <rdfs:label xml:lang="zxx-Hani">叶舒宪, 1954-</rdfs:label>
+	    <bflc:marcKey xml:lang="zxx-Hani">4001 $a叶舒宪,$d1954-</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
@@ -309,7 +316,8 @@
     </bf:title>
     <bf:title>
       <bf:VariantTitle>
-	<bf:variantType>portion</bf:variantType>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/por"/>
+	<bf:mainTitle>Wu qian nian Zhongguo de xin qiu zheng</bf:mainTitle>
 	<bf:mainTitle xml:lang="zh-hani">五千年中国的新求证</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
@@ -337,8 +345,8 @@
 	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79091151-781">
 	    <rdfs:label>China</rdfs:label>
 	    <bflc:marcKey>181  $zChina</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-hani">中国</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-hani">4101 $a中国.</bflc:marcKey>
+	    <rdfs:label xml:lang="zxx-hani">Forbidden city (北京, China)</rdfs:label>
+	    <bflc:marcKey xml:lang="zxx-hani">451 4$aForbidden city (北京, China)</bflc:marcKey>
 	  </madsrdf:Geographic>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>jadecarvingprehistoricchina</bflc:aap-normalized>
@@ -396,7 +404,12 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
-	<bf:relationship rdf:resource="http://id.loc.gov/ontologies/bibframe/hasSeries"/>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
 	<bf:associatedResource>
 	  <bf:Series>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
@@ -445,7 +458,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-03-25T08:54:11</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:54:08</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -473,13 +486,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-09T22:39:40.873626-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:24:36.911498-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -505,8 +518,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d3$encip$f20$gy-nonroman</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 3 $e ncip $f 20 $g y-nonroman</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $ave11 to LC 2021-04-28$ccc18 2022-03-16 TW$dcc14 2022-03-25 (TW situational)$ecc14 2022-03-25 (TW situational) to ASIAN</bflc:marcKey>
 	<lclocal:d955>=955     $a ve11 to LC 2021-04-28 $c cc18 2022-03-16 TW $d cc14 2022-03-25 (TW situational) $e cc14 2022-03-25 (TW situational) to ASIAN</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -535,6 +551,8 @@
 	<lclocal:d985>=985     $a CNP load-new $d 2021-04-28</lclocal:d985>
 	<lclocal:batch>BibframePilot2</lclocal:batch>
 	<lclocal:d985>=985     $e BibframePilot2 $d 2022-03-25 $f cc14 2022-03-25</lclocal:d985>
+	<bflc:marcKey>999ff$i45d893f0-fc1a-5d03-abf0-7f37a899fb45$s0edea461-add2-46fc-8bbb-792c90e2a319</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 45d893f0-fc1a-5d03-abf0-7f37a899fb45 $s 0edea461-add2-46fc-8bbb-792c90e2a319</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

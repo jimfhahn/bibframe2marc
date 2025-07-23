@@ -1,8 +1,10 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "MARC issue. Possible provision activity anomaly: Missing aspects for a proper 008 date."},
-{"level": "WARNING", "message": "RDA alert. Missing Media."},
-{"level": "WARNING", "message": "RDA alert. Missing Carrier."},
-{"level": "WARNING", "message": "No LCCN"}]-->
+  <!--[{"level": "WARNING", "message": "MARC issue. Possible provision activity anomaly: Missing aspects for a proper 008 date. Check **Provision activity**"},
+{"level": "WARNING", "message": "RDA alert. Missing Media. Check **Media type**"},
+{"level": "WARNING", "message": "RDA alert. Missing Carrier. Check **Carrier type**"},
+{"level": "WARNING", "message": "No LCCN. Check **Identifiers**"},
+{"level": "WARNING", "message": "Missing language for overall content."},
+{"level": "WARNING", "message": "Missing MARC language for overall content."}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/20525980">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -23,6 +25,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>s.l.</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>20525980</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:title>
       <bf:Title>
 	<bf:mainTitle>George Gershwin Themes from "An American in Paris," holograph music manuscript. 1. p.</bf:mainTitle>
@@ -64,7 +71,16 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-01T19:33:35</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-08T02:10:56</bf:date>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -84,13 +100,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T04:33:52.715085-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:57.64039-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -116,8 +132,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corignew$d2$encip$f20$gy-music</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d 2 $e ncip $f 20 $g y-music</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $ahh05 2018-06-01 On Order for Music Division</bflc:marcKey>
 	<lclocal:d955>=955     $a hh05 2018-06-01 On Order for Music Division</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -131,18 +150,20 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$beng$cDLC$erda</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/s">
-	    <rdfs:label>suppressed</rdfs:label>
-	    <bf:code>s</bf:code>
-	  </bf:Status>
-	</bf:status>
+	<bflc:marcKey>999ff$ie61201d2-ffa6-5bfd-9be2-0fecd88f02de$s8e34f356-c373-4e13-8d55-6ba34853e640</bflc:marcKey>
+	<lclocal:d999>=999  ff $i e61201d2-ffa6-5bfd-9be2-0fecd88f02de $s 8e34f356-c373-4e13-8d55-6ba34853e640</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -193,7 +214,16 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-01T19:33:35</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-08T02:10:56</bf:date>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -213,13 +243,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.7.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-02T04:33:52.715085-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:57.64039-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-3-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
 	    <rdfs:label>preliminary</rdfs:label>
@@ -245,8 +275,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bibc$corignew$d2$encip$f20$gy-music</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d 2 $e ncip $f 20 $g y-music</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $ahh05 2018-06-01 On Order for Music Division</bflc:marcKey>
 	<lclocal:d955>=955     $a hh05 2018-06-01 On Order for Music Division</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -260,18 +293,20 @@
 	    <bf:code>rda</bf:code>
 	  </bf:DescriptionConventions>
 	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$beng$cDLC$erda</rdfs:label>
+	  </bf:Note>
+	</bf:note>
 	<bf:descriptionAuthentication>
 	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
 	    <rdfs:label>Program for Cooperative Cataloging</rdfs:label>
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/s">
-	    <rdfs:label>suppressed</rdfs:label>
-	    <bf:code>s</bf:code>
-	  </bf:Status>
-	</bf:status>
+	<bflc:marcKey>999ff$ie61201d2-ffa6-5bfd-9be2-0fecd88f02de$s8e34f356-c373-4e13-8d55-6ba34853e640</bflc:marcKey>
+	<lclocal:d999>=999  ff $i e61201d2-ffa6-5bfd-9be2-0fecd88f02de $s 8e34f356-c373-4e13-8d55-6ba34853e640</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

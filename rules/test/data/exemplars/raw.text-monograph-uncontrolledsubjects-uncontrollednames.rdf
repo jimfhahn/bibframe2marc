@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-25T12:04:55</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T23:59:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:50.987643-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:32.944787-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
 	    <rdfs:label>abbreviated</rdfs:label>
@@ -71,18 +71,19 @@
 	    <rdfs:label>040  $aViU$cViU$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d3$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 3 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $evl34 2012-03-02 microfilm added</bflc:marcKey>
 	<lclocal:d955>=955     $e vl34 2012-03-02 microfilm added</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<lclocal:d985>=985     $e USRISMlibretto</lclocal:d985>
 	<lclocal:d985>=985     $e musschatz_scanning_2016</lclocal:d985>
+	<bflc:marcKey>999ff$ia229dec3-a7b2-51b3-b284-c5fc45099f1c$s43f072d9-dcc8-41f8-b846-1b7fe19ca62a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a229dec3-a7b2-51b3-b284-c5fc45099f1c $s 43f072d9-dcc8-41f8-b846-1b7fe19ca62a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
     <bf:genreForm>
@@ -120,13 +121,21 @@
 	<bf:mainTitle>The Farmer</bf:mainTitle>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
     <bf:capture>
       <bf:Capture>
 	<rdfs:label>Performance: Dublin, Theatres Royal, 1792?</rdfs:label>
       </bf:Capture>
     </bf:capture>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Topic650-25">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Topic650-27">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Operas--Librettos</rdfs:label>
 	<madsrdf:authoritativeLabel>Operas--Librettos</madsrdf:authoritativeLabel>
@@ -217,7 +226,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-38">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-40">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Hannam, Mrs</rdfs:label>
@@ -233,7 +242,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-39">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-41">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Shield, William, 1748-1829</rdfs:label>
@@ -254,7 +263,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-40">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-42">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>O'Keeffe, John, 1747-1833</rdfs:label>
@@ -270,7 +279,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-41">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-43">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Mitchell, Mr</rdfs:label>
@@ -286,7 +295,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-42">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-44">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Duffy, Mr</rdfs:label>
@@ -302,7 +311,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-43">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-45">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>King, Mr</rdfs:label>
@@ -318,7 +327,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-44">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-46">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Brett, Alphonse, Mr</rdfs:label>
@@ -334,7 +343,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-45">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-47">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>O'Rahilly, Thomas Francis, Mr</rdfs:label>
@@ -350,7 +359,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-46">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-48">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Owenfon, Mr</rdfs:label>
@@ -366,7 +375,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-47">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-49">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Cherry, Mr</rdfs:label>
@@ -382,7 +391,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-48">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-50">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>barret, Mr</rdfs:label>
@@ -398,7 +407,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-49">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-51">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Smith, Mr</rdfs:label>
@@ -414,7 +423,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-50">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-52">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Marshall, Mrs</rdfs:label>
@@ -430,7 +439,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-51">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-53">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Hitchcock, Orra White, 1796-1863, Mrs</rdfs:label>
@@ -446,7 +455,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-52">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16362995#Agent720-54">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
 	    <rdfs:label>Chalmers, Mrs</rdfs:label>
@@ -525,8 +534,19 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
 	<rdfs:label>unmediated</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>U.S. RISM Libretto Project.</rdfs:label>
@@ -577,11 +597,17 @@
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
 	<rdfs:label>computer</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
       </bf:Media>
     </bf:media>
     <bf:carrier>
       <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
 	<rdfs:label>online resource</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
       </bf:Carrier>
     </bf:carrier>
     <bf:title>

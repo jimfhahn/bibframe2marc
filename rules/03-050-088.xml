@@ -218,7 +218,7 @@
   </df>
   
   <switch>
-    <case test="/descendant::node()[bf:Title|bf:ProvisionActivity|bf:editionStatement|bf:Series]//@xml:lang[contains(., '-') and not(contains(., 'atn'))]">
+    <case test="/descendant::node()[bf:Title|bf:ProvisionActivity|bf:editionStatement|bf:Series]//@xml:lang[contains(., '-') and not(contains(., 'atn')) and not(contains(., 'hai'))]">
       <df tag="066">
           <ind1 default=" "/>
           <ind2 default=" "/>
@@ -231,9 +231,14 @@
                 <!-- Those defined in the map. -->
                 <xsl:for-each select="$df880scriptNS/script/lang">
                   <xsl:variable name="vLang" select="." />
-                  <xsl:if test="$vLangs[translate(substring-after(.,'-'),$upper,$lower) = $vLang ]">
-                    <marc:scriptCode><xsl:value-of select="../code" /></marc:scriptCode>
-                  </xsl:if>
+                  <xsl:choose>
+                    <xsl:when test="$vLangs[translate(.,$upper,$lower) = $vLang ]">
+                      <marc:scriptCode><xsl:value-of select="../code" /></marc:scriptCode>
+                    </xsl:when>
+                    <xsl:when test="$vLangs[translate(substring-after(.,'-'),$upper,$lower) = $vLang ]">
+                      <marc:scriptCode><xsl:value-of select="../code" /></marc:scriptCode>
+                    </xsl:when>
+                  </xsl:choose>
                 </xsl:for-each>
                 
                 <!-- For those not defined in the map. -->

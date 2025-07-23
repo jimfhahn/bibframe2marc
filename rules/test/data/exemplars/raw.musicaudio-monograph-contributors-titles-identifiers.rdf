@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2014-10-24T16:46:09</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T02:21:23</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:38.958944-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:14.402056-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,9 +65,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr27 2014-10-22 z-client$iqr27 2014-10-22</bflc:marcKey>
 	<lclocal:d955>=955     $a qr27 2014-10-22 z-client $i qr27 2014-10-22</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-990</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-990</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
@@ -79,14 +84,11 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
+	<bflc:marcKey>999ff$i70af9951-92ab-5bcd-bafe-f247af25bb7c$s5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 70af9951-92ab-5bcd-bafe-f247af25bb7c $s 5aee2adc-09a2-41ef-a720-ff2c1f37c3b9</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/MusicAudio"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
-	<rdfs:label>performed music</rdfs:label>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/>
     <bf:supplementaryContent>
@@ -121,7 +123,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent100-17">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent100-19">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Paganini, Nicolò, 1782-1840</rdfs:label>
 	    <bflc:marcKey>1001 $aPaganini, Nicolò,$d1782-1840.</bflc:marcKey>
@@ -133,13 +135,13 @@
       </bf:Contribution>
     </bf:contribution>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-18">
+      <bf:Hub rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-20">
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Arrangement"/>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-18-Agent">
+	      <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Hub240-20-Agent">
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 		<rdfs:label>Paganini, Nicolò, 1782-1840</rdfs:label>
 		<bflc:marcKey>1001 $aPaganini, Nicolò,$d1782-1840.</bflc:marcKey>
@@ -184,6 +186,14 @@
 	<bf:mainTitle>24 caprices</bf:mainTitle>
       </bf:VariantTitle>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+	<rdfs:label>performed music</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+      </bf:Content>
+    </bf:content>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/participants"/>
@@ -196,7 +206,7 @@
       </bf:Capture>
     </bf:capture>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Topic650-30">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Topic650-35">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Viola music, Arranged</rdfs:label>
 	<madsrdf:authoritativeLabel>Viola music, Arranged</madsrdf:authoritativeLabel>
@@ -207,7 +217,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent700-31">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Agent700-36">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Slapin, Scott, 1974-</rdfs:label>
 	    <bflc:marcKey>7001 $aSlapin, Scott,$d1974-$4prf</bflc:marcKey>
@@ -222,16 +232,6 @@
   </bf:Work>
   <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/18344194#Instance">
     <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
-	<rdfs:label>audio</rdfs:label>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
-	<rdfs:label>audio disc</rdfs:label>
-      </bf:Carrier>
-    </bf:carrier>
     <bf:soundCharacteristic>
       <bf:PlayingSpeed rdf:about="http://id.loc.gov/vocabulary/mplayspeed/f">
 	<rdfs:label>1.4 m. per sec.</rdfs:label>
@@ -274,6 +274,11 @@
     </bf:provisionActivity>
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Ventura, CA: Eroica Classical Recordings, p2008</bf:publicationStatement>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>18344194</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2014624918</rdf:value>
       </bf:Lccn>
@@ -287,15 +292,15 @@
       <bf:AudioIssueNumber>
 	<rdf:value>JDT3420</rdf:value>
 	<bf:assigner>
-	  <bf:Agent>
+	  <bf:Organization>
 	    <rdfs:label>Eroica Classical Recordings</rdfs:label>
-	  </bf:Agent>
+	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn311097395</rdf:value>
+	<rdf:value>311097395</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:title>
@@ -306,15 +311,31 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 sound disc</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>digital</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>digital</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>4 3/4 in</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+	<rdfs:label>audio</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Originally for violin.</rdfs:label>

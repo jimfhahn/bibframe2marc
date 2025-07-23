@@ -1,5 +1,4 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "RDA alert. Missing Carrier."}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16362995">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -85,6 +84,12 @@
 	<bf:code>n</bf:code>
       </bf:Media>
     </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:code>nc</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>U.S. RISM Libretto Project.</rdfs:label>
@@ -141,7 +146,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-25T12:04:55</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T23:59:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -169,13 +174,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T01:23:49.968778-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:25.708252-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
 	    <rdfs:label>abbreviated</rdfs:label>
@@ -207,10 +212,16 @@
 	    <rdfs:label>040  $aViU$cViU$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d3$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 3 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $evl34 2012-03-02 microfilm added</bflc:marcKey>
 	<lclocal:d955>=955     $e vl34 2012-03-02 microfilm added</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<lclocal:d985>=985     $e USRISMlibretto</lclocal:d985>
 	<lclocal:d985>=985     $e musschatz_scanning_2016</lclocal:d985>
+	<bflc:marcKey>999ff$ia229dec3-a7b2-51b3-b284-c5fc45099f1c$s43f072d9-dcc8-41f8-b846-1b7fe19ca62a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a229dec3-a7b2-51b3-b284-c5fc45099f1c $s 43f072d9-dcc8-41f8-b846-1b7fe19ca62a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -218,12 +229,6 @@
     <bflc:aap>The Farmer</bflc:aap>
     <bflc:aap-normalized>thefarmer</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-	<bf:code>txt</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -258,13 +263,12 @@
       </bf:ClassificationLcc>
     </bf:classification>
     <bf:expressionOf>
-      <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/b9fac065-91d1-afc6-6af4-096137290889">
-	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-	<rdfs:label>Farmer. Libretto. English</rdfs:label>
-	<bflc:marcKey>130  $aFarmer.$sLibretto.$lEnglish.</bflc:marcKey>
+      <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/550b20b5-7134-6dce-f940-48c2d1f9f608">
+	<rdfs:label>Farmer. English</rdfs:label>
+	<bflc:marcKey>130  $aFarmer.$lEnglish.</bflc:marcKey>
 	<bf:title>
 	  <bf:Title>
-	    <bf:mainTitle>Farmer. Libretto. English.</bf:mainTitle>
+	    <bf:mainTitle>Farmer. English.</bf:mainTitle>
 	  </bf:Title>
 	</bf:title>
 	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -276,6 +280,12 @@
 	<bflc:nonSortNum>4</bflc:nonSortNum>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:code>txt</bf:code>
+      </bf:Content>
+    </bf:content>
     <bf:capture>
       <bf:Capture>
 	<rdfs:label>Performance: Dublin, Theatres Royal, 1792?</rdfs:label>
@@ -401,9 +411,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -456,9 +466,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -473,9 +483,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -490,9 +500,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -507,9 +517,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -524,9 +534,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -541,9 +551,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -558,9 +568,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -575,9 +585,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -592,9 +602,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -609,9 +619,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -626,9 +636,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -643,9 +653,9 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
-	    <rdfs:label>singer</rdfs:label>
-	    <bf:code>sng</bf:code>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/voc">
+	    <rdfs:label>vocalist</rdfs:label>
+	    <bf:code>voc</bf:code>
 	  </bf:Role>
 	</bf:role>
       </bf:Contribution>
@@ -680,7 +690,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-25T12:04:55</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T23:59:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -708,13 +718,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T01:23:49.968778-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:25.708252-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
 	    <rdfs:label>abbreviated</rdfs:label>
@@ -746,10 +756,16 @@
 	    <rdfs:label>040  $aViU$cViU$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d3$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 3 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $evl34 2012-03-02 microfilm added</bflc:marcKey>
 	<lclocal:d955>=955     $e vl34 2012-03-02 microfilm added</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<lclocal:d985>=985     $e USRISMlibretto</lclocal:d985>
 	<lclocal:d985>=985     $e musschatz_scanning_2016</lclocal:d985>
+	<bflc:marcKey>999ff$ia229dec3-a7b2-51b3-b284-c5fc45099f1c$s43f072d9-dcc8-41f8-b846-1b7fe19ca62a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a229dec3-a7b2-51b3-b284-c5fc45099f1c $s 43f072d9-dcc8-41f8-b846-1b7fe19ca62a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -809,7 +825,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-25T12:04:55</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T23:59:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -837,8 +853,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T01:23:49.968778-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:25.708252-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -856,7 +872,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
 	    <rdfs:label>abbreviated</rdfs:label>
@@ -875,10 +891,16 @@
 	    <rdfs:label>040  $aViU$cViU$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d3$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 3 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $evl34 2012-03-02 microfilm added</bflc:marcKey>
 	<lclocal:d955>=955     $e vl34 2012-03-02 microfilm added</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<lclocal:d985>=985     $e USRISMlibretto</lclocal:d985>
 	<lclocal:d985>=985     $e musschatz_scanning_2016</lclocal:d985>
+	<bflc:marcKey>999ff$ia229dec3-a7b2-51b3-b284-c5fc45099f1c$s43f072d9-dcc8-41f8-b846-1b7fe19ca62a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a229dec3-a7b2-51b3-b284-c5fc45099f1c $s 43f072d9-dcc8-41f8-b846-1b7fe19ca62a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -950,7 +972,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-25T12:04:55</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T23:59:06</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -978,13 +1000,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-12T01:23:49.968778-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:25.708252-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
 	    <rdfs:label>abbreviated</rdfs:label>
@@ -1016,10 +1038,16 @@
 	    <rdfs:label>040  $aViU$cViU$dDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d3$encip$f20$gy-genmusic</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 3 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>955  $evl34 2012-03-02 microfilm added</bflc:marcKey>
 	<lclocal:d955>=955     $e vl34 2012-03-02 microfilm added</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<lclocal:d985>=985     $e USRISMlibretto</lclocal:d985>
 	<lclocal:d985>=985     $e musschatz_scanning_2016</lclocal:d985>
+	<bflc:marcKey>999ff$ia229dec3-a7b2-51b3-b284-c5fc45099f1c$s43f072d9-dcc8-41f8-b846-1b7fe19ca62a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i a229dec3-a7b2-51b3-b284-c5fc45099f1c $s 43f072d9-dcc8-41f8-b846-1b7fe19ca62a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Item>

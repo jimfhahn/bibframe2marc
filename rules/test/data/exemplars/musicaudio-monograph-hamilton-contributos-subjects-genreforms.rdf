@@ -122,13 +122,13 @@
     </bf:classification>
     <bf:classification>
       <bf:Classification>
-	<rdfs:label>-</rdfs:label>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/classSchemes/sudocs">
 	    <rdfs:label>Superintendent of Documents classification system</rdfs:label>
 	    <bf:code>sudocs</bf:code>
 	  </bf:Source>
 	</bf:source>
+	<rdfs:label>-</rdfs:label>
       </bf:Classification>
     </bf:classification>
     <bf:contribution>
@@ -264,6 +264,12 @@
       <bf:Person rdf:about="http://id.worldcat.org/fast/31768">
 	<bflc:marcKey>1001 $aHamilton, Alexander,$d1757-1804</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Hamilton, Alexander, 1757-1804</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Person>
     </bf:subject>
     <bf:subject>
@@ -342,25 +348,48 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1030814">
 	<bflc:marcKey>150  $aMusicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1739942">
 	<bflc:marcKey>150  $aFounding Fathers of the United States</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Founding Fathers of the United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1131990">
 	<bflc:marcKey>150  $aStatesmen</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Statesmen</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
-	<rdfs:label>United States</rdfs:label>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
 	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Place>
     </bf:subject>
     <bf:subject>
@@ -402,36 +431,72 @@
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423910">
 	<bflc:marcKey>155  $aAdaptations</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Adaptations</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1921596">
 	<bflc:marcKey>155  $aBiographical drama</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Biographical drama</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1423879">
 	<bflc:marcKey>155  $aDrama</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Drama</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1726680">
 	<bflc:marcKey>155  $aMusicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Musicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1919889">
 	<bflc:marcKey>155  $aOriginal cast recordings</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Original cast recordings</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1726716">
 	<bflc:marcKey>155  $aRap (Music)</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Rap (Music)</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
@@ -668,7 +733,6 @@
 	</bf:role>
       </bf:Contribution>
     </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -713,6 +777,7 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance>
       <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19537131">
 	<bf:title>
@@ -748,7 +813,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T13:55:13</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T03:44:39</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -776,13 +841,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:24.979089-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:53.235474-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -808,6 +873,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr27 2017-03-03 z-client$iqr27 2017-03-03</bflc:marcKey>
+	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-821</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-821</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -832,9 +905,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
-	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
-	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
+	<bflc:marcKey>999ff$i3861f94f-548e-590d-9efe-8d22ee367624$s820b220d-249d-4168-b054-1ec230d97bc1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 3861f94f-548e-590d-9efe-8d22ee367624 $s 820b220d-249d-4168-b054-1ec230d97bc1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
@@ -887,6 +959,11 @@
     <bf:publicationStatement>New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2015</bf:copyrightDate>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>19537131</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2017618270</rdf:value>
       </bf:Lccn>
@@ -900,16 +977,15 @@
       <bf:AudioIssueNumber>
 	<rdf:value>551093-2</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n50059835">
+	  <bf:Organization>
 	    <rdfs:label>Atlantic Recording Corporation</rdfs:label>
-	    <bflc:marcKey>1102 $aAtlantic Recording Corporation</bflc:marcKey>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:AudioIssueNumber>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocn919490894</rdf:value>
+	<rdf:value>919490894</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:responsibilityStatement>[book, music and lyrics] by Lin-Manuel Miranda</bf:responsibilityStatement>
@@ -923,47 +999,29 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>2 audio discs (142 min.)</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>audio disc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>CD</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>digital, stereo</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>digital, stereo</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>audio disc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>CD</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>4 3/4 in</bf:dimensions>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
-	<rdfs:label>audio disc</rdfs:label>
-	<bf:code>sd</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
+    <bf:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">022200</bf:duration>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
 	<rdfs:label>audio</rdfs:label>
 	<bf:code>s</bf:code>
       </bf:Media>
     </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:code>sd</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:soundCharacteristic>
       <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
 	<rdfs:label>digital</rdfs:label>
@@ -1004,8 +1062,6 @@
 	<bf:code>cda</bf:code>
       </bf:EncodingFormat>
     </bf:digitalCharacteristic>
-    <bf:duration rdf:datatype="http://www.w3.org/2001/XMLSchema#duration">022200</bf:duration>
-    <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Composed by Lin-Manuel Miranda.</rdfs:label>
@@ -1029,7 +1085,7 @@
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
     <bf:instanceOf>
       <bf:Work rdf:about="http://id.loc.gov/resources/works/19537131">
-	<rdfs:label>Miranda, Lin-Manuel, 1980- Hamilton</rdfs:label>
+	<rdfs:label>Miranda, Lin-Manuel, 1980-. Hamilton</rdfs:label>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
@@ -1285,6 +1341,11 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:identifiedBy>
+	      <bf:Local>
+		<rdf:value>19537131</rdf:value>
+	      </bf:Local>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>  2017618270</rdf:value>
 	      </bf:Lccn>
@@ -1297,12 +1358,16 @@
 	    <bf:identifiedBy>
 	      <bf:AudioIssueNumber>
 		<rdf:value>551093-2</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n50059835"/>
+		<bf:assigner>
+		  <bf:Organization>
+		    <rdfs:label>Atlantic Recording Corporation</rdfs:label>
+		  </bf:Organization>
+		</bf:assigner>
 	      </bf:AudioIssueNumber>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:OclcNumber>
-		<rdf:value>ocn919490894</rdf:value>
+		<rdf:value>919490894</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
 	    <bf:publicationStatement>New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
@@ -1310,16 +1375,12 @@
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>2 audio discs (142 min.)</rdfs:label>
-		<bflc:appliesTo>
-		  <bflc:AppliesTo>
-		    <rdfs:label>audio disc</rdfs:label>
-		  </bflc:AppliesTo>
-		</bflc:appliesTo>
-		<bflc:appliesTo>
-		  <bflc:AppliesTo>
-		    <rdfs:label>CD</rdfs:label>
-		  </bflc:AppliesTo>
-		</bflc:appliesTo>
+		<bf:note>
+		  <bf:Note>
+		    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+		    <rdfs:label>digital, stereo</rdfs:label>
+		  </bf:Note>
+		</bf:note>
 	      </bf:Extent>
 	    </bf:extent>
 	  </bf:Instance>
@@ -1350,7 +1411,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T13:55:13</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T03:44:39</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -1378,13 +1439,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:24.979089-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:53.235474-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1410,6 +1471,14 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-soundrec</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr27 2017-03-03 z-client$iqr27 2017-03-03</bflc:marcKey>
+	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-02-04:00: LCAPM-821</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-02-04:00: LCAPM-821</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -1434,449 +1503,8 @@
 	    <bf:code>lccopycat</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
-	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
-	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-  </bf:Instance>
-  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19537131-85X-1">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/SecondaryInstance"/>
-    <bf:issuance>
-      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
-	<rdfs:label>single unit</rdfs:label>
-	<bf:code>mono</bf:code>
-      </bf:Issuance>
-    </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
-	<rdfs:label>computer</rdfs:label>
-	<bf:code>c</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
-	<rdfs:label>online resource</rdfs:label>
-	<bf:code>cr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
-    <bf:title>
-      <bf:Title>
-	<bf:mainTitle>View cover art</bf:mainTitle>
-      </bf:Title>
-    </bf:title>
-    <bf:electronicLocator rdf:resource="http://midwesttapes.com/images/movies/000/000/000/011/415/000000000011415110.jpg"/>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
-    <bf:instanceOf>
-      <bf:Work rdf:about="http://id.loc.gov/resources/works/19537131">
-	<rdfs:label>Miranda, Lin-Manuel, 1980- Hamilton</rdfs:label>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2008101876">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Miranda, Lin-Manuel, 1980-</rdfs:label>
-		<bflc:marcKey>1001 $aMiranda, Lin-Manuel,$d1980-</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
-		<rdfs:label>composer</rdfs:label>
-		<bf:code>cmp</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/lbt">
-		<rdfs:label>librettist</rdfs:label>
-		<bf:code>lbt</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/lyr">
-		<rdfs:label>lyricist</rdfs:label>
-		<bf:code>lyr</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015141088">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Diggs, Daveed</rdfs:label>
-		<bflc:marcKey>1001 $aDiggs, Daveed</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2005053017">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Goldsberry, Renée Elise, 1971-</rdfs:label>
-		<bflc:marcKey>1001 $aGoldsberry, Renée Elise,$d1971-</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n2009046077">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Groff, Jonathan</rdfs:label>
-		<bflc:marcKey>1001 $aGroff, Jonathan</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2008102276">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Jackson, Christopher (Vocalist)</rdfs:label>
-		<bflc:marcKey>1001 $aJackson, Christopher$c(Vocalist)</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015143079">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Jones, Jasmine Cephas</rdfs:label>
-		<bflc:marcKey>1001 $aJones, Jasmine Cephas</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015153094">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Muñoz, Javier (Actor)</rdfs:label>
-		<bflc:marcKey>1001 $aMuñoz, Javier$c(Actor)</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2012071772">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Odom, Leslie, Jr., 1981-</rdfs:label>
-		<bflc:marcKey>1001 $aOdom, Leslie,$cJr.,$d1981-</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015143177">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Onaodowan, Okieriete</rdfs:label>
-		<bflc:marcKey>1001 $aOnaodowan, Okieriete</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015143207">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Ramos, Anthony</rdfs:label>
-		<bflc:marcKey>1001 $aRamos, Anthony</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2014071027">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Soo, Phillipa</rdfs:label>
-		<bflc:marcKey>1001 $aSoo, Phillipa</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
-		<rdfs:label>performer</rdfs:label>
-		<bf:code>prf</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2001040681">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Lacamoire, Alex</rdfs:label>
-		<bflc:marcKey>1001 $aLacamoire, Alex</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
-		<rdfs:label>conductor</rdfs:label>
-		<bf:code>cnd</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:contribution>
-	  <bf:Contribution>
-	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2015153104">
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		<rdfs:label>Kail, Thomas, 1978-</rdfs:label>
-		<bflc:marcKey>1001 $aKail, Thomas,$d1978-</bflc:marcKey>
-	      </bf:Agent>
-	    </bf:agent>
-	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/drt">
-		<rdfs:label>director</rdfs:label>
-		<bf:code>drt</bf:code>
-	      </bf:Role>
-	    </bf:role>
-	  </bf:Contribution>
-	</bf:contribution>
-	<bf:title>
-	  <bf:Title>
-	    <bf:mainTitle>Hamilton</bf:mainTitle>
-	  </bf:Title>
-	</bf:title>
-	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-	<bf:hasInstance>
-	  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19537131">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>Hamilton</bf:mainTitle>
-		<bf:subtitle>original Broadway cast recording</bf:subtitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:identifiedBy>
-	      <bf:Lccn>
-		<rdf:value>  2017618270</rdf:value>
-	      </bf:Lccn>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Upc>
-		<rdf:value>075678668432</rdf:value>
-	      </bf:Upc>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:AudioIssueNumber>
-		<rdf:value>551093-2</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/rwo/agents/n50059835"/>
-	      </bf:AudioIssueNumber>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:OclcNumber>
-		<rdf:value>ocn919490894</rdf:value>
-	      </bf:OclcNumber>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
-	    <bf:editionStatement>[Explicit version]</bf:editionStatement>
-	    <bf:extent>
-	      <bf:Extent>
-		<rdfs:label>2 audio discs (142 min.)</rdfs:label>
-		<bflc:appliesTo>
-		  <bflc:AppliesTo>
-		    <rdfs:label>audio disc</rdfs:label>
-		  </bflc:AppliesTo>
-		</bflc:appliesTo>
-		<bflc:appliesTo>
-		  <bflc:AppliesTo>
-		    <rdfs:label>CD</rdfs:label>
-		  </bflc:AppliesTo>
-		</bflc:appliesTo>
-	      </bf:Extent>
-	    </bf:extent>
-	  </bf:Instance>
-	</bf:hasInstance>
-      </bf:Work>
-    </bf:instanceOf>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
-	    <rdfs:label>new</rdfs:label>
-	    <bf:code>n</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-03</bf:date>
-	<bf:agent>
-	  <bf:Agent>
-	    <bf:code>BTCTA</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T13:55:13</bf:date>
-	<bf:descriptionModifier>
-	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-	    <rdfs:label>United States, Library of Congress</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	  </bf:Organization>
-	</bf:descriptionModifier>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:24.979089-05:00</bf:date>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:identifiedBy>
-	  <bf:Local>
-	    <rdf:value>19537131-85X-1</rdf:value>
-	    <bf:assigner>
-	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-		<rdfs:label>United States, Library of Congress</rdfs:label>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	      </bf:Organization>
-	    </bf:assigner>
-	  </bf:Local>
-	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
-	<bflc:encodingLevel>
-	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
-	    <rdfs:label>full</rdfs:label>
-	    <bf:code>f</bf:code>
-	  </bflc:EncodingLevel>
-	</bflc:encodingLevel>
-	<bf:descriptionConventions>
-	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
-	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
-	    <bf:code>isbd</bf:code>
-	  </bf:DescriptionConventions>
-	</bf:descriptionConventions>
-	<bf:descriptionLanguage>
-	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
-	    <rdfs:label xml:lang="en">English</rdfs:label>
-	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
-	  </bf:Language>
-	</bf:descriptionLanguage>
-	<bf:descriptionConventions>
-	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
-	    <rdfs:label>Resource description and access</rdfs:label>
-	    <bf:code>rda</bf:code>
-	  </bf:DescriptionConventions>
-	</bf:descriptionConventions>
-	<bf:note>
-	  <bf:Note>
-	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aBTCTA$beng$erda$cBTCTA$dTEF$dAPL$dRB0$dZMS$dWUT$dOCLCF$dERE$dIEP$dIDU$dGK8$dMYG$dIXA$dTXA$dOCL$dVP@$dTJC$dOCLCA$dKYC$dDGU$dZCU$dEMU$dKSU$dSCO$dVOD$dWAU$dOCLCA$dNDS$dGK8$dOCL$dCNSAP$dTOH$dIAT$dCLO$dIQU$dTEFMT$dLPCLI$dCUT$dTXH$dOCL$dAW3$dOCLCQ$dDYJ$dOCLCO$dMKN$dDLC</rdfs:label>
-	  </bf:Note>
-	</bf:note>
-	<bf:descriptionAuthentication>
-	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
-	    <rdfs:label>LC Copy Cataloging</rdfs:label>
-	    <bf:code>lccopycat</bf:code>
-	  </bf:DescriptionAuthentication>
-	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
-	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
-	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
+	<bflc:marcKey>999ff$i3861f94f-548e-590d-9efe-8d22ee367624$s820b220d-249d-4168-b054-1ec230d97bc1</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 3861f94f-548e-590d-9efe-8d22ee367624 $s 820b220d-249d-4168-b054-1ec230d97bc1</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>

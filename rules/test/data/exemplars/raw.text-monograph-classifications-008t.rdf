@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-09T14:35:07</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T05:10:17</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:30.163841-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:59.327738-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -65,8 +65,11 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d1$eecip$f20$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 1 $e ecip $f 20 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aLBSOR$erf06 2018-08-09 to Dewey$wxm06 2018-08-09$axn13 2018-10-31 1 copy rec'd., to CIP ver.$frf06 2018-11-09 (telework) to CALM</bflc:marcKey>
 	<lclocal:d955>=955     $a LBSOR $e rf06 2018-08-09 to Dewey $w xm06 2018-08-09 $a xn13 2018-10-31 1 copy rec'd., to CIP ver. $f rf06 2018-11-09 (telework) to CALM</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
@@ -88,6 +91,8 @@
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
 	<lclocal:d985>=985     $a LBSORCIP $d 2018-08-08</lclocal:d985>
+	<bflc:marcKey>999ff$ib7cffd37-086a-55d7-af0f-937434cc334d$s23dd8223-e7d4-4999-a6a1-7b18304ca73a</bflc:marcKey>
+	<lclocal:d999>=999  ff $i b7cffd37-086a-55d7-af0f-937434cc334d $s 23dd8223-e7d4-4999-a6a1-7b18304ca73a</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -136,7 +141,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Agent100-16">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Agent100-17">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Krause, Scott H.</rdfs:label>
 	    <bflc:marcKey>1001 $aKrause, Scott H.,$eauthor.</bflc:marcKey>
@@ -187,36 +192,16 @@
 	<bf:seriesEnumeration>61</bf:seriesEnumeration>
       </bf:Relation>
     </bf:relation>
-    <bf:summary>
-      <bf:Summary>
-	<rdfs:label>"Within the span of a generation, Nazi Germany's former capital, Berlin, found a new role as a symbol of freedom and resilient democracy in the Cold War. This book unearths how this remarkable transformation derived from a network of liberal American occupation officials, and returned émigrés, or remigrés, of the Marxist Social Democratic Party (SPD). This network derived from lengthy physical and political journeys. After fleeing Hitler, German-speaking self-professed 'revolutionary socialists' emphasized 'anti-totalitarianism' in New Deal America and contributed to its intelligence apparatus. These experiences made these remigrés especially adept at cultural translation in postwar Berlin against Stalinism. This book provides a new explanation for the alignment of Germany's principal left-wing party with the Western camp. While the Cold War has traditionally been analyzed from the perspective of decision makers in Moscow or Washington, this study demonstrates the agency of hitherto marginalized on the conflict's first battlefield. Examining local political culture and social networks underscores how both Berliners and émigrés understood the East-West competition over the rubble that the Nazis left behind as a chance to reinvent themselves as democrats and cultural mediators, respectively. As this network popularized an anti-Communist, pro-Western Left, this book identifies how often ostracized émigrés made a crucial contribution to the Federal Republic of Germany's democratization"-- Provided by publisher.</rdfs:label>
-      </bf:Summary>
-    </bf:summary>
     <bf:tableOfContents>
       <bf:TableOfContents>
 	<rdfs:label>Berlin, capital of ruins, 1945-1948 -- Origins of the outpost network, 1933-1949 -- Rise of the outpost narrative in the wake of the Berlin airlift, 1948-1953 -- Triple Crisis, 1953 -- Ascent to leadership, 1954-1961 -- Public acceptance and reinterpretation, 1961-1972 -- Conclusion: Excavating the outpost of freedom on the spree.</rdfs:label>
       </bf:TableOfContents>
     </bf:tableOfContents>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-30">
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Berlin (Germany)--Politics and government--1945-1990</rdfs:label>
-	<madsrdf:authoritativeLabel>Berlin (Germany)--Politics and government--1945-1990</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Berlin (Germany)</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:Topic>
-	    <madsrdf:authoritativeLabel>Politics and government</madsrdf:authoritativeLabel>
-	  </madsrdf:Topic>
-	  <madsrdf:Temporal>
-	    <madsrdf:authoritativeLabel>1945-1990</madsrdf:authoritativeLabel>
-	  </madsrdf:Temporal>
-	</madsrdf:componentList>
-	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
-      </bf:Topic>
-    </bf:subject>
+    <bf:summary>
+      <bf:Summary>
+	<rdfs:label>"Within the span of a generation, Nazi Germany's former capital, Berlin, found a new role as a symbol of freedom and resilient democracy in the Cold War. This book unearths how this remarkable transformation derived from a network of liberal American occupation officials, and returned émigrés, or remigrés, of the Marxist Social Democratic Party (SPD). This network derived from lengthy physical and political journeys. After fleeing Hitler, German-speaking self-professed 'revolutionary socialists' emphasized 'anti-totalitarianism' in New Deal America and contributed to its intelligence apparatus. These experiences made these remigrés especially adept at cultural translation in postwar Berlin against Stalinism. This book provides a new explanation for the alignment of Germany's principal left-wing party with the Western camp. While the Cold War has traditionally been analyzed from the perspective of decision makers in Moscow or Washington, this study demonstrates the agency of hitherto marginalized on the conflict's first battlefield. Examining local political culture and social networks underscores how both Berliners and émigrés understood the East-West competition over the rubble that the Nazis left behind as a chance to reinvent themselves as democrats and cultural mediators, respectively. As this network popularized an anti-Communist, pro-Western Left, this book identifies how often ostracized émigrés made a crucial contribution to the Federal Republic of Germany's democratization"-- Provided by publisher.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
     <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Topic650-31">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
@@ -237,6 +222,26 @@
     <bf:subject>
       <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-32">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Berlin (Germany)--Politics and government--1945-1990</rdfs:label>
+	<madsrdf:authoritativeLabel>Berlin (Germany)--Politics and government--1945-1990</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Geographic>
+	    <madsrdf:authoritativeLabel>Berlin (Germany)</madsrdf:authoritativeLabel>
+	  </madsrdf:Geographic>
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Politics and government</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:Temporal>
+	    <madsrdf:authoritativeLabel>1945-1990</madsrdf:authoritativeLabel>
+	  </madsrdf:Temporal>
+	</madsrdf:componentList>
+	<bf:source rdf:resource="http://id.loc.gov/authorities/subjects"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-33">
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Germany (West)--Foreign relations--United States</rdfs:label>
 	<madsrdf:authoritativeLabel>Germany (West)--Foreign relations--United States</madsrdf:authoritativeLabel>
 	<madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
@@ -255,7 +260,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/20621601#Place651-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>United States--Foreign relations--Germany (West)</rdfs:label>
 	<madsrdf:authoritativeLabel>United States--Foreign relations--Germany (West)</madsrdf:authoritativeLabel>
@@ -292,6 +297,11 @@
     <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London; New York, NY: Routledge/Taylor &amp; Francis Group, 2019</bf:publicationStatement>
     <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:copyrightDate>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>20621601</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2018020991</rdf:value>
       </bf:Lccn>
@@ -325,14 +335,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>xiv, 284 pages</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>illustrations</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>25 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">

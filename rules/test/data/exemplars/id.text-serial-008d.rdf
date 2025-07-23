@@ -1,7 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "ProvisionActivity has something other than simplePlace, simpleDate, simpleAgent, EDTF date, place, agent, note, rdf:type, or appliesTo. This may be a problem."},
-{"level": "WARNING", "message": "RDA alert. Missing Media."},
-{"level": "WARNING", "message": "RDA alert. Missing Carrier."}]-->
+  <!--[{"level": "WARNING", "message": "ProvisionActivity has something other than simplePlace, simpleDate, simpleAgent, EDTF date, place, agent, note, rdf:type, or appliesTo. This may be a problem."}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11393548">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/serl">
@@ -50,6 +48,11 @@
       </bf:Note>
     </bf:note>
     <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>11393548</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>   91662053 </rdf:value>
       </bf:Lccn>
@@ -69,16 +72,15 @@
       <bf:PostalRegistration>
 	<rdf:value>005241</rdf:value>
 	<bf:assigner>
-	  <bf:Organization rdf:about="http://id.loc.gov/rwo/agents/n89658260">
-	    <rdfs:label>United States Power Squadrons</rdfs:label>
-	    <bflc:marcKey>11020$aUnited States Power Squadrons</bflc:marcKey>
+	  <bf:Organization>
+	    <rdfs:label>USPS</rdfs:label>
 	  </bf:Organization>
 	</bf:assigner>
       </bf:PostalRegistration>
     </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:OclcNumber>
-	<rdf:value>ocm22192348 </rdf:value>
+	<rdf:value>22192348</rdf:value>
       </bf:OclcNumber>
     </bf:identifiedBy>
     <bf:acquisitionSource>
@@ -96,14 +98,14 @@
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>v.</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>ill. (some col.)</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>ill. (some col.)</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>35 cm</bf:dimensions>
     <bf:frequency>
       <bf:Frequency>
@@ -116,6 +118,18 @@
 	</bf:status>
       </bf:Frequency>
     </bf:frequency>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:code>nc</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/number"/>
@@ -160,7 +174,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-17T14:02:26</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:24:09</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -185,13 +199,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-10T19:58:11.774294-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:47.607397-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -223,6 +237,10 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f19$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -247,7 +265,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>999ff$idea1d7e2-2eb4-5f8e-ae19-19789ed5a18f$s7665c11a-5b49-4e8f-8859-bacd618931a6</bflc:marcKey>
+	<lclocal:d999>=999  ff $i dea1d7e2-2eb4-5f8e-ae19-19789ed5a18f $s 7665c11a-5b49-4e8f-8859-bacd618931a6</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -255,12 +274,6 @@
     <bflc:aap>The National sports daily</bflc:aap>
     <bflc:aap-normalized>thenationalsportsdaily</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
-	<rdfs:label>text</rdfs:label>
-	<bf:code>txt</bf:code>
-      </bf:Content>
-    </bf:content>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Serial"/>
     <bf:language>
       <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
@@ -380,8 +393,15 @@
 	<bflc:nonSortNum>4</bflc:nonSortNum>
       </bf:Title>
     </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+	<rdfs:label>text</rdfs:label>
+	<bf:code>txt</bf:code>
+      </bf:Content>
+    </bf:content>
     <bf:note>
       <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/relnote"/>
 	<rdfs:label>Issued in 4 other regional editions: Chicago, Los Angeles, San Diego, and San Francisco.</rdfs:label>
       </bf:Note>
     </bf:note>
@@ -420,19 +440,36 @@
       <bf:Topic rdf:about="http://id.worldcat.org/fast/1130432">
 	<bflc:marcKey>150  $aSports</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Sports</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n78095330">
-	<rdfs:label>United States</rdfs:label>
+      <bf:Place rdf:about="http://id.worldcat.org/fast/1204155">
 	<bflc:marcKey>151  $aUnited States</bflc:marcKey>
-	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us---</bf:code>
+	<madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:Place>
     </bf:subject>
     <bf:genreForm>
       <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
 	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
 	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
@@ -695,54 +732,6 @@
 	</bf:associatedResource>
       </bf:Relation>
     </bf:relation>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/otherphysicalformat">
-	    <rdfs:label>other physical format</rdfs:label>
-	    <bf:code>otherphysicalformat</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11480306">
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>The National sports daily</bf:mainTitle>
-		<bflc:nonSortNum>4</bflc:nonSortNum>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11480306">
-		<bf:publicationStatement>New York, NY: National American Sports Communications, [1990]-</bf:publicationStatement>
-		<bf:editionStatement>[New York ed.].</bf:editionStatement>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>sf 97095059 </rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:OclcNumber>
-		    <rdf:value>ocm36722427 </rdf:value>
-		  </bf:OclcNumber>
-		</bf:identifiedBy>
-		<bf:media>
-		  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/h">
-		    <rdfs:label>microform</rdfs:label>
-		    <bf:code>h</bf:code>
-		  </bf:Media>
-		</bf:media>
-		<bf:carrier>
-		  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/hd">
-		    <rdfs:label>microfilm reel</rdfs:label>
-		    <bf:code>hd</bf:code>
-		  </bf:Carrier>
-		</bf:carrier>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
     <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/11393548"/>
     <bf:adminMetadata>
       <bf:AdminMetadata>
@@ -768,7 +757,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-12-17T14:02:26</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T13:24:09</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
 	    <bf:code>OCLCL</bf:code>
@@ -793,13 +782,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-10T19:58:11.774294-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:47.607397-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -831,6 +820,10 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$cserials$d2$encip$f19$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-644</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-644</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -855,7 +848,8 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c serials $d 2 $e ncip $f 19 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>999ff$idea1d7e2-2eb4-5f8e-ae19-19789ed5a18f$s7665c11a-5b49-4e8f-8859-bacd618931a6</bflc:marcKey>
+	<lclocal:d999>=999  ff $i dea1d7e2-2eb4-5f8e-ae19-19789ed5a18f $s 7665c11a-5b49-4e8f-8859-bacd618931a6</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

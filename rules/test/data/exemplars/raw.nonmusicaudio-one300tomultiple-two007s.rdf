@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-05-02T15:29:46</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T06:47:52</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,13 +38,13 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.9.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-03-05T11:34:33.037009-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:05.819498-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -79,9 +79,14 @@
 	    <rdfs:label>040  $aDLC$beng$erda$cDLC</rdfs:label>
 	  </bf:Note>
 	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corignew$d4$encip$f20$gy-soundrec</bflc:marcKey>
 	<lclocal:d906>=906     $a 7 $b cbc $c orignew $d 4 $e ncip $f 20 $g y-soundrec</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b2 shelf copies$xpolicy default</bflc:marcKey>
 	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $aqr39 2021-03-09$iqr39 2021-03-09$tcopy 2 qr40 2022-05-02</bflc:marcKey>
 	<lclocal:d955>=955     $a qr39 2021-03-09 $i qr39 2021-03-09 $t copy 2 qr40 2022-05-02</lclocal:d955>
+	<bflc:marcKey>999ff$i16939915-607d-5595-8f5c-1725e344373f$sb1138d37-e248-495a-9f62-8d583e9e23af</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 16939915-607d-5595-8f5c-1725e344373f $s b1138d37-e248-495a-9f62-8d583e9e23af</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NonMusicAudio"/>
@@ -108,7 +113,7 @@
       <bf:Contribution>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Agent100-13">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Agent100-14">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Russell, Rod, 1946-</rdfs:label>
 	    <bflc:marcKey>1001 $aRussell, Rod,$d1946-$eauthor,$espeaker,$eperformer.</bflc:marcKey>
@@ -175,6 +180,32 @@
 	</bflc:appliesTo>
       </bf:Content>
     </bf:content>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/spw">
+	<rdfs:label>spoken word</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio discs</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:Content>
+    </bf:content>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+	<rdfs:label>performed music</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+	</bf:source>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio discs and videodisc</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:Content>
+    </bf:content>
     <bf:tableOfContents>
       <bf:TableOfContents>
 	<rdfs:label>Audio instructional CD [1]: Lessons 9 &amp; 10 -- CD [2]: Lessons 11 &amp; 12 -- CD [3]: Lessons 13 &amp; 14 -- CD [4]: Lessons 15 &amp; 16 -- DVD: Rod's video demonstrations for Lessons 9 to 16 --</rdfs:label>
@@ -212,7 +243,7 @@
       </bf:Notation>
     </bf:notation>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-33">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-42">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Piano--Instruction and study</rdfs:label>
 	<madsrdf:authoritativeLabel>Piano--Instruction and study</madsrdf:authoritativeLabel>
@@ -229,7 +260,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-34">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-43">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Piano--Methods (Popular music)</rdfs:label>
 	<madsrdf:authoritativeLabel>Piano--Methods (Popular music)</madsrdf:authoritativeLabel>
@@ -246,7 +277,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-35">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-44">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Popular instrumental music--Instruction and study</rdfs:label>
 	<madsrdf:authoritativeLabel>Popular instrumental music--Instruction and study</madsrdf:authoritativeLabel>
@@ -263,7 +294,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-36">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/21933307#Topic650-45">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Piano music--Teaching pieces</rdfs:label>
 	<madsrdf:authoritativeLabel>Piano music--Teaching pieces</madsrdf:authoritativeLabel>
@@ -280,7 +311,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/21933307#GenreForm655-37">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/21933307#GenreForm655-46">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Instructional and educational works</rdfs:label>
 	<madsrdf:authoritativeLabel>Instructional and educational works</madsrdf:authoritativeLabel>
@@ -292,7 +323,7 @@
       </bf:GenreForm>
     </bf:genreForm>
     <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/21933307#GenreForm655-38">
+      <bf:GenreForm rdf:about="http://id.loc.gov/resources/REPLACE/21933307#GenreForm655-47">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
 	<rdfs:label>Popular music</rdfs:label>
 	<madsrdf:authoritativeLabel>Popular music</madsrdf:authoritativeLabel>
@@ -364,6 +395,11 @@
 	<rdf:value>9780973947816</rdf:value>
       </bf:Ean>
     </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>21933307</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:title>
       <bf:Title>
 	<bf:mainTitle>How to play popular piano</bf:mainTitle>
@@ -385,24 +421,24 @@
 	    <rdfs:label>CD</rdfs:label>
 	  </bflc:AppliesTo>
 	</bflc:appliesTo>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>spoken word</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>digital</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>digital</rdfs:label>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>audio disc</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-	<bflc:appliesTo>
-	  <bflc:AppliesTo>
-	    <rdfs:label>CD</rdfs:label>
-	  </bflc:AppliesTo>
-	</bflc:appliesTo>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
@@ -485,6 +521,32 @@
 	</bflc:appliesTo>
       </bf:EncodingFormat>
     </bf:digitalCharacteristic>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+	<rdfs:label>audio</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+	</bf:source>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio discs</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+	<rdfs:label>audio disc</rdfs:label>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+	</bf:source>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>audio discs</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:Carrier>
+    </bf:carrier>
     <bf:note>
       <bf:Note>
 	<rdfs:label>Title from container.</rdfs:label>
@@ -517,20 +579,20 @@
     </bf:soundCharacteristic>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[videodisc]</bf:mainTitle>
+	<bf:mainTitle>[1 videodisc (27 min. )]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>1 videodisc (27 min. )</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>sound, color</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>sound, color</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>4 3/4 in</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
@@ -590,20 +652,20 @@
     <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>[lesson guide]</bf:mainTitle>
+	<bf:mainTitle>[8 lesson guides (various pagings )]</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:extent>
       <bf:Extent>
 	<rdfs:label>8 lesson guides (various pagings )</rdfs:label>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+	    <rdfs:label>music, illustrations</rdfs:label>
+	  </bf:Note>
+	</bf:note>
       </bf:Extent>
     </bf:extent>
-    <bf:note>
-      <bf:Note>
-	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-	<rdfs:label>music, illustrations</rdfs:label>
-      </bf:Note>
-    </bf:note>
     <bf:dimensions>28 cm</bf:dimensions>
     <bf:media>
       <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">

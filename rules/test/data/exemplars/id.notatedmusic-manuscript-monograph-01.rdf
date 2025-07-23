@@ -1,7 +1,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
-  <!--[{"level": "WARNING", "message": "MARC issue. Possible provision activity anomaly: Missing aspects for a proper 008 date."},
-{"level": "WARNING", "message": "RDA alert. Missing Media."},
-{"level": "WARNING", "message": "RDA alert. Missing Carrier."}]-->
+  <!--[{"level": "WARNING", "message": "RDA alert. Missing Media. Check **Media type**"},
+{"level": "WARNING", "message": "RDA alert. Missing Carrier. Check **Carrier type**"}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/10496140">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -12,6 +11,7 @@
     <bf:provisionActivity>
       <bf:ProvisionActivity>
 	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">XXXX</bf:date>
 	<bf:place>
 	  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xx">
 	    <rdfs:label xml:lang="en">No place, unknown, or undetermined</rdfs:label>
@@ -23,6 +23,11 @@
       </bf:ProvisionActivity>
     </bf:provisionActivity>
     <bf:publicationStatement>[n.p.]: [n.d.]</bf:publicationStatement>
+    <bf:identifiedBy>
+      <bf:Local>
+	<rdf:value>10496140</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2012570811</rdf:value>
@@ -68,7 +73,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-14T13:58:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T12:24:44</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -96,13 +101,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-11T09:49:11.180361-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:39.086009-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bf:identifiedBy>
 	  <bf:Local>
 	    <rdf:value>10496140</rdf:value>
@@ -116,7 +121,9 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bcbc$cpremunv$du$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b cbc $c premunv $d u $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $avl41 2012-07-30 type code change$ivl26 2012-09-14 telework</bflc:marcKey>
 	<lclocal:d955>=955     $a vl41 2012-07-30 type code change $i vl26 2012-09-14 telework</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
@@ -125,11 +132,13 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $e ML96</lclocal:d985>
+	<bflc:marcKey>999ff$i27889336-7a7e-58f4-a8c2-0e449d918ce8$s622b6292-e203-45cc-b4e7-77aadee79fd8</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 27889336-7a7e-58f4-a8c2-0e449d918ce8 $s 622b6292-e203-45cc-b4e7-77aadee79fd8</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/10496140">
-    <bflc:aap>Freer, Eleanor Everest Manuscript of The boat is chafing at our long delay, op. 16, I. Daughter of Egypt, veil thine eyes, op. 16, II. (Two songs)</bflc:aap>
+    <bflc:aap>Freer, Eleanor Everest. Manuscript of The boat is chafing at our long delay, op. 16, I. Daughter of Egypt, veil thine eyes, op. 16, II. (Two songs)</bflc:aap>
     <bflc:aap-normalized>freereleanoreverestmanuscriptoftheboatischafingatourlongdelayop16idaughterofegyptveilthineeyesop16ii(twosongs)</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Manuscript"/>
@@ -227,7 +236,7 @@
 	</bf:title>
 	<bf:title>
 	  <bf:VariantTitle>
-	    <bf:mainTitle>Boat is chafing at our long delay</bf:mainTitle>
+	    <bf:mainTitle xml:lang="zxx-latn">Boat is chafing at our long delay</bf:mainTitle>
 	  </bf:VariantTitle>
 	</bf:title>
       </bf:Hub>
@@ -283,7 +292,7 @@
 	    </bf:title>
 	    <bf:title>
 	      <bf:VariantTitle>
-		<bf:mainTitle>Daughter of Egypt, veil thine eyes</bf:mainTitle>
+		<bf:mainTitle xml:lang="zxx-latn">Daughter of Egypt, veil thine eyes</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
 	  </bf:Hub>
@@ -319,7 +328,7 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2012-09-14T13:58:14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T12:24:44</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdfs:label>United States, Library of Congress</rdfs:label>
@@ -347,13 +356,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.8.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-11T09:49:11.180361-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:22:39.086009-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-4-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
 	<bf:identifiedBy>
 	  <bf:Local>
 	    <rdf:value>10496140</rdf:value>
@@ -367,7 +376,9 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
+	<bflc:marcKey>906  $a0$bcbc$cpremunv$du$encip$f19$gy-gencatlg</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b cbc $c premunv $d u $e ncip $f 19 $g y-gencatlg</lclocal:d906>
+	<bflc:marcKey>955  $avl41 2012-07-30 type code change$ivl26 2012-09-14 telework</bflc:marcKey>
 	<lclocal:d955>=955     $a vl41 2012-07-30 type code change $i vl26 2012-09-14 telework</lclocal:d955>
 	<bf:note>
 	  <bf:Note>
@@ -376,6 +387,8 @@
 	  </bf:Note>
 	</bf:note>
 	<lclocal:d985>=985     $e ML96</lclocal:d985>
+	<bflc:marcKey>999ff$i27889336-7a7e-58f4-a8c2-0e449d918ce8$s622b6292-e203-45cc-b4e7-77aadee79fd8</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 27889336-7a7e-58f4-a8c2-0e449d918ce8 $s 622b6292-e203-45cc-b4e7-77aadee79fd8</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
