@@ -391,11 +391,11 @@
           </marc:subfield>
         </xsl:for-each>
         <xsl:copy-of select="$vShared" />
-        <xsl:if test="$vLangTagLabel!=''">
+        <!--<xsl:if test="$vLangTagLabel!=''">
           <marc:subfield code="7">
             <xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/>
           </marc:subfield>
-        </xsl:if>
+        </xsl:if>-->
       </transform>
     </df>
       </case>
@@ -441,7 +441,7 @@
             </xsl:for-each>
             <xsl:copy-of select="$vShared" />
           </transform>
-          <sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>
+          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
         </df>
       </case>
     </switch>
@@ -944,11 +944,11 @@
           </switch>
           <transform>
             <xsl:copy-of select="$vShared" />
-            <xsl:if test="$vLangTagLabel!=''">
+            <!--<xsl:if test="$vLangTagLabel!=''">
               <marc:subfield code="7">
                 <xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/>
               </marc:subfield>
-            </xsl:if>
+            </xsl:if>-->
           </transform>
         </df>
       </case>
@@ -1003,7 +1003,7 @@
             </xsl:for-each>
             <xsl:copy-of select="$vShared" />
           </transform>
-          <sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>
+          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
         </df>
       </case>
     </switch>
@@ -1567,13 +1567,13 @@
       <sf code="5" repeatable="false">
         <select xpath="bflc:applicableInstitution/*/bf:code"/>
       </sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <!--<sf code="7" chopPunct="true" repeatable="false">
         <switch>
           <case test="$vLangTagLabel!=''">
             <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
           </case>
         </switch>
-      </sf>
+      </sf>-->
     </df>
     
     <switch>
@@ -1596,7 +1596,7 @@
           <sf code="5" repeatable="false">
             <select xpath="bflc:applicableInstitution/*/bf:code"/>
           </sf>
-          <sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>
+          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
         </df>
       </case>
     </switch>

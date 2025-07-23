@@ -212,13 +212,13 @@
                                   string-length(@xml:lang)='2' or 
                                   string-length(@xml:lang)='3']"/>
               </sf>
-              <sf code="7" chopPunct="true" repeatable="false">
+              <!--<sf code="7" chopPunct="true" repeatable="false">
                 <switch>
                   <case test="$vLangTagLabel!=''">
                     <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
                   </case>
                 </switch>
-              </sf>
+              </sf>-->
             </df>
       </case>
     </switch>
@@ -342,7 +342,7 @@
           <sf code="v" repeatable="true">
             <select xpath="../../bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]"/>
           </sf>
-          <sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>
+          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
         </df>
       </case>
     </switch>
