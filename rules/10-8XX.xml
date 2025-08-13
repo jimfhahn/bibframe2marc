@@ -1069,7 +1069,18 @@
     </switch>
     <switch>
       <case test="$pGenerationUri">
-        <sf code="u"><transform><xsl:value-of select="concat($pGenerationUri, '/releases/tag/', substring-after($vCurrentVersion, 'DLC bibframe2marc '))" /></transform></sf>
+        <sf code="u">
+          <transform>
+            <xsl:choose>
+              <xsl:when test="contains($vCurrentVersion, '-dev')">
+                <xsl:value-of select="concat($pGenerationUri, '/tree/', substring-after($vCurrentVersion, 'DLC bibframe2marc '))" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="concat($pGenerationUri, '/releases/tag/', substring-after($vCurrentVersion, 'DLC bibframe2marc '))" />
+              </xsl:otherwise>
+            </xsl:choose>
+          </transform>
+        </sf>
       </case>
     </switch>
   </df>
