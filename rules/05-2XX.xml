@@ -603,7 +603,7 @@
               <case test="$v880Script != ''">
                 <transform><xsl:value-of select="concat('245-03/',$v880Script)"/></transform>
               </case>
-              <case test="default">245-01</case>
+              <case test="default">245-03</case>
             </switch>
           </sf>
           <sf code="a" chopPunct="true" repeatable="false">
