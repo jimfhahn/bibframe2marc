@@ -992,7 +992,7 @@
         <case test="default">
           <select xpath="bf:mediumComponent/bf:MediumComponent[bf:mediumOfPerformance/*/rdfs:label]">
             <switch>
-              <case test="bf:qualifier">
+              <case test="bf:mediumComponentQualifier//@rdf:*[1] = 'http://id.loc.gov/vocabulary/medcompqual/solo'">
                 <sf code="b" chopPunct="true"><select xpath="bf:mediumOfPerformance/*/rdfs:label"/></sf>
               </case>
               <case test="default">
@@ -1002,12 +1002,12 @@
             <sf code="n" chopPunct="true" repeatable="false">
               <select xpath="bf:count"/>
             </sf>
-            <sf code="p" chopPunct="true" repeatable="false">
-              <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/alternative']/rdfs:label"/>
-            </sf>
-            <sf code="d" chopPunct="true" repeatable="false">
-              <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doubling']/rdfs:label"/>
-            </sf>
+            <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/alternative']/rdfs:label">
+              <sf code="p" chopPunct="true" repeatable="false"><select xpath="." /></sf>
+            </select>
+            <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doubling']/rdfs:label">
+              <sf code="d" chopPunct="true" repeatable="false"><select xpath="." /></sf>
+            </select>
             <sf code="v" chopPunct="true" repeatable="false">
               <select xpath="bf:note/bf:Note[not(rdf:type)]/rdfs:label"/>
             </sf>
