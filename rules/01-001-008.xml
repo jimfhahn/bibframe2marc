@@ -601,6 +601,14 @@
               bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Production']/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf' 
               or 
               bf:Instance/bf:provisionActivity/bf:Production/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'
+              or 
+              bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Manufacture']/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf' 
+              or 
+              bf:Instance/bf:provisionActivity/bf:Manufacture/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'
+              or 
+              bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Distribution']/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf' 
+              or 
+              bf:Instance/bf:provisionActivity/bf:Distribution/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'
               ">
               <transform>
                 <xsl:variable name="vPAprenodeset">
@@ -608,9 +616,21 @@
                     <xsl:when test="bf:Instance/bf:provisionActivity/bf:Production/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'">
                       <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:Production[bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
                     </xsl:when>
-                    <xsl:otherwise>
-                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Production' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />    
-                    </xsl:otherwise>
+                    <xsl:when test="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Production' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']">
+                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Production' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
+                    </xsl:when>
+                    <xsl:when test="bf:Instance/bf:provisionActivity/bf:Manufacture/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'">
+                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:Manufacture[bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
+                    </xsl:when>
+                    <xsl:when test="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Manufacture' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']">
+                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Manufacture' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
+                    </xsl:when>
+                    <xsl:when test="bf:Instance/bf:provisionActivity/bf:Distribution/bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf'">
+                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:Distribution[bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
+                    </xsl:when>
+                    <xsl:when test="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Distribution' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']">
+                      <xsl:copy-of select="bf:Instance/bf:provisionActivity/bf:ProvisionActivity[rdf:type/@rdf:resource = 'http://id.loc.gov/ontologies/bibframe/Distribution' and bf:date/@rdf:datatype = 'http://id.loc.gov/datatypes/edtf']" />
+                    </xsl:when>
                   </xsl:choose>                  
                 </xsl:variable>
                 <xsl:variable name="vPA" select="exsl:node-set($vPAprenodeset)" />
