@@ -969,7 +969,7 @@
       </ind1>
       <ind2 default="1"/>
       <sf code="3" chopPunct="true" repeatable="false">
-        <select xpath="rdfs:label"/>
+        <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
       <var name="v382data">
           <switch>
