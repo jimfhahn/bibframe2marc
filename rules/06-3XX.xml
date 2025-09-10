@@ -1132,9 +1132,10 @@
   </df>
 
   <df tag="384" lang-xpath=".">
-    <context xpath="bf:Work/bf:musicKey">
+    <context xpath="bf:Work/bf:musicKey|bf:Work/bf:keyMode/bf:KeyMode/rdfs:label">
       <ind1 default = " "/>
       <ind2 default = " "/>
+      <sf code="3" chopPunct="true"><select xpath="parent::bf:KeyMode/bflc:appliesTo/bflc:AppliesTo/rdfs:label"/></sf>
       <sf code="a" chopPunct="true"><select xpath="."/></sf>
     </context>
   </df>
