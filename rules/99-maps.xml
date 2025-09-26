@@ -117,6 +117,10 @@
         <lang>thai</lang>
         <code>Thai</code>
      </script>
+     <script>
+        <lang>tibt</lang>
+        <code>Tibt</code>
+     </script>
      
   </bf2marc:map>
   <bf2marc:map name="df045BCEtimePeriods">
