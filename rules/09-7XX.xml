@@ -2146,6 +2146,7 @@
             <sf code="o"><select xpath="rdf:value"/></sf>
           </case>
           -->
+          <case test="local-name()='Upc' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Upc'" />
           <case test="local-name()='ReportNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/ReportNumber'">
             <sf code="r"><select xpath="rdf:value"/></sf>
           </case>
@@ -2155,6 +2156,11 @@
           <case test="local-name()='Lccn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Lccn'">
             <sf code="w">
               <transform><xsl:value-of select="concat('(DLC)',rdf:value)"/></transform>
+            </sf>
+          </case>
+          <case test="local-name()='OclcNumber' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/OclcNumber'">
+            <sf code="w">
+              <transform><xsl:value-of select="concat('(OCoLC)',rdf:value)"/></transform>
             </sf>
           </case>
           <case test="local-name()='Coden' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Coden'">
