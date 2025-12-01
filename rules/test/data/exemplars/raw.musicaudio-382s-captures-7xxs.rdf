@@ -38,8 +38,8 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:24.089044-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:39:49.588863-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -155,25 +155,6 @@
 	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
       </bf:Note>
     </bf:note>
-    <bf:instrument>
-      <bf:MusicInstrument>
-	<bf:instrumentalType>keyboard</bf:instrumentalType>
-	<rdfs:label>piano</rdfs:label>
-	<bf:count>1</bf:count>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
-	</bf:source>
-      </bf:MusicInstrument>
-    </bf:instrument>
-    <bf:ensemble>
-      <bf:MusicEnsemble>
-	<bf:ensembleType>instrumental</bf:ensembleType>
-	<rdfs:label>orchestra</rdfs:label>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
-	</bf:source>
-      </bf:MusicEnsemble>
-    </bf:ensemble>
     <bf:classification>
       <bf:ClassificationLcc>
 	<bf:classificationPortion>SDD 49503</bf:classificationPortion>
@@ -280,11 +261,50 @@
 	</bflc:appliesTo>
       </bf:Content>
     </bf:content>
-    <bf:musicMedium>
-      <bf:MusicMedium>
-	<bflc:readMarc382>38201$bpiano$n1$aorchestra$e1$r1$t1$2lcmpt</bflc:readMarc382>
-      </bf:MusicMedium>
-    </bf:musicMedium>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <bf:MediumOfPerformance>
+		<rdfs:label>piano</rdfs:label>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/authorities/performanceMediums">
+		    <bf:code>lcmpt</bf:code>
+		  </bf:Source>
+		</bf:source>
+	      </bf:MediumOfPerformance>
+	    </bf:mediumOfPerformance>
+	    <bf:mediumComponentQualifier>
+	      <bf:MediumComponentQualifier rdf:about="http://id.loc.gov/vocabulary/medcompqual/solo">
+		<rdfs:label>solo</rdfs:label>
+	      </bf:MediumComponentQualifier>
+	    </bf:mediumComponentQualifier>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <bf:MediumOfPerformance>
+		<rdfs:label>orchestra</rdfs:label>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/authorities/performanceMediums">
+		    <bf:code>lcmpt</bf:code>
+		  </bf:Source>
+		</bf:source>
+	      </bf:MediumOfPerformance>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/ensemble">
+	    <rdfs:label>large ensemble</rdfs:label>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
     <bf:tableOfContents>
       <bf:TableOfContents>
 	<rdfs:label>Concerto for piano &amp; orchestra no. 2 in C minor, op. 18 (33:55) -- Concerto for piano &amp; orchestra no. 3 in D minor, op. 30 (43:01).</rdfs:label>

@@ -22,10 +22,10 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:28:39</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-24T07:42:52</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>OCLCA</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -38,8 +38,8 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:49.579668-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:37:11.217039-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -71,19 +71,13 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
-	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
-	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
-	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
-	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
-	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
-	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
 	</bf:descriptionLanguage>
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA</rdfs:label>
+	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -91,8 +85,14 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<bflc:marcKey>999ff$i5512dd0a-c420-51f0-a545-7170d46dfc12$sd81680a3-f1bc-40b7-b2e1-6248f0d64067</bflc:marcKey>
-	<lclocal:d999>=999  ff $i 5512dd0a-c420-51f0-a545-7170d46dfc12 $s d81680a3-f1bc-40b7-b2e1-6248f0d64067</lclocal:d999>
+	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
+	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
+	<bflc:marcKey>999ff$sd81680a3-f1bc-40b7-b2e1-6248f0d64067$i5512dd0a-c420-51f0-a545-7170d46dfc12</bflc:marcKey>
+	<lclocal:d999>=999  ff $s d81680a3-f1bc-40b7-b2e1-6248f0d64067 $i 5512dd0a-c420-51f0-a545-7170d46dfc12</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
@@ -148,7 +148,7 @@
       </bf:Content>
     </bf:content>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-34">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-25">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Pharmaceutical industry--China--Beijing--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Pharmaceutical industry--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
@@ -171,7 +171,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-35">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-26">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Pharmaceutical technology--China--Beijing--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Pharmaceutical technology--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
@@ -194,7 +194,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-36">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-27">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Biotechnology--China--Beijing--Periodicals</rdfs:label>
 	<madsrdf:authoritativeLabel>Biotechnology--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
@@ -217,7 +217,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-37">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-28">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Biomedical Engineering--trends</rdfs:label>
 	<madsrdf:authoritativeLabel>Biomedical Engineering--trends</madsrdf:authoritativeLabel>
@@ -233,7 +233,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-38">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-29">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Biotechnology</rdfs:label>
 	<madsrdf:authoritativeLabel>Biotechnology</madsrdf:authoritativeLabel>
@@ -241,7 +241,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-39">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Topic650-30">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Drug Industry</rdfs:label>
 	<madsrdf:authoritativeLabel>Drug Industry</madsrdf:authoritativeLabel>
@@ -273,7 +273,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Place651-43">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Place651-34">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
 	<rdfs:label>China</rdfs:label>
 	<madsrdf:authoritativeLabel>China</madsrdf:authoritativeLabel>
@@ -281,7 +281,7 @@
       </bf:Place>
     </bf:subject>
     <bf:subject>
-      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Place651-44">
+      <bf:Place rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Place651-35">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>China--Beijing</rdfs:label>
 	<madsrdf:authoritativeLabel>China--Beijing</madsrdf:authoritativeLabel>
@@ -308,11 +308,11 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Agent710-46">
+	  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7JmtfCcRW6QqKt6KQmm9t">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Beijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui</rdfs:label>
 	    <rdfs:label xml:lang="zh-hani">北京生物产业发展报告编辑委员会</rdfs:label>
-	    <bflc:marcKey>7102 $6880-06$aBeijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui.</bflc:marcKey>
+	    <bflc:marcKey>7102 $6880-06$aBeijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui.$1https://id.oclc.org/worldcat/entity/E39QH7JmtfCcRW6QqKt6KQmm9t</bflc:marcKey>
 	    <bflc:marcKey xml:lang="zh-hani">8802 $6710-06/$1$a北京生物产业发展报告编辑委员会.</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
@@ -324,11 +324,11 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Agent710-48">
+	  <bf:Agent rdf:about="https://id.oclc.org/worldcat/entity/E39QH7JmmVWRMmtqTgb3h9vJc6">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 	    <rdfs:label>Beijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</rdfs:label>
 	    <rdfs:label xml:lang="zh-hani">北京生物技术和新医药产业促进中心</rdfs:label>
-	    <bflc:marcKey>7102 $6880-07$aBeijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin.</bflc:marcKey>
+	    <bflc:marcKey>7102 $6880-07$aBeijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin.$1https://id.oclc.org/worldcat/entity/E39QH7JmmVWRMmtqTgb3h9vJc6</bflc:marcKey>
 	    <bflc:marcKey xml:lang="zh-hani">8802 $6710-07/$1$a北京生物技术和新医药产业促进中心.</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
@@ -341,7 +341,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/continuationof"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Work780-50">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Work780-39">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Beijing sheng wu gong cheng he xin yi yao chan ye fa zhan bao gao</bf:mainTitle>
@@ -349,7 +349,7 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Instance780-50">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/16777386#Instance780-39">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Beijing sheng wu gong cheng he xin yi yao chan ye fa zhan bao gao</bf:mainTitle>
@@ -376,7 +376,7 @@
 		    </bf:assigner>
 		  </bf:Identifier>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/16777386#Work780-50"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/16777386#Work780-39"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -410,11 +410,6 @@
 	<rdfs:label>annual</rdfs:label>
       </bf:Frequency>
     </bf:frequency>
-    <bf:identifiedBy>
-      <bf:Local>
-	<rdf:value>16777386</rdf:value>
-      </bf:Local>
-    </bf:identifiedBy>
     <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2012211076</rdf:value>

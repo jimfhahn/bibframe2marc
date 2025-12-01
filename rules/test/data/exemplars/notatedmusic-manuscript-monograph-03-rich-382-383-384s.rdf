@@ -1,0 +1,1357 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:lcc="http://id.loc.gov/ontologies/lcc#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/23742669">
+    <bflc:aap>Senfter, Johanna, 1879-1961. Kammermusik</bflc:aap>
+    <bflc:aap-normalized>senfterjohanna18791961kammermusik</bflc:aap-normalized>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/zxx">
+	<rdfs:label xml:lang="en">No linguistic content</rdfs:label>
+	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zxx</bf:code>
+      </bf:Language>
+    </bf:language>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/bibliography">
+	<rdfs:label>bibliography</rdfs:label>
+	<bf:code>bibliography</bf:code>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/historicalinfo">
+	<rdfs:label>historical information</rdfs:label>
+	<bf:code>historicalinfo</bf:code>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:accompaniedBy>
+      <bf:Work>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/resourceComponents/amt"/>
+	<bf:language>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:language>
+      </bf:Work>
+    </bf:accompaniedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+	<bf:classificationPortion>M2</bf:classificationPortion>
+	<bf:itemPortion>.M925 Bd. 13</bf:itemPortion>
+	<bf:assigner>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:assigner>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+	    <rdfs:label>used by assigner</rdfs:label>
+	    <bf:code>uba</bf:code>
+	  </bf:Status>
+	</bf:status>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:subject>
+      <bf:Topic>
+	<bf:code>M</bf:code>
+	<bf:source>
+	  <bf:Source>
+	    <bf:code>lcco</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+	    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+	    <rdfs:label>composer</rdfs:label>
+	    <bf:code>cmp</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:expressionOf>
+      <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/c10a6e34-cc23-3e72-5960-7416969a0091">
+	<rdfs:label>Senfter, Johanna, 1879-1961. Chamber music. Selections</rdfs:label>
+	<bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961.$tChamber music.$kSelections</bflc:marcKey>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		<bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		<rdfs:label>contributor</rdfs:label>
+		<bf:code>ctb</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>Chamber music. Selections</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+      </bf:Hub>
+    </bf:expressionOf>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Kammermusik</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/ntm">
+	<rdfs:label>notated music</rdfs:label>
+	<bf:code>ntm</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:musicFormat>
+      <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+	<rdfs:label>score</rdfs:label>
+	<bf:code>score</bf:code>
+      </bf:MusicFormat>
+    </bf:musicFormat>
+    <bf:notation>
+      <bf:MusicNotation>
+	<rdfs:label>staff notation</rdfs:label>
+	<bf:source>
+	  <bf:Source>
+	    <bf:code>rdafmn</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichtrio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015782">
+		<rdfs:label xml:lang="en">violin</rdfs:label>
+		<bflc:marcKey>162  $aviolin</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015772">
+		<rdfs:label xml:lang="en">viola</rdfs:label>
+		<bflc:marcKey>162  $aviola</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015120">
+		<rdfs:label xml:lang="en">cello</rdfs:label>
+		<bflc:marcKey>162  $acello</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/trio">
+	    <rdfs:label>trio</rdfs:label>
+	    <bf:code>trio</bf:code>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Trio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015154">
+		<rdfs:label xml:lang="en">clarinet</rdfs:label>
+		<bflc:marcKey>162  $aclarinet</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015342">
+		<rdfs:label xml:lang="en">horn</rdfs:label>
+		<bflc:marcKey>162  $ahorn</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015550">
+		<rdfs:label xml:lang="en">piano</rdfs:label>
+		<bflc:marcKey>162  $apiano</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/trio">
+	    <rdfs:label>trio</rdfs:label>
+	    <bf:code>trio</bf:code>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichquartett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015782">
+		<rdfs:label xml:lang="en">violin</rdfs:label>
+		<bflc:marcKey>162  $aviolin</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>2</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015772">
+		<rdfs:label xml:lang="en">viola</rdfs:label>
+		<bflc:marcKey>162  $aviola</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015120">
+		<rdfs:label xml:lang="en">cello</rdfs:label>
+		<bflc:marcKey>162  $acello</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/quartet">
+	    <rdfs:label>quartet</rdfs:label>
+	    <bf:code>quartet</bf:code>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Sextett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015268">
+		<rdfs:label xml:lang="en">flute</rdfs:label>
+		<bflc:marcKey>162  $aflute</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015507">
+		<rdfs:label xml:lang="en">oboe</rdfs:label>
+		<bflc:marcKey>162  $aoboe</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015342">
+		<rdfs:label xml:lang="en">horn</rdfs:label>
+		<bflc:marcKey>162  $ahorn</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015782">
+		<rdfs:label xml:lang="en">violin</rdfs:label>
+		<bflc:marcKey>162  $aviolin</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015772">
+		<rdfs:label xml:lang="en">viola</rdfs:label>
+		<bflc:marcKey>162  $aviola</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015120">
+		<rdfs:label xml:lang="en">cello</rdfs:label>
+		<bflc:marcKey>162  $acello</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/sextet">
+	    <rdfs:label>sextet</rdfs:label>
+	    <bf:code>sextet</bf:code>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
+    <bf:identifiedBy>
+      <bf:OpusNumber>
+	<rdf:value>op. 54</rdf:value>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichtrio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:OpusNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OpusNumber>
+	<rdf:value>op. 103</rdf:value>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Trio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:OpusNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OpusNumber>
+	<rdf:value>op. 28</rdf:value>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichquartett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:OpusNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OpusNumber>
+	<rdf:value>op. 44</rdf:value>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Sextett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:OpusNumber>
+    </bf:identifiedBy>
+    <bf:keyMode>
+      <bf:KeyMode>
+	<rdfs:label>G major</rdfs:label>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichtrio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:KeyMode>
+    </bf:keyMode>
+    <bf:keyMode>
+      <bf:KeyMode>
+	<rdfs:label>E minor</rdfs:label>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Trio</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:KeyMode>
+    </bf:keyMode>
+    <bf:keyMode>
+      <bf:KeyMode>
+	<rdfs:label>F♯ minor</rdfs:label>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Streichquartett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:KeyMode>
+    </bf:keyMode>
+    <bf:keyMode>
+      <bf:KeyMode>
+	<rdfs:label>G minor</rdfs:label>
+	<bflc:appliesTo>
+	  <bflc:AppliesTo>
+	    <rdfs:label>Sextett</rdfs:label>
+	  </bflc:AppliesTo>
+	</bflc:appliesTo>
+      </bf:KeyMode>
+    </bf:keyMode>
+    <bflc:creatorCharacteristic>
+      <bflc:CreatorCharacteristic rdf:about="http://id.loc.gov/authorities/demographicTerms/dg2015060358">
+	<rdfs:label xml:lang="en">Women</rdfs:label>
+	<bflc:marcKey>150  $aWomen</bflc:marcKey>
+	<bflc:demographicGroup>
+	  <bflc:DemographicGroup rdf:about="http://id.loc.gov/authorities/demographicTerms/age">
+	    <rdfs:label>Age group</rdfs:label>
+	  </bflc:DemographicGroup>
+	</bflc:demographicGroup>
+      </bflc:CreatorCharacteristic>
+    </bflc:creatorCharacteristic>
+    <bflc:creatorCharacteristic>
+      <bflc:CreatorCharacteristic rdf:about="http://id.loc.gov/authorities/demographicTerms/dg2015060340">
+	<rdfs:label xml:lang="en">Germans</rdfs:label>
+	<bflc:marcKey>150  $aGermans</bflc:marcKey>
+	<bflc:demographicGroup>
+	  <bflc:DemographicGroup rdf:about="http://id.loc.gov/authorities/demographicTerms/nat">
+	    <rdfs:label>National/regional group</rdfs:label>
+	  </bflc:DemographicGroup>
+	</bflc:demographicGroup>
+      </bflc:CreatorCharacteristic>
+    </bflc:creatorCharacteristic>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:seriesEnumeration>Band XIII</bf:seriesEnumeration>
+	<bf:associatedResource>
+	  <bf:Series>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/Uncontrolled"/>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/t">
+		<rdfs:label>transcribed</rdfs:label>
+		<bf:code>t</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/tr">
+		<rdfs:label>traced</rdfs:label>
+		<bf:code>tr</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Musikalische Denkmäler</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Issn>
+		<rdf:value>0077-2526</rdf:value>
+	      </bf:Issn>
+	    </bf:identifiedBy>
+	  </bf:Series>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+	<rdfs:label>Streichtrio G-Dur für Violine, Viola und Violoncello, opus 54 -- Trio G-Dur/e-Moll für Klarinette, Horn und Klavier, opus 103 -- Streichquartett fis-Moll, opus 28 -- Sextett g-Moll für Flöte, Oboe, Horn, Violine, Viola und Violoncello, opus 44.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:notation>
+      <bf:MusicNotation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+	<rdfs:label>staff notation</rdfs:label>
+	<bf:code>staff</bf:code>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85129094">
+	<rdfs:label xml:lang="en">String trios--Scores</rdfs:label>
+	<bflc:marcKey>150 0$aString trios$vScores</bflc:marcKey>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">String trios</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">String trios</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">Scores</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:GenreFormElement>
+		<madsrdf:elementValue xml:lang="en">Scores</madsrdf:elementValue>
+	      </madsrdf:GenreFormElement>
+	    </madsrdf:elementList>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Trios (Piano, clarinet, horn)--Scores</rdfs:label>
+	<madsrdf:authoritativeLabel>Trios (Piano, clarinet, horn)--Scores</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme>
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85137750">
+	    <rdfs:label xml:lang="en">Trios (Piano, clarinet, horn)</rdfs:label>
+	    <bflc:marcKey>150 0$aTrios (Piano, clarinet, horn)</bflc:marcKey>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Scores</madsrdf:authoritativeLabel>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>trios(pianoclarinethorn)scores</bflc:aap-normalized>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85129037">
+	<rdfs:label xml:lang="en">String quartets--Scores</rdfs:label>
+	<bflc:marcKey>150 0$aString quartets$vScores</bflc:marcKey>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">String quartets</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:TopicElement>
+		<madsrdf:elementValue xml:lang="en">String quartets</madsrdf:elementValue>
+	      </madsrdf:TopicElement>
+	    </madsrdf:elementList>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+	    <madsrdf:authoritativeLabel xml:lang="en">Scores</madsrdf:authoritativeLabel>
+	    <madsrdf:elementList rdf:parseType="Collection">
+	      <madsrdf:GenreFormElement>
+		<madsrdf:elementValue xml:lang="en">Scores</madsrdf:elementValue>
+	      </madsrdf:GenreFormElement>
+	    </madsrdf:elementList>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+	<rdfs:label>Sextets (Flute, horn, oboe, violin, viola, cello)--Scores</rdfs:label>
+	<madsrdf:authoritativeLabel>Sextets (Flute, horn, oboe, violin, viola, cello)--Scores</madsrdf:authoritativeLabel>
+	<madsrdf:isMemberOfMADSScheme>
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic>
+	    <madsrdf:authoritativeLabel>Sextets (Flute, horn, oboe, violin, viola, cello)</madsrdf:authoritativeLabel>
+	  </madsrdf:Topic>
+	  <madsrdf:GenreForm>
+	    <madsrdf:authoritativeLabel>Scores</madsrdf:authoritativeLabel>
+	  </madsrdf:GenreForm>
+	</madsrdf:componentList>
+	<bflc:aap-normalized>sextets(flutehornoboeviolinviolacello)scores</bflc:aap-normalized>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026704">
+	<rdfs:label xml:lang="en">Chamber music</rdfs:label>
+	<bflc:marcKey>155  $aChamber music</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027077">
+	<rdfs:label xml:lang="en">Scores</rdfs:label>
+	<bflc:marcKey>155  $aScores</bflc:marcKey>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n87923491">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Birtel, Wolfgang</rdfs:label>
+	    <bflc:marcKey>1001 $aBirtel, Wolfgang</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+	    <rdfs:label>editor</rdfs:label>
+	    <bf:code>edt</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/part">
+	    <rdfs:label>part</rdfs:label>
+	    <bf:code>part</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/9abf0d93-ce15-e4cf-c145-48fb09b9d71b">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
+	    <rdfs:label>Senfter, Johanna, 1879-1961. Trios, violin, viola, cello, op. 54, G major</rdfs:label>
+	    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961.$tTrios,$mviolin, viola, cello,$nop. 54,$rG major</bflc:marcKey>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Trios, violin, viola, cello, op. 54, G major</bf:mainTitle>
+		<bf:partNumber>op. 54</bf:partNumber>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/part">
+	    <rdfs:label>part</rdfs:label>
+	    <bf:code>part</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/53576a45-38df-6bc3-3b72-d5045c16f851">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
+	    <rdfs:label>Senfter, Johanna, 1879-1961. Trios, piano, clarinet, horn, op. 103, G major</rdfs:label>
+	    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961.$tTrios,$mpiano, clarinet, horn,$nop. 103,$rG major</bflc:marcKey>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Trios, piano, clarinet, horn, op. 103, G major</bf:mainTitle>
+		<bf:partNumber>op. 103</bf:partNumber>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/part">
+	    <rdfs:label>part</rdfs:label>
+	    <bf:code>part</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/d4646e20-b541-5152-0696-73742a4e33ea">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
+	    <rdfs:label>Senfter, Johanna, 1879-1961. Quartets, violins (2), viola, cello, op. 28 F♯ minor</rdfs:label>
+	    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961.$tQuartets,$mviolins (2), viola, cello,$nop. 28$rF♯ minor</bflc:marcKey>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Quartets, violins (2), viola, cello, op. 28 F♯ minor</bf:mainTitle>
+		<bf:partNumber>op. 28</bf:partNumber>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/part">
+	    <rdfs:label>part</rdfs:label>
+	    <bf:code>part</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/54505af5-f017-ff42-951c-7e05ce6d8b4c">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Audio"/>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>
+	    <rdfs:label>Senfter, Johanna, 1879-1961. Sextet, flute, oboe, horn, violin, viola, cello, op. 44, G minor</rdfs:label>
+	    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961.$tSextet,$mflute, oboe, horn, violin, viola, cello,$nop. 44,$rG minor</bflc:marcKey>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		    <bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+		    <rdfs:label>contributor</rdfs:label>
+		    <bf:code>ctb</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Sextet, flute, oboe, horn, violin, viola, cello, op. 44, G minor</bf:mainTitle>
+		<bf:partNumber>op. 44</bf:partNumber>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/series">
+	    <rdfs:label>series</rdfs:label>
+	    <bf:code>series</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:seriesEnumeration>Bd. 13.</bf:seriesEnumeration>
+	<bf:associatedResource>
+	  <bf:Hub rdf:about="http://id.loc.gov/resources/hubs/aa3f5f3c-1032-6069-4c0a-c6420e572d95">
+	    <rdfs:label>Musikalische Denkmäler</rdfs:label>
+	    <bflc:marcKey>1300 $aMusikalische Denkmäler,</bflc:marcKey>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Musikalische Denkmäler</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	  </bf:Hub>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:hasInstance>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/23742669">
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>Kammermusik</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+	<bf:publicationStatement>Mainz: Schott, [2024]</bf:publicationStatement>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-15</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>OHX</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-05T11:15:07</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:36:54.5306-05:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>23742669</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-genmusic</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk39 2024-11-05 z-client$ivk39 2024-11-05$evk39 2024-11-05 c.1 to Music Division</bflc:marcKey>
+	<lclocal:d955>=955     $a vk39 2024-11-05 z-client $i vk39 2024-11-05 $e vk39 2024-11-05 c.1 to Music Division</lclocal:d955>
+	<bflc:marcKey>955  $ave21 2024-06-21$bfd11 2024-10-07 to MBAS</bflc:marcKey>
+	<lclocal:d955>=955     $a ve21 2024-06-21 $b fd11 2024-10-07 to MBAS</lclocal:d955>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aOHX$beng$erda$cOHX$dOCLCO$dMBB$dOCLCO$dWTU$dOCLCO$dGUA$dCIN$dCUV$dIXA$dOCLCO$dCOO$dWAU$dRES$dOCLCO$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+	<lclocal:d985>=985     $e VENDOR LOAD</lclocal:d985>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/23742669">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+	<rdfs:label>single unit</rdfs:label>
+	<bf:code>mono</bf:code>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+	<bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2024</bf:date>
+	<bf:place>
+	  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/gw">
+	    <rdfs:label xml:lang="en">Germany</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gw</bf:code>
+	  </bf:Place>
+	</bf:place>
+	<bflc:simplePlace>Mainz</bflc:simplePlace>
+	<bflc:simpleAgent>Schott</bflc:simpleAgent>
+	<bflc:simpleDate>[2024]</bflc:simpleDate>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:publicationStatement>Mainz: Schott, [2024]</bf:publicationStatement>
+    <bf:copyrightDate rdf:datatype="http://id.loc.gov/datatypes/edtf">2024</bf:copyrightDate>
+    <bf:identifiedBy>
+      <bf:Lccn>
+	<rdf:value>  2024396242</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>9783795711696</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+	<rdf:value>379571169X</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ean>
+	<rdf:value>9783795711696</rdf:value>
+      </bf:Ean>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ismn>
+	<rdf:value>M001163989</rdf:value>
+      </bf:Ismn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ismn>
+	<rdf:value>9790001163989</rdf:value>
+      </bf:Ismn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:MusicPublisherNumber>
+	<rdf:value>MD 13</rdf:value>
+	<bf:assigner>
+	  <bf:Organization>
+	    <rdfs:label>Schott</rdfs:label>
+	  </bf:Organization>
+	</bf:assigner>
+      </bf:MusicPublisherNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:MusicPublisherNumber>
+	<rdf:value>57807</rdf:value>
+	<bf:assigner>
+	  <bf:Organization>
+	    <rdfs:label>Schott</rdfs:label>
+	  </bf:Organization>
+	</bf:assigner>
+      </bf:MusicPublisherNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OclcNumber>
+	<rdf:value>on1438783675</rdf:value>
+      </bf:OclcNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:OclcNumber>
+	<rdf:value>1438783675</rdf:value>
+      </bf:OclcNumber>
+    </bf:identifiedBy>
+    <bf:responsibilityStatement>Johanna Senfter ; herausgegeben von Wolfgang Birtel</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Kammermusik</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:extent>
+      <bf:Extent>
+	<rdfs:label>1 score (228 pages)</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>33 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+	<rdfs:label>volume</rdfs:label>
+	<bf:code>nc</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>String trio for violin, viola, and cello; trio for clarinet, horn, and piano; string quartet for 2 violins, viola, and cello; sextet for flute, oboe, horn, violin, viola, and cello.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Preface and critical report in German.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/biblio"/>
+	<rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/23742669">
+	<rdfs:label>Senfter, Johanna, 1879-1961. Kammermusik</rdfs:label>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n94054767">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Senfter, Johanna, 1879-1961</rdfs:label>
+		<bflc:marcKey>1001 $aSenfter, Johanna,$d1879-1961</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+		<rdfs:label>composer</rdfs:label>
+		<bf:code>cmp</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:contribution>
+	  <bf:Contribution>
+	    <bf:agent>
+	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n87923491">
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		<rdfs:label>Birtel, Wolfgang</rdfs:label>
+		<bflc:marcKey>1001 $aBirtel, Wolfgang</bflc:marcKey>
+	      </bf:Agent>
+	    </bf:agent>
+	    <bf:role>
+	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+		<rdfs:label>editor</rdfs:label>
+		<bf:code>edt</bf:code>
+	      </bf:Role>
+	    </bf:role>
+	  </bf:Contribution>
+	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>M2</bf:classificationPortion>
+	    <bf:itemPortion>.M925 Bd. 13</bf:itemPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>Kammermusik</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+	<bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/zxx"/>
+	<bf:hasInstance>
+	  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/23742669">
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>Kammermusik</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:identifiedBy>
+	      <bf:Lccn>
+		<rdf:value>  2024396242</rdf:value>
+	      </bf:Lccn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>9783795711696</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Isbn>
+		<rdf:value>379571169X</rdf:value>
+	      </bf:Isbn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Ean>
+		<rdf:value>9783795711696</rdf:value>
+	      </bf:Ean>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Ismn>
+		<rdf:value>M001163989</rdf:value>
+	      </bf:Ismn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:Ismn>
+		<rdf:value>9790001163989</rdf:value>
+	      </bf:Ismn>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:MusicPublisherNumber>
+		<rdf:value>MD 13</rdf:value>
+		<bf:assigner>
+		  <bf:Agent>
+		    <rdfs:label>Schott</rdfs:label>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:MusicPublisherNumber>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:MusicPublisherNumber>
+		<rdf:value>57807</rdf:value>
+		<bf:assigner>
+		  <bf:Agent>
+		    <rdfs:label>Schott</rdfs:label>
+		  </bf:Agent>
+		</bf:assigner>
+	      </bf:MusicPublisherNumber>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:OclcNumber>
+		<rdf:value>on1438783675</rdf:value>
+	      </bf:OclcNumber>
+	    </bf:identifiedBy>
+	    <bf:identifiedBy>
+	      <bf:OclcNumber>
+		<rdf:value>1438783675</rdf:value>
+	      </bf:OclcNumber>
+	    </bf:identifiedBy>
+	    <bf:publicationStatement>Mainz: Schott, [2024]</bf:publicationStatement>
+	    <bf:extent>
+	      <bf:Extent>
+		<rdfs:label>1 score (228 pages)</rdfs:label>
+	      </bf:Extent>
+	    </bf:extent>
+	  </bf:Instance>
+	</bf:hasInstance>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-15</bf:date>
+	<bf:agent>
+	  <bf:Agent>
+	    <bf:code>OHX</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-05T11:15:07</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:36:54.5306-05:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
+	    <bf:code>isbd</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>23742669</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bflc:marcKey>906  $a7$bcbc$ccopycat$d2$encip$f20$gy-genmusic</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-genmusic</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$b1 shelf copy$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $b 1 shelf copy $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $avk39 2024-11-05 z-client$ivk39 2024-11-05$evk39 2024-11-05 c.1 to Music Division</bflc:marcKey>
+	<lclocal:d955>=955     $a vk39 2024-11-05 z-client $i vk39 2024-11-05 $e vk39 2024-11-05 c.1 to Music Division</lclocal:d955>
+	<bflc:marcKey>955  $ave21 2024-06-21$bfd11 2024-10-07 to MBAS</bflc:marcKey>
+	<lclocal:d955>=955     $a ve21 2024-06-21 $b fd11 2024-10-07 to MBAS</lclocal:d955>
+	<bf:descriptionLanguage>
+	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+	    <rdfs:label xml:lang="en">English</rdfs:label>
+	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
+	  </bf:Language>
+	</bf:descriptionLanguage>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+	    <rdfs:label>Resource description and access</rdfs:label>
+	    <bf:code>rda</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aOHX$beng$erda$cOHX$dOCLCO$dMBB$dOCLCO$dWTU$dOCLCO$dGUA$dCIN$dCUV$dIXA$dOCLCO$dCOO$dWAU$dRES$dOCLCO$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bf:descriptionAuthentication>
+	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+	    <rdfs:label>LC Copy Cataloging</rdfs:label>
+	    <bf:code>lccopycat</bf:code>
+	  </bf:DescriptionAuthentication>
+	</bf:descriptionAuthentication>
+	<lclocal:d985>=985     $e VENDOR LOAD</lclocal:d985>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+</rdf:RDF>

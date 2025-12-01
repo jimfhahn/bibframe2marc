@@ -22,7 +22,7 @@
 	    <rdfs:label>changed</rdfs:label>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-29T21:27:49</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-28T14:30:13</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <bf:code>DLC</bf:code>
@@ -38,8 +38,8 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:12.087597-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:38:51.056825-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -78,11 +78,12 @@
 	</bf:note>
 	<bflc:marcKey>906  $a0$bibc$corignew$du$encip$f20$gy-printpho</bflc:marcKey>
 	<lclocal:d906>=906     $a 0 $b ibc $c orignew $d u $e ncip $f 20 $g y-printpho</lclocal:d906>
-	<bflc:marcKey>955  $aqw60 2025-06r</bflc:marcKey>
-	<lclocal:d955>=955     $a qw60 2025-06r</lclocal:d955>
+	<bflc:marcKey>955  $aqw60 2025-06r; qw60 2025-07r</bflc:marcKey>
+	<lclocal:d955>=955     $a qw60 2025-06r; qw60 2025-07r</lclocal:d955>
 	<bflc:marcKey>955  $aLCAP batch update 2025-06-12-04:00: LCAPM-859</bflc:marcKey>
 	<lclocal:d955>=955     $a LCAP batch update 2025-06-12-04:00: LCAPM-859</lclocal:d955>
 	<lclocal:d985>=985     $a pp/guide</lclocal:d985>
+	<lclocal:d985>=985     $a pp/ead</lclocal:d985>
 	<bflc:marcKey>999ff$if4e45885-5e62-50ef-ac33-94d8dbdb46a9$s838ee576-5e87-42ca-a39d-5deb9482de04</bflc:marcKey>
 	<lclocal:d999>=999  ff $i f4e45885-5e62-50ef-ac33-94d8dbdb46a9 $s 838ee576-5e87-42ca-a39d-5deb9482de04</lclocal:d999>
       </bf:AdminMetadata>
@@ -169,7 +170,7 @@
       </bf:Note>
     </bf:note>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-36">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-38">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Design</rdfs:label>
 	<madsrdf:authoritativeLabel>Design</madsrdf:authoritativeLabel>
@@ -178,7 +179,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-37">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-39">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Eames furniture</rdfs:label>
 	<madsrdf:authoritativeLabel>Eames furniture</madsrdf:authoritativeLabel>
@@ -187,7 +188,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-38">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-40">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Exhibitions--Design</rdfs:label>
 	<madsrdf:authoritativeLabel>Exhibitions--Design</madsrdf:authoritativeLabel>
@@ -204,7 +205,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-39">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-41">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
 	<rdfs:label>Furniture design</rdfs:label>
 	<madsrdf:authoritativeLabel>Furniture design</madsrdf:authoritativeLabel>
@@ -213,7 +214,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-40">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Topic650-42">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Motion pictures--Production and direction</rdfs:label>
 	<madsrdf:authoritativeLabel>Motion pictures--Production and direction</madsrdf:authoritativeLabel>
@@ -230,7 +231,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-41">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-43">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Design drawings--1940-1980</rdfs:label>
 	<madsrdf:authoritativeLabel>Design drawings--1940-1980</madsrdf:authoritativeLabel>
@@ -250,7 +251,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-42">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-44">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Portrait photographs--1940-1980</rdfs:label>
 	<madsrdf:authoritativeLabel>Portrait photographs--1940-1980</madsrdf:authoritativeLabel>
@@ -270,7 +271,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-43">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-45">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Photographs--1940-1980</rdfs:label>
 	<madsrdf:authoritativeLabel>Photographs--1940-1980</madsrdf:authoritativeLabel>
@@ -290,7 +291,7 @@
       </bf:Topic>
     </bf:subject>
     <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-44">
+      <bf:Topic rdf:about="http://id.loc.gov/resources/REPLACE/14437118#GenreForm655-46">
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
 	<rdfs:label>Drawings--1940-1980</rdfs:label>
 	<madsrdf:authoritativeLabel>Drawings--1940-1980</madsrdf:authoritativeLabel>
@@ -312,7 +313,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Agent700-45">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Agent700-47">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Eames, Charles</rdfs:label>
 	    <bflc:marcKey>7001 $aEames, Charles,$ecollector.</bflc:marcKey>
@@ -328,7 +329,7 @@
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Agent700-46">
+	  <bf:Agent rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Agent700-48">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Eames, Ray</rdfs:label>
 	    <bflc:marcKey>7001 $aEames, Ray,$ecollector.</bflc:marcKey>
@@ -345,7 +346,7 @@
       <bf:Relation>
 	<bf:relationship rdf:resource="http://id.loc.gov/vocabulary/relationship/partof"/>
 	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Work773-47">
+	  <bf:Work rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Work773-49">
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Charles Eames and Ray Eames papers</bf:mainTitle>
@@ -361,7 +362,7 @@
 	      </bf:PrimaryContribution>
 	    </bf:contribution>
 	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Instance773-47">
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Instance773-49">
 		<bf:title>
 		  <bf:Title>
 		    <bf:mainTitle>Charles Eames and Ray Eames papers</bf:mainTitle>
@@ -377,7 +378,7 @@
 		    </bf:assigner>
 		  </bf:Lccn>
 		</bf:identifiedBy>
-		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/14437118#Work773-47"/>
+		<bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/14437118#Work773-49"/>
 	      </bf:Instance>
 	    </bf:hasInstance>
 	  </bf:Work>
@@ -509,10 +510,62 @@
     </bf:note>
     <bf:note>
       <bf:Note>
+	<rdfs:label>Finding aid for the Contact Sheet and Print Series available online</rdfs:label>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp025001"/>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+	<rdfs:label>Finding aid for the Slide Photograph Series available online</rdfs:label>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp019002"/>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
 	<rdfs:label>Published in: Albrecht, Donald, et al. The Work of Charles and Ray Eames: A Legacy of Invention. New York: Harry N. Abrams in association with the Library of Congress and the Vitra Design Museum, 1997.</rdfs:label>
 	<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/related"/>
       </bf:Note>
     </bf:note>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp025001"/>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Finding aid for the Contact Sheet and Print Series</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp025001.3"/>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Finding aid for the Contact Sheet and Print Series (PDF)</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp019002"/>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Finding aid for the Slide Photograph Series</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+	<bf:electronicLocator rdf:resource="https://hdl.loc.gov/loc.pnp/eadpnp.pp019002.3"/>
+	<bf:note>
+	  <bf:Note>
+	    <rdfs:label>Finding aid for the Slide Photograph Series (PDF)</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
     <bf:instanceOf rdf:resource="http://id.loc.gov/resources/REPLACE/14437118#Work"/>
     <bf:hasItem>
       <bf:Item rdf:about="http://id.loc.gov/resources/REPLACE/14437118#Item">

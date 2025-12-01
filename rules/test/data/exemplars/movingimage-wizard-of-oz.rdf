@@ -1218,8 +1218,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1756,6 +1756,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -1943,8 +2095,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2357,6 +2509,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -2506,8 +2810,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2914,6 +3218,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -3063,8 +3519,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3471,6 +3927,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -3620,8 +4228,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4028,6 +4636,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -4177,8 +4937,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4585,6 +5345,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -4734,8 +5646,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5142,6 +6054,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -5291,8 +6355,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5705,6 +6769,158 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1538 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DAA 1180 (viewing copy)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1593-1595 (masterpos)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1596-1603 (yellow)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1604-1611 (cyan)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1612-1619 (magenta)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FPG 1620-1625 (dbl edge pos trk)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>FQA 5750-5754 (theatrical projection print)</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>The Wizard of Oz</bf:mainTitle>
@@ -5854,8 +7070,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -6074,8 +7290,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:36.443951-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

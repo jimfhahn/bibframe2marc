@@ -228,7 +228,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:49.892982-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T23:30:41.845174-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1129,7 +1129,7 @@
 	  </bf:Agent>
 	</bf:agent>
 	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:49.892982-04:00</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T23:30:41.845174-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1197,146 +1197,4 @@
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
-  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/19537131-85X-1">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/SecondaryInstance"/>
-    <bf:issuance>
-      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
-	<rdfs:label>single unit</rdfs:label>
-	<bf:code>mono</bf:code>
-      </bf:Issuance>
-    </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/c">
-	<rdfs:label>computer</rdfs:label>
-	<bf:code>c</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/cr">
-	<rdfs:label>online resource</rdfs:label>
-	<bf:code>cr</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
-    <bf:title>
-      <bf:Title>
-	<bf:mainTitle>View cover art</bf:mainTitle>
-      </bf:Title>
-    </bf:title>
-    <bf:electronicLocator rdf:resource="http://midwesttapes.com/images/movies/000/000/000/011/415/000000000011415110.jpg"/>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
-    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/19537131"/>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
-	    <rdfs:label>new</rdfs:label>
-	    <bf:code>n</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-03</bf:date>
-	<bf:agent>
-	  <bf:Agent>
-	    <bf:code>BTCTA</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-03-06T13:55:13</bf:date>
-	<bf:descriptionModifier>
-	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-	    <rdfs:label>United States, Library of Congress</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	  </bf:Organization>
-	</bf:descriptionModifier>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v2.10-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-04-27T04:56:07.381501-04:00</bf:date>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:identifiedBy>
-	  <bf:Local>
-	    <rdf:value>19537131-85X-1</rdf:value>
-	    <bf:assigner>
-	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-		<rdfs:label>United States, Library of Congress</rdfs:label>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	      </bf:Organization>
-	    </bf:assigner>
-	  </bf:Local>
-	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-5-0/"/>
-	<bflc:encodingLevel>
-	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
-	    <rdfs:label>full</rdfs:label>
-	    <bf:code>f</bf:code>
-	  </bflc:EncodingLevel>
-	</bflc:encodingLevel>
-	<bf:descriptionConventions>
-	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
-	    <rdfs:label>ISBD: International standard bibliographic description</rdfs:label>
-	    <bf:code>isbd</bf:code>
-	  </bf:DescriptionConventions>
-	</bf:descriptionConventions>
-	<bf:descriptionLanguage>
-	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
-	    <rdfs:label xml:lang="en">English</rdfs:label>
-	    <bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
-	  </bf:Language>
-	</bf:descriptionLanguage>
-	<bf:descriptionConventions>
-	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
-	    <rdfs:label>Resource description and access</rdfs:label>
-	    <bf:code>rda</bf:code>
-	  </bf:DescriptionConventions>
-	</bf:descriptionConventions>
-	<bf:note>
-	  <bf:Note>
-	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aBTCTA$beng$erda$cBTCTA$dTEF$dAPL$dRB0$dZMS$dWUT$dOCLCF$dERE$dIEP$dIDU$dGK8$dMYG$dIXA$dTXA$dOCL$dVP@$dTJC$dOCLCA$dKYC$dDGU$dZCU$dEMU$dKSU$dSCO$dVOD$dWAU$dOCLCA$dNDS$dGK8$dOCL$dCNSAP$dTOH$dIAT$dCLO$dIQU$dTEFMT$dLPCLI$dCUT$dTXH$dOCL$dAW3$dOCLCQ$dDYJ$dOCLCO$dMKN$dDLC</rdfs:label>
-	  </bf:Note>
-	</bf:note>
-	<bf:descriptionAuthentication>
-	  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
-	    <rdfs:label>LC Copy Cataloging</rdfs:label>
-	    <bf:code>lccopycat</bf:code>
-	  </bf:DescriptionAuthentication>
-	</bf:descriptionAuthentication>
-	<lclocal:d906>=906     $a 7 $b cbc $c copycat $d 2 $e ncip $f 20 $g y-soundrec</lclocal:d906>
-	<lclocal:d925>=925  0  $a acquire $b 2 shelf copies $x policy default</lclocal:d925>
-	<lclocal:d955>=955     $a qr27 2017-03-03 z-client $i qr27 2017-03-03</lclocal:d955>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-  </bf:Instance>
 </rdf:RDF>
