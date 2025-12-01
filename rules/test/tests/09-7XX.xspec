@@ -294,7 +294,7 @@
     <x:expect label=".. and expected ind1" test="//marc:datafield[@tag='787'][1]/@ind1 = '1'"/>
     <x:expect label=".. and expected ind2" test="//marc:datafield[@tag='787'][1]/@ind2 = ' '"/>
     <x:expect label=".. and expected first $w" test="//marc:datafield[@tag='787'][1]/marc:subfield[@code='w'][1] = '(DLC)  2011201713'" />
-    <x:expect label=".. and expected third $w" test="//marc:datafield[@tag='787'][1]/marc:subfield[@code='w'][3] = '(OCoLC)ocm42637019 '" />
+    <x:expect label=".. and expected third $w" test="//marc:datafield[@tag='787'][1]/marc:subfield[@code='w'][3] = '(OCoLC)42637019'" />
   </x:scenario>
   
 </x:description>
