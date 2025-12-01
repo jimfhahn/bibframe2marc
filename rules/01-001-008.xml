@@ -126,6 +126,16 @@
     </case>
   </switch>
 
+  <switch>
+    <case test="$pConversionAgency = 'DLC' and
+                /rdf:RDF/bf:Instance/bf:carrier//@rdf:*[1] = 'http://id.loc.gov/vocabulary/carriers/cr' and 
+                contains(/rdf:RDF/bf:Instance/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/descsource']/rdfs:label, 'Description based on print version record')
+      ">
+      <cf tag="006">
+        <transform><xsl:value-of select="'m    |o  d |      '"/></transform>
+      </cf>
+    </case>
+  </switch>
   
   <cf tag="007" repeatable="true">
     <context xpath="/rdf:RDF/bf:Instance">
