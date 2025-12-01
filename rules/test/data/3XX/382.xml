@@ -16,6 +16,196 @@
         </bflc:appliesTo>
       </bf:MusicMedium>
     </bf:musicMedium>
+    
+    <bf:ensemble>
+      <bf:Ensemble>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015268">
+                <rdfs:label xml:lang="en">flute</rdfs:label>
+                <bflc:marcKey>162  $aflute</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>alto flute</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>piccolo</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015154">
+                <rdfs:label xml:lang="en">clarinet</rdfs:label>
+                <bflc:marcKey>162  $aclarinet</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>bass clarinet</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>sopranino clarinet</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015057">
+                <rdfs:label xml:lang="en">baritone saxophone</rdfs:label>
+                <bflc:marcKey>162  $abaritone saxophone</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>tenor saxophone</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015748">
+                <rdfs:label xml:lang="en">trumpet</rdfs:label>
+                <bflc:marcKey>162  $atrumpet</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:note>
+              <bf:Note>
+                <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/doubling"/>
+                <rdfs:label>piccolo trumpet</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015342">
+                <rdfs:label xml:lang="en">horn</rdfs:label>
+                <bflc:marcKey>162  $ahorn</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015747">
+                <rdfs:label xml:lang="en">trombone</rdfs:label>
+                <bflc:marcKey>162  $atrombone</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015540">
+                <rdfs:label xml:lang="en">percussion</rdfs:label>
+                <bflc:marcKey>162  $apercussion</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015782">
+                <rdfs:label xml:lang="en">violin</rdfs:label>
+                <bflc:marcKey>162  $aviolin</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015120">
+                <rdfs:label xml:lang="en">cello</rdfs:label>
+                <bflc:marcKey>162  $acello</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015216">
+                <rdfs:label xml:lang="en">double bass</rdfs:label>
+                <bflc:marcKey>162  $adouble bass</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015729">
+                <rdfs:label xml:lang="en">theorbo</rdfs:label>
+                <bflc:marcKey>162  $atheorbo</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015776">
+                <rdfs:label xml:lang="en">viola da gamba</rdfs:label>
+                <bflc:marcKey>162  $aviola da gamba</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>2</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:mediumComponent>
+          <bf:MediumComponent>
+            <bf:mediumOfPerformance>
+              <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015248">
+                <rdfs:label xml:lang="en">electronics</rdfs:label>
+                <bflc:marcKey>162  $aelectronics</bflc:marcKey>
+              </madsrdf:Medium>
+            </bf:mediumOfPerformance>
+            <bf:count>1</bf:count>
+          </bf:MediumComponent>
+        </bf:mediumComponent>
+        <bf:ensembleSize>
+          <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/ensemble">
+            <rdfs:label>large ensemble</rdfs:label>
+            <bf:code>ensemble</bf:code>
+          </bf:EnsembleSize>
+        </bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
     <bf:hasInstance rdf:resource="http://example.org/382test#Instance"/>
   </bf:Work>
   <bf:Instance rdf:about="http://example.org/382test#Instance"/>
