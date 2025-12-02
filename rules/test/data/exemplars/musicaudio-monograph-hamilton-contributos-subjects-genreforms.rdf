@@ -786,7 +786,7 @@
 	    <bf:subtitle>original Broadway cast recording</bf:subtitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
     <bf:adminMetadata>
@@ -841,8 +841,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:53.235474-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:37:26.716179-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1326,6 +1326,47 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>SDC 79425</bf:classificationPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationDdc>
+	    <bf:classificationPortion>782.14</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>23</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <bf:edition>full</bf:edition>
+	  </bf:ClassificationDdc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/vocabulary/classSchemes/sudocs">
+		<rdfs:label>Superintendent of Documents classification system</rdfs:label>
+		<bf:code>sudocs</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <rdfs:label>-</rdfs:label>
+	  </bf:Classification>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Hamilton</bf:mainTitle>
@@ -1370,7 +1411,7 @@
 		<rdf:value>919490894</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">New York, NY: Atlantic Recording Corporation, [2015]</bf:publicationStatement>
 	    <bf:editionStatement>[Explicit version]</bf:editionStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -1439,8 +1480,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:53.235474-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:37:26.716179-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

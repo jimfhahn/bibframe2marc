@@ -222,8 +222,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:02.285383-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T14:45:28.090102-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -521,6 +521,25 @@
 	<bf:associatedResource>
 	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11496151">
 	    <rdfs:label>The art newspaper</rdfs:label>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>Microfilm (o) 96/4704</bf:classificationPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
 	    <bf:title>
 	      <bf:AbbreviatedTitle>
 		<bf:mainTitle>Art newspaper</bf:mainTitle>
@@ -568,6 +587,12 @@
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>volumes</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>illustrations</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
 		  </bf:Extent>
 		</bf:extent>
 	      </bf:Instance>
@@ -587,6 +612,45 @@
 	<bf:associatedResource>
 	  <bf:Work rdf:about="http://id.loc.gov/resources/works/11347516">
 	    <rdfs:label>Il giornale dell'arte</rdfs:label>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>N6911</bf:classificationPortion>
+		<bf:itemPortion>.G55</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:classification>
+	      <bf:ClassificationDdc>
+		<bf:classificationPortion>705</bf:classificationPortion>
+		<bf:source>
+		  <bf:Source>
+		    <bf:code>19</bf:code>
+		  </bf:Source>
+		</bf:source>
+		<bf:edition>full</bf:edition>
+		<bf:assigner>
+		  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </madsrdf:CorporateName>
+		</bf:assigner>
+	      </bf:ClassificationDdc>
+	    </bf:classification>
 	    <bf:title>
 	      <bf:AbbreviatedTitle>
 		<bf:mainTitle>G. arte</bf:mainTitle>
@@ -625,15 +689,19 @@
 		<bf:identifiedBy>
 		  <bf:Lccn>
 		    <rdf:value>sn 88016070 </rdf:value>
-		    <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+		    <bf:status>
+		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+			<rdfs:label>invalid</rdfs:label>
+		      </bf:Status>
+		    </bf:status>
 		  </bf:Lccn>
 		</bf:identifiedBy>
 		<bf:identifiedBy>
 		  <bf:OclcNumber>
-		    <rdf:value>ocm09739371 </rdf:value>
+		    <rdf:value>9739371</rdf:value>
 		  </bf:OclcNumber>
 		</bf:identifiedBy>
-		<bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Torino: Allemandi, 1983-</bf:publicationStatement>
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>volumes</rdfs:label>
@@ -705,8 +773,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:02.285383-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T14:45:28.090102-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -889,8 +957,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:02.285383-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T14:45:28.090102-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

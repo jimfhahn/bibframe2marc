@@ -236,7 +236,7 @@
 	    <bf:mainTitle xml:lang="uk-cyrl">Країна жіночого роду</bf:mainTitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>Kharkiv: Vydavnyt︠s︡tvo Vivat, 2021</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Kharkiv: Vydavnyt︠s︡tvo Vivat, 2021</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
     <bf:adminMetadata>
@@ -296,8 +296,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:47.233923-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:10.472881-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -405,7 +405,7 @@
     <bf:identifiedBy>
       <bf:Isbn>
 	<rdf:value>9789669428431</rdf:value>
-	<bf:qualifier>serii︠a</bf:qualifier>
+	<bf:qualifier>serii︠a︡</bf:qualifier>
       </bf:Isbn>
     </bf:identifiedBy>
     <bf:identifiedBy>
@@ -480,6 +480,26 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>DK5129</bf:classificationPortion>
+	    <bf:itemPortion>.K73 2021</bf:itemPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Kraïna z︠h︡inochoho rodu</bf:mainTitle>
@@ -519,11 +539,13 @@
 	    <bf:identifiedBy>
 	      <bf:Local>
 		<rdf:value>ev5017173B</rdf:value>
-		<bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/rumoevis"/>
+		<bf:assigner>
+		  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/rumoevis"/>
+		</bf:assigner>
 	      </bf:Local>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>Kharkiv: Vydavnyt︠s︡tvo Vivat, 2021</bf:publicationStatement>
-	    <bf:publicationStatement xml:lang="uk-cyrl">Харків: Видавництво Vivat, 2021</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Kharkiv: Vydavnyt︠s︡tvo Vivat, 2021</bf:publicationStatement>
+	    <bf:publicationStatement xml:lang="uk-cyrl" xmlns:exsl="http://exslt.org/common">Харків: Видавництво Vivat, 2021</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>302 pages</rdfs:label>
@@ -596,8 +618,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:47.233923-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:10.472881-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

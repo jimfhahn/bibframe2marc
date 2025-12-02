@@ -38,8 +38,8 @@
 	  </bf:Status>
 	</bf:status>
 	<bf:agent rdf:resource="http://id.loc.gov/vocabulary/organizations/dlcmrc"/>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:32:55.666448-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:37:33.130387-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -92,6 +92,11 @@
 	</bf:descriptionAuthentication>
 	<bflc:marcKey>999ff$ie61201d2-ffa6-5bfd-9be2-0fecd88f02de$s8e34f356-c373-4e13-8d55-6ba34853e640</bflc:marcKey>
 	<lclocal:d999>=999  ff $i e61201d2-ffa6-5bfd-9be2-0fecd88f02de $s 8e34f356-c373-4e13-8d55-6ba34853e640</lclocal:d999>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/s">
+	    <rdfs:label>opac suppressed</rdfs:label>
+	  </bf:Status>
+	</bf:status>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/NotatedMusic"/>

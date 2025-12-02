@@ -52,10 +52,88 @@
       <lang>latn</lang>
       <code>(B</code>
     </script>
+     
+     <script>
+        <lang>adlm</lang>
+        <code>Adlm</code>
+     </script>
+     <script>
+        <lang>aran</lang>
+        <code>Aran</code>
+     </script>
+     <script>
+        <lang>armn</lang>
+        <code>Armn</code>
+     </script>
+     <script>
+        <lang>beng</lang>
+        <code>Beng</code>
+     </script>
+     <script>
+        <lang>deva</lang>
+        <code>Deva</code>
+     </script>
+     <script>
+        <lang>ethi</lang>
+        <code>Ethi</code>
+     </script>
+     <script>
+        <lang>geor</lang>
+        <code>Geor</code>
+     </script>
+     <script>
+        <lang>gujr</lang>
+        <code>Gujr</code>
+     </script>
+     <script>
+        <lang>guru</lang>
+        <code>Guru</code>
+     </script>
+     <script>
+        <lang>knda</lang>
+        <code>Knda</code>
+     </script>
+     <script>
+        <lang>orya</lang>
+        <code>Orya</code>
+     </script>
+     <script>
+        <lang>mong</lang>
+        <code>Mong</code>
+     </script>
+     <script>
+        <lang>mlym</lang>
+        <code>Mlym</code>
+     </script>
+     <script>
+        <lang>mymr</lang>
+        <code>Mymr</code>
+     </script>
+     <script>
+        <lang>sinh</lang>
+        <code>Sinh</code>
+     </script>
+     <script>
+        <lang>taml</lang>
+        <code>Taml</code>
+     </script>
+     <script>
+        <lang>telu</lang>
+        <code>Telu</code>
+     </script>
+     <script>
+        <lang>thaa</lang>
+        <code>Thaa</code>
+     </script>
      <script>
         <lang>thai</lang>
         <code>Thai</code>
      </script>
+     <script>
+        <lang>tibt</lang>
+        <code>Tibt</code>
+     </script>
+     
   </bf2marc:map>
   <bf2marc:map name="df045BCEtimePeriods">
     <timePeriod>

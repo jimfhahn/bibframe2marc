@@ -959,7 +959,7 @@
   </df>
 
   <df tag="382">
-    <context xpath="bf:Work/bf:musicMedium/bf:MusicMedium[bflc:readMarc382]">
+    <context xpath="bf:Work/bf:ensemble/bf:Ensemble|bf:Work/bf:musicMedium/bf:MusicMedium[bflc:readMarc382]">
       <ind1 default="0">
         <switch>
           <case test="bf:status/@rdf:resource='http://id.loc.gov/vocabulary/mstatus/part' or
@@ -967,7 +967,7 @@
                       translate(bf:status/bf:Status/rdfs:label,$upper,$lower)='partial'">1</case>
         </switch>
       </ind1>
-      <ind2 default=" "/>
+      <ind2 default="1"/>
       <sf code="3" chopPunct="true" repeatable="false">
         <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
@@ -981,11 +981,100 @@
               </case>
           </switch>
       </var>
-      <transform>
-        <xsl:call-template name="tReadMarc382">
-          <xsl:with-param name="pString" select="substring($v382data, 6)"/>
-        </xsl:call-template>
-      </transform>
+      <switch>
+        <case test="$v382data != ''">
+          <transform>
+            <xsl:call-template name="tReadMarc382">
+              <xsl:with-param name="pString" select="substring($v382data, 6)"/>
+            </xsl:call-template>
+          </transform>
+        </case>
+        <case test="default">
+          <select xpath="bf:mediumComponent/bf:MediumComponent[bf:mediumOfPerformance/*/rdfs:label]">
+            <switch>
+              <case test="bf:mediumComponentQualifier//@rdf:*[1] = 'http://id.loc.gov/vocabulary/medcompqual/solo'">
+                <sf code="b" chopPunct="true"><select xpath="bf:mediumOfPerformance/*/rdfs:label"/></sf>
+              </case>
+              <case test="default">
+                <sf code="a" chopPunct="true"><select xpath="bf:mediumOfPerformance/*/rdfs:label"/></sf>
+              </case>
+            </switch>
+            <sf code="n" chopPunct="true" repeatable="false">
+              <select xpath="bf:count"/>
+            </sf>
+            <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/alternative']/rdfs:label">
+              <sf code="p" chopPunct="true" repeatable="false"><select xpath="." /></sf>
+            </select>
+            <select xpath="bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/doubling']/rdfs:label">
+              <sf code="d" chopPunct="true" repeatable="false"><select xpath="." /></sf>
+            </select>
+            <sf code="v" chopPunct="true" repeatable="false">
+              <select xpath="bf:note/bf:Note[not(rdf:type)]/rdfs:label"/>
+            </sf>
+          </select>
+          <switch>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/ensemble']">
+              <sf code="t">
+                <transform><xsl:value-of select="'1'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/soloind']">
+              <sf code="s">
+                <transform><xsl:value-of select="'1'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/duo']">
+              <sf code="s">
+                <transform><xsl:value-of select="'2'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/trio']">
+              <sf code="s">
+                <transform><xsl:value-of select="'3'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/quartet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'4'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/quintet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'5'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/sextet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'6'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/septet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'7'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/octet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'8'" /></transform>
+              </sf>
+            </case>
+            <case test="bf:ensembleSize//@rdf:*[. = 'http://id.loc.gov/vocabulary/ensemblesize/nonet']">
+              <sf code="s">
+                <transform><xsl:value-of select="'9'" /></transform>
+              </sf>
+            </case>
+          </switch>
+          <switch>
+            <case test="bf:mediumComponent/bf:MediumComponent/bf:mediumOfPerformance//@rdf:*[contains(., 'authorities/performanceMediums')] or 
+                        bf:mediumComponent/bf:MediumComponent/bf:mediumOfPerformance//bf:source//@rdf:*[contains(., 'authorities/performanceMediums')] or 
+                        bf:mediumComponent/bf:MediumComponent/bf:mediumOfPerformance//bf:source//bf:code[. = 'lcmpt']">
+              <sf code="2">
+                <transform><xsl:value-of select="'lcmpt'" /></transform>
+              </sf>
+            </case>
+          </switch>
+        </case>
+      </switch>
     </context>
   </df>
 
@@ -1016,10 +1105,37 @@
     </case>
   </switch>
 
-  <df tag="384" lang-xpath=".">
-    <context xpath="bf:Work/bf:musicKey">
+  <df tag="383" lang-xpath=".">
+    <context xpath="bf:Work/bf:identifiedBy/bf:SerialNumber[rdf:value] |
+                    bf:Work/bf:identifiedBy/bf:OpusNumber[rdf:value] |
+                    bf:Work/bf:identifiedBy/bf:ThematicCatalogNumber[rdf:value] ">
       <ind1 default = " "/>
       <ind2 default = " "/>
+      <sf code="3" chopPunct="true" repeatable="false">
+        <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
+      </sf>
+      <switch>
+        <case test="local-name() = 'SerialNumber'">
+          <sf code="a" chopPunct="true"><select xpath="rdf:value"/></sf>
+        </case>
+        <case test="local-name() = 'OpusNumber'">
+          <sf code="b" chopPunct="true"><select xpath="rdf:value"/></sf>
+          <sf code="e" chopPunct="true"><select xpath="bf:source//bf:code"/></sf>
+        </case>
+        <case test="local-name() = 'ThematicCatalogNumber'">
+          <sf code="c" chopPunct="true"><select xpath="rdf:value"/></sf>
+          <sf code="d" chopPunct="true"><select xpath="bf:source//bf:code"/></sf>
+          <sf code="2" chopPunct="true"><transform><xsl:value-of select="'mlati'" /></transform></sf>
+        </case>
+      </switch>
+    </context>
+  </df>
+
+  <df tag="384" lang-xpath=".">
+    <context xpath="bf:Work/bf:musicKey|bf:Work/bf:keyMode/bf:KeyMode/rdfs:label">
+      <ind1 default = " "/>
+      <ind2 default = " "/>
+      <sf code="3" chopPunct="true"><select xpath="parent::bf:KeyMode/bflc:appliesTo/bflc:AppliesTo/rdfs:label"/></sf>
       <sf code="a" chopPunct="true"><select xpath="."/></sf>
     </context>
   </df>

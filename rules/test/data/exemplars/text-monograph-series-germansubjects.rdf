@@ -994,7 +994,7 @@
 	    <bf:mainTitle>Harry Potter and the Order of the Phoenix</bf:mainTitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>London: Bloomsbury, 2003</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Bloomsbury, 2003</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
     <bf:adminMetadata>
@@ -1049,8 +1049,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:30.207125-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:14.164659-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1333,6 +1333,75 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationDdc>
+	    <bf:classificationPortion>823.914</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>21</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <bf:edition>full</bf:edition>
+	  </bf:ClassificationDdc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>18.05</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>bcl</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 9990</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7623</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7621</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>PR6068.O93</bf:classificationPortion>
+	    <bf:itemPortion>H395 2004x</bf:itemPortion>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		<rdfs:label>not used by assigner</rdfs:label>
+		<bf:code>nuba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+		<rdfs:label>prepublication</rdfs:label>
+		<bf:code>p</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Harry Potter and the Order of the Phoenix</bf:mainTitle>
@@ -1354,19 +1423,31 @@
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7384</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7389</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3V2642</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -1409,7 +1490,7 @@
 		<rdf:value>52055301</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>London: Bloomsbury, 2003</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Bloomsbury, 2003</bf:publicationStatement>
 	    <bf:editionStatement>1st ed.</bf:editionStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -1472,8 +1553,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:30.207125-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:14.164659-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1656,6 +1737,75 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationDdc>
+	    <bf:classificationPortion>823.914</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>21</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <bf:edition>full</bf:edition>
+	  </bf:ClassificationDdc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>18.05</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>bcl</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 9990</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7623</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7621</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>PR6068.O93</bf:classificationPortion>
+	    <bf:itemPortion>H395 2004x</bf:itemPortion>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		<rdfs:label>not used by assigner</rdfs:label>
+		<bf:code>nuba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+		<rdfs:label>prepublication</rdfs:label>
+		<bf:code>p</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Harry Potter and the Order of the Phoenix</bf:mainTitle>
@@ -1677,19 +1827,31 @@
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7384</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7389</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3V2642</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -1732,7 +1894,7 @@
 		<rdf:value>52055301</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>London: Bloomsbury, 2003</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Bloomsbury, 2003</bf:publicationStatement>
 	    <bf:editionStatement>1st ed.</bf:editionStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -1795,8 +1957,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:30.207125-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:14.164659-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1979,6 +2141,75 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationDdc>
+	    <bf:classificationPortion>823.914</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>21</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <bf:edition>full</bf:edition>
+	  </bf:ClassificationDdc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>18.05</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>bcl</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 9990</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7623</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7621</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>PR6068.O93</bf:classificationPortion>
+	    <bf:itemPortion>H395 2004x</bf:itemPortion>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		<rdfs:label>not used by assigner</rdfs:label>
+		<bf:code>nuba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+		<rdfs:label>prepublication</rdfs:label>
+		<bf:code>p</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Harry Potter and the Order of the Phoenix</bf:mainTitle>
@@ -2000,19 +2231,31 @@
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7384</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7389</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3V2642</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -2055,7 +2298,7 @@
 		<rdf:value>52055301</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>London: Bloomsbury, 2003</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Bloomsbury, 2003</bf:publicationStatement>
 	    <bf:editionStatement>1st ed.</bf:editionStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -2118,8 +2361,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:30.207125-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:14.164659-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2295,6 +2538,75 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationDdc>
+	    <bf:classificationPortion>823.914</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>21</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	    <bf:edition>full</bf:edition>
+	  </bf:ClassificationDdc>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>18.05</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>bcl</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 9990</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7623</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:Classification>
+	    <bf:classificationPortion>HN 7621</bf:classificationPortion>
+	    <bf:source>
+	      <bf:Source>
+		<bf:code>rvk</bf:code>
+	      </bf:Source>
+	    </bf:source>
+	  </bf:Classification>
+	</bf:classification>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>PR6068.O93</bf:classificationPortion>
+	    <bf:itemPortion>H395 2004x</bf:itemPortion>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/nuba">
+		<rdfs:label>not used by assigner</rdfs:label>
+		<bf:code>nuba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/p">
+		<rdfs:label>prepublication</rdfs:label>
+		<bf:code>p</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Harry Potter and the Order of the Phoenix</bf:mainTitle>
@@ -2316,19 +2628,31 @@
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7384</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3X7389</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
 	      <bf:Nbn>
 		<rdf:value>GBA3V2642</rdf:value>
-		<bf:source rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+		<bf:source>
+		  <bf:Source rdf:about="http://id.loc.gov/vocabulary/nationalbibschemes/bnb">
+		    <bf:code>bnb</bf:code>
+		  </bf:Source>
+		</bf:source>
 	      </bf:Nbn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -2371,7 +2695,7 @@
 		<rdf:value>52055301</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>London: Bloomsbury, 2003</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Bloomsbury, 2003</bf:publicationStatement>
 	    <bf:editionStatement>1st ed.</bf:editionStatement>
 	    <bf:extent>
 	      <bf:Extent>
@@ -2434,8 +2758,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:30.207125-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:14.164659-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

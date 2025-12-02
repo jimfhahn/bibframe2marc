@@ -13,6 +13,7 @@ declare -A exemplars=(
 ["21340497"]="notatedmusic-monograph-subjects-paralleltitle-contributors-genreforms"
 ["10496140"]="notatedmusic-manuscript-monograph-01"
 ["20525980"]="notatedmusic-manuscript-monograph-02"
+["23742669"]="notatedmusic-manuscript-monograph-03-rich-382-383-384s"
 
 ["21009588"]="musicaudio-monograph-varianttitles-subjects-008p"
 ["11457859"]="text-serial-SUBJECTS-relationships-008c"

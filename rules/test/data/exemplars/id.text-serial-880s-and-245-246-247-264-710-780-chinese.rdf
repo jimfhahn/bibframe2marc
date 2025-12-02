@@ -38,11 +38,6 @@
       </bf:Frequency>
     </bf:frequency>
     <bf:identifiedBy>
-      <bf:Local>
-	<rdf:value>16777386</rdf:value>
-      </bf:Local>
-    </bf:identifiedBy>
-    <bf:identifiedBy>
       <bf:Lccn>
 	<rdf:value>  2012211076</rdf:value>
       </bf:Lccn>
@@ -131,10 +126,10 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:28:39</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-24T07:42:52</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>OCLCA</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -156,8 +151,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:29.929892-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T13:08:41.715222-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -194,12 +189,6 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
-	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
-	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
-	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
-	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
-	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
-	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -209,7 +198,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA</rdfs:label>
+	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -218,8 +207,14 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<bflc:marcKey>999ff$i5512dd0a-c420-51f0-a545-7170d46dfc12$sd81680a3-f1bc-40b7-b2e1-6248f0d64067</bflc:marcKey>
-	<lclocal:d999>=999  ff $i 5512dd0a-c420-51f0-a545-7170d46dfc12 $s d81680a3-f1bc-40b7-b2e1-6248f0d64067</lclocal:d999>
+	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
+	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
+	<bflc:marcKey>999ff$sd81680a3-f1bc-40b7-b2e1-6248f0d64067$i5512dd0a-c420-51f0-a545-7170d46dfc12</bflc:marcKey>
+	<lclocal:d999>=999  ff $s d81680a3-f1bc-40b7-b2e1-6248f0d64067 $i 5512dd0a-c420-51f0-a545-7170d46dfc12</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Instance>
@@ -595,6 +590,26 @@
 		</bf:role>
 	      </bf:Contribution>
 	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>HD9672.C5</bf:classificationPortion>
+		<bf:itemPortion>B45</bf:itemPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
 	    <bf:title>
 	      <bf:Title>
 		<bf:mainTitle>Beijing sheng wu gong cheng he xin yi yao chan ye fa zhan bao gao</bf:mainTitle>
@@ -602,12 +617,13 @@
 	      </bf:Title>
 	    </bf:title>
 	    <bf:title>
-	      <bf:ParallelTitle>
-		<bf:mainTitle>Annual report on the development of Beijing biotechnology &amp; pharmaceutical industry</bf:mainTitle>
-	      </bf:ParallelTitle>
-	    </bf:title>
-	    <bf:title>
 	      <bf:VariantTitle>
+		<bf:note>
+		  <bf:Note>
+		    <rdfs:label>At head of title</rdfs:label>
+		  </bf:Note>
+		</bf:note>
+		<bf:mainTitle>Qi hang</bf:mainTitle>
 		<bf:note>
 		  <bf:Note>
 		    <rdfs:label xml:lang="zh-hani">At head of title</rdfs:label>
@@ -617,7 +633,13 @@
 	      </bf:VariantTitle>
 	    </bf:title>
 	    <bf:title>
+	      <bf:ParallelTitle>
+		<bf:mainTitle>Annual report on the development of Beijing biotechnology &amp; pharmaceutical industry</bf:mainTitle>
+	      </bf:ParallelTitle>
+	    </bf:title>
+	    <bf:title>
 	      <bf:VariantTitle>
+		<bf:mainTitle>Qi hang, Beijing sheng wu gong cheng he xin yi yao chan ye fa zhan bao gao</bf:mainTitle>
 		<bf:mainTitle xml:lang="zh-hani">启航, 北京生物工程和新医药产业发展报告</bf:mainTitle>
 	      </bf:VariantTitle>
 	    </bf:title>
@@ -637,13 +659,20 @@
 		</bf:identifiedBy>
 		<bf:identifiedBy>
 		  <bf:OclcNumber>
-		    <rdf:value>ocm57721554 </rdf:value>
+		    <rdf:value>57721554</rdf:value>
 		  </bf:OclcNumber>
 		</bf:identifiedBy>
 		<bf:publicationStatement>Beijing: Ke xue chu ban she</bf:publicationStatement>
+		<bf:publicationStatement xml:lang="zh-hani">北京: 科学出版社</bf:publicationStatement>
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>v.</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>col. ill.</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
 		  </bf:Extent>
 		</bf:extent>
 	      </bf:Instance>
@@ -677,10 +706,10 @@
 	    <bf:code>c</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-07T00:28:39</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-24T07:42:52</bf:date>
 	<bf:descriptionModifier>
 	  <bf:Agent>
-	    <bf:code>OCLCA</bf:code>
+	    <bf:code>OCLCL</bf:code>
 	  </bf:Agent>
 	</bf:descriptionModifier>
       </bf:AdminMetadata>
@@ -702,8 +731,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:23:29.929892-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T13:08:41.715222-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -740,12 +769,6 @@
 	    <rdfs:label>0 - successive</rdfs:label>
 	  </bf:Note>
 	</bf:note>
-	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
-	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
-	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
-	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
-	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
-	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
 	<bf:descriptionLanguage>
 	  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
 	    <rdfs:label xml:lang="en">English</rdfs:label>
@@ -755,7 +778,7 @@
 	<bf:note>
 	  <bf:Note>
 	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA</rdfs:label>
+	    <rdfs:label>040  $aHUA$beng$cHUA$dOCLCQ$dDLC$dNLM$dOCLCO$dOCLCQ$dOCLCF$dOCLCO$dOCLCQ$dOCLCO$dOCLCA$dOCLCL</rdfs:label>
 	  </bf:Note>
 	</bf:note>
 	<bf:descriptionAuthentication>
@@ -764,8 +787,14 @@
 	    <bf:code>pcc</bf:code>
 	  </bf:DescriptionAuthentication>
 	</bf:descriptionAuthentication>
-	<bflc:marcKey>999ff$i5512dd0a-c420-51f0-a545-7170d46dfc12$sd81680a3-f1bc-40b7-b2e1-6248f0d64067</bflc:marcKey>
-	<lclocal:d999>=999  ff $i 5512dd0a-c420-51f0-a545-7170d46dfc12 $s d81680a3-f1bc-40b7-b2e1-6248f0d64067</lclocal:d999>
+	<bflc:marcKey>906  $a7$bcbc$cserasst$d3$encip$f20$gn-oclcserc</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c serasst $d 3 $e ncip $f 20 $g n-oclcserc</lclocal:d906>
+	<bflc:marcKey>9250 $aacquire$xpolicy default</bflc:marcKey>
+	<lclocal:d925>=925  0  $a acquire $x policy default</lclocal:d925>
+	<bflc:marcKey>955  $bcc13 2011-05-13$icc19 2012-03-14$gcc13 2012-03-19 to AD</bflc:marcKey>
+	<lclocal:d955>=955     $b cc13 2011-05-13 $i cc19 2012-03-14 $g cc13 2012-03-19 to AD</lclocal:d955>
+	<bflc:marcKey>999ff$sd81680a3-f1bc-40b7-b2e1-6248f0d64067$i5512dd0a-c420-51f0-a545-7170d46dfc12</bflc:marcKey>
+	<lclocal:d999>=999  ff $s d81680a3-f1bc-40b7-b2e1-6248f0d64067 $i 5512dd0a-c420-51f0-a545-7170d46dfc12</lclocal:d999>
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>

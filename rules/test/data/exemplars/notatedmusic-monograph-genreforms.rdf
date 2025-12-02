@@ -120,12 +120,37 @@
 	<bf:code>ntm</bf:code>
       </bf:Content>
     </bf:content>
-    <bf:musicMedium>
-      <bf:MusicMedium>
-	<bflc:readMarc382>38201$apiano$n1$s1$2lcmpt</bflc:readMarc382>
-      </bf:MusicMedium>
-    </bf:musicMedium>
-    <bf:musicThematicNumber>S. 420 Searle</bf:musicThematicNumber>
+    <bf:ensemble>
+      <bf:Ensemble>
+	<bf:mediumComponent>
+	  <bf:MediumComponent>
+	    <bf:mediumOfPerformance>
+	      <madsrdf:Medium rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015550">
+		<rdfs:label xml:lang="en">piano</rdfs:label>
+		<bflc:marcKey>162  $apiano</bflc:marcKey>
+	      </madsrdf:Medium>
+	    </bf:mediumOfPerformance>
+	    <bf:count>1</bf:count>
+	  </bf:MediumComponent>
+	</bf:mediumComponent>
+	<bf:ensembleSize>
+	  <bf:EnsembleSize rdf:about="http://id.loc.gov/vocabulary/ensemblesize/soloind">
+	    <rdfs:label>solo or individual</rdfs:label>
+	    <bf:code>soloind</bf:code>
+	  </bf:EnsembleSize>
+	</bf:ensembleSize>
+      </bf:Ensemble>
+    </bf:ensemble>
+    <bf:identifiedBy>
+      <bf:ThematicCatalogNumber>
+	<rdf:value>S. 420</rdf:value>
+	<bf:source>
+	  <bf:Source>
+	    <bf:code>Searle</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:ThematicCatalogNumber>
+    </bf:identifiedBy>
     <bf:notation>
       <bf:MusicNotation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
 	<rdfs:label>staff notation</rdfs:label>
@@ -263,7 +288,7 @@
 	    <bf:subtitle>pour le piano-forte : oeuvre 2</bf:subtitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
     <bf:adminMetadata>
@@ -322,8 +347,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:00.543503-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -532,6 +557,26 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>ML31</bf:classificationPortion>
+	    <bf:itemPortion>.H43e no. 43</bf:itemPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Grande fantaisie de bravoure sur La clochette de Paganini</bf:mainTitle>
@@ -554,7 +599,11 @@
 	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>   64045636 </rdf:value>
-		<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+		    <rdfs:label>invalid</rdfs:label>
+		  </bf:Status>
+		</bf:status>
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -582,7 +631,7 @@
 		<rdf:value>20779915</rdf:value>
 	      </bf:Local>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 score (39 pages)</rdfs:label>
@@ -598,7 +647,27 @@
       </bf:Work>
     </bf:instanceOf>
     <bf:hasItem>
-      <bf:Item rdf:about="http://id.loc.gov/resources/items/20779915"/>
+      <bf:Item rdf:about="http://id.loc.gov/resources/items/20779915">
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>86/20,226 (Mus)</bf:classificationPortion>
+	    <bf:itemPortion>item 121</bf:itemPortion>
+	    <bf:note>
+	      <bf:Note>
+		<rdfs:label>Microfilm</rdfs:label>
+	      </bf:Note>
+	    </bf:note>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:ClassificationLcc>
+	</bf:classification>
+      </bf:Item>
     </bf:hasItem>
     <bf:adminMetadata>
       <bf:AdminMetadata>
@@ -656,8 +725,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:00.543503-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -771,6 +840,26 @@
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
+	<bf:classification>
+	  <bf:ClassificationLcc>
+	    <bf:classificationPortion>ML31</bf:classificationPortion>
+	    <bf:itemPortion>.H43e no. 43</bf:itemPortion>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	    <bf:status>
+	      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		<rdfs:label>used by assigner</rdfs:label>
+		<bf:code>uba</bf:code>
+	      </bf:Status>
+	    </bf:status>
+	  </bf:ClassificationLcc>
+	</bf:classification>
 	<bf:title>
 	  <bf:Title>
 	    <bf:mainTitle>Grande fantaisie de bravoure sur La clochette de Paganini</bf:mainTitle>
@@ -793,7 +882,11 @@
 	    <bf:identifiedBy>
 	      <bf:Lccn>
 		<rdf:value>   64045636 </rdf:value>
-		<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+		    <rdfs:label>invalid</rdfs:label>
+		  </bf:Status>
+		</bf:status>
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
@@ -821,7 +914,7 @@
 		<rdf:value>20779915</rdf:value>
 	      </bf:Local>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 score (39 pages)</rdfs:label>
@@ -892,8 +985,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:00.543503-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -996,7 +1089,7 @@
 	    <bf:subtitle>pour le piano-forte : oeuvre 2</bf:subtitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Vienne: Pietro Mechetti qm Carlo, [1839]</bf:publicationStatement>
       </bf:Instance>
     </bf:itemOf>
     <bf:adminMetadata>
@@ -1055,8 +1148,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-07-23T17:33:45.145204-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:41:00.543503-05:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>

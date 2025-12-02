@@ -1,5 +1,15 @@
 # bibframe2marc release notes
 
+## v3.0.0
+
+Conversion updates based on specifications v3.0.0. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
+
+* Updated creation of MARC 382, 383 and 384 fields using new properties and classes from the Performed Music Ontology that have been added to the BIBFRAME ontology.
+* Updated creation of 024 $2 to includes URIs from the Standard Identifiers Source Codes list.
+* Updated creation of MARC Leader byte 17=2
+
+See the [NEWS](NEWS) file for full details of changes.   Changes from v2.10.0 in the specifications are marked in red.
+
 ## v2.10.0
 
 Conversion updates based on specifications v2.10. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
