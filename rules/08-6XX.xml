@@ -2609,6 +2609,9 @@
                 <case test="bf:Source/bf:code"><transform><xsl:value-of select="bf:Source/bf:code"/></transform></case>
                 <case test="$vSourceUri != ''">
                   <switch>
+                    <case test="$vSourceUri = 'http://id.loc.gov/authorities/genreForms'">
+                      <transform><xsl:value-of select="'lcgft'"/></transform>
+                    </case>
                     <case test="contains($vSourceUri,'id.loc.gov')">
                       <transform>
                         <xsl:call-template name="tUriCode">
