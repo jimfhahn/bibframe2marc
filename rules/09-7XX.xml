@@ -896,6 +896,8 @@
           <ind2 default=" ">
             <switch>
               <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[.='http://id.loc.gov/vocabulary/relationship/part']">2</case>
+              <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[.='http://id.loc.gov/vocabulary/relationship/containerof']">2</case>
+              <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[.='http://id.loc.gov/entities/relationships/containerof']">2</case>
               <case test="ancestor::bf:Relation/bf:relationship//@rdf:*[.='http://id.loc.gov/ontologies/bibframe/hasPart']">2</case>
               <case test="ancestor::bflc:Relationship/bflc:relation//@rdf:*[.='http://id.loc.gov/ontologies/bibframe/hasPart']">2</case>
               <case test="self::bf:hasPart or ancestor::bf:hasPart">2</case>
