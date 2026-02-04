@@ -304,6 +304,14 @@
       </switch>
       
       <switch>
+        <case test="ancestor::bf:contribution/parent::bf:Item">
+          <sf code="5">
+            <transform><xsl:value-of select="$pConversionAgency" /></transform>
+          </sf>
+        </case>
+      </switch>
+      
+      <switch>
         <case test="$relURI != '' and contains($relURI, 'id.loc.gov/authorities/')">
           <sf code="0">
             <transform><xsl:value-of select="$relURI"/></transform>
