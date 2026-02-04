@@ -2419,9 +2419,9 @@
       bf:Work/bf:genreForm/*[contains(@rdf:about, 'd-nb.info/gnd/') and not(contains(@rdf:about, '#'))] |
       bf:Work/bf:genreForm[contains(@rdf:resource, 'id.worldcat.org/fast/')] |
       bf:Work/bf:genreForm/*[contains(@rdf:about, 'id.worldcat.org/fast/')] |
+      //bf:Item/bf:genreForm/*[bflc:marcKey or marc:record] |
       //bf:Item/bf:genreForm[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
-      //bf:Item/bf:genreForm/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
-      //bf:Item/bf:genreForm/*[bflc:marcKey or marc:record] 
+      //bf:Item/bf:genreForm/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))]
       ">
       <!--
       <transform>
@@ -2480,6 +2480,7 @@
           <case test="contains($relURI, '/nalt/')">3</case>
           <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
             contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
+            contains($relURI, '/vocabulary/rbmscv/') or 
             contains($relURI, '/fast/') or
             contains($relURI, 'd-nb.info/gnd/')">7</case>
           
@@ -2514,11 +2515,19 @@
           <!-- <case test="contains($relURI, '/names/')">naf</case> -->
           <case test="contains($relURI, '/genreForms/')">lcgft</case>
           <case test="contains($relURI, '/demogrpahicTerms/')">lcdgt</case>
+          <case test="contains($relURI, '/vocabulary/rbmscv/')">rbmscv</case>
           <case test="contains($relURI, '/graphicMaterials/')">lctgm</case>
           <case test="contains($relURI, '/fast/')">fast</case>
           <case test="contains($relURI, 'd-nb.info/gnd/')">gnd</case>
         </switch>
       </sf>
+      <switch>
+        <case test="parent::bf:genreForm/parent::bf:Item">
+          <sf code="5">
+            <transform><xsl:value-of select="$pConversionAgency" /></transform>
+          </sf>
+        </case>
+      </switch>
       <switch>
         <case test="$relURI != ''">
           <sf code="0">
