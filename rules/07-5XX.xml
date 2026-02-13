@@ -209,7 +209,7 @@
               <switch>
                 <case test="$vTag = '501' or $vTag = '533' or $vTag = '585'">
                   <sf code="5" repeatable="false">
-                    <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+                    <select xpath="../bflc:applicableInstitution/*/bf:code"/>
                   </sf>
                 </case>
               </switch>
@@ -256,7 +256,7 @@
               <select xpath="."/>
             </sf>
             <sf code="5" repeatable="false">
-              <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+              <select xpath="../bflc:applicableInstitution/*/bf:code"/>
             </sf>
             <!--<sf code="7" chopPunct="true" repeatable="false">
               <switch>
@@ -909,7 +909,7 @@
               <select xpath="."/>
             </sf>
             <sf code="5" chopPunct="true" repeatable="false">
-              <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+              <select xpath="../bflc:applicableInstitution/*/bf:code"/>
             </sf>
             <!--<sf code="7" chopPunct="true" repeatable="false">
               <switch>
@@ -956,7 +956,7 @@
                 </switch>
             </sf>
             <sf code="5" repeatable="false">
-              <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+              <select xpath="../bflc:applicableInstitution/*/bf:code"/>
             </sf>
             <!--<sf code="7" chopPunct="true" repeatable="false">
               <switch>
@@ -991,7 +991,7 @@
                   </switch>
               </sf>
               <sf code="5" repeatable="false">
-                <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+                <select xpath="../bflc:applicableInstitution/*/bf:code"/>
               </sf>
                 <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
             </df>
@@ -1075,7 +1075,7 @@
               </transform>
             </sf>
             <sf code="5" repeatable="false">
-              <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+              <select xpath="../bflc:applicableInstitution/*/bf:code"/>
             </sf>
             <!--<sf code="7" chopPunct="true" repeatable="false">
               <switch>
@@ -1118,7 +1118,7 @@
                   </transform>
                 </sf>
                 <sf code="5" repeatable="false">
-                  <select xpath="../bflc:applicableInstitution/bf:Agent/bf:code"/>
+                  <select xpath="../bflc:applicableInstitution/*/bf:code"/>
                 </sf>
                 <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
               </df>
@@ -1479,7 +1479,7 @@
             <select xpath="bf:source/bf:Source/bf:code"/>
           </sf>
           <sf code="5" repeatable="false">
-            <select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/>
+            <select xpath="bflc:applicableInstitution/*/bf:code"/>
           </sf>
         </df>
       </case>
@@ -1506,7 +1506,7 @@
             <select xpath="bf:source/bf:Source/bf:code"/>
           </sf>
           <sf code="5" repeatable="false">
-            <select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/>
+            <select xpath="bflc:applicableInstitution/*/bf:code"/>
           </sf>
         </df>
       </case>
@@ -1726,7 +1726,7 @@
         <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
       </sf>
       <sf code="5">
-        <select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/>
+        <select xpath="bflc:applicableInstitution/*/bf:code"/>
       </sf>
     </context>
   </df>
@@ -1742,7 +1742,7 @@
         <select xpath="rdfs:label"/>
       </sf>
       <sf code="5">
-        <select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/>
+        <select xpath="bflc:applicableInstitution/*/bf:code"/>
       </sf>
     </context>
   </df>
