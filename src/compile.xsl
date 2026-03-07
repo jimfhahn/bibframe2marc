@@ -32,7 +32,7 @@
 
       <xsl:param name="pRecordId" select="'default'"/>
       <xsl:param name="pCatScript" select="'Latn'"/>
-      
+          
       <!-- parameters for 884 generation -->
       <xsl:param name="pGenerationDatestamp">
         <xsl:choose>
@@ -52,6 +52,8 @@
       <!-- for upper- and lower-case translation (ASCII only) -->
       <xsl:variable name="lower">abcdefghijklmnopqrstuvwxyz</xsl:variable>
       <xsl:variable name="upper">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
+      
+      <xsl:param name="pCatScriptNormalized" select="translate($pCatScript, $upper, $lower)"/>
       
       <xsl:variable name="xslProcessor">
         <!-- xsl:vendor, when compiled with xsltproc, works, meaning the output is xsl for elements and xsl:vendor and the tests pass. -->
@@ -550,9 +552,58 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:template>
+      
+      <xsl:template name="tGetBCP47forCatScript">
+        <xsl:param name="x" />
+        <xsl:value-of select="translate(
+                                $x[
+                                  contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized) or 
+                                  (
+                                    $pCatScriptNormalized='latn' and 
+                                    string-length(@xml:lang)='2' and
+                                    (
+                                      @xml:lang='en' or 
+                                      @xml:lang='fr' or 
+                                      @xml:lang='de' or 
+                                      @xml:lang='it' 
+                                    )
+                                  ) or ( 
+                                    string-length(@xml:lang)='3'
+                                  )
+                                 ]/@xml:lang,
+                                 $upper,
+                                 $lower
+                              )" />
+      </xsl:template>
+      
+      <xsl:template name="tGetBCP47for880">
+        <xsl:param name="x" />
+        <xsl:param name="bcp47forRegField" />
+        <xsl:value-of select="translate(
+                                $x[
+                                    @xml:lang and 
+                                    translate(@xml:lang,$upper,$lower)!=$bcp47forRegField and
+                                    (
+                                      contains(@xml:lang,'-') or 
+                                      (
+                                        string-length(@xml:lang)='2' and
+                                        (
+                                          @xml:lang='ko' or 
+                                          @xml:lang='ja' or 
+                                          @xml:lang='ru' or 
+                                          @xml:lang='uk' 
+                                        )
+                                       ) or ( 
+                                        string-length(@xml:lang)='3'
+                                      )
+                                    )
+                                  ]/@xml:lang,
+                                  $upper,
+                                  $lower
+                               )" />
+      </xsl:template>
 
       <!-- get a MARC authority from a URI -->
-      
       <xsl:template name="tGetRelResource">
         <xsl:param name="pRelUri"/>
         <xsl:param name="pContext"/>
