@@ -162,7 +162,7 @@
           </case>
         </switch>
       </sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
             <transform>
@@ -588,7 +588,7 @@
           </case>
         </switch>
       </sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangMainTitle!=''">
             <transform>
@@ -988,7 +988,7 @@
         </case>
       </switch>
       <sf code="5" repeatable="false"><select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/></sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
             <transform>
@@ -1171,7 +1171,7 @@
       <sf code="x" repeatable="false">
         <select xpath="bf:identifiedBy/*[local-name()='Issn' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']]/rdf:value"/>
       </sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
             <transform>
@@ -1247,7 +1247,7 @@
   <!-- 250/880 -->
   <select xpath="bf:Instance/bf:editionStatement[
                     not(@xml:lang) or 
-                    contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
+                    contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized) or 
                     string-length(@xml:lang)='2' or 
                     string-length(@xml:lang)='3']">
 
@@ -1300,7 +1300,7 @@
           </xsl:if>
         </transform>
       </sf>
-      <sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
             <transform>
@@ -1662,7 +1662,7 @@
               </sf>
             </case>
           </switch>
-          <sf code="7" chopPunct="true" repeatable="false">
+          <sf code="7">
             <switch>
               <case test="$vLangTagLabel!=''">
                 <transform>
