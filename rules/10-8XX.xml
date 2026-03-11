@@ -180,17 +180,26 @@
       </switch>
     </var>
     
-    <var name="vLangTagLabel" xpath="self::node()/bflc:marcKey[
-                    contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                    string-length(@xml:lang)='2' or 
-                    string-length(@xml:lang)='3'
-                  ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="self::node()/bflc:marcKey[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="self::node()/bflc:marcKey" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="self::node()/bflc:marcKey" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
     <var name="v880Script">
       <switch>
         <case test="$vLangTagScript!=''">
           <lookup map="df880script" targetField="code">
-            <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+            <lookupField name="lang" xpath="substring-after($vLangTagScript,'-')"/>
           </lookup>
         </case>
       </switch>
@@ -285,13 +294,16 @@
           </sf>
         </case>
       </switch>
-      <!--<sf code="7" chopPunct="true" repeatable="false">
-        <switch>
-          <case test="$vLangTagLabel!=''">
-            <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
-          </case>
-        </switch>
-      </sf>-->
+      <sf code="y">
+        <transform>
+          <xsl:variable name="bcp47code">
+            <xsl:call-template name="tOutputBCP47">
+              <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+            </xsl:call-template>
+          </xsl:variable>
+          <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+        </transform>
+      </sf>
     </df>
     
     <switch>
@@ -367,7 +379,16 @@
               </sf>
             </case>
           </switch>
-          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+          <sf code="y">
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
+          </sf>
         </df>
       </case>
     </switch>

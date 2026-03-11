@@ -846,7 +846,7 @@
                     <transform>
                       <xsl:variable name="bcp47code">
                         <xsl:call-template name="tOutputBCP47">
-                          <xsl:with-param name="bcp47orig" select="vLangTagScript" />
+                          <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
                         </xsl:call-template>
                       </xsl:variable>
                       <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
@@ -1556,17 +1556,27 @@
     </switch>
   </select>
   
-  <!-- Left off here. -->
   <select xpath="bf:Instance/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/biblio' and rdfs:label[. != '']]">
-    <var name="vLangTagLabel" xpath="rdfs:label[
-                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                string-length(@xml:lang)='2' or 
-                string-length(@xml:lang)='3'
-              ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="rdfs:label" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="rdfs:label" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
-          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+          <lookupField name="lang" xpath="substring-after($vLangTagScript,'-')"/>
         </lookup>
     </var>
     <var name="v880Occurrence">
@@ -1578,8 +1588,8 @@
               when also accounting for supplementary content .. -->
             <xsl:value-of select="
               49 + 
-              count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) + 
+              count(ancestor::bf:Instance/bf:note/bf:Note[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) + 
+              count(ancestor::bf:Instance/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel] and not(@rdf:about)]) + 
               position() + 
               1" />
           </transform>
@@ -1588,7 +1598,7 @@
     </var>
     
 
-    <df tag="504" lang-xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+    <df tag="504" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
       <ind1 default=" "/>
       <ind2 default=" "/>
       <switch>
@@ -1598,18 +1608,25 @@
       </switch>
       <sf code="a" chopPunct="true" repeatable="false"><select xpath="rdfs:label"/></sf>
       <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
-      <!--<sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
-            <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
           </case>
         </switch>
-      </sf>-->
+      </sf>
   </df>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
           <df tag="880">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -1618,7 +1635,16 @@
               <select xpath="."/>
             </sf>
             <sf code="b" repeatable="false"><select xpath="bf:count"/></sf>
-            <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+            <sf code="7">
+              <transform>
+                <xsl:variable name="bcp47code">
+                  <xsl:call-template name="tOutputBCP47">
+                    <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+              </transform>
+            </sf>
           </df>
         </select>
       </case>
@@ -1627,16 +1653,25 @@
 
   <select xpath="bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label]">
     
-    <var name="vLangTagLabel" xpath="rdfs:label[
-      contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-      string-length(@xml:lang)='2' or 
-      string-length(@xml:lang)='3'
-      ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="rdfs:label" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="rdfs:label" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
     
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
-          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+          <lookupField name="lang" xpath="substring-after($vLangTagScript,'-')"/>
         </lookup>
     </var>
     <var name="v880Occurrence">
@@ -1644,15 +1679,13 @@
         <case test="$v880Script != ''">
           <transform>
             <!-- This should be the next in the numerical sequence for work notes. -->
-            <xsl:value-of select="39 + count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + position()"></xsl:value-of>
+            <xsl:value-of select="39 + count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) + position()"></xsl:value-of>
           </transform>
         </case>
       </switch>
     </var>
     
-    <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or 
-      string-length(@xml:lang)='2' or 
-      string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+    <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
       <ind1 default="0">
         <switch>
           <case test="bf:status//@rdf:*[.='http://id.loc.gov/vocabulary/mstatus/incmp']">1</case>
@@ -1665,22 +1698,27 @@
           <sf code="6"><transform><xsl:value-of select="concat('880-', $v880Occurrence)"/></transform></sf>
         </case>
       </switch>
-      <sf code="a" chopPunct="false" repeatable="false"><select xpath="rdfs:label[not(@xml:lang) or 
-        string-length(@xml:lang)='2' or 
-        string-length(@xml:lang)='3' or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]" /></sf>
+      <sf code="a" chopPunct="false" repeatable="false"><select xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]" /></sf>
       <sf code="u"><select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/></sf>
-      <!--<sf code="7" chopPunct="true" repeatable="false">
+      <sf code="7">
         <switch>
           <case test="$vLangTagLabel!=''">
-            <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
           </case>
         </switch>
-      </sf>-->
+      </sf>
     </df>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
           <df tag="880">
             <ind1 default="0">
               <switch>
@@ -1694,7 +1732,16 @@
               <select xpath="."/>
             </sf>
             <sf code="u"><select xpath="../bf:electronicLocator/@rdf:resource|../rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/></sf>
-            <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+            <sf code="7">
+              <transform>
+                <xsl:variable name="bcp47code">
+                  <xsl:call-template name="tOutputBCP47">
+                    <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+              </transform>
+            </sf>
           </df>
         </select>
       </case>
@@ -1825,26 +1872,26 @@
   </df>
 
   <select xpath="bf:Work/bf:summary/bf:Summary[rdfs:label]">
-    <var name="vLabel" xpath="rdfs:label[
-                  not(@xml:lang) or 
-                  (
-                    string-length(@xml:lang)='2' or 
-                    string-length(@xml:lang)='3' or
-                    contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))
-                  ) 
-               ][1]" />
-    <var name="vLangTagLabel" xpath="rdfs:label[
-                  @xml:lang and
-                  (  
-                    ( contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))) ) or 
-                    string-length(@xml:lang)='2' or 
-                    string-length(@xml:lang)='3'
-                  )
-                  ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="rdfs:label" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="rdfs:label" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLabel" xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel][1]" />
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
-          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+          <lookupField name="lang" xpath="substring-after($vLangTagScript,'-')"/>
         </lookup>
     </var>
     <var name="v880Occurrence">
@@ -1855,8 +1902,8 @@
             <!-- This should be the next in the numerical sequence for work notes, when also accounting for tableOfContents .. -->
             <xsl:value-of select="
                             39 + 
-                            count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-                            count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
+                            count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) + 
+                            count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) + 
                             position()" />
           </transform>
         </case>
@@ -1865,7 +1912,7 @@
     
     <switch>
       <case test="string($vLabel) != ''">
-        <df tag="520" lang-xpath="rdfs:label">
+        <df tag="520" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
         <ind1 default=" "/>
         <ind2 default=" "/>
         <switch>
@@ -1877,25 +1924,32 @@
           <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
         </sf>
         <sf code="a" chopPunct="false" repeatable="false">
-          <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+          <select xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
         </sf>
         <sf code="u">
           <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
         </sf>
-      <!--<sf code="7" chopPunct="true" repeatable="false">
-        <switch>
-          <case test="$vLangTagLabel!=''">
-            <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
-          </case>
-        </switch>
-      </sf>-->
+          <sf code="7">
+            <switch>
+              <case test="$vLangTagLabel!=''">
+                <transform>
+                  <xsl:variable name="bcp47code">
+                    <xsl:call-template name="tOutputBCP47">
+                      <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                    </xsl:call-template>
+                  </xsl:variable>
+                  <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+                </transform>
+              </case>
+            </switch>
+          </sf>
     </df>
       </case>
     </switch>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
           <df tag="880">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -1909,7 +1963,16 @@
             <sf code="u">
               <select xpath="bf:electronicLocator/@rdf:resource|rdf:value[@rdf:datatype='http://www.w3.org/2001/XMLSchema#anyURI']"/>
             </sf>
-            <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+            <sf code="7">
+              <transform>
+                <xsl:variable name="bcp47code">
+                  <xsl:call-template name="tOutputBCP47">
+                    <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+              </transform>
+            </sf>
           </df>
         </select>
       </case>
@@ -1999,15 +2062,24 @@
   </df>
 
   <select xpath="bf:Work/bf:note/bf:Note[rdf:type/@rdf:resource = 'http://id.loc.gov/vocabulary/mnotetype/lang' and rdfs:label]">
-    <var name="vLangTagLabel" xpath="rdfs:label[
-                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                string-length(@xml:lang)='2' or 
-                string-length(@xml:lang)='3'
-              ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="rdfs:label" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="rdfs:label" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
-          <lookupField name="lang" xpath="translate(substring-after($vLangTagScript,'-'),$upper,$lower)"/>
+          <lookupField name="lang" xpath="substring-after($vLangTagScript,'-')"/>
         </lookup>
     </var>
     <var name="v880Occurrence">
@@ -2018,9 +2090,9 @@
                  when also accounting for tableOfContents, supplementarycontent, dissertation, and padding .. -->
             <xsl:value-of select="
               41 + 
-              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) + 
-              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]]) +
-              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and contains(@xml:lang, '-') and not(contains(translate(rdfs:label/@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))] and not(@rdf:about)]) +
+              count(ancestor::bf:Work/bf:note/bf:Note[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) + 
+              count(ancestor::bf:Work/bf:tableOfContents/bf:TableOfContents[rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]]) +
+              count(ancestor::bf:Work/bf:supplementaryContent/bf:SupplementaryContent[rdfs:label[. != '' and @xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel] and not(@rdf:about)]) +
               count(ancestor::bf:Work/bf:dissertation/bf:Dissertation) +
               position()" />
           </transform>
@@ -2028,7 +2100,7 @@
       </switch>
     </var>
   
-  <df tag="546" lang-xpath="rdfs:label">
+    <df tag="546" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
       <ind1 default=" "/>
       <ind2 default=" "/>
       <switch>
@@ -2040,30 +2112,37 @@
         <select xpath="bflc:appliesTo/bflc:AppliesTo/rdfs:label"/>
       </sf>
       <sf code="a" chopPunct="true" repeatable="false">
-        <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+        <select xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
       </sf>
       <select xpath="ancestor::bf:Work/bf:notation/bf:Script[contains(@rdf:about, 'id.loc.gov/vocabulary/mscript')] | ancestor::bf:Work/bf:notation/bf:Notation[contains(@rdf:about, 'id.loc.gov/vocabulary/mscript')]">
         <sf code="b" chopPunct="true">
-          <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+          <select xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
         </sf>
       </select>
       <select xpath="ancestor::bf:Work/bf:notation/bf:Script[not(@rdf:about)] | ancestor::bf:Work/bf:notation/bf:Notation[not(@rdf:about)]">
         <sf code="b" chopPunct="true">
-          <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+          <select xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
         </sf>
       </select>
-    <!--<sf code="7" chopPunct="true" repeatable="false">
-      <switch>
-        <case test="$vLangTagLabel!=''">
-          <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
-        </case>
-      </switch>
-    </sf>-->
+      <sf code="7">
+        <switch>
+          <case test="$vLangTagLabel!=''">
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
+          </case>
+        </switch>
+      </sf>
   </df>
     
     <switch>
       <case test="$v880Script != ''">
-        <select xpath="rdfs:label[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">
+        <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
           <df tag="880">
             <ind1 default=" "/>
             <ind2 default=" "/>
@@ -2076,15 +2155,24 @@
             </sf>
             <select xpath="ancestor::bf:Work/bf:notation/bf:Script[contains(@rdf:about, 'id.loc.gov/vocabulary/mscript')] | ancestor::bf:Work/bf:notation/bf:Notation[contains(@rdf:about, 'id.loc.gov/vocabulary/mscript')]">
               <sf code="b" chopPunct="true">
-                <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+                <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"/>
               </sf>
             </select>
             <select xpath="ancestor::bf:Work/bf:notation/bf:Script[not(@rdf:about)] | ancestor::bf:Work/bf:notation/bf:Notation[not(@rdf:about)]">
               <sf code="b" chopPunct="true">
-                <select xpath="rdfs:label[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]"/>
+                <select xpath="rdfs:label[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"/>
               </sf>
             </select>
-            <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+            <sf code="7">
+              <transform>
+                <xsl:variable name="bcp47code">
+                  <xsl:call-template name="tOutputBCP47">
+                    <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                  </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+              </transform>
+            </sf>
           </df>
         </select>
       </case>
@@ -2211,8 +2299,6 @@
       bf:Work/bf:relation/bf:Relation/bf:note/bf:Note[rdf:type/@rdf:resource='http://id.loc.gov/vocabulary/mnotetype/relnote']/rdfs:label ">
       <ind1 default=" "/>
       <ind2 default=" "/>
-      <!--
-      Uncomment at your own risk. A $8 subfield could wreak havoc on a MARC system despite its legality.
       <switch>
         <case test="ancestor::bf:Relation">
           <var name="vLinkage">
@@ -2225,7 +2311,6 @@
           </sf>
         </case>
       </switch>
-      -->
       <sf code="a" repeatable="false">
         <transform>
           <xsl:call-template name="tChopPunct">
