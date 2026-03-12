@@ -688,6 +688,9 @@
                 </xsl:variable>
                 <xsl:variable name="s">
                   <xsl:choose>
+                    <xsl:when test="not($langcode-to-script/langcode-script[langcode=$l])">
+                      <xsl:value-of select="$spart" />
+                    </xsl:when>
                     <xsl:when test="$langcode-to-script/langcode-script[langcode=$l]/script != $spart">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
@@ -716,6 +719,9 @@
                 <xsl:variable name="spart" select="substring($last4, 2, 4)" />
                 <xsl:variable name="s">
                   <xsl:choose>
+                    <xsl:when test="not($langcode-to-script/langcode-script[langcode=$lpart])">
+                      <xsl:value-of select="$spart" />
+                    </xsl:when>
                     <xsl:when test="$langcode-to-script/langcode-script[langcode=$lpart]/script != $spart">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
