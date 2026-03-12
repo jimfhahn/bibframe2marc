@@ -678,8 +678,8 @@
                 <xsl:variable name="spart" select="substring($last5, 2, 4)" />
                 <xsl:variable name="l">
                   <xsl:choose>
-                    <xsl:when test="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391">
-                      <xsl:value-of select="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391" />
+                    <xsl:when test="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391">
+                      <xsl:value-of select="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391" />
                     </xsl:when>
                     <xsl:otherwise>
                       <xsl:value-of select="$lpart" />
@@ -688,13 +688,13 @@
                 </xsl:variable>
                 <xsl:variable name="s">
                   <xsl:choose>
-                    <xsl:when test="not($langcode-to-script/langcode-script[langcode=$l])">
+                    <xsl:when test="not($langcode-to-scriptNS/langcode-script[langcode=$l])">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$l]/script != $spart">
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$l]/script != $spart">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$l]/script = $spart" />
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$l]/script = $spart" />
                   </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
@@ -719,13 +719,15 @@
                 <xsl:variable name="spart" select="substring($last4, 2, 4)" />
                 <xsl:variable name="s">
                   <xsl:choose>
-                    <xsl:when test="not($langcode-to-script/langcode-script[langcode=$lpart])">
+                    <xsl:when test="not($langcode-to-scriptNS/langcode-script[langcode=$lpart])">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$lpart]/script != $spart">
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$lpart]/script != $spart">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$lpart]/script = $spart" />
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$lpart]/script = $spart">
+                        <xsl:value-of select="''" />
+                    </xsl:when>
                   </xsl:choose>
                 </xsl:variable>
                 <xsl:choose>
@@ -746,8 +748,8 @@
                 -->
                 <xsl:variable name="lpart" select="substring($first3, 1, 3)" />
                 <xsl:choose>
-                  <xsl:when test="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391">
-                    <xsl:value-of select="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391" />
+                  <xsl:when test="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391">
+                    <xsl:value-of select="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391" />
                   </xsl:when>
                   <xsl:otherwise>
                     <xsl:value-of select="$lpart" />
@@ -796,8 +798,8 @@
                 <xsl:variable name="spart" select="substring($last5, 2, 4)" />
                 <xsl:variable name="l">
                   <xsl:choose>
-                    <xsl:when test="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391">
-                      <xsl:value-of select="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391" />
+                    <xsl:when test="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391">
+                      <xsl:value-of select="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391" />
                     </xsl:when>
                     <xsl:otherwise>
                       <xsl:value-of select="$lpart" />
@@ -826,7 +828,7 @@
                 <xsl:variable name="spart" select="substring($last4, 2, 4)" />
                 <xsl:variable name="s">
                   <xsl:choose>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$lpart]/script">
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$lpart]/script">
                       <xsl:value-of select="$spart" />
                     </xsl:when>
                   </xsl:choose>
@@ -850,8 +852,8 @@
                 <xsl:variable name="lpart" select="$first3" />
                 <xsl:variable name="l">
                   <xsl:choose>
-                    <xsl:when test="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391">
-                      <xsl:value-of select="$iso6392-to-iso6391/iso6392to1[iso6391=$lpart]/iso6391" />
+                    <xsl:when test="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391">
+                      <xsl:value-of select="$iso6392-to-iso6391NS/iso6392to1[iso6391=$lpart]/iso6391" />
                     </xsl:when>
                     <xsl:otherwise>
                       <xsl:value-of select="$lpart" />
@@ -860,8 +862,8 @@
                 </xsl:variable>
                 <xsl:variable name="s">
                   <xsl:choose>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$l]/script">
-                      <xsl:value-of select="$langcode-to-script/langcode-script[langcode=$l]/script" />
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$l]/script">
+                      <xsl:value-of select="$langcode-to-scriptNS/langcode-script[langcode=$l]/script" />
                     </xsl:when>
                   </xsl:choose>
                 </xsl:variable>
@@ -882,8 +884,8 @@
                 <xsl:variable name="lpart" select="$first2" />
                 <xsl:variable name="s">
                   <xsl:choose>
-                    <xsl:when test="$langcode-to-script/langcode-script[langcode=$lpart]/script">
-                      <xsl:value-of select="$langcode-to-script/langcode-script[langcode=$lpart]/script" />
+                    <xsl:when test="$langcode-to-scriptNS/langcode-script[langcode=$lpart]/script">
+                      <xsl:value-of select="$langcode-to-scriptNS/langcode-script[langcode=$lpart]/script" />
                     </xsl:when>
                   </xsl:choose>
                 </xsl:variable>
@@ -1342,6 +1344,9 @@
        this.
     <xsl:variable name="{@name}NS" select="exsl:node-set(${@name})" />
     -->
+    <xslt:if test="@name = 'langcode-to-script' or @name = 'iso6392-to-iso6391'">
+        <xsl:variable name="{@name}NS" select="exsl:node-set(${@name})" />    
+    </xslt:if>
   </xslt:template>
 
   <!-- templates for constructing keys: simple pass-through -->
