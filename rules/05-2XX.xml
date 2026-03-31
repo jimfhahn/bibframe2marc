@@ -355,9 +355,18 @@
     <context xpath="bf:Instance[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/SecondaryInstance')]/bf:title/bf:Title[not(rdf:type)]|bf:Work[not(../bf:Instance/bf:title/bf:Title[not(rdf:type)])]/bf:title/bf:Title[not(rdf:type)]">
       <var name="vLangMainTitle">
         <transform>
-          <xsl:call-template name="tGetBCP47RegField">
-            <xsl:with-param name="x" select="bf:mainTitle" />
-          </xsl:call-template>
+          <xsl:choose>
+            <xsl:when test="bf:mainTitle[contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized)]">
+              <xsl:call-template name="tGetBCP47RegField">
+                <xsl:with-param name="x" select="bf:mainTitle" />
+              </xsl:call-template>    
+            </xsl:when>
+            <xsl:when test="bf:subtitle[contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized)]">
+              <xsl:call-template name="tGetBCP47RegField">
+                <xsl:with-param name="x" select="bf:subtitle" />
+              </xsl:call-template>    
+            </xsl:when>
+          </xsl:choose>
         </transform>
       </var>
       <ind1 default="0">
@@ -609,9 +618,18 @@
   <select xpath="bf:Instance[not(rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bflc/SecondaryInstance')]/bf:title/bf:Title[not(rdf:type)]|bf:Work[not(../bf:Instance/bf:title/bf:Title[not(rdf:type)])]/bf:title/bf:Title[not(rdf:type)]">
     <var name="vLangMainTitle">
       <transform>
-        <xsl:call-template name="tGetBCP47RegField">
-          <xsl:with-param name="x" select="bf:mainTitle" />
-        </xsl:call-template>
+        <xsl:choose>
+          <xsl:when test="bf:mainTitle[contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized)]">
+            <xsl:call-template name="tGetBCP47RegField">
+              <xsl:with-param name="x" select="bf:mainTitle" />
+            </xsl:call-template>    
+          </xsl:when>
+          <xsl:when test="bf:subtitle[contains(translate(@xml:lang,$upper,$lower),$pCatScriptNormalized)]">
+            <xsl:call-template name="tGetBCP47RegField">
+              <xsl:with-param name="x" select="bf:subtitle" />
+            </xsl:call-template>    
+          </xsl:when>
+        </xsl:choose>
       </transform>
     </var>
     <var name="vLangTagScript">
@@ -775,7 +793,7 @@
               <case test="$bExists='1' and ancestor::bf:Instance/bf:responsibilityStatement[@xml:lang and not(translate(@xml:lang,$upper,$lower)=$vLangMainTitle)]">
                 <transform><xsl:text> /</xsl:text></transform>
               </case>
-              <case test="default">
+              <case test="$bExists='1'">
                 <!-- There is a b but no c, so period here. -->
                 <transform><xsl:text>.</xsl:text></transform>
               </case>
@@ -852,21 +870,24 @@
       
       <var name="vOccurrenceNumber">
         <transform>
-          <xsl:if test="count(bf:mainTitle)=2 and bf:mainTitle[@xml:lang] and bf:mainTitle[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
-            <xsl:variable name="prevTitleCount" select="count(parent::bf:title/preceding-sibling::bf:title/*[(
-              local-name()='VariantTitle' or
-              local-name()='ParallelTitle' or
-              local-name()='TranscribedTitle' or
-              rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/VariantTitle'] or
-              rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/ParallelTitle'] or
-              rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bflc/TranscribedTitle']
-              ) and 
-              not(rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/for']) and
-              not(bf:variantType = 'translated') and
-              not(bf:variantType = 'former') and
-              bf:mainTitle[@xml:lang]])" />
-            <xsl:value-of select="4 + $prevTitleCount" />
-          </xsl:if>
+          <xsl:choose>
+            <xsl:when test="count(bf:mainTitle)=2 and bf:mainTitle[@xml:lang] and bf:mainTitle[not(@xml:lang) or contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower))]">
+              <xsl:variable name="prevTitleCount" select="count(parent::bf:title/preceding-sibling::bf:title/*[(
+                local-name()='VariantTitle' or
+                local-name()='ParallelTitle' or
+                local-name()='TranscribedTitle' or
+                rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/VariantTitle'] or
+                rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/ParallelTitle'] or
+                rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bflc/TranscribedTitle']
+                ) and 
+                not(rdf:type[@rdf:resource='http://id.loc.gov/vocabulary/vartitletype/for']) and
+                not(bf:variantType = 'translated') and
+                not(bf:variantType = 'former') and
+                bf:mainTitle[@xml:lang]])" />
+              <xsl:value-of select="4 + $prevTitleCount" />
+            </xsl:when>
+            <xsl:when test="count(bf:mainTitle)=1 and bf:mainTitle[@xml:lang and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))]">00</xsl:when>
+          </xsl:choose>
         </transform>
       </var>
       
@@ -889,7 +910,7 @@
       <var name="vTag">
         <switch>
           <!-- If there is a vOccurrenceNumber, field will be 246 followed by an 880. -->
-          <case test="$vOccurrenceNumber != ''">246</case>
+          <case test="$vOccurrenceNumber != '' and $vOccurrenceNumber != '00'">246</case>
           
           <!-- If there is only one mainTitle and it either does not have a lang tag or is in the cataloging script, this is a 246. -->
           <case test="count(bf:mainTitle)='1' and
@@ -949,6 +970,15 @@
         <case test="count(bf:mainTitle)=2 and bf:mainTitle[@xml:lang and not(translate(@xml:lang,$upper,$lower)=$vLangTagLabel)] and bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
           <sf code="6"><transform><xsl:value-of select="concat('880-0', $vOccurrenceNumber)" /></transform></sf>
         </case>
+        <case test="$vOccurrenceNumber = '00'">
+          <var name="vScript"><transform><xsl:value-of select="substring-after($vLangTagScript,'-')" /></transform></var>
+          <var name="v880Script">
+            <lookup map="df880script" targetField="code">
+              <lookupField name="lang" xpath="$vScript"/>
+            </lookup>
+          </var>
+          <sf code="6"><transform><xsl:value-of select="concat('246-', $vOccurrenceNumber, '/' , $v880Script)" /></transform></sf>
+        </case>
       </switch>
       <sf code="i" chopPunct="true" repeatable="false">
         <select xpath="bf:note/bf:Note/rdfs:label"/>
@@ -986,10 +1016,37 @@
                         ]"/>
           </sf>
         </case>
+        <case test="$vTag = '880'">
+          <sf code="a" chopPunct="true" repeatable="false">
+            <select xpath="bf:mainTitle[translate(@xml:lang,$upper,$lower)=$vLangTagScript]"/>
+          </sf>
+          <sf code="b" chopPunct="true" repeatable="false">
+            <select xpath="bf:subtitle[translate(@xml:lang,$upper,$lower)=$vLangTagScript]"/>
+          </sf>
+          <sf code="f" chopPunct="true" repeatable="false">
+            <select xpath="bf:date[translate(@xml:lang,$upper,$lower)=$vLangTagScript]"/>
+          </sf>
+          <sf code="n" chopPunct="true">
+            <select xpath="bf:partNumber[translate(@xml:lang,$upper,$lower)=$vLangTagScript]"/>
+          </sf>
+          <sf code="p" chopPunct="true">
+            <select xpath="bf:partName[translate(@xml:lang,$upper,$lower)=$vLangTagScript]"/>
+          </sf>
+        </case>
       </switch>
       <sf code="5" repeatable="false"><select xpath="bflc:applicableInstitution/bf:Agent/bf:code"/></sf>
       <sf code="7">
         <switch>
+          <case test="$vOccurrenceNumber = '00' and $vLangTagScript!=''">
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
+          </case>
           <case test="$vLangTagLabel!=''">
             <transform>
               <xsl:variable name="bcp47code">
@@ -1005,7 +1062,11 @@
       </df>
       
       <switch>
-        <case test="count(bf:mainTitle)=2 and bf:mainTitle[@xml:lang and not(translate(@xml:lang,$upper,$lower)=$vLangTagLabel)] and bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
+        <case test="(
+                      count(bf:mainTitle)=2 and 
+                      bf:mainTitle[@xml:lang and not(translate(@xml:lang,$upper,$lower)=$vLangTagLabel)] and 
+                      bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]
+                      )">
           <var name="vScript"><transform><xsl:value-of select="substring-after($vLangTagScript,'-')" /></transform></var>
           <var name="v880Script">
             <lookup map="df880script" targetField="code">
