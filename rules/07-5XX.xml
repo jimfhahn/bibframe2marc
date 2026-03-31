@@ -1668,6 +1668,7 @@
         </xsl:call-template>
       </transform>
     </var>
+    <var name="vLabel" xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel][1]" />
     
     <var name="v880Script">
         <lookup map="df880script" targetField="code">
@@ -1676,6 +1677,7 @@
     </var>
     <var name="v880Occurrence">
       <switch>
+        <case test="string($vLabel) = ''"><text>00</text></case>
         <case test="$v880Script != ''">
           <transform>
             <!-- This should be the next in the numerical sequence for work notes. -->
@@ -1685,7 +1687,9 @@
       </switch>
     </var>
     
-    <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
+    <switch>
+      <case test="string($vLabel) != ''">
+        <df tag="505" lang-xpath="rdfs:label[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
       <ind1 default="0">
         <switch>
           <case test="bf:status//@rdf:*[.='http://id.loc.gov/vocabulary/mstatus/incmp']">1</case>
@@ -1715,6 +1719,8 @@
         </switch>
       </sf>
     </df>
+      </case>
+    </switch>
     
     <switch>
       <case test="$v880Script != ''">
