@@ -12,8 +12,8 @@
     <switch>
       <case test="self::node()/*/bflc:marcKey |
                   self::node()/*/marc:record |
-                  self::node()[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
-                  self::node()/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
+                  self::node()[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/entities/')) and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
+                  self::node()/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/entities/')) and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
                   self::node()[contains(@rdf:resource, 'd-nb.info/gnd/') and not(contains(@rdf:resource, '#'))] |
                   self::node()/*[contains(@rdf:about, 'd-nb.info/gnd/') and not(contains(@rdf:about, '#'))] |
                   self::node()[contains(@rdf:resource, 'id.worldcat.org/fast/')] |
@@ -430,6 +430,7 @@
                     (
                       (
                         not(*/@rdf:about) or 
+                        contains(*/@rdf:about, 'id.loc.gov/entities') or 
                         contains(*/@rdf:about, 'example') or 
                         contains(*/@rdf:about, 'REPLACE') or 
                         ( contains(*/@rdf:about, 'd-nb.info/') and contains(*/@rdf:about, '#') ) or 
