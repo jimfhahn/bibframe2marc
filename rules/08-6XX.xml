@@ -931,6 +931,7 @@
             <df tag="610">
               <ind1 default="2">
                 <switch>
+                  <case test="starts-with(*/madsrdf:componentList/madsrdf:*[1]/bflc:marcKey, '1101')">1</case>
                   <case test="*[local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction'] or
                               local-name(madsrdf:componentList/*[1])='Jurisdiction' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction' or
                               bf:Hub/bf:contribution/*/bf:agent/*[local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction']] or
