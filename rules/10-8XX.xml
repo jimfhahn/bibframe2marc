@@ -294,16 +294,20 @@
           </sf>
         </case>
       </switch>
-      <sf code="y">
-        <transform>
-          <xsl:variable name="bcp47code">
-            <xsl:call-template name="tOutputBCP47">
-              <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
-            </xsl:call-template>
-          </xsl:variable>
-          <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
-        </transform>
-      </sf>
+      <switch>
+        <case test="$vLangTagLabel != ''">
+          <sf code="y">
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
+          </sf>
+        </case>
+      </switch>
     </df>
     
     <switch>
