@@ -10,12 +10,6 @@
 	<bf:code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eng</bf:code>
       </bf:Language>
     </bf:language>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/marcgt/gra">
-	<rdfs:label>graphic</rdfs:label>
-	<bf:code>gra</bf:code>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:classification>
       <bf:ClassificationLcc>
 	<bf:classificationPortion>LOT 15158-1,</bf:classificationPortion>
@@ -58,6 +52,168 @@
 	<rdfs:label>Forms part of: Liljenquist Family Collection of Civil War Photographs (Library of Congress).</rdfs:label>
       </bf:Note>
     </bf:note>
+    <bf:relation>
+      <bf:Relation>
+	<bf:relationship>
+	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/partof">
+	    <rdfs:label>part of</rdfs:label>
+	    <bf:code>partof</bf:code>
+	  </bf:Relationship>
+	</bf:relationship>
+	<bf:associatedResource>
+	  <bf:Work rdf:about="http://id.loc.gov/resources/works/16341713">
+	    <rdfs:label>Liljenquist, Thomas Richard, 1952-. [Liljenquist Family Collection (Library of Congress)]</rdfs:label>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+		<bf:agent>
+		  <bf:Agent>
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Liljenquist, Thomas Richard, 1952-</rdfs:label>
+		    <bflc:marcKey>1001 $aLiljenquist, Thomas Richard,$d1952-$ecollector.</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
+		    <rdfs:label>collector</rdfs:label>
+		    <bf:code>col</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent>
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Liljenquist, Jason George, 1991-</rdfs:label>
+		    <bflc:marcKey>7001 $aLiljenquist, Jason George,$d1991-$ecollector.</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
+		    <rdfs:label>collector</rdfs:label>
+		    <bf:code>col</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent>
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Liljenquist, Brandon Paul, 1993-</rdfs:label>
+		    <bflc:marcKey>7001 $aLiljenquist, Brandon Paul,$d1993-$ecollector.</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
+		    <rdfs:label>collector</rdfs:label>
+		    <bf:code>col</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:contribution>
+	      <bf:Contribution>
+		<bf:agent>
+		  <bf:Agent>
+		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+		    <rdfs:label>Liljenquist, Christian Blaine, 1997-</rdfs:label>
+		    <bflc:marcKey>7001 $aLiljenquist, Christian Blaine,$d1997-$ecollector.</bflc:marcKey>
+		  </bf:Agent>
+		</bf:agent>
+		<bf:role>
+		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
+		    <rdfs:label>collector</rdfs:label>
+		    <bf:code>col</bf:code>
+		  </bf:Role>
+		</bf:role>
+	      </bf:Contribution>
+	    </bf:contribution>
+	    <bf:classification>
+	      <bf:ClassificationLcc>
+		<bf:classificationPortion>Guide Record</bf:classificationPortion>
+		<bf:assigner>
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		    <rdfs:label>United States, Library of Congress</rdfs:label>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+		  </bf:Organization>
+		</bf:assigner>
+		<bf:status>
+		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
+		    <rdfs:label>used by assigner</rdfs:label>
+		    <bf:code>uba</bf:code>
+		  </bf:Status>
+		</bf:status>
+	      </bf:ClassificationLcc>
+	    </bf:classification>
+	    <bf:title>
+	      <bf:Title>
+		<bf:mainTitle>[Liljenquist Family Collection (Library of Congress)]</bf:mainTitle>
+	      </bf:Title>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle>Liljenquist Family Collection of Civil War Photographs (Library of Congress)</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:title>
+	      <bf:VariantTitle>
+		<bf:mainTitle>Liljenquist Family Collection of Civil War Ambrotypes and Tintypes (Library of Congress)</bf:mainTitle>
+	      </bf:VariantTitle>
+	    </bf:title>
+	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+	    <bf:hasInstance>
+	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16341713">
+		<bf:title>
+		  <bf:Title>
+		    <bf:mainTitle>[Liljenquist Family Collection (Library of Congress)]</bf:mainTitle>
+		  </bf:Title>
+		</bf:title>
+		<bf:identifiedBy>
+		  <bf:Lccn>
+		    <rdf:value>  2010650519</rdf:value>
+		  </bf:Lccn>
+		</bf:identifiedBy>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">[between ca. 1850 and ca. 1950, bulk between 1861 and 1865]</bf:publicationStatement>
+		<bf:extent>
+		  <bf:Extent>
+		    <rdfs:label>ca. 2,050 photographs</rdfs:label>
+		    <bf:note>
+		      <bf:Note>
+			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
+			<rdfs:label>ambrotypes and tintypes, many hand-colored</rdfs:label>
+		      </bf:Note>
+		    </bf:note>
+		  </bf:Extent>
+		</bf:extent>
+	      </bf:Instance>
+	    </bf:hasInstance>
+	  </bf:Work>
+	</bf:associatedResource>
+      </bf:Relation>
+    </bf:relation>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:hasInstance>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/22724623">
+	<bf:title>
+	  <bf:Title>
+	    <bf:mainTitle>[Major James Wren of Co. B, 25th Pennsylvania Infantry Regiment and Co. B, 48th Pennsylvania Infantry Regiment in uniform with sword and sitting on horse]</bf:mainTitle>
+	  </bf:Title>
+	</bf:title>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/marcgt/gra">
+	<rdfs:label>graphic</rdfs:label>
+	<bf:code>gra</bf:code>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:subject>
       <bf:Person rdf:about="http://id.loc.gov/rwo/agents/n90639402">
 	<rdfs:label>Wren, James, 1825-</rdfs:label>
@@ -325,172 +481,6 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
-    <bf:relation>
-      <bf:Relation>
-	<bf:relationship>
-	  <bf:Relationship rdf:about="http://id.loc.gov/vocabulary/relationship/partof">
-	    <rdfs:label>part of</rdfs:label>
-	    <bf:code>partof</bf:code>
-	  </bf:Relationship>
-	</bf:relationship>
-	<bf:associatedResource>
-	  <bf:Work rdf:about="http://id.loc.gov/resources/works/16341713">
-	    <rdfs:label>Liljenquist, Thomas Richard, 1952-. [Liljenquist Family Collection (Library of Congress)]</rdfs:label>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
-		<bf:agent>
-		  <bf:Agent>
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		    <rdfs:label>Liljenquist, Thomas Richard, 1952-</rdfs:label>
-		    <bflc:marcKey>1001 $aLiljenquist, Thomas Richard,$d1952-$ecollector.</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
-		    <rdfs:label>collector</rdfs:label>
-		    <bf:code>col</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<bf:agent>
-		  <bf:Agent>
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		    <rdfs:label>Liljenquist, Jason George, 1991-</rdfs:label>
-		    <bflc:marcKey>7001 $aLiljenquist, Jason George,$d1991-$ecollector.</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
-		    <rdfs:label>collector</rdfs:label>
-		    <bf:code>col</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<bf:agent>
-		  <bf:Agent>
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		    <rdfs:label>Liljenquist, Brandon Paul, 1993-</rdfs:label>
-		    <bflc:marcKey>7001 $aLiljenquist, Brandon Paul,$d1993-$ecollector.</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
-		    <rdfs:label>collector</rdfs:label>
-		    <bf:code>col</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
-	    <bf:contribution>
-	      <bf:Contribution>
-		<bf:agent>
-		  <bf:Agent>
-		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-		    <rdfs:label>Liljenquist, Christian Blaine, 1997-</rdfs:label>
-		    <bflc:marcKey>7001 $aLiljenquist, Christian Blaine,$d1997-$ecollector.</bflc:marcKey>
-		  </bf:Agent>
-		</bf:agent>
-		<bf:role>
-		  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/col">
-		    <rdfs:label>collector</rdfs:label>
-		    <bf:code>col</bf:code>
-		  </bf:Role>
-		</bf:role>
-	      </bf:Contribution>
-	    </bf:contribution>
-	    <bf:classification>
-	      <bf:ClassificationLcc>
-		<bf:classificationPortion>Guide Record</bf:classificationPortion>
-		<bf:assigner>
-		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-		    <rdfs:label>United States, Library of Congress</rdfs:label>
-		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-		  </bf:Organization>
-		</bf:assigner>
-		<bf:status>
-		  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/uba">
-		    <rdfs:label>used by assigner</rdfs:label>
-		    <bf:code>uba</bf:code>
-		  </bf:Status>
-		</bf:status>
-	      </bf:ClassificationLcc>
-	    </bf:classification>
-	    <bf:title>
-	      <bf:Title>
-		<bf:mainTitle>[Liljenquist Family Collection (Library of Congress)]</bf:mainTitle>
-	      </bf:Title>
-	    </bf:title>
-	    <bf:title>
-	      <bf:VariantTitle>
-		<bf:mainTitle>Liljenquist Family Collection of Civil War Photographs (Library of Congress)</bf:mainTitle>
-	      </bf:VariantTitle>
-	    </bf:title>
-	    <bf:title>
-	      <bf:VariantTitle>
-		<bf:mainTitle>Liljenquist Family Collection of Civil War Ambrotypes and Tintypes (Library of Congress)</bf:mainTitle>
-	      </bf:VariantTitle>
-	    </bf:title>
-	    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
-	    <bf:hasInstance>
-	      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/16341713">
-		<bf:title>
-		  <bf:Title>
-		    <bf:mainTitle>[Liljenquist Family Collection (Library of Congress)]</bf:mainTitle>
-		  </bf:Title>
-		</bf:title>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>  2010650519</rdf:value>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>mm2016086110</rdf:value>
-		    <bf:status>
-		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
-			<rdfs:label>invalid</rdfs:label>
-		      </bf:Status>
-		    </bf:status>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">[between ca. 1850 and ca. 1950, bulk between 1861 and 1865]</bf:publicationStatement>
-		<bf:extent>
-		  <bf:Extent>
-		    <rdfs:label>ca. 2,050 photographs</rdfs:label>
-		    <bf:note>
-		      <bf:Note>
-			<rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/physical"/>
-			<rdfs:label>ambrotypes and tintypes, many hand-colored</rdfs:label>
-		      </bf:Note>
-		    </bf:note>
-		  </bf:Extent>
-		</bf:extent>
-	      </bf:Instance>
-	    </bf:hasInstance>
-	  </bf:Work>
-	</bf:associatedResource>
-      </bf:Relation>
-    </bf:relation>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
-    <bf:hasInstance>
-      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/22724623">
-	<bf:title>
-	  <bf:Title>
-	    <bf:mainTitle>[Major James Wren of Co. B, 25th Pennsylvania Infantry Regiment and Co. B, 48th Pennsylvania Infantry Regiment in uniform with sword and sitting on horse]</bf:mainTitle>
-	  </bf:Title>
-	</bf:title>
-	<bf:publicationStatement>[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
-      </bf:Instance>
-    </bf:hasInstance>
     <bf:adminMetadata>
       <bf:AdminMetadata>
 	<bf:status>
@@ -499,7 +489,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-28</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-28T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -548,13 +538,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:38:45.517647-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:45:39.100399-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -746,12 +736,7 @@
 		<rdf:value>  2022631487</rdf:value>
 	      </bf:Lccn>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>22724623</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 photograph</rdfs:label>
@@ -778,7 +763,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-28</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-28T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -827,13 +812,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:38:45.517647-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:45:39.100399-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -957,12 +942,7 @@
 		<rdf:value>  2022631487</rdf:value>
 	      </bf:Lccn>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>22724623</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 photograph</rdfs:label>
@@ -986,7 +966,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-28</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-28T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -1035,8 +1015,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:38:45.517647-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:45:39.100399-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1054,7 +1034,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>
@@ -1132,7 +1112,7 @@
 	    <bf:mainTitle>[Major James Wren of Co. B, 25th Pennsylvania Infantry Regiment and Co. B, 48th Pennsylvania Infantry Regiment in uniform with sword and sitting on horse]</bf:mainTitle>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">[Place not identified]: [Publisher not identified], [between 1861 and 1863]</bf:publicationStatement>
       </bf:Instance>
     </bf:itemOf>
     <bf:adminMetadata>
@@ -1143,7 +1123,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2022-07-28</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-07-28T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -1192,13 +1172,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:38:45.517647-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:45:39.100399-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
 	    <rdfs:label>minimal</rdfs:label>

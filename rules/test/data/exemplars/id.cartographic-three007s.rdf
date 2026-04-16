@@ -1,4 +1,5 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#">
+  <!--[{"level": "INFO", "message": "A Contribution has an unlinked Agent. If possible, Agents should be identified by URIs."}]-->
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11982059">
     <bf:issuance>
       <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
@@ -10,6 +11,11 @@
       <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026530">
 	<rdfs:label xml:lang="en">Remote-sensing images</rdfs:label>
 	<bflc:marcKey>155  $aRemote-sensing images</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:baseMaterial>
@@ -144,7 +150,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-04-20</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-04-20T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -192,13 +198,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T19:32:31.473714-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.565318-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -242,8 +248,8 @@
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/11982059">
-    <bflc:aap>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change</bflc:aap>
-    <bflc:aap-normalized>hedbergmapsincwashingtondcatthemillenniumathousandyearsofchange</bflc:aap-normalized>
+    <bflc:aap>Hedberg Maps, Inc. Washington DC at the millennium, a thousand years of change : satellite imagery, bird's-eye views, historical topography : 2000 ... 1000</bflc:aap>
+    <bflc:aap-normalized>hedbergmapsincwashingtondcatthemillenniumathousandyearsofchange:satelliteimagerybird'seyeviewshistoricaltopography:20001000</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
@@ -341,6 +347,112 @@
 	<bf:code>G3851</bf:code>
       </bf:GeographicCoverage>
     </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution>
+	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
+	<bf:agent>
+	  <bf:Agent>
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Hedberg Maps, Inc</rdfs:label>
+	    <bflc:marcKey>1102 $aHedberg Maps, Inc.</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>Washington DC at the millennium, a thousand years of change : satellite imagery, bird's-eye views, historical topography : 2000 ... 1000</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:scale>
+      <bf:Scale>
+	<rdfs:label>Scale not given</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:scale>
+      <bf:Scale>
+	<rdfs:label>Not drawn to scale</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
+	<rdfs:label>cartographic image</rdfs:label>
+	<bf:code>cri</bf:code>
+      </bf:Content>
+    </bf:content>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+	<rdfs:label>Satellite image, 1999 -- Aerial image, 1994 -- Aerial view, 1925 : [remote-sensing image] -- Bird's eye view, 1852 : [facsimile] -- Landforms, 1000 A.D.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n00112454">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>White Star Press</rdfs:label>
+	    <bflc:marcKey>1102 $aWhite Star Press</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026099">
+	<rdfs:label xml:lang="en">Facsimiles</rdfs:label>
+	<bflc:marcKey>155  $aFacsimiles</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026530">
+	<rdfs:label xml:lang="en">Remote-sensing images</rdfs:label>
+	<bflc:marcKey>155  $aRemote-sensing images</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026440">
+	<rdfs:label xml:lang="en">Physical maps</rdfs:label>
+	<bflc:marcKey>155  $aPhysical maps</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026033">
+	<rdfs:label xml:lang="en">Aerial views</rdfs:label>
+	<bflc:marcKey>155  $aAerial views</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:subject>
       <bf:Topic>
 	<bf:code>A43</bf:code>
@@ -371,162 +483,23 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
-    <bf:contribution>
-      <bf:Contribution>
-	<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/PrimaryContribution"/>
-	<bf:agent>
-	  <bf:Agent>
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Hedberg Maps, Inc</rdfs:label>
-	    <bflc:marcKey>1102 $aHedberg Maps, Inc.</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <bf:title>
-      <bf:Title>
-	<bf:mainTitle>Washington DC at the millennium, a thousand years of change</bf:mainTitle>
-      </bf:Title>
-    </bf:title>
-    <bf:scale>
-      <bf:Scale>
-	<rdfs:label>Scale not given</rdfs:label>
-      </bf:Scale>
-    </bf:scale>
-    <bf:scale>
-      <bf:Scale>
-	<rdfs:label>Not drawn to scale</rdfs:label>
-      </bf:Scale>
-    </bf:scale>
-    <bf:content>
-      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
-	<rdfs:label>cartographic image</rdfs:label>
-	<bf:code>cri</bf:code>
-      </bf:Content>
-    </bf:content>
-    <bf:tableOfContents>
-      <bf:TableOfContents>
-	<rdfs:label>Satellite image, 1999 -- Aerial image, 1994 -- Aerial view, 1925 : [remote-sensing image] -- Bird's eye view, 1852 : [facsimile] -- Landforms, 1000 A.D.</rdfs:label>
-      </bf:TableOfContents>
-    </bf:tableOfContents>
     <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Washington (D.C.)--Remote-sensing images</rdfs:label>
-	<madsrdf:authoritativeLabel>Washington (D.C.)--Remote-sensing images</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79018774">
-	    <rdfs:label>Washington (D.C.)</rdfs:label>
-	    <bflc:marcKey>151  $aWashington (D.C.)</bflc:marcKey>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us-dc</bf:code>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Remote-sensing images</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>washington(dc)remotesensingimages</bflc:aap-normalized>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
+      <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n79018774">
+	<rdfs:label>Washington (D.C.)</rdfs:label>
+	<bflc:marcKey>151  $aWashington (D.C.)</bflc:marcKey>
+	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us-dc</bf:code>
+      </bf:Place>
     </bf:subject>
     <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Washington Metropolitan Area--Remote-sensing images</rdfs:label>
-	<madsrdf:authoritativeLabel>Washington Metropolitan Area--Remote-sensing images</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/subjects/sh85145387">
-	    <rdfs:label xml:lang="en">Washington Metropolitan Area</rdfs:label>
-	    <bflc:marcKey>151  $aWashington Metropolitan Area</bflc:marcKey>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Remote-sensing images</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>washingtonmetropolitanarearemotesensingimages</bflc:aap-normalized>
+      <bf:Place rdf:about="http://id.loc.gov/authorities/subjects/sh85145387">
+	<rdfs:label xml:lang="en">Washington Metropolitan Area</rdfs:label>
+	<bflc:marcKey>151  $aWashington Metropolitan Area</bflc:marcKey>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	    <rdfs:label>LC Subject Headings</rdfs:label>
 	  </bf:Source>
 	</bf:source>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Washington (D.C.)--Aerial views--Facsimiles</rdfs:label>
-	<madsrdf:authoritativeLabel>Washington (D.C.)--Aerial views--Facsimiles</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79018774">
-	    <rdfs:label>Washington (D.C.)</rdfs:label>
-	    <bflc:marcKey>151  $aWashington (D.C.)</bflc:marcKey>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">n-us-dc</bf:code>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Aerial views</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Facsimiles</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>washington(dc)aerialviewsfacsimiles</bflc:aap-normalized>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Washington Metropolitan Area--Maps, Physical</rdfs:label>
-	<madsrdf:authoritativeLabel>Washington Metropolitan Area--Maps, Physical</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/subjects/sh85145387">
-	    <rdfs:label xml:lang="en">Washington Metropolitan Area</rdfs:label>
-	    <bflc:marcKey>151  $aWashington Metropolitan Area</bflc:marcKey>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Maps, Physical</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>washingtonmetropolitanareamapsphysical</bflc:aap-normalized>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
+      </bf:Place>
     </bf:subject>
     <bf:subject>
       <bf:Topic>
@@ -547,6 +520,11 @@
 	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh00006030">
 	    <rdfs:label xml:lang="en">Historical geography</rdfs:label>
 	    <bflc:marcKey>180  $xHistorical geography</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
 	  </madsrdf:Topic>
 	</madsrdf:componentList>
 	<bflc:aap-normalized>washington(dc)historicalgeography</bflc:aap-normalized>
@@ -557,25 +535,6 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
-    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026099"/>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n00112454">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>White Star Press</rdfs:label>
-	    <bflc:marcKey>1102 $aWhite Star Press</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/11982059"/>
     <bf:adminMetadata>
       <bf:AdminMetadata>
@@ -585,7 +544,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-04-20</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-04-20T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -633,13 +592,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T19:32:31.473714-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.565318-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -682,156 +641,6 @@
       </bf:AdminMetadata>
     </bf:adminMetadata>
   </bf:Work>
-  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11982059-03">
-    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/SecondaryInstance"/>
-    <bf:issuance>
-      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
-	<rdfs:label>single unit</rdfs:label>
-	<bf:code>mono</bf:code>
-      </bf:Issuance>
-    </bf:issuance>
-    <bf:media>
-      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
-	<rdfs:label>unmediated</rdfs:label>
-	<bf:code>n</bf:code>
-      </bf:Media>
-    </bf:media>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387">
-	<rdfs:label xml:lang="en">Maps</rdfs:label>
-	<bflc:marcKey>155  $aMaps</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:carrier>
-      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
-	<rdfs:label>sheet</rdfs:label>
-	<bf:code>nb</bf:code>
-      </bf:Carrier>
-    </bf:carrier>
-    <bf:baseMaterial>
-      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
-	<rdfs:label>paper</rdfs:label>
-	<bf:code>pap</bf:code>
-      </bf:BaseMaterial>
-    </bf:baseMaterial>
-    <bf:colorContent>
-      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
-	<rdfs:label>color</rdfs:label>
-	<bf:code>mul</bf:code>
-      </bf:ColorContent>
-    </bf:colorContent>
-    <bf:title>
-      <bf:Title>
-	<bf:mainTitle>[Map]</bf:mainTitle>
-      </bf:Title>
-    </bf:title>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
-    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/11982059"/>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
-	    <rdfs:label>new</rdfs:label>
-	    <bf:code>n</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-04-20</bf:date>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>United States, Library of Congress</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
-	<bf:descriptionModifier>
-	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-	    <rdfs:label>United States, Library of Congress</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	  </bf:Organization>
-	</bf:descriptionModifier>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:status>
-	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
-	    <rdfs:label>changed</rdfs:label>
-	    <bf:code>c</bf:code>
-	  </bf:Status>
-	</bf:status>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
-	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T19:32:31.473714-04:00</bf:date>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-    <bf:adminMetadata>
-      <bf:AdminMetadata>
-	<bf:identifiedBy>
-	  <bf:Local>
-	    <rdf:value>11982059-03</rdf:value>
-	    <bf:assigner>
-	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
-		<rdfs:label>United States, Library of Congress</rdfs:label>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
-		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-	      </bf:Organization>
-	    </bf:assigner>
-	  </bf:Local>
-	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
-	<bflc:encodingLevel>
-	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
-	    <rdfs:label>full</rdfs:label>
-	    <bf:code>f</bf:code>
-	  </bflc:EncodingLevel>
-	</bflc:encodingLevel>
-	<bf:descriptionConventions>
-	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
-	    <rdfs:label>Anglo-American cataloguing rules</rdfs:label>
-	    <bf:code>aacr</bf:code>
-	  </bf:DescriptionConventions>
-	</bf:descriptionConventions>
-	<bf:note>
-	  <bf:Note>
-	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
-	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
-	  </bf:Note>
-	</bf:note>
-	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
-	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
-	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
-	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
-	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
-	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
-	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
-	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
-      </bf:AdminMetadata>
-    </bf:adminMetadata>
-  </bf:Instance>
   <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11982059-02">
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/SecondaryInstance"/>
     <bf:issuance>
@@ -850,6 +659,11 @@
       <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2018026045">
 	<rdfs:label xml:lang="en">Views</rdfs:label>
 	<bflc:marcKey>155  $aViews</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
       </bf:GenreForm>
     </bf:genreForm>
     <bf:carrier>
@@ -891,7 +705,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-04-20</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-04-20T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -939,8 +753,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-11T19:32:31.473714-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.565318-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -958,7 +772,162 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
+	<bflc:encodingLevel>
+	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+	    <rdfs:label>full</rdfs:label>
+	    <bf:code>f</bf:code>
+	  </bflc:EncodingLevel>
+	</bflc:encodingLevel>
+	<bf:descriptionConventions>
+	  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+	    <rdfs:label>Anglo-American cataloguing rules</rdfs:label>
+	    <bf:code>aacr</bf:code>
+	  </bf:DescriptionConventions>
+	</bf:descriptionConventions>
+	<bf:note>
+	  <bf:Note>
+	    <rdf:type rdf:resource="http://id.loc.gov/vocabulary/mnotetype/internal"/>
+	    <rdfs:label>040  $aDLC$cDLC$dDLC</rdfs:label>
+	  </bf:Note>
+	</bf:note>
+	<bflc:marcKey>906  $a7$bcbc$corigcop$du$encip$f20$gn-geogmaps</bflc:marcKey>
+	<lclocal:d906>=906     $a 7 $b cbc $c origcop $d u $e ncip $f 20 $g n-geogmaps</lclocal:d906>
+	<bflc:marcKey>955  $aga05; sent to CMT 04-21-00</bflc:marcKey>
+	<lclocal:d955>=955     $a ga05; sent to CMT 04-21-00</lclocal:d955>
+	<bflc:marcKey>955  $aLCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</bflc:marcKey>
+	<lclocal:d955>=955     $a LCAP batch update 2025-06-01-04:00: LCAPM-779, LCAPM-893, LCAPM-150</lclocal:d955>
+	<bflc:marcKey>999ff$i6ac63b64-a551-5030-8138-9f8dd610c57e$s290ea0ac-1c1a-41d5-a9b9-010328659ab9</bflc:marcKey>
+	<lclocal:d999>=999  ff $i 6ac63b64-a551-5030-8138-9f8dd610c57e $s 290ea0ac-1c1a-41d5-a9b9-010328659ab9</lclocal:d999>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/11982059-03">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/SecondaryInstance"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+	<rdfs:label>single unit</rdfs:label>
+	<bf:code>mono</bf:code>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+	<rdfs:label>unmediated</rdfs:label>
+	<bf:code>n</bf:code>
+      </bf:Media>
+    </bf:media>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387">
+	<rdfs:label xml:lang="en">Maps</rdfs:label>
+	<bflc:marcKey>155  $aMaps</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+	<rdfs:label>sheet</rdfs:label>
+	<bf:code>nb</bf:code>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:baseMaterial>
+      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+	<rdfs:label>paper</rdfs:label>
+	<bf:code>pap</bf:code>
+      </bf:BaseMaterial>
+    </bf:baseMaterial>
+    <bf:colorContent>
+      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
+	<rdfs:label>color</rdfs:label>
+	<bf:code>mul</bf:code>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:title>
+      <bf:Title>
+	<bf:mainTitle>[Map]</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/instances"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/11982059"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/n">
+	    <rdfs:label>new</rdfs:label>
+	    <bf:code>n</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-04-20T00:00:00</bf:date>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-06T14:18:06</bf:date>
+	<bf:descriptionModifier>
+	  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+	    <rdfs:label>United States, Library of Congress</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	  </bf:Organization>
+	</bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:status>
+	  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/c">
+	    <rdfs:label>changed</rdfs:label>
+	    <bf:code>c</bf:code>
+	  </bf:Status>
+	</bf:status>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlcmrc">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>United States, Library of Congress, Network Development and MARC Standards Office</rdfs:label>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC-MRC</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlcmrc</bf:code>
+	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.565318-04:00</bf:date>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+	<bf:identifiedBy>
+	  <bf:Local>
+	    <rdf:value>11982059-03</rdf:value>
+	    <bf:assigner>
+	      <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		<rdfs:label>United States, Library of Congress</rdfs:label>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
+		<bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
+	      </bf:Organization>
+	    </bf:assigner>
+	  </bf:Local>
+	</bf:identifiedBy>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>

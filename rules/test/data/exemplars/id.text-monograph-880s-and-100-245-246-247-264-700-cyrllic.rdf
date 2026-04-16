@@ -90,7 +90,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-03</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-03T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -139,13 +139,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T09:37:06.625029-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.709876-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -209,8 +209,8 @@
     </bf:adminMetadata>
   </bf:Instance>
   <bf:Work rdf:about="http://id.loc.gov/resources/works/22915593">
-    <bflc:aap>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna). I︠A︡ izuchai︠u︡ "Dzhangar"</bflc:aap>
-    <bflc:aap-normalized>todaevabkh(buli︠a︡shkhoĭchievna)i︠a︡izuchai︠u︡"dzhangar"</bflc:aap-normalized>
+    <bflc:aap>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna). I︠A︡ izuchai︠u︡ "Dzhangar" : kalmyt︠s︡ko-russkiĭ slovarʹ</bflc:aap>
+    <bflc:aap-normalized>todaevabkh(buli︠a︡shkhoĭchievna)i︠a︡izuchai︠u︡"dzhangar":kalmyt︠s︡korusskiĭslovarʹ</bflc:aap-normalized>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
     <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Monograph"/>
     <bf:language>
@@ -259,8 +259,8 @@
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
 	    <rdfs:label>Todaeva, B. Kh. (Buli︠a︡sh Khoĭchievna)</rdfs:label>
 	    <bflc:marcKey>1001 $aTodaeva, B. Kh.$q(Buli︠a︡sh Khoĭchievna)</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Cyrl">Тодаева, Б. Х. (Буляш Хойчиевна)</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Cyrl">4001 $aТодаева, Б. Х.$q(Буляш Хойчиевна)</bflc:marcKey>
+	    <rdfs:label xml:lang="und-cyrl">Тодаева, Б. Х. (Буляш Хойчиевна)</rdfs:label>
+	    <bflc:marcKey xml:lang="und-cyrl">4001 $aТодаева, Б. Х.$q(Буляш Хойчиевна)$7(bcp47)und-cyrl</bflc:marcKey>
 	  </bf:Agent>
 	</bf:agent>
 	<bf:role>
@@ -273,8 +273,8 @@
     </bf:contribution>
     <bf:title>
       <bf:Title>
-	<bf:mainTitle>I︠A︡ izuchai︠u︡ "Dzhangar"</bf:mainTitle>
-	<bf:mainTitle xml:lang="ru-cyrl">Я изучаю "Джангар"</bf:mainTitle>
+	<bf:mainTitle>I︠A︡ izuchai︠u︡ "Dzhangar" : kalmyt︠s︡ko-russkiĭ slovarʹ</bf:mainTitle>
+	<bf:mainTitle xml:lang="ru-cyrl">Я изучаю "Джангар" : калмыцко-русский словарь</bf:mainTitle>
       </bf:Title>
     </bf:title>
     <bf:title>
@@ -297,6 +297,37 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n84079752">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+	    <rdfs:label>Pi︠u︡rbeev, G. T︠S︡. (Grigoriĭ T︠S︡erenovich)</rdfs:label>
+	    <bflc:marcKey>1001 $aPi︠u︡rbeev, G. T︠S︡.$q(Grigoriĭ T︠S︡erenovich)</bflc:marcKey>
+	    <rdfs:label xml:lang="und-cyrl">Пюрбеев, Г. Ц. (Григорий Церенович)</rdfs:label>
+	    <bflc:marcKey xml:lang="und-cyrl">4001 $aПюрбеев, Г. Ц.$q(Григорий Церенович)$7(bcp47)und-cyrl</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+	    <rdfs:label>editor</rdfs:label>
+	    <bf:code>edt</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026086">
+	<rdfs:label xml:lang="en">Dictionaries</rdfs:label>
+	<bflc:marcKey>155  $aDictionaries</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
@@ -311,9 +342,20 @@
 	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85071365">
 	    <rdfs:label xml:lang="en">Kalmyk language</rdfs:label>
 	    <bflc:marcKey>150  $aKalmyk language</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
 	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Dictionaries</madsrdf:authoritativeLabel>
+	  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001671">
+	    <rdfs:label xml:lang="en">Dictionaries</rdfs:label>
+	    <bflc:marcKey>185  $vDictionaries</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
 	  </madsrdf:GenreForm>
 	  <madsrdf:Topic>
 	    <madsrdf:authoritativeLabel>Russian</madsrdf:authoritativeLabel>
@@ -327,27 +369,6 @@
 	</bf:source>
       </bf:Topic>
     </bf:subject>
-    <bf:genreForm rdf:resource="https://id.loc.gov/authorities/genreForms/gf2014026086"/>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n84079752">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
-	    <rdfs:label>Pi︠u︡rbeev, G. T︠S︡. (Grigoriĭ T︠S︡erenovich)</rdfs:label>
-	    <bflc:marcKey>1001 $aPi︠u︡rbeev, G. T︠S︡.$q(Grigoriĭ T︠S︡erenovich)</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Cyrl">Пюрбеев, Г. Ц. (Григорий Церенович)</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Cyrl">4001 $aПюрбеев, Г. Ц.$q(Григорий Церенович)</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
-	    <rdfs:label>editor</rdfs:label>
-	    <bf:code>edt</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/22915593"/>
     <bf:adminMetadata>
       <bf:AdminMetadata>
@@ -357,7 +378,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-01-03</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-03T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -406,13 +427,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-08-16T09:37:06.625029-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:57.709876-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>

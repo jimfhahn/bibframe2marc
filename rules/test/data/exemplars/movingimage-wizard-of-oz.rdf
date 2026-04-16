@@ -11,12 +11,6 @@
       </bf:Language>
     </bf:language>
     <bf:originDate rdf:datatype="http://id.loc.gov/datatypes/edtf">1939</bf:originDate>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
-	<rdfs:label xml:lang="en">Motion pictures</rdfs:label>
-	<bflc:marcKey>155  $aMotion pictures</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bflc:movingImageTechnique>
       <bflc:MovingImageTechnique rdf:about="http://id.loc.gov/vocabulary/mtechnique/live">
 	<rdfs:label>live action</rdfs:label>
@@ -609,121 +603,6 @@
 	<rdfs:label>This film was selected for the National Film Registry.</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2009125590">
-	<rdfs:label xml:lang="en">Friendship--Drama</rdfs:label>
-	<bflc:marcKey>150  $aFriendship$vDrama</bflc:marcKey>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Friendship</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:TopicElement>
-		<madsrdf:elementValue xml:lang="en">Friendship</madsrdf:elementValue>
-	      </madsrdf:TopicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Drama</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:GenreFormElement>
-		<madsrdf:elementValue xml:lang="en">Drama</madsrdf:elementValue>
-	      </madsrdf:GenreFormElement>
-	    </madsrdf:elementList>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008118249">
-	<rdfs:label xml:lang="en">Good and evil--Drama</rdfs:label>
-	<bflc:marcKey>150  $aGood and evil$vDrama</bflc:marcKey>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Good and evil</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:TopicElement>
-		<madsrdf:elementValue xml:lang="en">Good and evil</madsrdf:elementValue>
-	      </madsrdf:TopicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Drama</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:GenreFormElement>
-		<madsrdf:elementValue xml:lang="en">Drama</madsrdf:elementValue>
-	      </madsrdf:GenreFormElement>
-	    </madsrdf:elementList>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010104674">
-	<rdfs:label xml:lang="en">Oz (Imaginary place)--Drama</rdfs:label>
-	<bflc:marcKey>150  $aOz (Imaginary place)$vDrama</bflc:marcKey>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Oz (Imaginary place)</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:TopicElement>
-		<madsrdf:elementValue xml:lang="en">Oz (Imaginary place)</madsrdf:elementValue>
-	      </madsrdf:TopicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Drama</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:GenreFormElement>
-		<madsrdf:elementValue xml:lang="en">Drama</madsrdf:elementValue>
-	      </madsrdf:GenreFormElement>
-	    </madsrdf:elementList>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-      </bf:Topic>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026242">
-	<rdfs:label xml:lang="en">Fantasy films</rdfs:label>
-	<bflc:marcKey>155  $aFantasy films</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026414">
-	<rdfs:label xml:lang="en">Musical films</rdfs:label>
-	<bflc:marcKey>155  $aMusical films</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026250">
-	<rdfs:label xml:lang="en">Fiction films</rdfs:label>
-	<bflc:marcKey>155  $aFiction films</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026247">
-	<rdfs:label xml:lang="en">Feature films</rdfs:label>
-	<bflc:marcKey>155  $aFeature films</bflc:marcKey>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:genreForm>
-      <bf:GenreForm>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
-	<madsrdf:authoritativeLabel>Videodiscs</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/gmgpc">
-	    <rdfs:label>Thesaurus for graphic materials: TGM II, Genre and physical characteristic terms</rdfs:label>
-	    <bf:code>gmgpc</bf:code>
-	  </madsrdf:Authority>
-	</bf:source>
-	<rdfs:label>Videodiscs</rdfs:label>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:contribution>
       <bf:Contribution>
 	<bf:agent>
@@ -1159,9 +1038,121 @@
 	    <bflc:nonSortNum>4</bflc:nonSortNum>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406">
+	<rdfs:label xml:lang="en">Motion pictures</rdfs:label>
+	<bflc:marcKey>155  $aMotion pictures</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026242">
+	<rdfs:label xml:lang="en">Fantasy films</rdfs:label>
+	<bflc:marcKey>155  $aFantasy films</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026414">
+	<rdfs:label xml:lang="en">Musical films</rdfs:label>
+	<bflc:marcKey>155  $aMusical films</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026250">
+	<rdfs:label xml:lang="en">Fiction films</rdfs:label>
+	<bflc:marcKey>155  $aFiction films</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026247">
+	<rdfs:label xml:lang="en">Feature films</rdfs:label>
+	<bflc:marcKey>155  $aFeature films</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#GenreForm"/>
+	<madsrdf:authoritativeLabel>Videodiscs</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/gmgpc">
+	    <rdfs:label>Thesaurus for graphic materials: TGM II, Genre and physical characteristic terms</rdfs:label>
+	    <bf:code>gmgpc</bf:code>
+	  </madsrdf:Authority>
+	</bf:source>
+	<rdfs:label>Videodiscs</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026297">
+	<rdfs:label xml:lang="en">Drama</rdfs:label>
+	<bflc:marcKey>155  $aDrama</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/genreForms">
+	    <rdfs:label>LC Genre/Forms</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85051992">
+	<rdfs:label xml:lang="en">Friendship</rdfs:label>
+	<bflc:marcKey>150 0$aFriendship</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label>LC Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85055872">
+	<rdfs:label xml:lang="en">Good and evil</rdfs:label>
+	<bflc:marcKey>150  $aGood and evil</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label>LC Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh88002570">
+	<rdfs:label xml:lang="en">Oz (Imaginary place)</rdfs:label>
+	<bflc:marcKey>150 0$aOz (Imaginary place)</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label>LC Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
     <bf:adminMetadata>
       <bf:AdminMetadata>
 	<bf:status>
@@ -1170,7 +1161,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -1218,13 +1209,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -1938,14 +1929,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -2006,34 +1992,34 @@
 	<bf:contribution>
 	  <bf:Contribution>
 	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n85376625">
+	      <bf:Agent>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		<rdfs:label>LC Purchase Collection (Library of Congress)</rdfs:label>
-		<bflc:marcKey>11020$aLC Purchase Collection (Library of Congress)</bflc:marcKey>
+		<bflc:marcKey>7102 $aLC Purchase Collection (Library of Congress)$5DLC</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	      <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
 		<rdfs:label>contributor</rdfs:label>
 		<bf:code>ctb</bf:code>
-	      </bf:Role>
+	      </madsrdf:Authority>
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
 	<bf:contribution>
 	  <bf:Contribution>
 	    <bf:agent>
-	      <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/n85376789">
+	      <bf:Agent>
 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		<rdfs:label>Turner Entertainment Co. Collection (Library of Congress)</rdfs:label>
-		<bflc:marcKey>11020$aTurner Entertainment Co. Collection (Library of Congress)</bflc:marcKey>
+		<bflc:marcKey>7102 $aTurner Entertainment Co. Collection (Library of Congress)$5DLC</bflc:marcKey>
 	      </bf:Agent>
 	    </bf:agent>
 	    <bf:role>
-	      <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	      <madsrdf:Authority rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
 		<rdfs:label>contributor</rdfs:label>
 		<bf:code>ctb</bf:code>
-	      </bf:Role>
+	      </madsrdf:Authority>
 	    </bf:role>
 	  </bf:Contribution>
 	</bf:contribution>
@@ -2047,7 +2033,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -2095,13 +2081,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -2691,14 +2677,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -2762,7 +2743,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -2810,8 +2791,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -2829,7 +2810,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -3400,14 +3381,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -3471,7 +3447,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -3519,8 +3495,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -3538,7 +3514,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -4109,14 +4085,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -4180,7 +4151,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -4228,8 +4199,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4247,7 +4218,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -4818,14 +4789,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -4889,7 +4855,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -4937,8 +4903,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -4956,7 +4922,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -5527,14 +5493,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -5598,7 +5559,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -5646,8 +5607,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -5665,7 +5626,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -6236,14 +6197,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -6307,7 +6263,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -6355,8 +6311,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -6374,7 +6330,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -6951,14 +6907,9 @@
 		</bf:assigner>
 	      </bf:CopyrightNumber>
 	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11511184</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
-	    <bf:publicationStatement>United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/CBS Home Video, [1981]</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: MGM/UA Home Video, [1983]</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>1 videodisc of 1 (laser) (ca. 102 min.)</rdfs:label>
@@ -7022,7 +6973,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -7070,8 +7021,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -7089,7 +7040,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -7231,7 +7182,7 @@
 	    <bflc:nonSortNum>4</bflc:nonSortNum>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">United States: Metro-Goldwyn-Mayer, 1939</bf:publicationStatement>
       </bf:Instance>
     </bf:itemOf>
     <bf:adminMetadata>
@@ -7242,7 +7193,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-04-02</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1987-04-02T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -7290,13 +7241,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:40:35.861099-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:47:32.589703-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
