@@ -1,5 +1,15 @@
 # bibframe2marc release notes
 
+## v3.1.0
+
+Conversion updates based on specifications v3.1.0. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
+
+* Processing updates for the creation of language and script coding which follows the BCP47 standard and will appear in $7 (mostly), $e, $l, $y.
+* MARC 066 fields will no longer be created as the BCP47 data provides greater detail.
+
+
+See the [NEWS](NEWS) file for full details of changes.   Changes from v3.0.0 in the specifications are marked in red.
+
 ## v3.0.0
 
 Conversion updates based on specifications v3.0.0. See the Library of Congress’s [BIBFRAME site](https://www.loc.gov/bibframe/) for more details. Specifications are included in the distribution in the [spec](spec/) directory. Changes of note:
