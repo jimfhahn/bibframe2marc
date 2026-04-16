@@ -110,7 +110,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-16</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-03-16T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent>
 	    <bf:code>HUA</bf:code>
@@ -151,13 +151,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T13:08:41.715222-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:58.951931-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>
@@ -294,35 +294,108 @@
 	<bf:code>txt</bf:code>
       </bf:Content>
     </bf:content>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2012037375">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Beijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui</rdfs:label>
+	    <bflc:marcKey>1102 $aBeijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui</bflc:marcKey>
+	    <rdfs:label xml:lang="und-hani">北京生物产业发展报告编辑委员会</rdfs:label>
+	    <bflc:marcKey xml:lang="und-hani">4102 $a北京生物产业发展报告编辑委员会$7(bcp47)und-hani</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+	<bf:agent>
+	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2009146852">
+	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+	    <rdfs:label>Beijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</rdfs:label>
+	    <bflc:marcKey>1102 $aBeijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</bflc:marcKey>
+	    <rdfs:label xml:lang="und-hani">北京生物技术和新医药产业促进中心</rdfs:label>
+	    <bflc:marcKey xml:lang="und-hani">4102 $a北京生物技术和新医药产业促进中心$7(bcp47)und-hani</bflc:marcKey>
+	  </bf:Agent>
+	</bf:agent>
+	<bf:role>
+	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
+	    <rdfs:label>contributor</rdfs:label>
+	    <bf:code>ctb</bf:code>
+	  </bf:Role>
+	</bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
+	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdfs:label>Periodicals</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Pharmaceutical industry--China--Beijing--Periodicals</rdfs:label>
-	<madsrdf:authoritativeLabel>Pharmaceutical industry--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
+	<rdfs:label>Pharmaceutical industry--China--Beijing</rdfs:label>
+	<madsrdf:authoritativeLabel>Pharmaceutical industry--China--Beijing</madsrdf:authoritativeLabel>
 	<madsrdf:componentList rdf:parseType="Collection">
 	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85039713">
 	    <rdfs:label xml:lang="en">Pharmaceutical industry</rdfs:label>
 	    <bflc:marcKey>150  $aPharmaceutical industry</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
 	  </madsrdf:Topic>
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79091151-781">
-	    <rdfs:label>China</rdfs:label>
-	    <bflc:marcKey>181  $zChina</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-hani">Forbidden city (北京, China)</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-hani">451 4$aForbidden city (北京, China)</bflc:marcKey>
-	  </madsrdf:Geographic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
+	  <madsrdf:HierarchicalGeographic rdf:about="http://id.loc.gov/authorities/names/n79076155-781">
+	    <rdfs:label>China--Beijing</rdfs:label>
+	    <bflc:marcKey>181  $zChina$zBeijing</bflc:marcKey>
+	    <madsrdf:componentList rdf:parseType="Collection">
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>China</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>China</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>Beijing</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	    </madsrdf:componentList>
+	  </madsrdf:HierarchicalGeographic>
 	</madsrdf:componentList>
-	<bflc:aap-normalized>pharmaceuticalindustrychinabeijingperiodicals</bflc:aap-normalized>
+	<madsrdf:isMemberOfMADSScheme>
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<bflc:aap-normalized>pharmaceuticalindustrychinabeijing</bflc:aap-normalized>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
 	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
@@ -333,32 +406,49 @@
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Pharmaceutical technology--China--Beijing--Periodicals</rdfs:label>
-	<madsrdf:authoritativeLabel>Pharmaceutical technology--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
+	<rdfs:label>Pharmaceutical technology--China--Beijing</rdfs:label>
+	<madsrdf:authoritativeLabel>Pharmaceutical technology--China--Beijing</madsrdf:authoritativeLabel>
 	<madsrdf:componentList rdf:parseType="Collection">
 	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85100590">
 	    <rdfs:label xml:lang="en">Pharmaceutical technology</rdfs:label>
 	    <bflc:marcKey>150 0$aPharmaceutical technology</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
 	  </madsrdf:Topic>
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79091151-781">
-	    <rdfs:label>China</rdfs:label>
-	    <bflc:marcKey>181  $zChina</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-hani">Forbidden city (北京, China)</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-hani">451 4$aForbidden city (北京, China)</bflc:marcKey>
-	  </madsrdf:Geographic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
+	  <madsrdf:HierarchicalGeographic rdf:about="http://id.loc.gov/authorities/names/n79076155-781">
+	    <rdfs:label>China--Beijing</rdfs:label>
+	    <bflc:marcKey>181  $zChina$zBeijing</bflc:marcKey>
+	    <madsrdf:componentList rdf:parseType="Collection">
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>China</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>China</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>Beijing</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	    </madsrdf:componentList>
+	  </madsrdf:HierarchicalGeographic>
 	</madsrdf:componentList>
-	<bflc:aap-normalized>pharmaceuticaltechnologychinabeijingperiodicals</bflc:aap-normalized>
+	<madsrdf:isMemberOfMADSScheme>
+	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
+	  </madsrdf:MADSScheme>
+	</madsrdf:isMemberOfMADSScheme>
+	<bflc:aap-normalized>pharmaceuticaltechnologychinabeijing</bflc:aap-normalized>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
 	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
@@ -369,32 +459,49 @@
     <bf:subject>
       <bf:Topic>
 	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Biotechnology--China--Beijing--Periodicals</rdfs:label>
-	<madsrdf:authoritativeLabel>Biotechnology--China--Beijing--Periodicals</madsrdf:authoritativeLabel>
+	<rdfs:label>Biotechnology--China--Beijing</rdfs:label>
+	<madsrdf:authoritativeLabel>Biotechnology--China--Beijing</madsrdf:authoritativeLabel>
+	<madsrdf:componentList rdf:parseType="Collection">
+	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85014263">
+	    <rdfs:label xml:lang="en">Biotechnology</rdfs:label>
+	    <bflc:marcKey>150 0$aBiotechnology</bflc:marcKey>
+	    <bf:source>
+	      <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+		<rdfs:label>LC Subject Headings</rdfs:label>
+	      </bf:Source>
+	    </bf:source>
+	  </madsrdf:Topic>
+	  <madsrdf:HierarchicalGeographic rdf:about="http://id.loc.gov/authorities/names/n79076155-781">
+	    <rdfs:label>China--Beijing</rdfs:label>
+	    <bflc:marcKey>181  $zChina$zBeijing</bflc:marcKey>
+	    <madsrdf:componentList rdf:parseType="Collection">
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>China</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>China</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	      <madsrdf:Geographic>
+		<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
+		<madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
+		<madsrdf:elementList rdf:parseType="Collection">
+		  <madsrdf:GeographicElement>
+		    <madsrdf:elementValue>Beijing</madsrdf:elementValue>
+		  </madsrdf:GeographicElement>
+		</madsrdf:elementList>
+	      </madsrdf:Geographic>
+	    </madsrdf:componentList>
+	  </madsrdf:HierarchicalGeographic>
+	</madsrdf:componentList>
 	<madsrdf:isMemberOfMADSScheme>
 	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
 	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
 	  </madsrdf:MADSScheme>
 	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85014263">
-	    <rdfs:label xml:lang="en">Biotechnology</rdfs:label>
-	    <bflc:marcKey>150 0$aBiotechnology</bflc:marcKey>
-	  </madsrdf:Topic>
-	  <madsrdf:Geographic rdf:about="http://id.loc.gov/rwo/agents/n79091151-781">
-	    <rdfs:label>China</rdfs:label>
-	    <bflc:marcKey>181  $zChina</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-hani">Forbidden city (北京, China)</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-hani">451 4$aForbidden city (北京, China)</bflc:marcKey>
-	  </madsrdf:Geographic>
-	  <madsrdf:Geographic>
-	    <madsrdf:authoritativeLabel>Beijing</madsrdf:authoritativeLabel>
-	  </madsrdf:Geographic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>biotechnologychinabeijingperiodicals</bflc:aap-normalized>
+	<bflc:aap-normalized>biotechnologychinabeijing</bflc:aap-normalized>
 	<bf:source>
 	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
 	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
@@ -492,8 +599,8 @@
       <bf:Place rdf:about="http://id.loc.gov/rwo/agents/n79091151">
 	<rdfs:label>China</rdfs:label>
 	<bflc:marcKey>151  $aChina</bflc:marcKey>
-	<rdfs:label xml:lang="zxx-Hani">中华民国 (1912-1949)</rdfs:label>
-	<bflc:marcKey xml:lang="zxx-Hani">451  $a中华民国 (1912-1949)</bflc:marcKey>
+	<rdfs:label xml:lang="und-hani">中国</rdfs:label>
+	<bflc:marcKey xml:lang="und-hani">451  $a中国$7(bcp47)und-hani</bflc:marcKey>
 	<bf:code rdf:datatype="http://id.loc.gov/datatypes/codes/gac">a-cc---</bf:code>
       </bf:Place>
     </bf:subject>
@@ -509,57 +616,6 @@
 	</bf:source>
       </bf:Place>
     </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
-	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
-	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
-	    <bf:code>fast</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:GenreForm>
-    </bf:genreForm>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2012037375">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Beijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui</rdfs:label>
-	    <bflc:marcKey>1102 $aBeijing sheng wu chan ye fa zhan bao gao bian ji wei yuan hui</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Hani">北京生物产业发展报告编辑委员会</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Hani">4102 $a北京生物产业发展报告编辑委员会</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <bf:contribution>
-      <bf:Contribution>
-	<bf:agent>
-	  <bf:Agent rdf:about="http://id.loc.gov/rwo/agents/no2009146852">
-	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
-	    <rdfs:label>Beijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</rdfs:label>
-	    <bflc:marcKey>1102 $aBeijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</bflc:marcKey>
-	    <rdfs:label xml:lang="zxx-Hani">北京生物技术和新医药产业促进中心</rdfs:label>
-	    <bflc:marcKey xml:lang="zxx-Hani">4102 $a北京生物技术和新医药产业促进中心</bflc:marcKey>
-	  </bf:Agent>
-	</bf:agent>
-	<bf:role>
-	  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb">
-	    <rdfs:label>contributor</rdfs:label>
-	    <bf:code>ctb</bf:code>
-	  </bf:Role>
-	</bf:role>
-      </bf:Contribution>
-    </bf:contribution>
-    <dcterms:isPartOf rdf:resource="http://id.loc.gov/resources/works"/>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -578,8 +634,8 @@
 		    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
 		    <rdfs:label>Beijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</rdfs:label>
 		    <bflc:marcKey>1102 $aBeijing sheng wu ji shu he xin yi yao chan ye cu jin zhong xin</bflc:marcKey>
-		    <rdfs:label xml:lang="zxx-Hani">北京生物技术和新医药产业促进中心</rdfs:label>
-		    <bflc:marcKey xml:lang="zxx-Hani">4102 $a北京生物技术和新医药产业促进中心</bflc:marcKey>
+		    <rdfs:label xml:lang="und-hani">北京生物技术和新医药产业促进中心</rdfs:label>
+		    <bflc:marcKey xml:lang="und-hani">4102 $a北京生物技术和新医药产业促进中心$7(bcp47)und-hani</bflc:marcKey>
 		  </bf:Agent>
 		</bf:agent>
 		<bf:role>
@@ -662,8 +718,8 @@
 		    <rdf:value>57721554</rdf:value>
 		  </bf:OclcNumber>
 		</bf:identifiedBy>
-		<bf:publicationStatement>Beijing: Ke xue chu ban she</bf:publicationStatement>
-		<bf:publicationStatement xml:lang="zh-hani">北京: 科学出版社</bf:publicationStatement>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Beijing: Ke xue chu ban she</bf:publicationStatement>
+		<bf:publicationStatement xml:lang="zh-hani" xmlns:exsl="http://exslt.org/common">北京: 科学出版社</bf:publicationStatement>
 		<bf:extent>
 		  <bf:Extent>
 		    <rdfs:label>v.</rdfs:label>
@@ -690,7 +746,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-03-16</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2010-03-16T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent>
 	    <bf:code>HUA</bf:code>
@@ -731,13 +787,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/tree/v3.0-dev"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-09-27T13:08:41.715222-04:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:40:58.951931-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
 	    <rdfs:label>full</rdfs:label>

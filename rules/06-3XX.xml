@@ -49,7 +49,20 @@
         <ind1 default=" "/>
         <ind2 default=" "/>
         <sf code="a" chopPunct="true">
-          <select xpath="bf:Instance[not(rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bflc/SecondaryInstance'])]/bf:duration[@rdf:datatype='http://www.w3.org/2001/XMLSchema#duration']"/>
+          <switch>
+            <case test="starts-with(., 'PT')">
+              <!-- This will need expansion, but ... -->
+              <transform>
+                <xsl:variable name="vH" select="substring(., 3, 2)" />
+                <xsl:variable name="vM" select="substring(., 6, 2)" />
+                <xsl:variable name="vS" select="substring(., 9, 2)" />
+                <xsl:value-of select="concat($vH, $vM, $vS)" />
+              </transform>
+            </case>
+            <case test="default">
+              <select xpath="bf:Instance[not(rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bflc/SecondaryInstance'])]/bf:duration[@rdf:datatype='http://www.w3.org/2001/XMLSchema#duration']"/>              
+            </case>
+          </switch>          
         </sf>
       </df>
     </case>

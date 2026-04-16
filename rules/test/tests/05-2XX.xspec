@@ -85,8 +85,9 @@
   </x:scenario>
   <x:scenario label="MARC 242">
     <x:context href="../data/2XX/242.xml"/>
-    <x:expect label="generate 242" test="count(//marc:datafield[@tag='242']) = 1"/>
-    <x:expect label="generate 242 $y" test="//marc:datafield[@tag='242']/marc:subfield[@code='y'] = 'est'"/>
+    <x:expect label="generate 242" test="count(//marc:datafield[@tag='242']) = 2"/>
+    <x:expect label="generate 242 $y" test="//marc:datafield[@tag='242'][1]/marc:subfield[@code='y'] = 'est'"/>
+    <x:expect label="generate 242 $y" test="//marc:datafield[@tag='242'][2]/marc:subfield[@code='y'] = 'ita'"/>
   </x:scenario>
 
   <x:scenario label="MARC 243">
@@ -135,6 +136,15 @@
     <x:expect label="generate 880 $6"
               test="//marc:datafield[@tag='880']/marc:subfield[@code='6'] = '245-03/$1'"/>
   </x:scenario>
+  
+  <x:scenario label="MARC 245 - 880s">
+    <x:context href="../data/exemplars/text-monograph-880s-008s.rdf"/>
+    <x:expect label="generate 245" test="count(//marc:datafield[@tag='245']) = 1"/>
+    <x:expect label="generate 880 from 245 label with xml:lang"
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and contains(., '245-')]]/marc:subfield[@code = 'a'] = '玄玉时代 :'"/>
+    <x:expect label="generate 880 from 264 and has $7"
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and contains(., '245-')]]/marc:subfield[@code = '7'] = '(bcp47)zh-hani'"/>
+  </x:scenario>
 
   <x:scenario label="MARC 246">
     <x:context href="../data/2XX/246.xml"/>
@@ -150,12 +160,14 @@
     <x:expect label="..ind2 matches" test="//marc:datafield[@tag='246']/@ind2 = '0'"/>
     <x:expect label="..has expected $6" test="//marc:datafield[@tag='246']/marc:subfield[@code='6'] = '880-04'"/>
     <x:expect label="..has expected 880 pair" test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='246-04/(N']]/marc:subfield[@code='a'] = 'Калмыцко-русский словарь'" />
+    <x:expect label="..has expected 880 pair with $7" test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='246-04/(N']]/marc:subfield[@code='7'] = '(bcp47)ru'" />
 
     <x:expect label="generate 247" test="count(//marc:datafield[@tag='247']) = 1"/>
     <x:expect label="..ind1 matches" test="//marc:datafield[@tag='247']/@ind1 = '1'"/>
     <x:expect label="..ind2 matches" test="//marc:datafield[@tag='247']/@ind2 = '0'"/>
     <x:expect label="..has expected $6" test="//marc:datafield[@tag='247']/marc:subfield[@code='6'] = '880-07'"/>
     <x:expect label="..has expected 880 pair" test="count(//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='247-07/(N']]/marc:subfield[@code='a']) = 1" />
+    <x:expect label="..has expected 880 pair with $7" test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and .='247-07/(N']]/marc:subfield[@code='7'] = '(bcp47)ru'" />
     
   </x:scenario>
 
@@ -261,6 +273,8 @@
     <x:expect label="generate 264" test="count(//marc:datafield[@tag='264']) = 1"/>
     <x:expect label="generate 880 from 264 label with xml:lang"
       test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and contains(., '264-')]]/marc:subfield[@code = 'a'] = '上海 :'"/>
+    <x:expect label="generate 880 from 264 and has $7"
+      test="//marc:datafield[@tag='880' and marc:subfield[@code='6' and contains(., '264-')]]/marc:subfield[@code = '7'] = '(bcp47)zh-hani'"/>
   </x:scenario>
 
   <x:scenario label="MARC 264 - 02">

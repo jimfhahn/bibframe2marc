@@ -95,95 +95,6 @@
 	<rdfs:label>Issued also in international editions: Giornale dell'arte (Turin, Italy). English. Journal of art, Dec. 1988-June-July 1989; Giornale dell'arte (Turin, Italy). English (1990). Art newspaper, Oct. 1990-</rdfs:label>
       </bf:Note>
     </bf:note>
-    <bf:subject>
-      <bf:Topic>
-	<rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
-	<rdfs:label>Art, Italian--Periodicals</rdfs:label>
-	<madsrdf:authoritativeLabel>Art, Italian--Periodicals</madsrdf:authoritativeLabel>
-	<madsrdf:isMemberOfMADSScheme>
-	  <madsrdf:MADSScheme rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </madsrdf:MADSScheme>
-	</madsrdf:isMemberOfMADSScheme>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85007718">
-	    <rdfs:label xml:lang="en">Art, Italian</rdfs:label>
-	    <bflc:marcKey>150  $aArt, Italian</bflc:marcKey>
-	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-	<bflc:aap-normalized>artitalianperiodicals</bflc:aap-normalized>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
-	    <rdfs:label xml:lang="en">Library of Congress Subject Headings</rdfs:label>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2007101354">
-	<rdfs:label xml:lang="en">Art--Periodicals</rdfs:label>
-	<bflc:marcKey>150  $aArt$vPeriodicals</bflc:marcKey>
-	<madsrdf:componentList rdf:parseType="Collection">
-	  <madsrdf:Topic>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Art</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:TopicElement>
-		<madsrdf:elementValue xml:lang="en">Art</madsrdf:elementValue>
-	      </madsrdf:TopicElement>
-	    </madsrdf:elementList>
-	  </madsrdf:Topic>
-	  <madsrdf:GenreForm>
-	    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Authority"/>
-	    <madsrdf:authoritativeLabel xml:lang="en">Periodicals</madsrdf:authoritativeLabel>
-	    <madsrdf:elementList rdf:parseType="Collection">
-	      <madsrdf:GenreFormElement>
-		<madsrdf:elementValue xml:lang="en">Periodicals</madsrdf:elementValue>
-	      </madsrdf:GenreFormElement>
-	    </madsrdf:elementList>
-	  </madsrdf:GenreForm>
-	</madsrdf:componentList>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.worldcat.org/fast/815177">
-	<bflc:marcKey>150  $aArt</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Art</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
-	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
-	    <bf:code>fast</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
-    </bf:subject>
-    <bf:subject>
-      <bf:Topic rdf:about="http://id.worldcat.org/fast/816430">
-	<bflc:marcKey>150  $aArt, Italian</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Art, Italian</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
-	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
-	    <bf:code>fast</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:Topic>
-    </bf:subject>
-    <bf:genreForm>
-      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
-	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
-	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
-	<bf:source>
-	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
-	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
-	    <bf:code>fast</bf:code>
-	  </bf:Source>
-	</bf:source>
-      </bf:GenreForm>
-    </bf:genreForm>
     <bf:relation>
       <bf:Relation>
 	<bf:relationship>
@@ -291,7 +202,7 @@
 		    <rdf:value>ocm39966061 </rdf:value>
 		  </bf:OclcNumber>
 		</bf:identifiedBy>
-		<bf:publicationStatement>London: Umberto Allemandi &amp; Co, ©1990-</bf:publicationStatement>
+		<bf:publicationStatement xmlns:exsl="http://exslt.org/common">London: Umberto Allemandi &amp; Co, ©1990-</bf:publicationStatement>
 		<bf:editionStatement>International ed.</bf:editionStatement>
 		<bf:extent>
 		  <bf:Extent>
@@ -351,12 +262,12 @@
 		</bf:source>
 		<bf:edition>full</bf:edition>
 		<bf:assigner>
-		  <madsrdf:CorporateName rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+		  <bf:Organization rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 		    <rdfs:label>United States, Library of Congress</rdfs:label>
 		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/code">DLC</bf:code>
 		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/normalized">dlc</bf:code>
 		    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlc</bf:code>
-		  </madsrdf:CorporateName>
+		  </bf:Organization>
 		</bf:assigner>
 	      </bf:ClassificationDdc>
 	    </bf:classification>
@@ -396,16 +307,6 @@
 		  </bf:Lccn>
 		</bf:identifiedBy>
 		<bf:identifiedBy>
-		  <bf:Lccn>
-		    <rdf:value>sn 88016070 </rdf:value>
-		    <bf:status>
-		      <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
-			<rdfs:label>invalid</rdfs:label>
-		      </bf:Status>
-		    </bf:status>
-		  </bf:Lccn>
-		</bf:identifiedBy>
-		<bf:identifiedBy>
 		  <bf:OclcNumber>
 		    <rdf:value>9739371</rdf:value>
 		  </bf:OclcNumber>
@@ -437,9 +338,72 @@
 	    <bflc:nonSortNum>3</bflc:nonSortNum>
 	  </bf:Title>
 	</bf:title>
-	<bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
+	<bf:publicationStatement xmlns:exsl="http://exslt.org/common">Torino: Allemandi, 1983-</bf:publicationStatement>
       </bf:Instance>
     </bf:hasInstance>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.worldcat.org/fast/1411641">
+	<bflc:marcKey>155  $aPeriodicals</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Periodicals</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:genreForm>
+      <bf:GenreForm>
+	<rdfs:label>Periodicals</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85007718">
+	<rdfs:label xml:lang="en">Art, Italian</rdfs:label>
+	<bflc:marcKey>150  $aArt, Italian</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label>LC Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85007461">
+	<rdfs:label xml:lang="en">Art</rdfs:label>
+	<bflc:marcKey>150  $aArt</bflc:marcKey>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/authorities/subjects">
+	    <rdfs:label>LC Subject Headings</rdfs:label>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.worldcat.org/fast/815177">
+	<bflc:marcKey>150  $aArt</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Art</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.worldcat.org/fast/816430">
+	<bflc:marcKey>150  $aArt, Italian</bflc:marcKey>
+	<madsrdf:authoritativeLabel>Art, Italian</madsrdf:authoritativeLabel>
+	<bf:source>
+	  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/fast">
+	    <rdfs:label>Faceted application of subject terminology</rdfs:label>
+	    <bf:code>fast</bf:code>
+	  </bf:Source>
+	</bf:source>
+      </bf:Topic>
+    </bf:subject>
     <bf:adminMetadata>
       <bf:AdminMetadata>
 	<bf:status>
@@ -448,7 +412,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-14T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -493,13 +457,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:39:35.200311-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:46:30.17636-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>
@@ -785,22 +749,11 @@
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
-	      <bf:Lccn>
-		<rdf:value>   00004805 </rdf:value>
-		<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-	      </bf:Lccn>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11891684</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
 	      <bf:OclcNumber>
 		<rdf:value>43286094</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Torino: Allemandi, 1983-</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
@@ -824,7 +777,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-14T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -869,13 +822,13 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:39:35.200311-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:46:30.17636-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
       <bf:AdminMetadata>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>
@@ -1057,22 +1010,11 @@
 	      </bf:Lccn>
 	    </bf:identifiedBy>
 	    <bf:identifiedBy>
-	      <bf:Lccn>
-		<rdf:value>   00004805 </rdf:value>
-		<bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
-	      </bf:Lccn>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
-	      <bf:Local>
-		<rdf:value>11891684</rdf:value>
-	      </bf:Local>
-	    </bf:identifiedBy>
-	    <bf:identifiedBy>
 	      <bf:OclcNumber>
 		<rdf:value>43286094</rdf:value>
 	      </bf:OclcNumber>
 	    </bf:identifiedBy>
-	    <bf:publicationStatement>Torino: Allemandi, 1983-</bf:publicationStatement>
+	    <bf:publicationStatement xmlns:exsl="http://exslt.org/common">Torino: Allemandi, 1983-</bf:publicationStatement>
 	    <bf:extent>
 	      <bf:Extent>
 		<rdfs:label>volumes</rdfs:label>
@@ -1096,7 +1038,7 @@
 	    <bf:code>n</bf:code>
 	  </bf:Status>
 	</bf:status>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-01-14</bf:date>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-01-14T00:00:00</bf:date>
 	<bf:agent>
 	  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
 	    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
@@ -1141,8 +1083,8 @@
 	    <bf:code rdf:datatype="http://id.loc.gov/datatypes/orgs/iso15511">US-dlcmrc</bf:code>
 	  </bf:Agent>
 	</bf:agent>
-	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.0.0"/>
-	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T10:39:35.200311-05:00</bf:date>
+	<bf:generationProcess rdf:resource="https://github.com/lcnetdev/marc2bibframe2/releases/tag/v3.1.0"/>
+	<bf:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-04-15T18:46:30.17636-04:00</bf:date>
       </bf:AdminMetadata>
     </bf:adminMetadata>
     <bf:adminMetadata>
@@ -1160,7 +1102,7 @@
 	    </bf:assigner>
 	  </bf:Local>
 	</bf:identifiedBy>
-	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-2-6-0/"/>
+	<bf:descriptionLevel rdf:resource="http://id.loc.gov/ontologies/bibframe-3-0-1/"/>
 	<bflc:encodingLevel>
 	  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
 	    <rdfs:label>full not examined</rdfs:label>

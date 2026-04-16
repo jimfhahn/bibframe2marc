@@ -57,6 +57,11 @@ The converion stylesheet can take the following parameters:
 
 * `pCatScript` -- string for the default cataloging script found in `xml:lang` attributes. Defaults to `Latn`.
 
+* `bcp47inferrence` - Default is true.  If true, BCP47 codes will not include 
+the script component when it can be inferred from the language component.
+If false, the script component (the "-cyrl" of ru-cyrl) will be included in
+the code. At all times codes will be lowercased. 
+
 * `pGenerationTimestamp` -- a timestamp for the conversion. If it is not provided, and if the `date:date-time()` function is available, it will be created from the value of `date:date-time()`.
 
 * `pSourceRecordId` -- parameter to set the source record ID, for use in conversion rules. Used in generating the [884](rules/10-8XX.xml).

@@ -1,3 +1,16 @@
+--- 3.1.0 2026/04/16
+
+Changes for updated v3.1.0 specifications:
+
+008-bf2marc
+	Updated mapping of 008/33 (literary form) values
+Instance-bf2marc
+	Updated creation of MARC 242 field
+Work-bf2marc
+	Editorial cleanup to remove creation of 048 fields from bf:voice and bf:instrument resources
+Process0-4
+	Removed instructions to create 066 fields
+
 --- 3.0.0 2025/12/02
 
 Changes for updated v3.0.0 specifications:

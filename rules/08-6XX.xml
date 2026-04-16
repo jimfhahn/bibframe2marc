@@ -12,8 +12,8 @@
     <switch>
       <case test="self::node()/*/bflc:marcKey |
                   self::node()/*/marc:record |
-                  self::node()[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
-                  self::node()/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
+                  self::node()[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/entities/')) and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
+                  self::node()/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/entities/')) and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
                   self::node()[contains(@rdf:resource, 'd-nb.info/gnd/') and not(contains(@rdf:resource, '#'))] |
                   self::node()/*[contains(@rdf:about, 'd-nb.info/gnd/') and not(contains(@rdf:about, '#'))] |
                   self::node()[contains(@rdf:resource, 'id.worldcat.org/fast/')] |
@@ -430,6 +430,7 @@
                     (
                       (
                         not(*/@rdf:about) or 
+                        contains(*/@rdf:about, 'id.loc.gov/entities') or 
                         contains(*/@rdf:about, 'example') or 
                         contains(*/@rdf:about, 'REPLACE') or 
                         ( contains(*/@rdf:about, 'd-nb.info/') and contains(*/@rdf:about, '#') ) or 
@@ -651,6 +652,15 @@
                       </case>
                       <case test="local-name()='HierarchicalGeographic' or rdf:type[@rdf:resource='http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic']">
                         <switch>
+                          <case test="contains(rdfs:label, '--')">
+                            <transform>
+                              <xsl:call-template name="tToken2Subfields">
+                                <xsl:with-param name="pString" select="rdfs:label" />
+                                <xsl:with-param name="pSeparator" select="'--'"/>
+                                <xsl:with-param name="pSubfieldCode" select="'z'"/>  
+                              </xsl:call-template>
+                            </transform>
+                          </case>
                           <case test="contains(madsrdf:authoritativeLabel, '--')">
                             <transform>
                               <xsl:call-template name="tToken2Subfields">
@@ -921,6 +931,7 @@
             <df tag="610">
               <ind1 default="2">
                 <switch>
+                  <case test="starts-with(*/madsrdf:componentList/madsrdf:*[1]/bflc:marcKey, '1101')">1</case>
                   <case test="*[local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction'] or
                               local-name(madsrdf:componentList/*[1])='Jurisdiction' or madsrdf:componentList/*[1]/rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction' or
                               bf:Hub/bf:contribution/*/bf:agent/*[local-name()='Jurisdiction' or rdf:type[@rdf:resource='http://id.loc.gov/ontologies/bibframe/Jurisdiction']] or
@@ -2419,9 +2430,9 @@
       bf:Work/bf:genreForm/*[contains(@rdf:about, 'd-nb.info/gnd/') and not(contains(@rdf:about, '#'))] |
       bf:Work/bf:genreForm[contains(@rdf:resource, 'id.worldcat.org/fast/')] |
       bf:Work/bf:genreForm/*[contains(@rdf:about, 'id.worldcat.org/fast/')] |
+      //bf:Item/bf:genreForm/*[bflc:marcKey or marc:record] |
       //bf:Item/bf:genreForm[contains(@rdf:resource, 'id.loc.gov') and not(contains(@rdf:resource, '/vocabulary/')) and not(contains(@rdf:resource, 'REPLACE'))] |
-      //bf:Item/bf:genreForm/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))] |
-      //bf:Item/bf:genreForm/*[bflc:marcKey or marc:record] 
+      //bf:Item/bf:genreForm/*[contains(@rdf:about, 'id.loc.gov') and not(contains(@rdf:about, '/vocabulary/')) and not(contains(@rdf:about, 'REPLACE'))]
       ">
       <!--
       <transform>
@@ -2480,6 +2491,7 @@
           <case test="contains($relURI, '/nalt/')">3</case>
           <case test="contains($relURI, '/names/') or contains($relURI, '/genreForms/') or 
             contains($relURI, '/demographicTerms/') or contains($relURI, '/graphicMaterials/') or 
+            contains($relURI, '/vocabulary/rbmscv/') or 
             contains($relURI, '/fast/') or
             contains($relURI, 'd-nb.info/gnd/')">7</case>
           
@@ -2514,11 +2526,19 @@
           <!-- <case test="contains($relURI, '/names/')">naf</case> -->
           <case test="contains($relURI, '/genreForms/')">lcgft</case>
           <case test="contains($relURI, '/demogrpahicTerms/')">lcdgt</case>
+          <case test="contains($relURI, '/vocabulary/rbmscv/')">rbmscv</case>
           <case test="contains($relURI, '/graphicMaterials/')">lctgm</case>
           <case test="contains($relURI, '/fast/')">fast</case>
           <case test="contains($relURI, 'd-nb.info/gnd/')">gnd</case>
         </switch>
       </sf>
+      <switch>
+        <case test="parent::bf:genreForm/parent::bf:Item">
+          <sf code="5">
+            <transform><xsl:value-of select="$pConversionAgency" /></transform>
+          </sf>
+        </case>
+      </switch>
       <switch>
         <case test="$relURI != ''">
           <sf code="0">
@@ -2609,6 +2629,9 @@
                 <case test="bf:Source/bf:code"><transform><xsl:value-of select="bf:Source/bf:code"/></transform></case>
                 <case test="$vSourceUri != ''">
                   <switch>
+                    <case test="$vSourceUri = 'http://id.loc.gov/authorities/genreForms'">
+                      <transform><xsl:value-of select="'lcgft'"/></transform>
+                    </case>
                     <case test="contains($vSourceUri,'id.loc.gov')">
                       <transform>
                         <xsl:call-template name="tUriCode">

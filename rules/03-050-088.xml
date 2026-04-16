@@ -217,7 +217,7 @@
     </context>
   </df>
   
-  <switch>
+  <!--<switch>
     <case test="/descendant::node()[bf:Title|bf:ProvisionActivity|bf:editionStatement|bf:Series]//@xml:lang[contains(., '-') and not(contains(., 'atn')) and not(contains(., 'hai'))]">
       <df tag="066">
           <ind1 default=" "/>
@@ -226,9 +226,8 @@
             <xsl:variable name="scriptCodesPreNS">
               <xsl:variable name="df880scriptNS" select="exsl:node-set($df880script)" />
               <xsl:variable name="vLangs" select="//@xml:lang[contains(., '-') and not(contains(., 'atn'))]" />
-              <!-- <xsl:for-each select="$df880scriptNS/*[lang]/lang"> -->
               <marc:codes>
-                <!-- Those defined in the map. -->
+                <!-\- Those defined in the map. -\->
                 <xsl:for-each select="$df880scriptNS/script/lang">
                   <xsl:variable name="vLang" select="." />
                   <xsl:choose>
@@ -241,7 +240,7 @@
                   </xsl:choose>
                 </xsl:for-each>
                 
-                <!-- For those not defined in the map. -->
+                <!-\- For those not defined in the map. -\->
                 <xsl:for-each select="$vLangs">
                   <xsl:variable name="vLang" select="translate(substring-after(.,'-'),$upper,$lower)" />
                   <xsl:if test="count($df880scriptNS/script/lang[. = $vLang]) = 0">
@@ -264,7 +263,7 @@
           </transform>
       </df>
     </case>
-  </switch>
+  </switch>-->
   
   <df tag="070">
     <context xpath="bf:Work/bf:classification/bf:ClassificationNal|bf:Work/bf:classification/bf:Classification[bf:assigner/@rdf:resource='http://id.loc.gov/vocabulary/organizations/dnal' or

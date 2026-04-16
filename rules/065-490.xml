@@ -22,14 +22,23 @@
         bf:Work/bflc:relationship/bflc:Relationship[bflc:relation[contains(@rdf:resource, 'hasSeries') or contains(bflc:Relation/@rdf:about, 'hasSeries')]]/bf:relatedTo/bf:*[bf:status/@rdf:resource[.='http://id.loc.gov/vocabulary/mstatus/t'] or bf:status/bf:Status/@rdf:about[.='http://id.loc.gov/vocabulary/mstatus/t']] |
         //bf:Item/bflc:relationship/bflc:Relationship[bflc:relation[contains(@rdf:resource, 'hasSeries') or contains(bflc:Relation/@rdf:about, 'hasSeries')]]/bf:relatedTo/bf:*[bf:status/@rdf:resource[.='http://id.loc.gov/vocabulary/mstatus/t'] or bf:status/bf:Status/@rdf:about[.='http://id.loc.gov/vocabulary/mstatus/t']]">
     
-    <var name="vLangTagLabel" xpath="bf:title/bf:Title/bf:mainTitle[
-                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                  string-length(@xml:lang)='2' or 
-                  string-length(@xml:lang)='3'
-                ][1]/@xml:lang" />
-    <var name="vLangTagScript" xpath="bf:title/bf:Title/bf:mainTitle[@xml:lang and contains(@xml:lang, '-') and not(contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)))][1]/@xml:lang" />
+    <var name="vLangTagLabel">
+      <transform>
+        <xsl:call-template name="tGetBCP47RegField">
+          <xsl:with-param name="x" select="bf:title/bf:Title/bf:mainTitle" />
+        </xsl:call-template>
+      </transform>
+    </var>
+    <var name="vLangTagScript">
+      <transform>
+        <xsl:call-template name="tGetBCP47for880">
+          <xsl:with-param name="x" select="bf:title/bf:Title/bf:mainTitle" />
+          <xsl:with-param name="bcp47forRegField" select="$vLangTagLabel" />
+        </xsl:call-template>
+      </transform>
+    </var>
     
-    <var name="vScript"><transform><xsl:value-of select="translate(substring-after($vLangTagScript,'-'),$upper,$lower)" /></transform></var>
+    <var name="vScript"><transform><xsl:value-of select="substring-after($vLangTagScript,'-')" /></transform></var>
     <var name="v880Script">
       <lookup map="df880script" targetField="code">
         <lookupField name="lang" xpath="$vScript"/>
@@ -41,11 +50,7 @@
     </var>
     
     <switch>
-      <case test="bf:title/bf:Title/bf:mainTitle[
-                    not(@xml:lang) or 
-                    contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                    string-length(@xml:lang)='2' or 
-                    string-length(@xml:lang)='3']">
+      <case test="bf:title/bf:Title/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
             <df tag="490">
               <ind1 default="0">
                 <switch>
@@ -63,31 +68,15 @@
               </sf>
               <var name="vMainTitle">
                 <switch>
-                  <case test="bf:title/bf:Title/bf:mainTitle[
-                                not(@xml:lang) or 
-                                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                string-length(@xml:lang)='2' or 
-                                string-length(@xml:lang)='3']">
-                    <select xpath="bf:title/bf:Title/bf:mainTitle[
-                                      not(@xml:lang) or  
-                                      contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                      string-length(@xml:lang)='2' or 
-                                      string-length(@xml:lang)='3']"/>
+                  <case test="bf:title/bf:Title/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
+                    <select xpath="bf:title/bf:Title/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
                   </case>
                 </switch>
               </var>
               <var name="vParallelTitle">
                 <switch>
-                  <case test="bf:title/bf:ParallelTitle/bf:mainTitle[
-                                not(@xml:lang) or  
-                                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                string-length(@xml:lang)='2' or 
-                                string-length(@xml:lang)='3']">
-                    <select xpath="bf:title/bf:ParallelTitle/bf:mainTitle[
-                                  not(@xml:lang) or  
-                                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                  string-length(@xml:lang)='2' or 
-                                  string-length(@xml:lang)='3']"/>
+                  <case test="bf:title/bf:ParallelTitle/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
+                    <select xpath="bf:title/bf:ParallelTitle/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
                   </case>
                 </switch>
               </var>
@@ -107,11 +96,7 @@
                             <xsl:when test="bf:identifiedBy/*[local-name()='Issn']">
                               <xsl:value-of select="concat($vMainTitle, ',')"/>
                             </xsl:when>
-                            <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[
-                                              not(@xml:lang) or  
-                                              contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                              string-length(@xml:lang)='2' or 
-                                              string-length(@xml:lang)='3']">
+                            <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
                               <xsl:value-of select="concat($vMainTitle, ' ;')"/>
                             </xsl:when>
                             <xsl:otherwise>
@@ -125,11 +110,7 @@
                 <switch>
                   <case test="$vParallelTitle != ''">
                     <transform>
-                      <xsl:for-each select="bf:title/bf:ParallelTitle/bf:mainTitle[
-                                              not(@xml:lang) or  
-                                              contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                              string-length(@xml:lang)='2' or 
-                                              string-length(@xml:lang)='3']">
+                      <xsl:for-each select="bf:title/bf:ParallelTitle/bf:mainTitle[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
                         <marc:subfield code='a'>
                           <xsl:value-of select="." />
                           <xsl:if test="position() != last()"><xsl:text> =</xsl:text></xsl:if>
@@ -140,11 +121,7 @@
                             <xsl:when test="bf:identifiedBy/*[local-name()='Issn']">
                               <xsl:value-of select="concat($vMainTitle, ',')"/>
                             </xsl:when>
-                            <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[
-                                                not(@xml:lang) or  
-                                                contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                                string-length(@xml:lang)='2' or 
-                                                string-length(@xml:lang)='3']">
+                            <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]">
                               <xsl:value-of select="concat($vMainTitle, ' ;')"/>
                             </xsl:when>
                           </xsl:choose>
@@ -161,11 +138,7 @@
                       <marc:subfield code='x'>
                         <xsl:value-of select="." />
                         <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[
-                                        not(@xml:lang) or  
-                                        contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                        string-length(@xml:lang)='2' or 
-                                        string-length(@xml:lang)='3']"><xsl:text> ;</xsl:text></xsl:if>
+                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                       </marc:subfield>
                     </xsl:for-each>
                   </transform>
@@ -178,11 +151,7 @@
                       <marc:subfield code='y'>
                         <xsl:value-of select="." />
                         <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[
-                                          not(@xml:lang) or  
-                                          contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                          string-length(@xml:lang)='2' or 
-                                          string-length(@xml:lang)='3']"><xsl:text> ;</xsl:text></xsl:if>
+                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                       </marc:subfield>
                     </xsl:for-each>
                   </transform>
@@ -195,30 +164,29 @@
                       <marc:subfield code='z'>
                         <xsl:value-of select="." />
                         <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[
-                                          not(@xml:lang) or  
-                                          contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                          string-length(@xml:lang)='2' or 
-                                          string-length(@xml:lang)='3']"><xsl:text> ;</xsl:text></xsl:if>
+                        <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                       </marc:subfield>
                     </xsl:for-each>
                   </transform>
                 </case>
               </switch>
               <sf code="v" repeatable="true">
-                <select xpath="../../bf:seriesEnumeration[
-                                  not(@xml:lang) or  
-                                  contains(translate(@xml:lang,$upper,$lower),translate($pCatScript,$upper,$lower)) or 
-                                  string-length(@xml:lang)='2' or 
-                                  string-length(@xml:lang)='3']"/>
+                <select xpath="../../bf:seriesEnumeration[not(@xml:lang) or translate(@xml:lang,$upper,$lower)=$vLangTagLabel]"/>
               </sf>
-              <!--<sf code="7" chopPunct="true" repeatable="false">
+              <sf code="7">
                 <switch>
                   <case test="$vLangTagLabel!=''">
-                    <transform><xsl:value-of select="concat('(bcp47)', $vLangTagLabel)"/></transform>
+                    <transform>
+                      <xsl:variable name="bcp47code">
+                        <xsl:call-template name="tOutputBCP47">
+                          <xsl:with-param name="bcp47orig" select="$vLangTagLabel" />
+                        </xsl:call-template>
+                      </xsl:variable>
+                      <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+                    </transform>
                   </case>
                 </switch>
-              </sf>-->
+              </sf>
             </df>
       </case>
     </switch>
@@ -237,15 +205,15 @@
           </sf>
           <var name="vMainTitle">
             <switch>
-              <case test="bf:title/bf:Title/bf:mainTitle[contains(translate(@xml:lang,$upper,$lower), $vScript)]">
-                <select xpath="bf:title/bf:Title/bf:mainTitle[contains(translate(@xml:lang,$upper,$lower), $vScript)]"/>
+              <case test="bf:title/bf:Title/bf:mainTitle[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
+                <select xpath="bf:title/bf:Title/bf:mainTitle[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"/>
               </case>
             </switch>
           </var>
           <var name="vParallelTitle">
             <switch>
-              <case test="bf:title/bf:ParallelTitle/bf:mainTitle[contains(translate(@xml:lang,$upper,$lower), $vScript)]">
-                <select xpath="bf:title/bf:ParallelTitle/bf:mainTitle[contains(translate(@xml:lang,$upper,$lower), $vScript)]"/>
+              <case test="bf:title/bf:ParallelTitle/bf:mainTitle[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
+                <select xpath="bf:title/bf:ParallelTitle/bf:mainTitle[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"/>
               </case>
             </switch>
           </var>
@@ -265,7 +233,7 @@
                     <xsl:when test="bf:identifiedBy/*[local-name()='Issn']">
                       <xsl:value-of select="concat($vMainTitle, ',')"/>
                     </xsl:when>
-                    <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]">
+                    <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
                       <xsl:value-of select="concat($vMainTitle, ' ;')"/>
                     </xsl:when>
                     <xsl:otherwise>
@@ -279,7 +247,7 @@
           <switch>
             <case test="$vParallelTitle != ''">
               <transform>
-                <xsl:for-each select="bf:title/bf:ParallelTitle/bf:mainTitle[contains(translate(@xml:lang,$upper,$lower), $vScript)]">
+                <xsl:for-each select="bf:title/bf:ParallelTitle/bf:mainTitle[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
                   <marc:subfield code='a'>
                     <xsl:value-of select="." />
                     <xsl:if test="position() != last()"><xsl:text> =</xsl:text></xsl:if>
@@ -290,7 +258,7 @@
                       <xsl:when test="bf:identifiedBy/*[local-name()='Issn']">
                         <xsl:value-of select="concat($vMainTitle, ',')"/>
                       </xsl:when>
-                      <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]">
+                      <xsl:when test="ancestor::bf:Relation/bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]">
                         <xsl:value-of select="concat($vMainTitle, ' ;')"/>
                       </xsl:when>
                     </xsl:choose>
@@ -307,7 +275,7 @@
                   <marc:subfield code='x'>
                     <xsl:value-of select="." />
                     <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]"><xsl:text> ;</xsl:text></xsl:if>
+                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                   </marc:subfield>
                 </xsl:for-each>
               </transform>
@@ -320,7 +288,7 @@
                   <marc:subfield code='y'>
                     <xsl:value-of select="." />
                     <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]"><xsl:text> ;</xsl:text></xsl:if>
+                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                   </marc:subfield>
                 </xsl:for-each>
               </transform>
@@ -333,16 +301,25 @@
                   <marc:subfield code='z'>
                     <xsl:value-of select="." />
                     <xsl:if test="following-sibling::bf:identifiedBy/*[local-name()='Issn' or rdf:type/@rdf:resource='http://id.loc.gov/ontologies/bibframe/Issn']"><xsl:text>,</xsl:text></xsl:if>
-                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]"><xsl:text> ;</xsl:text></xsl:if>
+                    <xsl:if test="ancestor::bf:Relation/bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"><xsl:text> ;</xsl:text></xsl:if>
                   </marc:subfield>
                 </xsl:for-each>
               </transform>
             </case>
           </switch>
           <sf code="v" repeatable="true">
-            <select xpath="../../bf:seriesEnumeration[contains(translate(@xml:lang,$upper,$lower), $vScript)]"/>
+            <select xpath="../../bf:seriesEnumeration[@xml:lang and translate(@xml:lang,$upper,$lower)!=$vLangTagLabel]"/>
           </sf>
-          <!--<sf code="7"><transform><xsl:value-of select="concat('(bcp47)', $vLangTagScript)" /></transform></sf>-->
+          <sf code="7">
+            <transform>
+              <xsl:variable name="bcp47code">
+                <xsl:call-template name="tOutputBCP47">
+                  <xsl:with-param name="bcp47orig" select="$vLangTagScript" />
+                </xsl:call-template>
+              </xsl:variable>
+              <xsl:value-of select="concat('(bcp47)', $bcp47code)" />
+            </transform>
+          </sf>
         </df>
       </case>
     </switch>
