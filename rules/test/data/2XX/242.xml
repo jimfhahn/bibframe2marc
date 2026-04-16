@@ -12,5 +12,15 @@
         <bf:partName>part one</bf:partName>
       </bf:Title>
     </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdf:type rdf:resource="http://id.loc.gov/vocabulary/vartitletype/tra"/>
+        <bflc:titleSortKey>man who spoke Snakish</bflc:titleSortKey>
+        <bf:mainTitle xml:lang="it">L'uomo che parlava il serpentino</bf:mainTitle>
+        <bf:subtitle>a novel</bf:subtitle>
+        <bf:partNumber>1</bf:partNumber>
+        <bf:partName>part one</bf:partName>
+      </bf:VariantTitle>
+    </bf:title>
   </bf:Instance>
 </rdf:RDF>

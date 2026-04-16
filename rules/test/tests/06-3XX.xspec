@@ -37,7 +37,15 @@
     <x:expect label="generate 306"
               test="count(//marc:datafield[@tag='306']) = 1"/>
     <x:expect label="each duration property with xs:duration data type creates a $a in the 306"
-              test="count(//marc:datafield[@tag='306']/marc:subfield[@code='a']) = 2"/>
+              test="//marc:datafield[@tag='306'][1]/marc:subfield[@code='a'] = '011824'"/>
+  </x:scenario>
+  
+  <x:scenario label="MARC 306">
+    <x:context href="../data/3XX/306-02.xml"/>
+    <x:expect label="generate 306"
+      test="count(//marc:datafield[@tag='306']) = 1"/>
+    <x:expect label="Second one was properly converted back to MARC's format..."
+      test="//marc:datafield[@tag='306'][1]/marc:subfield[@code='a'] = '003100'"/>
   </x:scenario>
 
   <x:scenario label="MARC 310">
